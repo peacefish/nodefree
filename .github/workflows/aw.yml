@@ -38,7 +38,7 @@ jobs:
         git config --local user.name "GitHub Actions"
         git pull origin main
         git add ./sub
-        git commit -m "$(date '+%Y-%m-%d %H:%M:%S')合并节点"
+        git commit --allow-empty -m "$(date '+%Y-%m-%d %H:%M:%S')合并节点"
     - name: Push
       uses:  ad-m/github-push-action@master
       with:
