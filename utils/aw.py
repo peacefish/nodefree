@@ -11,6 +11,9 @@ def main():
     file = open("./sub/newclash.yaml", "w+",encoding='utf-8')
     file.write(download_content(newurl))
     file.close()
+    file1 = open("./sub/clash_short.yaml", "w+",encoding='utf-8')
+    file1.write(download_content('https://agit.ai/ansakg/clash_233/raw/branch/master/speed_short.yaml'))
+    file1.close()
 
 def parse(doc):
     links = doc.find_all("span", class_="commit-summary")
