@@ -5,183 +5,167 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: 南非|A, server: 129.151.164.152, port: 55600, type: vmess, uuid: e30f8588-2555-48b8-c354-c8e63f57232d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 129.151.164.152}}, udp: true}
   - {name: 爱沙尼亚|A, server: no.aries.ovh, port: 2052, type: vmess, uuid: c6f7bae0-36d9-41a6-9962-e79156c899c6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ee.cloudflare.quest}}, udp: true}
-  - {name: US美国|A, server: 172.67.145.166, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
+  - {name: VN越南|A, server: no.aries.ovh, port: 2052, type: vmess, uuid: c6f7bae0-36d9-41a6-9962-e79156c899c6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: vn.cloudflare.quest}}, udp: true}
+  - {name: US美国|A, server: 172.67.135.57, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
+  - {name: US美国|A 2, server: 158.101.7.8, port: 80, type: vmess, uuid: 95b45c49-f5c0-4959-bb64-2b8fbc4a869c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 158.101.7.8}}, udp: true}
+  - {name: US(https://awkj.cf/ky+注册体验流媒体机场)|A, server: zz.luosi.me, port: 10002, type: ss, cipher: chacha20-ietf-poly1305, password: 7604e3f1-42fb-4396-b5a4-9bfed0511918, udp: true}
+  - {name: US(https://awkj.cf/ky+注册体验流媒体机场)|A 2, server: 38.91.102.123, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US|A 2, server: news.microsoft.com, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: oplg1.zhujicn2.com}}, udp: true}
   - {name: US|A, server: 172.67.135.57, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
-  - {name: US|A 2, server: 172.67.199.34, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: lg1.trump2023.us}}, udp: true}
-  - {name: US|A 3, server: 172.67.199.34, port: 80, type: vmess, uuid: 8b6dd709-4d4e-4b92-f542-54a676efbfe4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shares, headers: {Host: la.awsbest.com}}, udp: true}
-  - {name: US|A 4, server: 172.67.201.14, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
-  - {name: US|A 5, server: 203.30.188.189, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: oplg1.zhujicn2.com}}, udp: true}
-  - {name: US|A 6, server: 172.67.199.115, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: lu.sharecentre.online}}, udp: true}
-  - {name: US|A 7, server: 172.67.199.34, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: lu.sharecentre.online}}, udp: true}
-  - {name: US|A 8, server: 172.67.203.162, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
-  - {name: US|A 9, server: 172.67.72.219, port: 443, type: vmess, uuid: 90ea24f6-4b7f-4b4e-a9c1-de7d77b67e45, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /m1, headers: {Host: de-2.heima-bot.tech}}, udp: true}
-  - {name: US|A 10, server: 185.162.228.230, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
-  - {name: US|A 11, server: 141.193.213.20, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: oplg1.zhujicn2.com}}, udp: true}
-  - {name: US|A 12, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: lu.sharecentre.online}}, udp: true}
-  - {name: US|A 13, server: 172.67.199.34, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: lu.sharecentre.online}}, udp: true}
-  - {name: US|A 14, server: 203.24.108.8, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: lg1.trump2023.us}}, udp: true}
-  - {name: US|A 15, server: 172.67.70.22, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
-  - {name: US|A 16, server: news.microsoft.com, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: oplg1.zhujicn2.com}}, udp: true}
-  - {name: US|A 17, server: 172.67.70.22, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
-  - {name: US|A 18, server: 172.67.72.219, port: 8080, type: vmess, uuid: 90ea24f6-4b7f-4b4e-a9c1-de7d77b67e45, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /m1, headers: {Host: do-1.heima-bot.tech}}, udp: true}
-  - {name: US|A 19, server: 172.67.145.166, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
-  - {name: US|A 20, server: 172.67.199.34, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
-  - {name: US|A 21, server: vus2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: vus2.0bad.com}}, udp: true}
-  - {name: US|A 22, server: 172.105.138.117, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: vus3.0bad.com}}, udp: true}
-  - {name: US|A 23, server: 172.67.145.166, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
-  - {name: US|A 24, server: 203.30.191.6, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
-  - {name: US|A 25, server: 172.67.135.57, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
-  - {name: US|A 26, server: 172.67.199.101, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: lg1.trump2023.us}}, udp: true}
-  - {name: US|A 27, server: 185.162.228.229, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: oplg1.zhujicn2.com}}, udp: true}
-  - {name: US|A 28, server: 172.67.137.72, port: 443, type: vmess, uuid: db39ef95-4245-418a-84c0-14c202f29bc6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /videnset, headers: {Host: khvwycch.cymlr.xyz}}, udp: true}
-  - {name: US|A 29, server: v47a.toddns.tk, port: 80, type: vmess, uuid: a25881f3-967f-3265-bc7f-9e66857b016b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v47-2023unlimitndxd, headers: {Host: v47a.toddns.tk}}, udp: true}
-  - {name: US|A 30, server: 141.193.213.20, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: oplg1.zhujicn2.com}}, udp: true}
-  - {name: US|A 31, server: 172.67.185.133, port: 443, type: vmess, uuid: 44ceb389-4cea-4ea1-eef9-11ce6f3effe6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us1.wanwusheng.me}}, udp: true}
-  - {name: US|A 32, server: 172.67.199.34, port: 443, type: vmess, uuid: 8763e625-929a-43da-b7bf-7e7bc2e57615, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shared, headers: {Host: lv.awsbest.com}}, udp: true}
-  - {name: US|A 33, server: cdn.xia.me, port: 443, type: vmess, uuid: 68fe8d27-cbc8-4e72-90b7-70d3bb69dfd3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /api, headers: {Host: us12.cachexy.ga}}, udp: true}
-  - {name: US|A 34, server: new3.hucloud-dns.xyz, port: 443, type: vmess, uuid: 2926bbcf-eef0-4d0d-d8a7-400e417608aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: new3.hucloud-dns.xyz}}, udp: true}
-  - {name: US|A 35, server: live07.suijiceshi.xyz, port: 8080, type: vmess, uuid: d51644d5-b2a1-46b7-a8ae-2c103cf07cd9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /xbov/6f42f0ef9d9257447d1f4d4391b4dd76e164c00fb47c0a318b3b1125e03f4d959921f11e97d0da21/media_0003.ts, headers: {Host: live07.hlzuifv.cn}}, udp: true}
-  - {name: US|A 36, server: ovh-3.555530.xyz, port: 80, type: vmess, uuid: 000fe881-b655-4212-b804-b00f9970d5aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /happy, headers: {Host: ovh-3.555530.xyz}}, udp: true}
-  - {name: US|A 37, server: hucloud.tk, port: 443, type: vmess, uuid: 2df3ed4a-4313-45f9-b742-2f02ce593a6e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /huhu, headers: {Host: hucloud.tk}}, udp: true}
-  - {name: US|A 38, server: 185.162.228.229, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: oplg1.zhujicn2.com}}, udp: true}
-  - {name: US|A 39, server: v2ray.online, port: 443, type: vmess, uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Kansas.v2ray.online}}, udp: true}
-  - {name: US|A 40, server: ovh-3.555530.xyz, port: 80, type: vmess, uuid: 000fe881-b655-4212-b804-b00f9970d5aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /happy, headers: {Host: ovh-3.555530.xyz}}, udp: true}
-  - {name: US|A 41, server: 172.67.199.32, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: oplg1.zhujicn2.com}}, udp: true}
-  - {name: US|A 42, server: main.millionaireaisle.com, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: lg1.trump2023.us}}, udp: true}
-  - {name: US|A 43, server: yjz.hk, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
-  - {name: US|A 44, server: dl-us3.steamdownload.top, port: 443, type: trojan, password: 5ea7384e-7d26-481b-9cbe-d411167b42b8, sni: data-us.efyunpan.com, skip-cert-verify: true, udp: true}
-  - {name: us|A, server: 172.67.199.34, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: lg1.trump2023.us}}, udp: true}
-  - {name: us|A 2, server: oplg1.cfcdn2.xyz, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
-  - {name: UK|A, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: uk-2.sharecentre.online}}, udp: true}
-  - {name: UK|A 2, server: gb.woiden.yuji2022.gq, port: 80, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /Eynyyo4kJfl2fkJfl2f, headers: {Host: gb.woiden.yuji2022.gq}}, udp: true}
-  - {name: UK|A 3, server: hn.xiaohouzi.club, port: 28456, type: trojan, password: a3278882-3614-39cf-a3d6-faefa8c910ab, sni: douk01.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: TW台湾|A, server: live10.suijiceshi.xyz, port: 2052, type: vmess, uuid: d51644d5-b2a1-46b7-a8ae-2c103cf07cd9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /xvod/1f42f0ef9d0257447d1f4d4391b4dd76e164c00fb47c0a318b3b1125e03f4d959921f11e97d0da21/media_7893.ts, headers: {Host: live10.hlzuifv.cn}}, udp: true}
+  - {name: US|A 3, server: 203.30.188.189, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: oplg1.zhujicn2.com}}, udp: true}
+  - {name: US|A 4, server: 0121136175176168.xhtk.cc, port: 443, type: vmess, uuid: 286ff9bd-26b8-39c2-d85e-ba20dc1a7e75, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /fkcgvws, headers: {Host: 0121136175176168.xhtk.cc}}, udp: true}
+  - {name: US|A 5, server: 172.67.199.101, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: lg1.trump2023.us}}, udp: true}
+  - {name: US|A 6, server: 172.67.199.34, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: oplg1.zhujicn2.com}}, udp: true}
+  - {name: US|A 7, server: 203.24.108.8, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: lg1.trump2023.us}}, udp: true}
+  - {name: US|A 8, server: 141.193.213.20, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: oplg1.zhujicn2.com}}, udp: true}
+  - {name: US|A 9, server: 172.105.138.117, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: vus3.0bad.com}}, udp: true}
+  - {name: US|A 10, server: 129.146.113.254, port: 44107, type: vmess, uuid: fd84746b-24ed-449f-c53e-def4b90e122e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 129.146.113.254}}, udp: true}
+  - {name: US|A 11, server: v47a.toddns.tk, port: 80, type: vmess, uuid: a25881f3-967f-3265-bc7f-9e66857b016b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v47-2023unlimitndxd, headers: {Host: v47a.toddns.tk}}, udp: true}
+  - {name: US|A 12, server: new3.hucloud-dns.xyz, port: 443, type: vmess, uuid: 2926bbcf-eef0-4d0d-d8a7-400e417608aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: new3.hucloud-dns.xyz}}, udp: true}
+  - {name: US|A 13, server: news.microsoft.com, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: lg1.trump2023.us}}, udp: true}
+  - {name: US|A 14, server: v125.toddns.tk, port: 80, type: vmess, uuid: a25881f3-967f-3265-bc7f-9e66857b016b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /usv125N93nz, headers: {Host: v125.toddns.tk}}, udp: true}
+  - {name: US|A 15, server: 172.67.199.32, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: oplg1.zhujicn2.com}}, udp: true}
+  - {name: US|A 16, server: 172.67.199.34, port: 443, type: vmess, uuid: 8763e625-929a-43da-b7bf-7e7bc2e57615, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shared, headers: {Host: lv.awsbest.com}}, udp: true}
+  - {name: US|A 17, server: 172.67.199.115, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: lu.sharecentre.online}}, udp: true}
+  - {name: US|A 18, server: vmess.woiden.yuji2022.gq, port: 8880, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /E86414F638E11, headers: {Host: vmess.woiden.yuji2022.gq}}, udp: true}
+  - {name: US|A 19, server: hucloud.tk, port: 443, type: vmess, uuid: 2df3ed4a-4313-45f9-b742-2f02ce593a6e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /huhu, headers: {Host: hucloud.tk}}, udp: true}
+  - {name: US|A 20, server: 35.172.190.231, port: 43632, type: vmess, uuid: 18f49289-9ee1-439a-bbaa-dbb59172c42e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US|A 21, server: test.rxsweet.repl.co, port: 443, type: vmess, uuid: 49b2cb63-0d53-400f-afe6-6e21f88d0da2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /49b2cb63-0d53-400f-afe6-6e21f88d0da2-vm, headers: {Host: test.rxsweet.repl.co}}, udp: true}
+  - {name: US|A 22, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: buyvm.sharecentre.online}}, udp: true}
+  - {name: US|A 23, server: hohm.microsoft.com, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: lu.sharecentre.online}}, udp: true}
+  - {name: US|A 24, server: v13.583182.xyz, port: 2053, type: vmess, uuid: 16a79594-8b08-42ab-8e59-40b15416b1b5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v13.583182.xyz}}, udp: true}
+  - {name: US|A 25, server: v2ray.online, port: 443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Phoenix.v2ray.online}}, udp: true}
+  - {name: US|A 26, server: cdn.xia.me, port: 443, type: vmess, uuid: 68fe8d27-cbc8-4e72-90b7-70d3bb69dfd3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /api, headers: {Host: us12.cachexy.ga}}, udp: true}
+  - {name: US|A 27, server: get.tech, port: 80, type: vmess, uuid: 8763e625-929a-43da-b7bf-7e7bc2e57615, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shared, headers: {Host: lv.awsbest.com}}, udp: true}
+  - {name: US|A 28, server: ovh-3.555530.xyz, port: 80, type: vmess, uuid: 000fe881-b655-4212-b804-b00f9970d5aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /happy, headers: {Host: ovh-3.555530.xyz}}, udp: true}
+  - {name: US|A 29, server: dl-us2.steamdownload.top, port: 443, type: trojan, password: 5f872daa-f536-41a9-91bd-1b242a9fd46c, sni: data-us.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: US|A 30, server: login.furbbs.top, port: 443, type: trojan, password: 638a56cb, skip-cert-verify: true, udp: true}
+  - {name: UK|A, server: no.aries.ovh, port: 2052, type: vmess, uuid: c6f7bae0-36d9-41a6-9962-e79156c899c6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: uk.cloudflare.quest}}, udp: true}
+  - {name: UK|A 2, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: uk-1.sharecentre.online}}, udp: true}
+  - {name: UK|A 3, server: gb.woiden.yuji2022.gq, port: 80, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /Eynyyo4kJfl2fkJfl2f, headers: {Host: gb.woiden.yuji2022.gq}}, udp: true}
+  - {name: UK|A 4, server: hn.xiaohouzi.club, port: 28456, type: trojan, password: a3278882-3614-39cf-a3d6-faefa8c910ab, sni: douk01.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: TW台湾(https://awkj.cf/ky+注册体验流媒体机场)|A, server: zz.luosi.me, port: 10003, type: ss, cipher: chacha20-ietf-poly1305, password: 7604e3f1-42fb-4396-b5a4-9bfed0511918, udp: true}
   - {name: TW|A, server: tw1.sanfen001.pics, port: 443, type: vmess, uuid: 3a97d3b0-54ee-47fc-a11a-f7091c7a0408, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: tw1.sanfen001.pics}}, udp: true}
-  - {name: TW|A 2, server: in02.my1188.org, port: 63088, type: vmess, uuid: b4eebd7a-d044-3785-9775-1c7e206fc7d8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: tw-load-balancer.myn1des.com}}, udp: true}
+  - {name: TW|A 2, server: dl-tw3.steamdownload.top, port: 443, type: trojan, password: 5f872daa-f536-41a9-91bd-1b242a9fd46c, sni: data-tw.efyunpan.com, skip-cert-verify: true, udp: true}
   - {name: TW|A 3, server: hnm.xiaohouzi.club, port: 16082, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: nh-hinet06.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: TW|A 4, server: gkifo-8-tr-0.tw-tpe-hinet-0-0.o-two.xyz, port: 889, type: trojan, password: JeSDlzqBCKqUCmDskZDSIvgscdvOYWbd, sni: o-two.bond, skip-cert-verify: true, udp: true}
-  - {name: TUR|A, server: NO.ARIES.OVH, port: 2052, type: vmess, uuid: c6f7bae0-36d9-41a6-9962-e79156c899c6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: GCORE-TR.cloudflare.quest}}, udp: true}
-  - {name: SG新加坡|A, server: live02.suijiceshi.xyz, port: 2052, type: vmess, uuid: d51644d5-b2a1-46b7-a8ae-2c103cf07cd9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /xvod/7f42f0ef9d9257447d1f4d4391b4dd76e164c00fb47c0a318b3b1125e03f4d959921f11e97d0da21/media_0003.ts, headers: {Host: live02.hlzuifv.cn}}, udp: true}
-  - {name: SG|A, server: in02.my1188.org, port: 63087, type: vmess, uuid: b4eebd7a-d044-3785-9775-1c7e206fc7d8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: sg-balancer.tencent.best}}, udp: true}
-  - {name: SG|A 2, server: free-sg10210.tencent.cfd, port: 50328, type: vmess, uuid: d1860587-aa33-4b76-85cd-c191edecb338, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: free-sg10210.tencent.cfd}}, udp: true}
-  - {name: SG|A 3, server: 36.156.102.166, port: 10001, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: SG|A 4, server: 172.67.189.142, port: 8443, type: vmess, uuid: a6a37e04-5e81-44c9-be53-baa3ff46eb8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /8cda48b3, headers: {Host: sg-212-128.shoptunnel.live}}, udp: true}
-  - {name: SG|A 5, server: 172.104.176.166, port: 80, type: vmess, uuid: 9bf3e9f2-2703-4bc4-b8a1-b78afe84e568, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ht4gvpn.com, headers: {Host: v9-vn.tiktokcdn.com}}, udp: true}
-  - {name: SG|A 6, server: 172.104.176.166, port: 80, type: vmess, uuid: 9bf3e9f2-2703-4bc4-b8a1-b78afe84e568, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ht4gvpn.com, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
-  - {name: SG|A 7, server: investors.spotify.com, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: sg-gcore.sharecentre.online}}, udp: true}
-  - {name: SG|A 8, server: 36.156.102.164, port: 10002, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: SG|A 9, server: six.r33.fun, port: 443, type: vmess, uuid: b8e347ad-065a-449f-bf62-06ac6ccdd97d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /racevpn, headers: {Host: sg-full.privateip.net}}, udp: true}
+  - {name: TW|A 4, server: gx.bailancloud.top, port: 19536, type: trojan, password: 7f348e2f-896c-44b3-bc9e-a17bb120774f, sni: tw.bailancloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW|A 5, server: gkifo-8-tr-0.tw-tpe-hinet-0-0.o-two.xyz, port: 889, type: trojan, password: JeSDlzqBCKqUCmDskZDSIvgscdvOYWbd, sni: o-two.bond, skip-cert-verify: true, udp: true}
+  - {name: SG新加坡|A, server: 162.159.128.72, port: 443, type: vmess, uuid: 8842fadf-5e16-443f-97e3-50addf4ff2ef, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/pq/sg1?ed=2048", headers: {Host: sg1.pqjc.buzz}}, udp: true}
+  - {name: SG|A 3, server: six.r33.fun, port: 443, type: vmess, uuid: b8e347ad-065a-449f-bf62-06ac6ccdd97d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /racevpn, headers: {Host: sg-full.privateip.net}}, udp: true}
+  - {name: SG|A, server: 172.67.189.142, port: 8443, type: vmess, uuid: a6a37e04-5e81-44c9-be53-baa3ff46eb8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /8cda48b3, headers: {Host: sg-212-128.shoptunnel.live}}, udp: true}
+  - {name: SG|A 2, server: project.mytargoocloud.live, port: 443, type: vmess, uuid: 7455cf85-4411-42fd-802a-f2e91c2da67c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sgm3.targoocloud.live}}, udp: true}
+  - {name: SG|A 4, server: cf-yd-dns.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: sg-1.sharecentre.online}}, udp: true}
+  - {name: SG|A 5, server: xjp2.wangjiaxin.xyz, port: 25932, type: vmess, uuid: 33a47ce6-5ea9-4d21-d3db-ce38421d2558, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /23423, headers: {Host: xjp2.wangjiaxin.xyz}}, udp: true}
+  - {name: SG|A 6, server: 36.156.102.164, port: 10002, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: SG|A 7, server: 172.104.176.166, port: 80, type: vmess, uuid: 9bf3e9f2-2703-4bc4-b8a1-b78afe84e568, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ht4gvpn.com, headers: {Host: v9-vn.tiktokcdn.com}}, udp: true}
+  - {name: SG|A 8, server: one.r33.fun, port: 443, type: vmess, uuid: 2ae0e289-5790-4486-9df2-41e6be509f44, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /racevpn, headers: {Host: sg2-full.privateip.net}}, udp: true}
+  - {name: SG|A 9, server: 172.104.176.166, port: 80, type: vmess, uuid: 9bf3e9f2-2703-4bc4-b8a1-b78afe84e568, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ht4gvpn.com, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
   - {name: SG|A 10, server: sg1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.nbvpn.org, port: 443, type: trojan, password: 86714e30-9135-4e83-9e93-8d14f5224b2b, sni: sg1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.nbvpn.org, skip-cert-verify: true, udp: true}
-  - {name: SG|A 11, server: hn.xiaohouzi.club, port: 19023, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: siga03.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: SG|A 12, server: hnm.xiaohouzi.club, port: 17107, type: trojan, password: a3278882-3614-39cf-a3d6-faefa8c910ab, sni: vusig01.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: RU俄罗斯|A, server: core2.steamdownload.top, port: 443, type: trojan, password: 5ea7384e-7d26-481b-9cbe-d411167b42b8, sni: data-ru.efyunpan.com, skip-cert-verify: true, udp: true}
-  - {name: PL波兰|A, server: cf.fovi.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxpol3.fovi.tk}}, udp: true}
-  - {name: LV拉脱维亚|A, server: 89.111.26.14, port: 48183, type: vmess, uuid: 1f805db5-adc0-42c3-ca65-9684f158af6d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 89.111.26.14}}, udp: true}
-  - {name: LV|A, server: 89.111.26.55, port: 34835, type: vmess, uuid: 4614d21e-03b3-481f-e3f8-14559c8ccd34, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 89.111.26.55}}, udp: true}
+  - {name: SG|A 11, server: dl-sg3.steamdownload.top, port: 443, type: trojan, password: 5f872daa-f536-41a9-91bd-1b242a9fd46c, sni: data-sg.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: SG|A 12, server: hn.xiaohouzi.club, port: 19023, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: siga03.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: SG|A 13, server: bj2.raytrack.cloud, port: 27164, type: trojan, password: 7f348e2f-896c-44b3-bc9e-a17bb120774f, sni: jp.bailancloud.top, skip-cert-verify: true, udp: true}
+  - {name: SG|A 14, server: 192.46.225.73, port: 443, type: trojan, password: 86714e30-9135-4e83-9e93-8d14f5224b2b, sni: sg1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.nbvpn.org, skip-cert-verify: true, udp: true}
+  - {name: SG|A 15, server: hnm.xiaohouzi.club, port: 17107, type: trojan, password: a3278882-3614-39cf-a3d6-faefa8c910ab, sni: vusig01.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: RU|A, server: 45.129.2.237, port: 2082, type: vmess, uuid: c4118aed-b0fd-4e98-e8fe-157c1d25fc36, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: awkj}}, udp: true}
+  - {name: RU|A 2, server: core1.steamdownload.top, port: 443, type: trojan, password: 5f872daa-f536-41a9-91bd-1b242a9fd46c, sni: data-ru.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: PL|A, server: no.aries.ovh, port: 2052, type: vmess, uuid: c6f7bae0-36d9-41a6-9962-e79156c899c6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: waw.cloudflare.quest}}, udp: true}
+  - {name: PL|A 2, server: cf.fovi.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxpol3.fovi.tk}}, udp: true}
+  - {name: NL_荷兰(https://awkj.cf/ky+注册体验流媒体机场)|A, server: 172.99.188.99, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: NL|A, server: six.r33.fun, port: 443, type: vmess, uuid: a6d1f100-a644-11ed-b931-205c6d5f5d78, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /qz5rkavj, headers: {Host: nl.0rd.net}}, udp: true}
+  - {name: NL|A 2, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: nl.sharecentre.online}}, udp: true}
   - {name: KR韩国|A, server: project.mytargoocloud.live, port: 443, type: vmess, uuid: 7455cf85-4411-42fd-802a-f2e91c2da67c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: krm1.targoocloud.live}}, udp: true}
-  - {name: KR|A, server: kr01.wxfz.gq, port: 80, type: vmess, uuid: 2bf8cebf-7911-4c25-b0a4-b642a5bdd4d7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: kr01.wxfz.gq}}, udp: true}
-  - {name: KR|A 2, server: live08.suijiceshi.xyz, port: 2052, type: vmess, uuid: d51644d5-b2a1-46b7-a8ae-2c103cf07cd9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /xvod/7f42f1ef9d9257447d1f4d4391b4dd76e164c00fb47c0a318b3b1125e03f4d959921f11e97d0da21/media_0003.ts, headers: {Host: live08.hlzuifv.cn}}, udp: true}
-  - {name: KR|A 3, server: 210.87.202.126, port: 46274, type: vmess, uuid: 4a15dc18-5c34-4551-9c61-d37d6e004f96, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /kor5/getData, headers: {Host: kor5.verichains.co}}, udp: true}
-  - {name: KR|A 4, server: 52.78.213.224, port: 80, type: vmess, uuid: 6f442823-6b73-4b31-f1f5-aa1e907b051e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 52.78.213.224}}, udp: true}
-  - {name: KR|A 5, server: 52.78.213.224, port: 80, type: vmess, uuid: 6f442823-6b73-4b31-f1f5-aa1e907b051e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 52.78.213.224}}, udp: true}
-  - {name: KR|A 6, server: dl-am1.steamdownload.top, port: 443, type: trojan, password: 5ea7384e-7d26-481b-9cbe-d411167b42b8, sni: data-ockrsl.efyunpan.com, skip-cert-verify: true, udp: true}
-  - {name: JP日本|A, server: download2hkt.windowsupdate.lol, port: 80, type: vmess, uuid: 689e9c1c-4a15-48c6-a810-fb586327702b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /pq/jp3, headers: {Host: AWKJ}}, udp: true}
-  - {name: JP|A, server: in02.my1188.org, port: 63086, type: vmess, uuid: b4eebd7a-d044-3785-9775-1c7e206fc7d8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: jp-balancer.myn1des.com}}, udp: true}
-  - {name: JP|A 2, server: hkt.52147.top, port: 80, type: vmess, uuid: 1aab2a1f-2127-477b-96c7-5ecc26475d74, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /yfjc/jp1, headers: {Host: tlu.dl.delivery.mp.microsoft.com}}, udp: true}
-  - {name: JP|A 3, server: live04.suijiceshi.xyz, port: 2052, type: vmess, uuid: d51644d5-b2a1-46b7-a8ae-2c103cf07cd9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /xvod/7f42f1ef9d9257447d1f4d4391b4dd76e164c00fb47c0a318b3b1125e03f4d959921f11e97d0da21/media_0003.ts, headers: {Host: live04.hlzuifv.cn}}, udp: true}
-  - {name: JP|A 4, server: 141.193.213.20, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: opc-jp.sharecentre.online}}, udp: true}
-  - {name: JP|A 5, server: v20.emovpn.xyz, port: 8443, type: vmess, uuid: 4bac51b0-13d4-4086-8263-b0b97e5c3c74, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v20.emovpn.xyz}}, udp: true}
-  - {name: JP|A 6, server: 141.193.213.20, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: opc-jp.sharecentre.online}}, udp: true}
-  - {name: JP|A 7, server: jp08.wxfz.gq, port: 28410, type: vmess, uuid: f3dc16dd-1118-457c-9ddf-453996cd7920, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP|A 8, server: in04.my1188.org, port: 63086, type: vmess, uuid: b4eebd7a-d044-3785-9775-1c7e206fc7d8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: jp-balancer.myn1des.com}}, udp: true}
-  - {name: JP|A 9, server: 152.70.109.16, port: 443, type: vmess, uuid: b5a503a9-a3ad-42d9-af00-86f959d3454b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 152.70.109.16}}, udp: true}
-  - {name: JP|A 10, server: 152.70.109.16, port: 8080, type: vmess, uuid: b5a503a9-a3ad-42d9-af00-86f959d3454b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 152.70.109.16}}, udp: true}
-  - {name: JP|A 11, server: dl-jp2.steamdownload.top, port: 443, type: trojan, password: 5ea7384e-7d26-481b-9cbe-d411167b42b8, sni: data-jp.efyunpan.com, skip-cert-verify: true, udp: true}
-  - {name: JP|A 12, server: hn.xiaohouzi.club, port: 18581, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: "%24%24vutnkr01.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: IN印度尼西亚|A, server: yd.wxfz.gq, port: 36739, type: vmess, uuid: c080af5d-5da8-4d0a-a55f-5e10bc901bd5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: in|A, server: NO.ARIES.OVH, port: 2052, type: vmess, uuid: c6f7bae0-36d9-41a6-9962-e79156c899c6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: gcore-in.cloudflare.quest}}, udp: true}
-  - {name: )|A_9, server: jp.xund8.xyz, port: 41008, type: ssr, cipher: aes-256-cfb, password: aLPVFv, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: )|A_8, server: hujp.mmods.site, port: 23566, type: ssr, cipher: aes-256-cfb, password: J3ITPq, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
-  - {name: )|A_7, server: hk.xund8.xyz, port: 41001, type: ssr, cipher: aes-256-cfb, password: aLPVFv, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: )|A_6, server: cdn-cn.nekocloud.cn, port: 19026, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: "", obfs-param: "", udp: true}
-  - {name: )|A_5, server: aahk8.mmods.site, port: 24201, type: ssr, cipher: aes-256-cfb, password: J3ITPq, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
-  - {name: )|A_4, server: aahk7.mmods.site, port: 24202, type: ssr, cipher: aes-256-cfb, password: J3ITPq, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
-  - {name: )|A_3, server: aahk5.mmods.site, port: 24204, type: ssr, cipher: aes-256-cfb, password: J3ITPq, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
-  - {name: )|A_24, server: zj9.mmods.site, port: 23556, type: ssr, cipher: aes-256-cfb, password: J3ITPq, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
-  - {name: )|A_23, server: z84001.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
-  - {name: )|A_22, server: z84001.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
-  - {name: )|A_21, server: z0115.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
-  - {name: )|A_20, server: z0113.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
-  - {name: )|A_2, server: aahk1.mmods.site, port: 24207, type: ssr, cipher: aes-256-cfb, password: J3ITPq, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
-  - {name: )|A_19, server: z0113.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
-  - {name: )|A_18, server: z0111.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
-  - {name: )|A_17, server: z0111.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
-  - {name: )|A_16, server: z0111.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
-  - {name: )|A_15, server: z0003.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
-  - {name: )|A_14, server: us.xund8.xyz, port: 41007, type: ssr, cipher: aes-256-cfb, password: aLPVFv, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: )|A_13, server: sql.accessconnect.cc, port: 999, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: )|A_12, server: sg.xund8.xyz, port: 41005, type: ssr, cipher: aes-256-cfb, password: aLPVFv, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: )|A_11, server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: )|A_10, server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: )|A_1, server: 117.28.245.197, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
-  - {name: HK香港|A, server: hk1.sanfen001.pics, port: 443, type: vmess, uuid: 3a97d3b0-54ee-47fc-a11a-f7091c7a0408, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: hk1.sanfen001.pics}}, udp: true}
-  - {name: HK|A, server: 20.205.10.171, port: 80, type: vmess, uuid: 90ef3edb-8ba4-3488-91d2-b31fedab8a46, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ny, headers: {Host: awkj-ytb}}, udp: true}
-  - {name: HK|A 2, server: 20.24.93.78, port: 80, type: vmess, uuid: 90ef3edb-8ba4-3488-91d2-b31fedab8a46, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ny, headers: {Host: AWKJ}}, udp: true}
+  - {name: KR|A, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: kr.sharecentre.online}}, udp: true}
+  - {name: KR|A 2, server: dl-am1.steamdownload.top, port: 443, type: trojan, password: 5f872daa-f536-41a9-91bd-1b242a9fd46c, sni: data-ockrsl.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: JP日本|A, server: 162.159.142.203, port: 443, type: vmess, uuid: 8842fadf-5e16-443f-97e3-50addf4ff2ef, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/pq/jp1?ed=2048", headers: {Host: jp1.pqjc.buzz}}, udp: true}
+  - {name: JP(https://awkj.cf/ky+注册体验流媒体机场)|A, server: zz.luosi.me, port: 10001, type: ss, cipher: chacha20-ietf-poly1305, password: 7604e3f1-42fb-4396-b5a4-9bfed0511918, udp: true}
+  - {name: JP|A, server: download2hkt.windowsupdate.lol, port: 80, type: vmess, uuid: 49c89ead-d12e-4a28-b90e-28f5625f2855, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /pq/jp3, headers: {Host: YTB-awkj}}, udp: true}
+  - {name: JP|A 2, server: no.aries.ovh, port: 2052, type: vmess, uuid: c6f7bae0-36d9-41a6-9962-e79156c899c6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: gcore-jp.cloudflare.quest}}, udp: true}
+  - {name: JP|A 3, server: 43.206.230.179, port: 43632, type: vmess, uuid: 0426d092-480a-43fb-9fbd-91c0c315f2dd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JP|A 4, server: www.kuromi.eu.org, port: 33421, type: vmess, uuid: 94e56ff9-ccf1-414e-a114-46e0a79f6614, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JP|A 5, server: 141.193.213.20, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: opc-jp.sharecentre.online}}, udp: true}
+  - {name: JP|A 6, server: jp2.v2pn.live, port: 10202, type: vmess, uuid: bdc3c92f-f49b-4907-9372-64f0b947640d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: JP|A 7, server: jp3.v2pn.live, port: 443, type: trojan, password: bdc3c92f-f49b-4907-9372-64f0b947640d, sni: 139-177-186-17.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: JP|A 8, server: dl-jp5.steamdownload.top, port: 443, type: trojan, password: 5f872daa-f536-41a9-91bd-1b242a9fd46c, sni: data-jp.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: JP|A 9, server: jp4.v2pn.live, port: 443, type: trojan, password: bdc3c92f-f49b-4907-9372-64f0b947640d, sni: 139-177-186-17.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: JP|A 10, server: bj2.raytrack.cloud, port: 30050, type: trojan, password: 7f348e2f-896c-44b3-bc9e-a17bb120774f, sni: jp2.bailancloud.top, skip-cert-verify: true, udp: true}
+  - {name: JP|A 11, server: 20.78.72.90, port: 443, type: trojan, password: 8842fadf-5e16-443f-97e3-50addf4ff2ef, sni: vzwzasc.cn, skip-cert-verify: true, udp: true}
+  - {name: JP|A 12, server: 20.222.228.18, port: 443, type: trojan, password: 8842fadf-5e16-443f-97e3-50addf4ff2ef, sni: vzwzasc.cn, skip-cert-verify: true, udp: true}
+  - {name: JP|A 13, server: szf02.xiaohouzi.club, port: 27851, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: tr-awsjp01.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: JP|A 14, server: gz01.xiaohouzi.club, port: 20091, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: "%24ajpn01.xiaohouzi.club", skip-cert-verify: true, udp: true}
+  - {name: IN印度|A, server: 103.21.244.226, port: 8443, type: vmess, uuid: a6a37e04-5e81-44c9-be53-baa3ff46eb8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /8cda48b3, headers: {Host: IN-92-99.shoptunnel.live}}, udp: true}
+  - {name: )|A_9, server: 13.mmods.site, port: 23569, type: ssr, cipher: aes-256-cfb, password: J3ITPq, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
+  - {name: )|A_8, server: jp.xund8.xyz, port: 41008, type: ssr, cipher: aes-256-cfb, password: aLPVFv, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: )|A_7, server: tw.xund8.xyz, port: 41002, type: ssr, cipher: aes-256-cfb, password: aLPVFv, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: )|A_6, server: hk.xund8.xyz, port: 41001, type: ssr, cipher: aes-256-cfb, password: aLPVFv, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: )|A_5, server: sg.xund8.xyz, port: 41004, type: ssr, cipher: aes-256-cfb, password: aLPVFv, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: )|A_4, server: sg.xund8.xyz, port: 41005, type: ssr, cipher: aes-256-cfb, password: aLPVFv, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: )|A_3, server: 117.28.245.197, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
+  - {name: )|A_2, server: z0005.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
+  - {name: )|A_19, server: z0111.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
+  - {name: )|A_18, server: z80001.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
+  - {name: )|A_17, server: aahk3.mmods.site, port: 23550, type: ssr, cipher: aes-256-cfb, password: J3ITPq, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
+  - {name: )|A_16, server: aa5us5.mmods.site, port: 23582, type: ssr, cipher: aes-256-cfb, password: J3ITPq, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
+  - {name: )|A_15, server: aakr2.mmods.site, port: 4655, type: ssr, cipher: aes-256-cfb, password: J3ITPq, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
+  - {name: )|A_14, server: aahk2.mmods.site, port: 24206, type: ssr, cipher: aes-256-cfb, password: J3ITPq, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
+  - {name: )|A_13, server: zj9.mmods.site, port: 23557, type: ssr, cipher: aes-256-cfb, password: J3ITPq, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
+  - {name: )|A_12, server: z0003.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
+  - {name: )|A_1, server: z00041.security-cloudfront-cdn.com, port: 42833, type: ssr, cipher: aes-256-cfb, password: YpX2opBbrfqJzzMs, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
+  - {name: HK香港|A, server: uns.xiaohouzi.club, port: 13328, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: siga01.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: HK|A, server: download1hkt.windowsupdate.lol, port: 80, type: vmess, uuid: 8842fadf-5e16-443f-97e3-50addf4ff2ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /pq/jp2, headers: {Host: YTB-awkj}}, udp: true}
+  - {name: HK|A 2, server: no.aries.ovh, port: 2052, type: vmess, uuid: c6f7bae0-36d9-41a6-9962-e79156c899c6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: gcore-hk.cloudflare.quest}}, udp: true}
   - {name: HK|A 3, server: 36.156.102.166, port: 10001, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK|A 4, server: 36.156.102.166, port: 10001, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK|A 5, server: in04.my1188.org, port: 63078, type: vmess, uuid: b4eebd7a-d044-3785-9775-1c7e206fc7d8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk-balancer.airport-v2.com}}, udp: true}
-  - {name: HK|A 6, server: dl-hk1.steamdownload.top, port: 443, type: trojan, password: 5ea7384e-7d26-481b-9cbe-d411167b42b8, sni: data-hk.efyunpan.com, skip-cert-verify: true, udp: true}
-  - {name: HK|A 7, server: hn.xiaohouzi.club, port: 19357, type: trojan, password: a3278882-3614-39cf-a3d6-faefa8c910ab, sni: azhk003.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: HK|A 8, server: 20.222.228.18, port: 443, type: trojan, password: 4ced2e64-021f-4c7c-acb7-7420c246cf1b, sni: vzwzasc.cn, skip-cert-verify: true, udp: true}
-  - {name: HK|A 9, server: hn.xiaohouzi.club, port: 19359, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: HK|A 10, server: hn.xiaohouzi.club, port: 19357, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: azhk003.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: HK|A 11, server: iplc.xiaohouzi.club, port: 20514, type: trojan, password: a3278882-3614-39cf-a3d6-faefa8c910ab, sni: supaz041.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: HK|A 12, server: hn.xiaohouzi.club, port: 19362, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: aws-hk03.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: HK|A 4, server: 47.243.227.139, port: 31450, type: vmess, uuid: bbe67936-0312-4da1-900b-80ffe82e8521, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [awkj]}}, udp: true}
+  - {name: HK|A 5, server: 36.156.102.166, port: 10001, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK|A 6, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: hk-gcore.sharecentre.online}}, udp: true}
+  - {name: HK|A 7, server: 112.18.159.7, port: 50207, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: 112.18.159.7}}, udp: true}
+  - {name: HK|A 8, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: hk-gcore.sharecentre.online}}, udp: true}
+  - {name: HK|A 9, server: dl-hk3.steamdownload.top, port: 443, type: trojan, password: 5f872daa-f536-41a9-91bd-1b242a9fd46c, sni: data-hk.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: HK|A 10, server: ah2.bailancloud.top, port: 22925, type: trojan, password: 7f348e2f-896c-44b3-bc9e-a17bb120774f, sni: hkt.bailancloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK|A 11, server: hn.xiaohouzi.club, port: 19357, type: trojan, password: a3278882-3614-39cf-a3d6-faefa8c910ab, sni: azhk003.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: HK|A 12, server: iplc.xiaohouzi.club, port: 20036, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: nazhk03.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: HK|A 13, server: hn.xiaohouzi.club, port: 19357, type: trojan, password: 64de1de7-e3bb-3dc4-ab04-d1e601e18ac5, sni: azhk003.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: HK|A 14, server: hkgu01.t1t2t3t4.com, port: 16816, type: trojan, password: UIZjyW03Nf, sni: hkgu01.t1t2t3t4.com, skip-cert-verify: true, udp: true}
+  - {name: HK|A 15, server: hk.swiftfalcon.app, port: 28897, type: trojan, password: shenmegui, skip-cert-verify: true, udp: true}
+  - {name: FR(法国)|A 3, server: 172.67.199.34, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
   - {name: FR(法国)|A, server: 141.193.213.20, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
-  - {name: FR|A, server: 172.67.199.31, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
+  - {name: FR|A 6, server: news.microsoft.com, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
+  - {name: FR|A, server: no.aries.ovh, port: 2052, type: vmess, uuid: c6f7bae0-36d9-41a6-9962-e79156c899c6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: fr.cloudflare.quest}}, udp: true}
   - {name: FR|A 2, server: 172.67.199.34, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
   - {name: FR|A 3, server: 203.30.191.193, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
   - {name: FR|A 4, server: 141.193.213.21, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
-  - {name: FR|A 5, server: 203.30.188.190, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
-  - {name: FR|A 6, server: 172.67.199.34, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
-  - {name: FR|A 7, server: news.microsoft.com, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
+  - {name: FR|A 5, server: 141.193.213.21, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
+  - {name: FR|A 7, server: 162.159.135.42, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
   - {name: FR|A 8, server: 172.67.199.34, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
-  - {name: FR|A 9, server: 172.67.199.200, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
-  - {name: FR|A 10, server: 5.135.43.119, port: 58732, type: vmess, uuid: d159c5be-8291-45c4-bd21-51d024658a6d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: bmi.irT.me/s0013_Official}}, udp: true}
-  - {name: FR|A 11, server: 162.159.135.42, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
+  - {name: FR|A 9, server: no.aries.ovh, port: 2052, type: vmess, uuid: c6f7bae0-36d9-41a6-9962-e79156c899c6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: france.cloudflare.quest}}, udp: true}
+  - {name: FR|A 10, server: v140a.toddns.tk, port: 443, type: vmess, uuid: a25881f3-967f-3265-bc7f-9e66857b016b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /fr-111unlimitxxx, headers: {Host: v140a.toddns.tk}}, udp: true}
+  - {name: FR|A 11, server: 172.67.199.200, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
   - {name: FR|A 12, server: els200.jslist.tk, port: 8443, type: vmess, uuid: e30cfa80-bc2c-43df-e808-97876aee77e2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /wo.php, headers: {Host: els200.jslist.tk}}, udp: true}
-  - {name: FR|A 13, server: get.tech, port: 80, type: vmess, uuid: 8763e625-929a-43da-b7bf-7e7bc2e57615, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shared, headers: {Host: lv.awsbest.com}}, udp: true}
-  - {name: FR|A 14, server: vmess.woiden.yuji2022.gq, port: 8880, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /E86414F638E11, headers: {Host: vmess.woiden.yuji2022.gq}}, udp: true}
-  - {name: FR|A 15, server: v140a.toddns.tk, port: 443, type: vmess, uuid: a25881f3-967f-3265-bc7f-9e66857b016b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /fr-111unlimitxxx, headers: {Host: v140a.toddns.tk}}, udp: true}
-  - {name: FR|A 16, server: v10.toddns.tk, port: 80, type: vmess, uuid: a25881f3-967f-3265-bc7f-9e66857b016b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ZPK2023jLBv10Ey, headers: {Host: v10.toddns.tk}}, udp: true}
-  - {name: fr|A, server: hohm.microsoft.com, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
   - {name: FI芬兰|A, server: vmess.woiden.yuji2022.gq, port: 8880, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /E86414F638E11, headers: {Host: vmess.woiden.yuji2022.gq}}, udp: true}
-  - {name: FI|A, server: v20.emovpn.xyz, port: 8443, type: vmess, uuid: 4bac51b0-13d4-4086-8263-b0b97e5c3c74, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v20.emovpn.xyz}}, udp: true}
   - {name: DE德国|A, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: de-1.sharecentre.online}}, udp: true}
-  - {name: DE|A, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: de-1.sharecentre.online}}, udp: true}
+  - {name: DE|A, server: one.r33.fun, port: 443, type: vmess, uuid: c9459985-d2d6-4e01-a5a1-1ed0815ac841, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /racevpn, headers: {Host: de-full.privateip.net}}, udp: true}
   - {name: DE|A 2, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: de-2.sharecentre.online}}, udp: true}
-  - {name: DE|A 3, server: vde2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: vde2.0bad.com}}, udp: true}
-  - {name: DE|A 4, server: 143.42.21.187, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: vde2.0bad.com}}, udp: true}
-  - {name: DE|A 5, server: 5.75.204.184, port: 12986, type: vmess, uuid: 64ff3a42-8651-47ac-9593-a7dba00823f4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [bmi.ir]}}, udp: true}
-  - {name: DE|A 6, server: 91.107.166.231, port: 8443, type: vmess, uuid: 4d598e48-234f-4c60-fdd3-fa90e084770d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [bmi.ir]}}, udp: true}
-  - {name: DE|A 7, server: cdnjs.com, port: 443, type: vmess, uuid: ee30d3ff-da14-4ea8-bcd2-02e8ee3667de, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /aidapp.lifevws, headers: {Host: hstr1675520106270.aidapp.life}}, udp: true}
-  - {name: DE|A 8, server: eu1.hax.yuji2022.gq, port: 80, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /8kH8qnepjkprbsidLrLkmX, headers: {Host: eu1.hax.yuji2022.gq}}, udp: true}
-  - {name: DE|A 9, server: cdnjs.com, port: 443, type: vmess, uuid: ee30d3ff-da14-4ea8-bcd2-02e8ee3667de, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /aidapp.lifevws, headers: {Host: hstr1675520106270.aidapp.life}}, udp: true}
-  - {name: DE|A 10, server: de1.trojan-lite.com, port: 443, type: trojan, password: bs6KJkPBW9MP74uHEa, sni: de1.trojan-lite.com, skip-cert-verify: true, udp: true}
-  - {name: CA加拿大|A, server: ca-ls03.nb1.fr, port: 64443, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /clientarea, headers: {Host: ca-ls03.nb1.fr}}, udp: true}
-  - {name: CA(https://awkj.cf/ky+注册体验流媒体机场)|A, server: 51.161.118.38, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: ARG阿根廷|A, server: in05.my1188.org, port: 63072, type: vmess, uuid: b4eebd7a-d044-3785-9775-1c7e206fc7d8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ag01-cdn.myn1des.com}}, udp: true}
+  - {name: DE|A 3, server: cdnjs.com, port: 443, type: vmess, uuid: ee30d3ff-da14-4ea8-bcd2-02e8ee3667de, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /aidapp.lifevws, headers: {Host: hstr1675520106270.aidapp.life}}, udp: true}
+  - {name: DE|A 4, server: hstr1675889106043.aidapp.sbs, port: 443, type: vmess, uuid: 1a4254b4-829c-4bf4-901b-bf8172c301fd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /aidapp.sbsvws, headers: {Host: hstr1675889106043.aidapp.sbs}}, udp: true}
+  - {name: DE|A 5, server: eu1.hax.yuji2022.gq, port: 80, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /8kH8qnepjkprbsidLrLkmX, headers: {Host: eu1.hax.yuji2022.gq}}, udp: true}
+  - {name: DE|A 6, server: 84.252.121.218, port: 443, type: trojan, password: 8842fadf-5e16-443f-97e3-50addf4ff2ef, sni: vzwzasc.cn, skip-cert-verify: true, udp: true}
+  - {name: DE|A 7, server: de1.trojan-lite.com, port: 443, type: trojan, password: bs6KJkPBW9MP74uHEa, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 南非|A
       - 爱沙尼亚|A
+      - VN越南|A
       - US美国|A
-      - US|A
+      - US美国|A 2
+      - US(https://awkj.cf/ky+注册体验流媒体机场)|A
+      - US(https://awkj.cf/ky+注册体验流媒体机场)|A 2
       - US|A 2
+      - US|A
       - US|A 3
       - US|A 4
       - US|A 5
@@ -210,35 +194,20 @@ proxy-groups:
       - US|A 28
       - US|A 29
       - US|A 30
-      - US|A 31
-      - US|A 32
-      - US|A 33
-      - US|A 34
-      - US|A 35
-      - US|A 36
-      - US|A 37
-      - US|A 38
-      - US|A 39
-      - US|A 40
-      - US|A 41
-      - US|A 42
-      - US|A 43
-      - US|A 44
-      - us|A
-      - us|A 2
       - UK|A
       - UK|A 2
       - UK|A 3
-      - TW台湾|A
+      - UK|A 4
+      - TW台湾(https://awkj.cf/ky+注册体验流媒体机场)|A
       - TW|A
       - TW|A 2
       - TW|A 3
       - TW|A 4
-      - TUR|A
+      - TW|A 5
       - SG新加坡|A
+      - SG|A 3
       - SG|A
       - SG|A 2
-      - SG|A 3
       - SG|A 4
       - SG|A 5
       - SG|A 6
@@ -248,18 +217,21 @@ proxy-groups:
       - SG|A 10
       - SG|A 11
       - SG|A 12
-      - RU俄罗斯|A
-      - PL波兰|A
-      - LV拉脱维亚|A
-      - LV|A
+      - SG|A 13
+      - SG|A 14
+      - SG|A 15
+      - RU|A
+      - RU|A 2
+      - PL|A
+      - PL|A 2
+      - NL_荷兰(https://awkj.cf/ky+注册体验流媒体机场)|A
+      - NL|A
+      - NL|A 2
       - KR韩国|A
       - KR|A
       - KR|A 2
-      - KR|A 3
-      - KR|A 4
-      - KR|A 5
-      - KR|A 6
       - JP日本|A
+      - JP(https://awkj.cf/ky+注册体验流媒体机场)|A
       - JP|A
       - JP|A 2
       - JP|A 3
@@ -272,8 +244,9 @@ proxy-groups:
       - JP|A 10
       - JP|A 11
       - JP|A 12
-      - IN印度尼西亚|A
-      - in|A
+      - JP|A 13
+      - JP|A 14
+      - IN印度|A
       - )|A_9
       - )|A_8
       - )|A_7
@@ -281,11 +254,6 @@ proxy-groups:
       - )|A_5
       - )|A_4
       - )|A_3
-      - )|A_24
-      - )|A_23
-      - )|A_22
-      - )|A_21
-      - )|A_20
       - )|A_2
       - )|A_19
       - )|A_18
@@ -295,8 +263,6 @@ proxy-groups:
       - )|A_14
       - )|A_13
       - )|A_12
-      - )|A_11
-      - )|A_10
       - )|A_1
       - HK香港|A
       - HK|A
@@ -311,26 +277,24 @@ proxy-groups:
       - HK|A 10
       - HK|A 11
       - HK|A 12
+      - HK|A 13
+      - HK|A 14
+      - HK|A 15
+      - FR(法国)|A 3
       - FR(法国)|A
+      - FR|A 6
       - FR|A
       - FR|A 2
       - FR|A 3
       - FR|A 4
       - FR|A 5
-      - FR|A 6
       - FR|A 7
       - FR|A 8
       - FR|A 9
       - FR|A 10
       - FR|A 11
       - FR|A 12
-      - FR|A 13
-      - FR|A 14
-      - FR|A 15
-      - FR|A 16
-      - fr|A
       - FI芬兰|A
-      - FI|A
       - DE德国|A
       - DE|A
       - DE|A 2
@@ -339,21 +303,20 @@ proxy-groups:
       - DE|A 5
       - DE|A 6
       - DE|A 7
-      - DE|A 8
-      - DE|A 9
-      - DE|A 10
-      - CA加拿大|A
-      - CA(https://awkj.cf/ky+注册体验流媒体机场)|A
-      - ARG阿根廷|A
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - 南非|A
       - 爱沙尼亚|A
+      - VN越南|A
       - US美国|A
-      - US|A
+      - US美国|A 2
+      - US(https://awkj.cf/ky+注册体验流媒体机场)|A
+      - US(https://awkj.cf/ky+注册体验流媒体机场)|A 2
       - US|A 2
+      - US|A
       - US|A 3
       - US|A 4
       - US|A 5
@@ -382,35 +345,20 @@ proxy-groups:
       - US|A 28
       - US|A 29
       - US|A 30
-      - US|A 31
-      - US|A 32
-      - US|A 33
-      - US|A 34
-      - US|A 35
-      - US|A 36
-      - US|A 37
-      - US|A 38
-      - US|A 39
-      - US|A 40
-      - US|A 41
-      - US|A 42
-      - US|A 43
-      - US|A 44
-      - us|A
-      - us|A 2
       - UK|A
       - UK|A 2
       - UK|A 3
-      - TW台湾|A
+      - UK|A 4
+      - TW台湾(https://awkj.cf/ky+注册体验流媒体机场)|A
       - TW|A
       - TW|A 2
       - TW|A 3
       - TW|A 4
-      - TUR|A
+      - TW|A 5
       - SG新加坡|A
+      - SG|A 3
       - SG|A
       - SG|A 2
-      - SG|A 3
       - SG|A 4
       - SG|A 5
       - SG|A 6
@@ -420,18 +368,21 @@ proxy-groups:
       - SG|A 10
       - SG|A 11
       - SG|A 12
-      - RU俄罗斯|A
-      - PL波兰|A
-      - LV拉脱维亚|A
-      - LV|A
+      - SG|A 13
+      - SG|A 14
+      - SG|A 15
+      - RU|A
+      - RU|A 2
+      - PL|A
+      - PL|A 2
+      - NL_荷兰(https://awkj.cf/ky+注册体验流媒体机场)|A
+      - NL|A
+      - NL|A 2
       - KR韩国|A
       - KR|A
       - KR|A 2
-      - KR|A 3
-      - KR|A 4
-      - KR|A 5
-      - KR|A 6
       - JP日本|A
+      - JP(https://awkj.cf/ky+注册体验流媒体机场)|A
       - JP|A
       - JP|A 2
       - JP|A 3
@@ -444,8 +395,9 @@ proxy-groups:
       - JP|A 10
       - JP|A 11
       - JP|A 12
-      - IN印度尼西亚|A
-      - in|A
+      - JP|A 13
+      - JP|A 14
+      - IN印度|A
       - )|A_9
       - )|A_8
       - )|A_7
@@ -453,11 +405,6 @@ proxy-groups:
       - )|A_5
       - )|A_4
       - )|A_3
-      - )|A_24
-      - )|A_23
-      - )|A_22
-      - )|A_21
-      - )|A_20
       - )|A_2
       - )|A_19
       - )|A_18
@@ -467,8 +414,6 @@ proxy-groups:
       - )|A_14
       - )|A_13
       - )|A_12
-      - )|A_11
-      - )|A_10
       - )|A_1
       - HK香港|A
       - HK|A
@@ -483,26 +428,24 @@ proxy-groups:
       - HK|A 10
       - HK|A 11
       - HK|A 12
+      - HK|A 13
+      - HK|A 14
+      - HK|A 15
+      - FR(法国)|A 3
       - FR(法国)|A
+      - FR|A 6
       - FR|A
       - FR|A 2
       - FR|A 3
       - FR|A 4
       - FR|A 5
-      - FR|A 6
       - FR|A 7
       - FR|A 8
       - FR|A 9
       - FR|A 10
       - FR|A 11
       - FR|A 12
-      - FR|A 13
-      - FR|A 14
-      - FR|A 15
-      - FR|A 16
-      - fr|A
       - FI芬兰|A
-      - FI|A
       - DE德国|A
       - DE|A
       - DE|A 2
@@ -511,22 +454,21 @@ proxy-groups:
       - DE|A 5
       - DE|A 6
       - DE|A 7
-      - DE|A 8
-      - DE|A 9
-      - DE|A 10
-      - CA加拿大|A
-      - CA(https://awkj.cf/ky+注册体验流媒体机场)|A
-      - ARG阿根廷|A
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 南非|A
       - 爱沙尼亚|A
+      - VN越南|A
       - US美国|A
-      - US|A
+      - US美国|A 2
+      - US(https://awkj.cf/ky+注册体验流媒体机场)|A
+      - US(https://awkj.cf/ky+注册体验流媒体机场)|A 2
       - US|A 2
+      - US|A
       - US|A 3
       - US|A 4
       - US|A 5
@@ -555,35 +497,20 @@ proxy-groups:
       - US|A 28
       - US|A 29
       - US|A 30
-      - US|A 31
-      - US|A 32
-      - US|A 33
-      - US|A 34
-      - US|A 35
-      - US|A 36
-      - US|A 37
-      - US|A 38
-      - US|A 39
-      - US|A 40
-      - US|A 41
-      - US|A 42
-      - US|A 43
-      - US|A 44
-      - us|A
-      - us|A 2
       - UK|A
       - UK|A 2
       - UK|A 3
-      - TW台湾|A
+      - UK|A 4
+      - TW台湾(https://awkj.cf/ky+注册体验流媒体机场)|A
       - TW|A
       - TW|A 2
       - TW|A 3
       - TW|A 4
-      - TUR|A
+      - TW|A 5
       - SG新加坡|A
+      - SG|A 3
       - SG|A
       - SG|A 2
-      - SG|A 3
       - SG|A 4
       - SG|A 5
       - SG|A 6
@@ -593,18 +520,21 @@ proxy-groups:
       - SG|A 10
       - SG|A 11
       - SG|A 12
-      - RU俄罗斯|A
-      - PL波兰|A
-      - LV拉脱维亚|A
-      - LV|A
+      - SG|A 13
+      - SG|A 14
+      - SG|A 15
+      - RU|A
+      - RU|A 2
+      - PL|A
+      - PL|A 2
+      - NL_荷兰(https://awkj.cf/ky+注册体验流媒体机场)|A
+      - NL|A
+      - NL|A 2
       - KR韩国|A
       - KR|A
       - KR|A 2
-      - KR|A 3
-      - KR|A 4
-      - KR|A 5
-      - KR|A 6
       - JP日本|A
+      - JP(https://awkj.cf/ky+注册体验流媒体机场)|A
       - JP|A
       - JP|A 2
       - JP|A 3
@@ -617,8 +547,9 @@ proxy-groups:
       - JP|A 10
       - JP|A 11
       - JP|A 12
-      - IN印度尼西亚|A
-      - in|A
+      - JP|A 13
+      - JP|A 14
+      - IN印度|A
       - )|A_9
       - )|A_8
       - )|A_7
@@ -626,11 +557,6 @@ proxy-groups:
       - )|A_5
       - )|A_4
       - )|A_3
-      - )|A_24
-      - )|A_23
-      - )|A_22
-      - )|A_21
-      - )|A_20
       - )|A_2
       - )|A_19
       - )|A_18
@@ -640,8 +566,6 @@ proxy-groups:
       - )|A_14
       - )|A_13
       - )|A_12
-      - )|A_11
-      - )|A_10
       - )|A_1
       - HK香港|A
       - HK|A
@@ -656,26 +580,24 @@ proxy-groups:
       - HK|A 10
       - HK|A 11
       - HK|A 12
+      - HK|A 13
+      - HK|A 14
+      - HK|A 15
+      - FR(法国)|A 3
       - FR(法国)|A
+      - FR|A 6
       - FR|A
       - FR|A 2
       - FR|A 3
       - FR|A 4
       - FR|A 5
-      - FR|A 6
       - FR|A 7
       - FR|A 8
       - FR|A 9
       - FR|A 10
       - FR|A 11
       - FR|A 12
-      - FR|A 13
-      - FR|A 14
-      - FR|A 15
-      - FR|A 16
-      - fr|A
       - FI芬兰|A
-      - FI|A
       - DE德国|A
       - DE|A
       - DE|A 2
@@ -684,12 +606,6 @@ proxy-groups:
       - DE|A 5
       - DE|A 6
       - DE|A 7
-      - DE|A 8
-      - DE|A 9
-      - DE|A 10
-      - CA加拿大|A
-      - CA(https://awkj.cf/ky+注册体验流媒体机场)|A
-      - ARG阿根廷|A
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -708,10 +624,15 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 南非|A
       - 爱沙尼亚|A
+      - VN越南|A
       - US美国|A
-      - US|A
+      - US美国|A 2
+      - US(https://awkj.cf/ky+注册体验流媒体机场)|A
+      - US(https://awkj.cf/ky+注册体验流媒体机场)|A 2
       - US|A 2
+      - US|A
       - US|A 3
       - US|A 4
       - US|A 5
@@ -740,35 +661,20 @@ proxy-groups:
       - US|A 28
       - US|A 29
       - US|A 30
-      - US|A 31
-      - US|A 32
-      - US|A 33
-      - US|A 34
-      - US|A 35
-      - US|A 36
-      - US|A 37
-      - US|A 38
-      - US|A 39
-      - US|A 40
-      - US|A 41
-      - US|A 42
-      - US|A 43
-      - US|A 44
-      - us|A
-      - us|A 2
       - UK|A
       - UK|A 2
       - UK|A 3
-      - TW台湾|A
+      - UK|A 4
+      - TW台湾(https://awkj.cf/ky+注册体验流媒体机场)|A
       - TW|A
       - TW|A 2
       - TW|A 3
       - TW|A 4
-      - TUR|A
+      - TW|A 5
       - SG新加坡|A
+      - SG|A 3
       - SG|A
       - SG|A 2
-      - SG|A 3
       - SG|A 4
       - SG|A 5
       - SG|A 6
@@ -778,18 +684,21 @@ proxy-groups:
       - SG|A 10
       - SG|A 11
       - SG|A 12
-      - RU俄罗斯|A
-      - PL波兰|A
-      - LV拉脱维亚|A
-      - LV|A
+      - SG|A 13
+      - SG|A 14
+      - SG|A 15
+      - RU|A
+      - RU|A 2
+      - PL|A
+      - PL|A 2
+      - NL_荷兰(https://awkj.cf/ky+注册体验流媒体机场)|A
+      - NL|A
+      - NL|A 2
       - KR韩国|A
       - KR|A
       - KR|A 2
-      - KR|A 3
-      - KR|A 4
-      - KR|A 5
-      - KR|A 6
       - JP日本|A
+      - JP(https://awkj.cf/ky+注册体验流媒体机场)|A
       - JP|A
       - JP|A 2
       - JP|A 3
@@ -802,8 +711,9 @@ proxy-groups:
       - JP|A 10
       - JP|A 11
       - JP|A 12
-      - IN印度尼西亚|A
-      - in|A
+      - JP|A 13
+      - JP|A 14
+      - IN印度|A
       - )|A_9
       - )|A_8
       - )|A_7
@@ -811,11 +721,6 @@ proxy-groups:
       - )|A_5
       - )|A_4
       - )|A_3
-      - )|A_24
-      - )|A_23
-      - )|A_22
-      - )|A_21
-      - )|A_20
       - )|A_2
       - )|A_19
       - )|A_18
@@ -825,8 +730,6 @@ proxy-groups:
       - )|A_14
       - )|A_13
       - )|A_12
-      - )|A_11
-      - )|A_10
       - )|A_1
       - HK香港|A
       - HK|A
@@ -841,26 +744,24 @@ proxy-groups:
       - HK|A 10
       - HK|A 11
       - HK|A 12
+      - HK|A 13
+      - HK|A 14
+      - HK|A 15
+      - FR(法国)|A 3
       - FR(法国)|A
+      - FR|A 6
       - FR|A
       - FR|A 2
       - FR|A 3
       - FR|A 4
       - FR|A 5
-      - FR|A 6
       - FR|A 7
       - FR|A 8
       - FR|A 9
       - FR|A 10
       - FR|A 11
       - FR|A 12
-      - FR|A 13
-      - FR|A 14
-      - FR|A 15
-      - FR|A 16
-      - fr|A
       - FI芬兰|A
-      - FI|A
       - DE德国|A
       - DE|A
       - DE|A 2
@@ -869,17 +770,11 @@ proxy-groups:
       - DE|A 5
       - DE|A 6
       - DE|A 7
-      - DE|A 8
-      - DE|A 9
-      - DE|A 10
-      - CA加拿大|A
-      - CA(https://awkj.cf/ky+注册体验流媒体机场)|A
-      - ARG阿根廷|A
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - TW台湾|A
+      - TW台湾(https://awkj.cf/ky+注册体验流媒体机场)|A
       - HK香港|A
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
@@ -887,10 +782,15 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - 南非|A
       - 爱沙尼亚|A
+      - VN越南|A
       - US美国|A
-      - US|A
+      - US美国|A 2
+      - US(https://awkj.cf/ky+注册体验流媒体机场)|A
+      - US(https://awkj.cf/ky+注册体验流媒体机场)|A 2
       - US|A 2
+      - US|A
       - US|A 3
       - US|A 4
       - US|A 5
@@ -919,35 +819,20 @@ proxy-groups:
       - US|A 28
       - US|A 29
       - US|A 30
-      - US|A 31
-      - US|A 32
-      - US|A 33
-      - US|A 34
-      - US|A 35
-      - US|A 36
-      - US|A 37
-      - US|A 38
-      - US|A 39
-      - US|A 40
-      - US|A 41
-      - US|A 42
-      - US|A 43
-      - US|A 44
-      - us|A
-      - us|A 2
       - UK|A
       - UK|A 2
       - UK|A 3
-      - TW台湾|A
+      - UK|A 4
+      - TW台湾(https://awkj.cf/ky+注册体验流媒体机场)|A
       - TW|A
       - TW|A 2
       - TW|A 3
       - TW|A 4
-      - TUR|A
+      - TW|A 5
       - SG新加坡|A
+      - SG|A 3
       - SG|A
       - SG|A 2
-      - SG|A 3
       - SG|A 4
       - SG|A 5
       - SG|A 6
@@ -957,18 +842,21 @@ proxy-groups:
       - SG|A 10
       - SG|A 11
       - SG|A 12
-      - RU俄罗斯|A
-      - PL波兰|A
-      - LV拉脱维亚|A
-      - LV|A
+      - SG|A 13
+      - SG|A 14
+      - SG|A 15
+      - RU|A
+      - RU|A 2
+      - PL|A
+      - PL|A 2
+      - NL_荷兰(https://awkj.cf/ky+注册体验流媒体机场)|A
+      - NL|A
+      - NL|A 2
       - KR韩国|A
       - KR|A
       - KR|A 2
-      - KR|A 3
-      - KR|A 4
-      - KR|A 5
-      - KR|A 6
       - JP日本|A
+      - JP(https://awkj.cf/ky+注册体验流媒体机场)|A
       - JP|A
       - JP|A 2
       - JP|A 3
@@ -981,8 +869,9 @@ proxy-groups:
       - JP|A 10
       - JP|A 11
       - JP|A 12
-      - IN印度尼西亚|A
-      - in|A
+      - JP|A 13
+      - JP|A 14
+      - IN印度|A
       - )|A_9
       - )|A_8
       - )|A_7
@@ -990,11 +879,6 @@ proxy-groups:
       - )|A_5
       - )|A_4
       - )|A_3
-      - )|A_24
-      - )|A_23
-      - )|A_22
-      - )|A_21
-      - )|A_20
       - )|A_2
       - )|A_19
       - )|A_18
@@ -1004,8 +888,6 @@ proxy-groups:
       - )|A_14
       - )|A_13
       - )|A_12
-      - )|A_11
-      - )|A_10
       - )|A_1
       - HK香港|A
       - HK|A
@@ -1020,26 +902,24 @@ proxy-groups:
       - HK|A 10
       - HK|A 11
       - HK|A 12
+      - HK|A 13
+      - HK|A 14
+      - HK|A 15
+      - FR(法国)|A 3
       - FR(法国)|A
+      - FR|A 6
       - FR|A
       - FR|A 2
       - FR|A 3
       - FR|A 4
       - FR|A 5
-      - FR|A 6
       - FR|A 7
       - FR|A 8
       - FR|A 9
       - FR|A 10
       - FR|A 11
       - FR|A 12
-      - FR|A 13
-      - FR|A 14
-      - FR|A 15
-      - FR|A 16
-      - fr|A
       - FI芬兰|A
-      - FI|A
       - DE德国|A
       - DE|A
       - DE|A 2
@@ -1048,21 +928,20 @@ proxy-groups:
       - DE|A 5
       - DE|A 6
       - DE|A 7
-      - DE|A 8
-      - DE|A 9
-      - DE|A 10
-      - CA加拿大|A
-      - CA(https://awkj.cf/ky+注册体验流媒体机场)|A
-      - ARG阿根廷|A
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - 南非|A
       - 爱沙尼亚|A
+      - VN越南|A
       - US美国|A
-      - US|A
+      - US美国|A 2
+      - US(https://awkj.cf/ky+注册体验流媒体机场)|A
+      - US(https://awkj.cf/ky+注册体验流媒体机场)|A 2
       - US|A 2
+      - US|A
       - US|A 3
       - US|A 4
       - US|A 5
@@ -1091,35 +970,20 @@ proxy-groups:
       - US|A 28
       - US|A 29
       - US|A 30
-      - US|A 31
-      - US|A 32
-      - US|A 33
-      - US|A 34
-      - US|A 35
-      - US|A 36
-      - US|A 37
-      - US|A 38
-      - US|A 39
-      - US|A 40
-      - US|A 41
-      - US|A 42
-      - US|A 43
-      - US|A 44
-      - us|A
-      - us|A 2
       - UK|A
       - UK|A 2
       - UK|A 3
-      - TW台湾|A
+      - UK|A 4
+      - TW台湾(https://awkj.cf/ky+注册体验流媒体机场)|A
       - TW|A
       - TW|A 2
       - TW|A 3
       - TW|A 4
-      - TUR|A
+      - TW|A 5
       - SG新加坡|A
+      - SG|A 3
       - SG|A
       - SG|A 2
-      - SG|A 3
       - SG|A 4
       - SG|A 5
       - SG|A 6
@@ -1129,18 +993,21 @@ proxy-groups:
       - SG|A 10
       - SG|A 11
       - SG|A 12
-      - RU俄罗斯|A
-      - PL波兰|A
-      - LV拉脱维亚|A
-      - LV|A
+      - SG|A 13
+      - SG|A 14
+      - SG|A 15
+      - RU|A
+      - RU|A 2
+      - PL|A
+      - PL|A 2
+      - NL_荷兰(https://awkj.cf/ky+注册体验流媒体机场)|A
+      - NL|A
+      - NL|A 2
       - KR韩国|A
       - KR|A
       - KR|A 2
-      - KR|A 3
-      - KR|A 4
-      - KR|A 5
-      - KR|A 6
       - JP日本|A
+      - JP(https://awkj.cf/ky+注册体验流媒体机场)|A
       - JP|A
       - JP|A 2
       - JP|A 3
@@ -1153,8 +1020,9 @@ proxy-groups:
       - JP|A 10
       - JP|A 11
       - JP|A 12
-      - IN印度尼西亚|A
-      - in|A
+      - JP|A 13
+      - JP|A 14
+      - IN印度|A
       - )|A_9
       - )|A_8
       - )|A_7
@@ -1162,11 +1030,6 @@ proxy-groups:
       - )|A_5
       - )|A_4
       - )|A_3
-      - )|A_24
-      - )|A_23
-      - )|A_22
-      - )|A_21
-      - )|A_20
       - )|A_2
       - )|A_19
       - )|A_18
@@ -1176,8 +1039,6 @@ proxy-groups:
       - )|A_14
       - )|A_13
       - )|A_12
-      - )|A_11
-      - )|A_10
       - )|A_1
       - HK香港|A
       - HK|A
@@ -1192,26 +1053,24 @@ proxy-groups:
       - HK|A 10
       - HK|A 11
       - HK|A 12
+      - HK|A 13
+      - HK|A 14
+      - HK|A 15
+      - FR(法国)|A 3
       - FR(法国)|A
+      - FR|A 6
       - FR|A
       - FR|A 2
       - FR|A 3
       - FR|A 4
       - FR|A 5
-      - FR|A 6
       - FR|A 7
       - FR|A 8
       - FR|A 9
       - FR|A 10
       - FR|A 11
       - FR|A 12
-      - FR|A 13
-      - FR|A 14
-      - FR|A 15
-      - FR|A 16
-      - fr|A
       - FI芬兰|A
-      - FI|A
       - DE德国|A
       - DE|A
       - DE|A 2
@@ -1220,22 +1079,21 @@ proxy-groups:
       - DE|A 5
       - DE|A 6
       - DE|A 7
-      - DE|A 8
-      - DE|A 9
-      - DE|A 10
-      - CA加拿大|A
-      - CA(https://awkj.cf/ky+注册体验流媒体机场)|A
-      - ARG阿根廷|A
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 南非|A
       - 爱沙尼亚|A
+      - VN越南|A
       - US美国|A
-      - US|A
+      - US美国|A 2
+      - US(https://awkj.cf/ky+注册体验流媒体机场)|A
+      - US(https://awkj.cf/ky+注册体验流媒体机场)|A 2
       - US|A 2
+      - US|A
       - US|A 3
       - US|A 4
       - US|A 5
@@ -1264,35 +1122,20 @@ proxy-groups:
       - US|A 28
       - US|A 29
       - US|A 30
-      - US|A 31
-      - US|A 32
-      - US|A 33
-      - US|A 34
-      - US|A 35
-      - US|A 36
-      - US|A 37
-      - US|A 38
-      - US|A 39
-      - US|A 40
-      - US|A 41
-      - US|A 42
-      - US|A 43
-      - US|A 44
-      - us|A
-      - us|A 2
       - UK|A
       - UK|A 2
       - UK|A 3
-      - TW台湾|A
+      - UK|A 4
+      - TW台湾(https://awkj.cf/ky+注册体验流媒体机场)|A
       - TW|A
       - TW|A 2
       - TW|A 3
       - TW|A 4
-      - TUR|A
+      - TW|A 5
       - SG新加坡|A
+      - SG|A 3
       - SG|A
       - SG|A 2
-      - SG|A 3
       - SG|A 4
       - SG|A 5
       - SG|A 6
@@ -1302,18 +1145,21 @@ proxy-groups:
       - SG|A 10
       - SG|A 11
       - SG|A 12
-      - RU俄罗斯|A
-      - PL波兰|A
-      - LV拉脱维亚|A
-      - LV|A
+      - SG|A 13
+      - SG|A 14
+      - SG|A 15
+      - RU|A
+      - RU|A 2
+      - PL|A
+      - PL|A 2
+      - NL_荷兰(https://awkj.cf/ky+注册体验流媒体机场)|A
+      - NL|A
+      - NL|A 2
       - KR韩国|A
       - KR|A
       - KR|A 2
-      - KR|A 3
-      - KR|A 4
-      - KR|A 5
-      - KR|A 6
       - JP日本|A
+      - JP(https://awkj.cf/ky+注册体验流媒体机场)|A
       - JP|A
       - JP|A 2
       - JP|A 3
@@ -1326,8 +1172,9 @@ proxy-groups:
       - JP|A 10
       - JP|A 11
       - JP|A 12
-      - IN印度尼西亚|A
-      - in|A
+      - JP|A 13
+      - JP|A 14
+      - IN印度|A
       - )|A_9
       - )|A_8
       - )|A_7
@@ -1335,11 +1182,6 @@ proxy-groups:
       - )|A_5
       - )|A_4
       - )|A_3
-      - )|A_24
-      - )|A_23
-      - )|A_22
-      - )|A_21
-      - )|A_20
       - )|A_2
       - )|A_19
       - )|A_18
@@ -1349,8 +1191,6 @@ proxy-groups:
       - )|A_14
       - )|A_13
       - )|A_12
-      - )|A_11
-      - )|A_10
       - )|A_1
       - HK香港|A
       - HK|A
@@ -1365,26 +1205,24 @@ proxy-groups:
       - HK|A 10
       - HK|A 11
       - HK|A 12
+      - HK|A 13
+      - HK|A 14
+      - HK|A 15
+      - FR(法国)|A 3
       - FR(法国)|A
+      - FR|A 6
       - FR|A
       - FR|A 2
       - FR|A 3
       - FR|A 4
       - FR|A 5
-      - FR|A 6
       - FR|A 7
       - FR|A 8
       - FR|A 9
       - FR|A 10
       - FR|A 11
       - FR|A 12
-      - FR|A 13
-      - FR|A 14
-      - FR|A 15
-      - FR|A 16
-      - fr|A
       - FI芬兰|A
-      - FI|A
       - DE德国|A
       - DE|A
       - DE|A 2
@@ -1393,12 +1231,6 @@ proxy-groups:
       - DE|A 5
       - DE|A 6
       - DE|A 7
-      - DE|A 8
-      - DE|A 9
-      - DE|A 10
-      - CA加拿大|A
-      - CA(https://awkj.cf/ky+注册体验流媒体机场)|A
-      - ARG阿根廷|A
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1414,10 +1246,15 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 南非|A
       - 爱沙尼亚|A
+      - VN越南|A
       - US美国|A
-      - US|A
+      - US美国|A 2
+      - US(https://awkj.cf/ky+注册体验流媒体机场)|A
+      - US(https://awkj.cf/ky+注册体验流媒体机场)|A 2
       - US|A 2
+      - US|A
       - US|A 3
       - US|A 4
       - US|A 5
@@ -1446,35 +1283,20 @@ proxy-groups:
       - US|A 28
       - US|A 29
       - US|A 30
-      - US|A 31
-      - US|A 32
-      - US|A 33
-      - US|A 34
-      - US|A 35
-      - US|A 36
-      - US|A 37
-      - US|A 38
-      - US|A 39
-      - US|A 40
-      - US|A 41
-      - US|A 42
-      - US|A 43
-      - US|A 44
-      - us|A
-      - us|A 2
       - UK|A
       - UK|A 2
       - UK|A 3
-      - TW台湾|A
+      - UK|A 4
+      - TW台湾(https://awkj.cf/ky+注册体验流媒体机场)|A
       - TW|A
       - TW|A 2
       - TW|A 3
       - TW|A 4
-      - TUR|A
+      - TW|A 5
       - SG新加坡|A
+      - SG|A 3
       - SG|A
       - SG|A 2
-      - SG|A 3
       - SG|A 4
       - SG|A 5
       - SG|A 6
@@ -1484,18 +1306,21 @@ proxy-groups:
       - SG|A 10
       - SG|A 11
       - SG|A 12
-      - RU俄罗斯|A
-      - PL波兰|A
-      - LV拉脱维亚|A
-      - LV|A
+      - SG|A 13
+      - SG|A 14
+      - SG|A 15
+      - RU|A
+      - RU|A 2
+      - PL|A
+      - PL|A 2
+      - NL_荷兰(https://awkj.cf/ky+注册体验流媒体机场)|A
+      - NL|A
+      - NL|A 2
       - KR韩国|A
       - KR|A
       - KR|A 2
-      - KR|A 3
-      - KR|A 4
-      - KR|A 5
-      - KR|A 6
       - JP日本|A
+      - JP(https://awkj.cf/ky+注册体验流媒体机场)|A
       - JP|A
       - JP|A 2
       - JP|A 3
@@ -1508,8 +1333,9 @@ proxy-groups:
       - JP|A 10
       - JP|A 11
       - JP|A 12
-      - IN印度尼西亚|A
-      - in|A
+      - JP|A 13
+      - JP|A 14
+      - IN印度|A
       - )|A_9
       - )|A_8
       - )|A_7
@@ -1517,11 +1343,6 @@ proxy-groups:
       - )|A_5
       - )|A_4
       - )|A_3
-      - )|A_24
-      - )|A_23
-      - )|A_22
-      - )|A_21
-      - )|A_20
       - )|A_2
       - )|A_19
       - )|A_18
@@ -1531,8 +1352,6 @@ proxy-groups:
       - )|A_14
       - )|A_13
       - )|A_12
-      - )|A_11
-      - )|A_10
       - )|A_1
       - HK香港|A
       - HK|A
@@ -1547,26 +1366,24 @@ proxy-groups:
       - HK|A 10
       - HK|A 11
       - HK|A 12
+      - HK|A 13
+      - HK|A 14
+      - HK|A 15
+      - FR(法国)|A 3
       - FR(法国)|A
+      - FR|A 6
       - FR|A
       - FR|A 2
       - FR|A 3
       - FR|A 4
       - FR|A 5
-      - FR|A 6
       - FR|A 7
       - FR|A 8
       - FR|A 9
       - FR|A 10
       - FR|A 11
       - FR|A 12
-      - FR|A 13
-      - FR|A 14
-      - FR|A 15
-      - FR|A 16
-      - fr|A
       - FI芬兰|A
-      - FI|A
       - DE德国|A
       - DE|A
       - DE|A 2
@@ -1575,12 +1392,6 @@ proxy-groups:
       - DE|A 5
       - DE|A 6
       - DE|A 7
-      - DE|A 8
-      - DE|A 9
-      - DE|A 10
-      - CA加拿大|A
-      - CA(https://awkj.cf/ky+注册体验流媒体机场)|A
-      - ARG阿根廷|A
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
