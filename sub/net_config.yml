@@ -1,0 +1,114 @@
+# Port of http(S) proxy server on the local end
+port: 7890
+
+# Port of SOCKS5 proxy server on the local end
+socks-port: 7891
+
+# Transparent proxy server port for Linux and macOS (Redirect TCP and TProxy UDP)
+# redir-port: 7892
+
+# Transparent proxy server port for Linux (TProxy TCP and TProxy UDP)
+# tproxy-port: 7893
+
+# http(S) and SOCKS5 server on the same port
+# mixed-port: 7890
+
+# authentication of local SOCKS5/http(S) server
+# authentication:
+#  - "user1:pass1"
+#  - "user2:pass2"
+
+# Set to true to allow connections to the local-end server from
+# other LAN IP addresses
+allow-lan: true
+
+# This is only applicable when `allow-lan` is `true`
+# '*': bind all IP addresses
+# 192.168.122.11: bind a single IPv4 address
+# "[aaaa::a8aa:ff:fe09:57d8]": bind a single IPv6 address
+#bind-address: '*'
+
+# Clash router working mode
+# rule: rule-based packet routing
+# global: all packets will be forwarded to a single endpoint
+# direct: directly forward the packets to the Internet
+mode: rule
+
+# Clash by default prints logs to STDOUT
+# info / warning / error / debug / silent
+log-level: info
+
+# When set to false, resolver won't translate hostnames to IPv6 addresses
+ipv6: true
+
+# RESTful web API listening address
+#external-controller: 0.0.0.0:9090
+
+# A relative path to the configuration directory or an absolute path to a
+# directory in which you put some static web resource. Clash core will then
+# serve it at `http://{{external-controller}}/ui`.
+#external-ui: /usr/share/yacd/
+
+# Secret for the RESTful API (optional)
+# Authenticate by spedifying http header `Authorization: Bearer ${secret}`
+# ALWAYS set a secret if RESTful API is listening on 0.0.0.0
+# secret:
+proxy-groups:
+  - name: PROXY
+    type: select
+    use:
+      - Group_0
+      - Group_1
+      - Group_2
+      - Group_3
+
+####################################################################################################
+proxy-providers:
+  Group_0:
+    type: file
+    url: "https://agit.ai/ansakg/clash-songtao1873/raw/branch/main/subscription/0.yaml"
+    interval: 2000
+    path: subscription/0.yaml
+    health-check:
+      enable: true
+      interval: 2000
+      url: "http://www.gstatic.com/generate_204"
+
+  Group_1:
+    type: file
+    url: "https://agit.ai/ansakg/clash-songtao1873/raw/branch/main/subscription/1.yaml"
+    interval: 2000
+    path: subscription/1.yaml
+    health-check:
+      enable: true
+      interval: 2000
+      url: "http://www.gstatic.com/generate_204"
+
+  Group_2:
+    type: file
+    url: "https://agit.ai/ansakg/clash-songtao1873/raw/branch/main/subscription/2.yaml"
+    interval: 2000
+    path: subscription/2.yaml
+    health-check:
+      enable: true
+      interval: 2000
+      url: "http://www.gstatic.com/generate_204"
+
+  Group_3:
+    type: file
+    url: "https://agit.ai/ansakg/clash-songtao1873/raw/branch/main/subscription/3.yaml"
+    interval: 2000
+    path: subscription/3.yaml
+    health-check:
+      enable: true
+      interval: 2000
+      url: "http://www.gstatic.com/generate_204"
+
+####################################################################################################
+rules:
+  - GEOIP,LAN,DIRECT
+
+  - DOMAIN-SUFFIX,bing.com,PROXY
+
+  - GEOIP,CN,DIRECT
+  - MATCH,PROXY
