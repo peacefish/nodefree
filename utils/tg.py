@@ -4,13 +4,14 @@ import re
 from datetime import datetime
 def main():
  
-    file1 = open("./clash_nodeshare.yaml", "w+",encoding='utf-8')
+    file1 = open("./sub/clash_nodeshare.yaml", "w+",encoding='utf-8')
     # 获取当前日期
     current_date = datetime.now()
 # 格式化日期为 'YYYY/MM/DDYYYYMMDD' 格式
     formatted_date = current_date.strftime('%Y/%m/%d%Y%m%d')
     file1.write(download_content(f'https://tglaoshiji.github.io/nodeshare/{formatted_date}.yaml'))
     file1.close()
+    print("ok url")
 
 
 def download_content(url):
