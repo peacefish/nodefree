@@ -31,7 +31,7 @@ jobs:
       run: pip install -r ./utils/requirements.txt
     - name: Get proxy
       run: |
-        python ./utils/tg.py
+        /usr/bin/bash -e  ./utils/tg.py
     - name: Commit change
       run: |
         git config --local user.email "actions@github.com"
