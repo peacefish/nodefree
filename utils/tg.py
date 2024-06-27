@@ -20,9 +20,10 @@ def download_content(url):
     参数 url 代表所要下载的网页网址。
     整体代码和之前类似
     """
-    response = requests.get(url).text.replace('https://awkj.cf/ky 注册体验流媒体机场','').replace('youtube阿伟科技','|A').replace('()','')
+    response = requests.get(url)
+    response.encoding = 'utf-8' 
     #print(response)
-    return response
+    return response.text
 
 if __name__ == '__main__':
     main()
