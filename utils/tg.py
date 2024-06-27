@@ -8,7 +8,7 @@ def main():
     # 获取当前日期
     current_date = datetime.now()
 # 格式化日期为 'YYYY/MM/DDYYYYMMDD' 格式
-    formatted_date = current_date.strftime('%Y/%-m/%d%Y%m%d')
+    formatted_date = current_date.strftime('%Y/%-m/%Y%m%d')
     file1.write(download_content(f'https://tglaoshiji.github.io/nodeshare/{formatted_date}.yaml'))
     file1.close()
     print("ok url")
