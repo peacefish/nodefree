@@ -13,13 +13,6 @@ jobs:
   main:
     name: Get AW
     runs-on: ubuntu-latest
-    env:
-      pythonLocation: /opt/hostedtoolcache/Python/3.12.4/x64
-      PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.4/x64/lib/pkgconfig
-      Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.4/x64
-      Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.4/x64
-      Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.4/x64
-      LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.4/x64/lib
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-python@v5.1.0
@@ -38,7 +31,7 @@ jobs:
       run: pip install -r ./utils/requirements.txt
     - name: Get proxy
       run: |
-        python  ./utils/tg.py
+        python  --version
     - name: Commit change
       run: |
         git config --local user.email "actions@github.com"
