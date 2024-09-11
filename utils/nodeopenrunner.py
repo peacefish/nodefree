@@ -9,7 +9,9 @@ def main():
     current_date = datetime.now()
 # 格式化日期为 'YYYY/MM/DDYYYYMMDD' 格式
     formatted_date = current_date.strftime('%Y%m%d')
-    file1.write(download_content(f'https://freenode.openrunner.net/uploads/{formatted_date}-clash.yaml'))
+    a=download_content(f'https://freenode.openrunner.net/uploads/{formatted_date}-clash.yaml')
+    if a[0:4]=="port":
+        file1.write(a)
     file1.close()
     print("ok url")
 
