@@ -23,7 +23,7 @@ def download_content(url):
     response = requests.get(url)
     response.encoding = 'utf-8' 
     #print(response)
-    text=response.text.replace('( https://www.fuye.fun/ 免费节点分享)','').replace('youtube阿伟科技','|A').replace('()','')
+    text=response.text.replace('( https://www.fuye.fun/ 免费节点分享)','').replace('youtube阿伟科技','|A').replace('()','').replace('( https://www.fuye.fun/免费节点分享)','')
     return text
 
 if __name__ == '__main__':
