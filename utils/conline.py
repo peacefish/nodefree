@@ -3,7 +3,14 @@ from bs4 import BeautifulSoup
 import urllib3
 import re
 from datetime import datetime
+from requests.packages.urllib3.exceptions import InsecureRequestWarning
+import logging
 
+# Enable debug-level logging
+logging.basicConfig(level=logging.DEBUG)
+# 禁用不安全请求警告
+requests.packages.urllib3.disable_warnings(InsecureRequestWarning
+                                           
 def extract_links(url):
     # 发送HTTP请求
     response = requests.get(url, verify=False)
