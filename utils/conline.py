@@ -11,7 +11,7 @@ logging.basicConfig(level=logging.DEBUG)
 # 禁用不安全请求警告
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 proxies = {
-    "http": "14.199.30.127:80",
+    "http": "103.186.90.18:8080",
 
 }                                           
 def extract_links(url):
