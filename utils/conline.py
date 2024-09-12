@@ -10,10 +10,13 @@ import logging
 logging.basicConfig(level=logging.DEBUG)
 # 禁用不安全请求警告
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
-                                           
+proxies = {
+    "http": "14.199.30.127:80",
+
+}                                           
 def extract_links(url):
     # 发送HTTP请求
-    response = requests.get(url, verify=False)
+    response = requests.get(url, proxies=proxies)
     # 确保请求成功
     if response.status_code == 200:
         # 使用BeautifulSoup解析HTML内容
@@ -27,7 +30,7 @@ def extract_links(url):
         return "Failed to retrieve the webpage"
 def extract_links_url(url):
     # 发送HTTP请求
-    response = requests.get(url, verify=False)
+    response = requests.get(url, proxies=proxies)
     # 确保请求成功
     if response.status_code == 200:
         # 使用BeautifulSoup解析HTML内容
