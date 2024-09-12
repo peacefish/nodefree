@@ -9,7 +9,7 @@ import logging
 # Enable debug-level logging
 logging.basicConfig(level=logging.DEBUG)
 # 禁用不安全请求警告
-requests.packages.urllib3.disable_warnings(InsecureRequestWarning
+requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
                                            
 def extract_links(url):
     # 发送HTTP请求
