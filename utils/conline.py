@@ -49,7 +49,7 @@ def main():
     # 获取当前日期
     current_date = datetime.now()
 
-    url = "http://www.85la.com/internet-access/free-network-nodes"
+    url = "https://www.85la.com/internet-access/free-network-nodes"
     links = extract_links(url)
     a=extract_links_url(links[0])
     file1.write(download_content(f'{a[0]}'))
