@@ -6,7 +6,7 @@ from datetime import datetime
 
 def extract_links(url):
     # 发送HTTP请求
-    response = requests.get(url)
+    response = requests.get(url, verify=False)
     # 确保请求成功
     if response.status_code == 200:
         # 使用BeautifulSoup解析HTML内容
@@ -20,7 +20,7 @@ def extract_links(url):
         return "Failed to retrieve the webpage"
 def extract_links_url(url):
     # 发送HTTP请求
-    response = requests.get(url)
+    response = requests.get(url, verify=False)
     # 确保请求成功
     if response.status_code == 200:
         # 使用BeautifulSoup解析HTML内容
