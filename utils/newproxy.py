@@ -44,7 +44,7 @@ def main():
   current_date = datetime.now()
   formatted_date = current_date.strftime('%Y-%m-%d')
   url = f"https://www.freeclashnode.com/free-node/{formatted_date}-free-subscribe-node.htm"
-  file1 = open("./proxy.yaml", "w+",encoding='utf-8')
+  file1 = open("./sub/proxy.yaml", "w+",encoding='utf-8')
   links = extract_links_url(url)
   print(len(links))
   a=[]
