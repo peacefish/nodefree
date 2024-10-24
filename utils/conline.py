@@ -55,7 +55,7 @@ def extract_links_url(url):
 
 
 def main():
-    file1 = open("./clash_online.yaml", "w+",encoding='utf-8')
+    file1 = open("./sub/clash_online.yaml", "w+",encoding='utf-8')
     # 获取当前日期
     current_date = datetime.now()
 
