@@ -119,7 +119,7 @@ def main():
   for link in links_tt:
     s=extract_yaml_url(link)
     b=b+s
-  c =extract_links_url('https://raw.githubusercontent.com/aiboboxx/clashfree/refs/heads/main/clash.yml')
+  c =extract_yaml_url('https://raw.githubusercontent.com/aiboboxx/clashfree/refs/heads/main/clash.yml')
   print(b)
   yaml_content = yaml.dump({"proxies":a+b+c}, default_flow_style=False)
   print(yaml_content)
