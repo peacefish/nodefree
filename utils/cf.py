@@ -33,6 +33,36 @@ def get_index_url(url):
   formatted_date = current_date.strftime('%Y-%m-%d')
   url = f"https://www.freeclashnode.com/free-node/{formatted_date}-free-subscribe-node.htm"
   return url
+def get_indextt_url(url):
+  headers = {
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+      'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
+      # 其他请求头可以根据需要添加
+  }
+
+  # 发起 GET 请求
+  ymal_urls = []
+  try:
+      response = requests.get(url, headers=headers, verify=False)  # 禁用 SSL 验证
+      #print(f"状态码: {response.text}")
+
+      if response.status_code == 200:
+        soup = BeautifulSoup(response.text, 'html.parser')
+        # 找到所有的<a>标签
+        h3_tags = soup.find_all('div', class_="col-3")
+        for h3_tag in h3_tags:
+          # 在每个<h3>标签中找到<a>标签
+          a_tag = h3_tag.find('a')
+          # 获取<a>标签的href属性值
+          if a_tag:
+             return a_tag['href'] 
+          
+  except requests.exceptions.RequestException as e:
+      print(f"请求出现错误: {e}")
+  current_date = datetime.now()
+  formatted_date = current_date.strftime('%Y-%m-%d')
+  url = f"https://www.freeclashnode.com/free-node/{formatted_date}-free-subscribe-node.htm"
+  return url
 
 def extract_links_url(url):
   # 设置请求头
@@ -83,7 +113,15 @@ def main():
     s=extract_yaml_url(link)
     a=a+s
   print(a)
-  yaml_content = yaml.dump({"proxies":a}, default_flow_style=False)
+  tt=get_indextt_url("https://oneclash.cc/freenode")
+  links_tt = extract_links_url(tt)
+  b=[]
+  for link in links_tt:
+    s=extract_yaml_url(link)
+    b=b+s
+
+  print(b)
+  yaml_content = yaml.dump({"proxies":a+b}, default_flow_style=False)
   print(yaml_content)
   file1.write(yaml_content)
   file1.close()
