@@ -3,7 +3,7 @@ import re
 import yaml
 from bs4 import BeautifulSoup
 from datetime import datetime
-def get_index_url(url):
+def get_index_url(url='', tags='h2', cls=''):
   headers = {
       'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
       'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
@@ -19,7 +19,7 @@ def get_index_url(url):
       if response.status_code == 200:
         soup = BeautifulSoup(response.text, 'html.parser')
         # 找到所有的<a>标签
-        h3_tags = soup.find_all('h2', class_="entry-title")
+        h3_tags = soup.find_all(tags, class_=cls)
         for h3_tag in h3_tags:
           # 在每个<h3>标签中找到<a>标签
           a_tag = h3_tag.find('a')
@@ -102,7 +102,7 @@ def extract_yaml_url(url):
       print(f"请求出现错误: {e}")
   return dct['proxies']
 def main():
-  s=get_index_url("https://www.cfmem.com/")
+  s=get_index_url("https://www.cfmem.com/",tags="h2",cls="entry-title")
   print(s)
   url = s
   file1 = open("./sub/proxy_cf.yaml", "w+",encoding='utf-8')
@@ -120,8 +120,15 @@ def main():
     s=extract_yaml_url(link)
     b=b+s
   c =extract_yaml_url('https://raw.githubusercontent.com/aiboboxx/clashfree/refs/heads/main/clash.yml')
-  print(b)
-  yaml_content = yaml.dump({"proxies":a+b+c}, default_flow_style=False)
+
+  dts=get_index_url("https://wanzhuanmi.com/freenode",tags="h2")
+  links_dts = extract_links_url(dts)
+  d=[]
+  for link in links_dts:
+    s=extract_yaml_url(link)
+    d=d+s
+  #print(d)
+  yaml_content = yaml.dump({"proxies":a+b+c+d}, default_flow_style=False)
   print(yaml_content)
   file1.write(yaml_content)
   file1.close()
