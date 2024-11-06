@@ -581,37 +581,47 @@ proxies:
   server: 156.146.38.168
   tfo: false
   type: ss
-- cipher: aes-128-gcm
+- cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 0|--2
-  password: shadowsocks
+  name: 0|--3
+  password: amazonskr05
   port: 443
-  server: 212.102.53.195
+  server: 54.187.244.22
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 0|--17
-  network: ws
-  port: 2082
-  server: 172.64.166.22
-  skip-cert-verify: false
+  name: 0|--4
+  password: X7eoEBrARWsBUiVfchVEdH
+  port: 443
+  server: 185.77.217.121
   tfo: false
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: ip16.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
+  type: ss
+- alterId: 1
   cipher: auto
   client-fingerprint: chrome
   name: 0|--18
   network: ws
+  port: 443
+  server: 38.99.82.187
+  servername: 38.99.82.187
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 38.99.82.187
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 0|--19
+  network: ws
   port: 2095
-  server: 172.64.167.29
+  server: japan.com
+  servername: ip10.6016725.xyz
   skip-cert-verify: false
   tfo: false
   tls: false
@@ -619,15 +629,15 @@ proxies:
   uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
   ws-opts:
     headers:
-      Host: ip11.6016725.xyz
+      Host: ip10.6016725.xyz
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 0|--20
+  name: 0|--21
   network: ws
   port: 2082
-  server: 172.64.198.249
+  server: 172.64.175.88
   servername: ip18.6929198.xyz
   skip-cert-verify: false
   tfo: false
@@ -637,56 +647,6 @@ proxies:
   ws-opts:
     headers:
       Host: ip18.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 0|--22
-  network: ws
-  port: 2095
-  server: 172.64.166.22
-  servername: ip20.6016725.xyz
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: ip20.6016725.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 0|--23
-  network: ws
-  port: 2082
-  server: 172.64.167.44
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: ip16.6929198.xyz
-    path: /github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 0|--28
-  network: ws
-  port: 2095
-  server: skk.moe
-  servername: ip20.6016725.xyz
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: ip20.6016725.xyz
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
@@ -1087,10 +1047,10 @@ proxies:
   tfo: false
   type: ss
 - client-fingerprint: chrome
-  name: 15|CN_speednode_0001
+  name: 15|AU_speednode_0001
   network: ws
-  port: 7000
-  server: 183.232.159.52
+  port: 1001
+  server: 82.115.20.250
   servername: vless.ifx.us.kg
   skip-cert-verify: false
   tfo: false
@@ -1102,7 +1062,52 @@ proxies:
       Host: vless.ifx.us.kg
     path: /?ed=2560fp=chrome
 - client-fingerprint: chrome
-  name: 15|DE_speednode_0003
+  name: 15|CN_speednode_0002
+  network: ws
+  port: 587
+  server: 103.112.184.7
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560fp=chrome
+- client-fingerprint: chrome
+  name: 15|CY_speednode_0004
+  network: ws
+  port: 2501
+  server: 45.82.254.35
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560fp=chrome
+- client-fingerprint: chrome
+  name: 15|DE_speednode_0005
+  network: ws
+  port: 2003
+  server: 2.59.134.248
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560fp=chrome
+- client-fingerprint: chrome
+  name: 15|DE_speednode_0006
   network: ws
   port: 2003
   server: 89.185.85.53
@@ -1117,7 +1122,7 @@ proxies:
       Host: vless.ifx.us.kg
     path: /?ed=2560fp=chrome
 - client-fingerprint: chrome
-  name: 15|DE_speednode_0004
+  name: 15|DE_speednode_0007
   network: ws
   port: 2003
   server: 152.53.14.225
@@ -1132,10 +1137,10 @@ proxies:
       Host: vless.ifx.us.kg
     path: /?ed=2560fp=chrome
 - client-fingerprint: chrome
-  name: 15|DE_speednode_0005
+  name: 15|DE_speednode_0008
   network: ws
-  port: 1091
-  server: 188.245.119.18
+  port: 2003
+  server: 152.53.13.241
   servername: vless.ifx.us.kg
   skip-cert-verify: false
   tfo: false
@@ -1147,10 +1152,70 @@ proxies:
       Host: vless.ifx.us.kg
     path: /?ed=2560fp=chrome
 - client-fingerprint: chrome
-  name: 15|DE_speednode_0006
+  name: 15|DE_speednode_0009
+  network: ws
+  port: 55555
+  server: 163.171.128.232
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560fp=chrome
+- client-fingerprint: chrome
+  name: 15|DE_speednode_0010
+  network: ws
+  port: 8080
+  server: 213.139.72.80
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560fp=chrome
+- client-fingerprint: chrome
+  name: 15|ES_speednode_0011
+  network: ws
+  port: 8080
+  server: 185.214.101.159
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560fp=chrome
+- client-fingerprint: chrome
+  name: 15|FI_speednode_0012
+  network: ws
+  port: 2222
+  server: 65.21.158.255
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560fp=chrome
+- client-fingerprint: chrome
+  name: 15|GB_speednode_0014
   network: ws
   port: 587
-  server: 138.2.139.71
+  server: 149.5.52.121
   servername: vless.ifx.us.kg
   skip-cert-verify: false
   tfo: false
@@ -1162,10 +1227,10 @@ proxies:
       Host: vless.ifx.us.kg
     path: /?ed=2560fp=chrome
 - client-fingerprint: chrome
-  name: 15|HK_speednode_0008
+  name: 15|GB_speednode_0015
   network: ws
   port: 587
-  server: 47.243.91.39
+  server: 8.211.207.185
   servername: vless.ifx.us.kg
   skip-cert-verify: false
   tfo: false
@@ -1177,40 +1242,10 @@ proxies:
       Host: vless.ifx.us.kg
     path: /?ed=2560fp=chrome
 - client-fingerprint: chrome
-  name: 15|HK_speednode_0009
-  network: ws
-  port: 23555
-  server: 219.77.65.212
-  servername: juzi8186.5112233.xyz
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzi8186.5112233.xyz
-    path: /?ed=2560fp=randomfp=chrome
-- client-fingerprint: chrome
-  name: 15|HK_speednode_0010
-  network: ws
-  port: 6666
-  server: 124.156.129.206
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560fp=chrome
-- client-fingerprint: chrome
-  name: 15|HK_speednode_0011
+  name: 15|GB_speednode_0016
   network: ws
   port: 587
-  server: 206.237.5.205
+  server: 149.5.52.90
   servername: vless.ifx.us.kg
   skip-cert-verify: false
   tfo: false
@@ -1222,7 +1257,97 @@ proxies:
       Host: vless.ifx.us.kg
     path: /?ed=2560fp=chrome
 - client-fingerprint: chrome
-  name: 15|HK_speednode_0012
+  name: 15|HK_speednode_0017
+  network: ws
+  port: 587
+  server: 107.150.119.240
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560fp=chrome
+- client-fingerprint: chrome
+  name: 15|HK_speednode_0018
+  network: ws
+  port: 587
+  server: 47.238.74.134
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560fp=chrome
+- client-fingerprint: chrome
+  name: 15|HK_speednode_0019
+  network: ws
+  port: 11001
+  server: 47.76.83.114
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560fp=chrome
+- client-fingerprint: chrome
+  name: 15|HK_speednode_0020
+  network: ws
+  port: 587
+  server: 47.76.165.252
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560fp=chrome
+- client-fingerprint: chrome
+  name: 15|HK_speednode_0021
+  network: ws
+  port: 587
+  server: 47.76.111.33
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560fp=chrome
+- client-fingerprint: chrome
+  name: 15|HK_speednode_0023
+  network: ws
+  port: 54321
+  server: 59.149.204.218
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560fp=chrome
+- client-fingerprint: chrome
+  name: 15|HK_speednode_0024
   network: ws
   port: 587
   server: 103.41.65.161
@@ -1237,7 +1362,22 @@ proxies:
       Host: vless.ifx.us.kg
     path: /?ed=2560fp=chrome
 - client-fingerprint: chrome
-  name: 15|JP_speednode_0013
+  name: 15|HK_speednode_0025
+  network: ws
+  port: 23555
+  server: 219.77.65.212
+  servername: juzi8186.5112233.xyz
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzi8186.5112233.xyz
+    path: /?ed=2560fp=randomfp=chromefp=chrome
+- client-fingerprint: chrome
+  name: 15|JP_speednode_0027
   network: ws
   port: 54321
   server: 34.146.31.202
@@ -1252,10 +1392,190 @@ proxies:
       Host: vless.ifx.us.kg
     path: /?ed=2560fp=chrome
 - client-fingerprint: chrome
-  name: 15|NL_speednode_0014
+  name: 15|KR_speednode_0028
+  network: ws
+  port: 11001
+  server: 218.38.36.6
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560fp=chrome
+- client-fingerprint: chrome
+  name: 15|KR_speednode_0029
+  network: ws
+  port: 33889
+  server: 218.152.205.205
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560fp=chrome
+- client-fingerprint: chrome
+  name: 15|KR_speednode_0030
+  network: ws
+  port: 11310
+  server: 175.198.94.206
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560fp=chrome
+- client-fingerprint: chrome
+  name: 15|KR_speednode_0031
+  network: ws
+  port: 28006
+  server: 59.30.29.64
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560fp=chrome
+- client-fingerprint: chrome
+  name: 15|KR_speednode_0032
+  network: ws
+  port: 28006
+  server: 59.15.240.231
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560fp=chrome
+- client-fingerprint: chrome
+  name: 15|KR_speednode_0033
+  network: ws
+  port: 33890
+  server: 221.166.163.61
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560fp=chrome
+- client-fingerprint: chrome
+  name: 15|KR_speednode_0034
+  network: ws
+  port: 33889
+  server: 118.39.97.156
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560fp=chrome
+- client-fingerprint: chrome
+  name: 15|KR_speednode_0035
+  network: ws
+  port: 28006
+  server: 220.81.169.216
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560fp=chrome
+- client-fingerprint: chrome
+  name: 15|KR_speednode_0036
+  network: ws
+  port: 28006
+  server: 210.126.67.51
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560fp=chrome
+- client-fingerprint: chrome
+  name: 15|KR_speednode_0037
+  network: ws
+  port: 28006
+  server: 218.152.195.182
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560fp=chrome
+- client-fingerprint: chrome
+  name: 15|KR_speednode_0038
+  network: ws
+  port: 28006
+  server: 220.124.232.109
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560fp=chrome
+- client-fingerprint: chrome
+  name: 15|NL_speednode_0039
+  network: ws
+  port: 1001
+  server: 192.210.160.163
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560fp=chrome
+- client-fingerprint: chrome
+  name: 15|NL_speednode_0040
   network: ws
   port: 2501
-  server: 79.137.205.240
+  server: 194.246.81.62
   servername: vless.ifx.us.kg
   skip-cert-verify: false
   tfo: false
@@ -1267,10 +1587,10 @@ proxies:
       Host: vless.ifx.us.kg
     path: /?ed=2560fp=chrome
 - client-fingerprint: chrome
-  name: 15|NL_speednode_0015
+  name: 15|NL_speednode_0041
   network: ws
-  port: 587
-  server: 45.128.222.188
+  port: 2501
+  server: 89.110.102.115
   servername: vless.ifx.us.kg
   skip-cert-verify: false
   tfo: false
@@ -1282,7 +1602,7 @@ proxies:
       Host: vless.ifx.us.kg
     path: /?ed=2560fp=chrome
 - client-fingerprint: chrome
-  name: 15|NL_speednode_0016
+  name: 15|NL_speednode_0042
   network: ws
   port: 1001
   server: 45.94.31.75
@@ -1297,10 +1617,10 @@ proxies:
       Host: vless.ifx.us.kg
     path: /?ed=2560fp=chrome
 - client-fingerprint: chrome
-  name: 15|NL_speednode_0017
+  name: 15|NL_speednode_0043
   network: ws
-  port: 587
-  server: 79.137.195.171
+  port: 1001
+  server: 45.94.31.75
   servername: vless.ifx.us.kg
   skip-cert-verify: false
   tfo: false
@@ -1310,9 +1630,9 @@ proxies:
   ws-opts:
     headers:
       Host: vless.ifx.us.kg
-    path: /?ed=2560fp=chrome
+    path: /?ed=2560fp=chromefp=chrome
 - client-fingerprint: chrome
-  name: 15|NL_speednode_0018
+  name: 15|NL_speednode_0044
   network: ws
   port: 1001
   server: 2.58.56.31
@@ -1327,10 +1647,10 @@ proxies:
       Host: vless.ifx.us.kg
     path: /?ed=2560fp=chrome
 - client-fingerprint: chrome
-  name: 15|NL_speednode_0019
+  name: 15|PT_speednode_0045
   network: ws
-  port: 3001
-  server: 2.58.56.31
+  port: 8080
+  server: 5.206.224.223
   servername: vless.ifx.us.kg
   skip-cert-verify: false
   tfo: false
@@ -1342,10 +1662,10 @@ proxies:
       Host: vless.ifx.us.kg
     path: /?ed=2560fp=chrome
 - client-fingerprint: chrome
-  name: 15|NL_speednode_0020
+  name: 15|RO_speednode_0046
   network: ws
-  port: 2501
-  server: 46.30.42.248
+  port: 587
+  server: 89.33.44.22
   servername: vless.ifx.us.kg
   skip-cert-verify: false
   tfo: false
@@ -1357,37 +1677,7 @@ proxies:
       Host: vless.ifx.us.kg
     path: /?ed=2560fp=chrome
 - client-fingerprint: chrome
-  name: 15|RU_speednode_0021
-  network: ws
-  port: 8000
-  server: 92.51.44.177
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560fp=chrome
-- client-fingerprint: chrome
-  name: 15|RU_speednode_0022
-  network: ws
-  port: 443
-  server: 188.42.145.159
-  servername: VIrgiNiavPn-nL.pagEs.dEv
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 54ef4ecf-ff37-436a-be13-95c8a8a1114d
-  ws-opts:
-    headers:
-      Host: VIrgiNiavPn-nL.pagEs.dEv
-    path: /security=tlsfp=chrome
-- client-fingerprint: chrome
-  name: 15|RU_speednode_0023
+  name: 15|RU_speednode_0047
   network: ws
   port: 8080
   server: 91.219.150.221
@@ -1402,10 +1692,10 @@ proxies:
       Host: vless.ifx.us.kg
     path: /?ed=2560fp=chrome
 - client-fingerprint: chrome
-  name: 15|SG_speednode_0024
+  name: 15|RU_speednode_0048
   network: ws
-  port: 6666
-  server: 8.222.178.214
+  port: 8080
+  server: 91.219.150.221
   servername: vless.ifx.us.kg
   skip-cert-verify: false
   tfo: false
@@ -1415,42 +1705,12 @@ proxies:
   ws-opts:
     headers:
       Host: vless.ifx.us.kg
-    path: /?ed=2560fp=chrome
+    path: /?ed=2560fp=chromefp=chrome
 - client-fingerprint: chrome
-  name: 15|SG_speednode_0025
-  network: ws
-  port: 587
-  server: 47.245.91.113
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560fp=chrome
-- client-fingerprint: chrome
-  name: 15|SG_speednode_0026
-  network: ws
-  port: 8000
-  server: 8.219.170.57
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560fp=chrome
-- client-fingerprint: chrome
-  name: 15|SG_speednode_0027
+  name: 15|SC_speednode_0049
   network: ws
   port: 587
-  server: 47.241.162.74
+  server: 156.247.9.119
   servername: vless.ifx.us.kg
   skip-cert-verify: false
   tfo: false
@@ -1462,10 +1722,55 @@ proxies:
       Host: vless.ifx.us.kg
     path: /?ed=2560fp=chrome
 - client-fingerprint: chrome
-  name: 15|SG_speednode_0028
+  name: 15|SE_speednode_0050
+  network: ws
+  port: 8080
+  server: 13.48.195.102
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560fp=chrome
+- client-fingerprint: chrome
+  name: 15|SE_speednode_0051
+  network: ws
+  port: 8080
+  server: 13.60.87.228
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560fp=chrome
+- client-fingerprint: chrome
+  name: 15|SE_speednode_0052
+  network: ws
+  port: 2501
+  server: 95.164.51.24
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560fp=chrome
+- client-fingerprint: chrome
+  name: 15|SG_speednode_0053
   network: ws
   port: 587
-  server: 138.2.73.37
+  server: 103.180.161.69
   servername: vless.ifx.us.kg
   skip-cert-verify: false
   tfo: false
@@ -1477,10 +1782,10 @@ proxies:
       Host: vless.ifx.us.kg
     path: /?ed=2560fp=chrome
 - client-fingerprint: chrome
-  name: 15|SG_speednode_0029
+  name: 15|SG_speednode_0054
   network: ws
   port: 587
-  server: 139.162.33.248
+  server: 103.180.161.123
   servername: vless.ifx.us.kg
   skip-cert-verify: false
   tfo: false
@@ -1492,7 +1797,37 @@ proxies:
       Host: vless.ifx.us.kg
     path: /?ed=2560fp=chrome
 - client-fingerprint: chrome
-  name: 15|US_speednode_0031
+  name: 15|TR_speednode_0055
+  network: ws
+  port: 999
+  server: 185.226.92.168
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560fp=chrome
+- client-fingerprint: chrome
+  name: 15|TW_speednode_0056
+  network: ws
+  port: 587
+  server: 123.58.196.181
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560fp=chrome
+- client-fingerprint: chrome
+  name: 15|US_speednode_0068
   network: ws
   port: 80
   server: 167.82.30.71
@@ -1507,410 +1842,67 @@ proxies:
       Host: samane.ir
     path: /4u7lAS4nPLtz0xPz?ed=2560fp=ios
 - client-fingerprint: chrome
-  name: 15|US_speednode_0032
-  network: ws
-  port: 80
-  server: 104.17.147.22
-  servername: www.speedtest.net.nl1.72.18.432.20.20.20.20.ir.xn--g28h.dns-dynamic.net.
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  uuid: 7d2dfb7a-2ecc-4448-bcbe-245a2092fe85
-  ws-opts:
-    headers:
-      Host: www.speedtest.net.nl1.72.18.432.20.20.20.20.ir.xn--g28h.dns-dynamic.net.
-    path: /Telegram-Xv2ry2?ed=512fp=chrome
-- client-fingerprint: chrome
-  name: 15|US_speednode_0033
-  network: ws
-  port: 80
-  server: www.speedtest.net
-  servername: www.speedtest.net.nl1.72.18.432.20.20.20.20.ir.xn--g28h.dns-dynamic.net.
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  uuid: 7d2dfb7a-2ecc-4448-bcbe-245a2092fe85
-  ws-opts:
-    headers:
-      Host: www.speedtest.net.nl1.72.18.432.20.20.20.20.ir.xn--g28h.dns-dynamic.net.
-    path: /Telegram-Xv2ry2?ed=512fp=chrome
-- client-fingerprint: chrome
-  name: 15|US_speednode_0035
-  network: ws
-  port: 587
-  server: 38.207.171.223
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560fp=chrome
-- client-fingerprint: chrome
-  name: 15|US_speednode_0036
-  network: ws
-  port: 587
-  server: 38.207.167.154
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560fp=chrome
-- client-fingerprint: chrome
-  name: 15|US_speednode_0037
-  network: ws
-  port: 587
-  server: 38.105.26.206
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560fp=chrome
-- client-fingerprint: chrome
-  name: 15|US_speednode_0038
-  network: ws
-  port: 587
-  server: 154.12.45.208
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560fp=chrome
-- client-fingerprint: chrome
-  name: 15|US_speednode_0039
-  network: ws
-  port: 587
-  server: 38.76.144.59
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560fp=chrome
-- client-fingerprint: chrome
-  name: 15|US_speednode_0040
-  network: ws
-  port: 587
-  server: 38.58.56.130
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560fp=chrome
-- client-fingerprint: chrome
-  name: 15|US_speednode_0042
-  network: ws
-  port: 55555
-  server: 38.76.148.231
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560fp=chrome
-- client-fingerprint: chrome
-  name: 15|US_speednode_0043
-  network: ws
-  port: 587
-  server: 38.175.108.84
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560fp=chrome
-- client-fingerprint: chrome
-  name: 15|US_speednode_0044
-  network: ws
-  port: 587
-  server: 154.64.225.243
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560fp=chrome
-- client-fingerprint: chrome
-  name: 15|US_speednode_0045
-  network: ws
-  port: 587
-  server: 38.105.28.9
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560fp=chrome
-- client-fingerprint: chrome
-  name: 15|US_speednode_0046
-  network: ws
-  port: 587
-  server: 209.146.101.234
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560fp=chrome
-- client-fingerprint: chrome
-  name: 15|US_speednode_0047
-  network: ws
-  port: 587
-  server: 91.217.139.120
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560fp=chrome
-- client-fingerprint: chrome
-  name: 15|US_speednode_0048
-  network: ws
-  port: 587
-  server: 154.64.239.219
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560fp=chrome
-- client-fingerprint: chrome
-  name: 15|US_speednode_0049
-  network: ws
-  port: 587
-  server: 38.105.28.10
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560fp=chrome
-- client-fingerprint: chrome
-  name: 15|US_speednode_0050
-  network: ws
-  port: 587
-  server: 38.105.28.2
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560fp=chrome
-- client-fingerprint: chrome
-  name: 15|US_speednode_0051
-  network: ws
-  port: 587
-  server: 38.105.31.9
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560fp=chrome
-- client-fingerprint: chrome
-  name: 15|US_speednode_0052
-  network: ws
-  port: 587
-  server: 38.105.27.31
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560fp=chrome
-- client-fingerprint: chrome
-  name: 15|US_speednode_0053
-  network: ws
-  port: 587
-  server: 47.88.90.170
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560fp=chrome
-- client-fingerprint: chrome
-  name: 15|US_speednode_0054
-  network: ws
-  port: 55555
-  server: 38.145.210.76
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560fp=chrome
-- client-fingerprint: chrome
-  name: 15|US_speednode_0055
-  network: ws
-  port: 587
-  server: 158.101.28.188
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560fp=chrome
-- client-fingerprint: chrome
-  name: 15|US_speednode_0056
-  network: ws
-  port: 587
-  server: 209.146.103.197
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560fp=chrome
-- client-fingerprint: chrome
-  name: 15|US_speednode_0057
-  network: ws
-  port: 587
-  server: 38.105.29.237
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560fp=chrome
-- client-fingerprint: chrome
   name: 15|US_speednode_0058
   network: ws
-  port: 80
-  server: 151.101.3.10
-  servername: uni.fi
+  port: 587
+  server: 154.12.45.244
+  servername: vless.ifx.us.kg
   skip-cert-verify: false
   tfo: false
-  tls: false
+  tls: true
   type: vless
-  uuid: cefffd1d-cc58-4560-b4d1-44f1af528f30
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: uni.fi
-    path: /?ed=2048fp=chromefp=chrome
+      Host: vless.ifx.us.kg
+    path: /?ed=2560fp=chrome
 - client-fingerprint: chrome
   name: 15|US_speednode_0059
   network: ws
-  password: bpb-trojan
-  port: 443
-  server: 172.64.150.145
-  skip-cert-verify: false
-  sni: mindrOOm-5cz.pAgEs.dEV
-  type: trojan
-  ws-opts:
-    headers:
-      Host: mindrOOm-5cz.pAgEs.dEV
-    path: /trC8BM8bTsAF0AnLYL
-- client-fingerprint: chrome
-  name: 15|US_speednode_0060
-  network: ws
-  port: 443
-  server: 199.232.5.79
-  servername: mefa.ir
+  port: 587
+  server: 154.12.39.181
+  servername: vless.ifx.us.kg
   skip-cert-verify: false
   tfo: false
   tls: true
   type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: mefa.ir
-    path: /H?ed=2560fp=chrome
+      Host: vless.ifx.us.kg
+    path: /?ed=2560fp=chrome
+- client-fingerprint: chrome
+  name: 15|US_speednode_0060
+  network: ws
+  port: 587
+  server: 154.64.228.114
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560fp=chrome
 - client-fingerprint: chrome
   name: 15|US_speednode_0061
+  network: ws
+  port: 587
+  server: 206.223.84.99
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560fp=chrome
+- client-fingerprint: chrome
+  name: 15|US_speednode_0062
   network: ws
   port: 80
   server: 167.82.30.71
@@ -1925,35 +1917,52 @@ proxies:
       Host: samane.ir
     path: /4u7lAS4nPLtz0xPz?ed=2560fp=chromefp=chrome
 - client-fingerprint: chrome
-  name: 15|US_speednode_0062
+  name: 15|US_speednode_0073
   network: ws
-  password: bpb-trojan
-  port: 443
-  server: 104.18.37.111
-  skip-cert-verify: false
-  sni: mindrOOm-5cz.pAgEs.dEV
-  type: trojan
-  ws-opts:
-    headers:
-      Host: mindrOOm-5cz.pAgEs.dEV
-    path: /trC8BM8bTsAF0AnLYL
-- client-fingerprint: chrome
-  name: 15|US_speednode_0063
-  network: ws
-  port: 587
-  server: 165.154.206.81
-  servername: vless.ifx.us.kg
+  port: 80
+  server: 167.82.30.71
+  servername: samane.ir
   skip-cert-verify: false
   tfo: false
-  tls: true
+  tls: false
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
   ws-opts:
     headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560fp=chrome
+      Host: samane.ir
+    path: /4u7lAS4nPLtz0xPz?ed=2560fp=chromefp=chromefp=chrome
 - client-fingerprint: chrome
-  name: 15|US_speednode_0064
+  name: 15|US_speednode_0066
+  network: ws
+  port: 80
+  server: 151.101.3.10
+  servername: uni.fi
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: cefffd1d-cc58-4560-b4d1-44f1af528f30
+  ws-opts:
+    headers:
+      Host: uni.fi
+    path: /?ed=2048fp=chromefp=chromefp=chrome
+- client-fingerprint: chrome
+  name: 15|US_speednode_0067
+  network: ws
+  port: 80
+  server: 199.232.37.15
+  servername: sara193.ir
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: sara193.ir
+    path: /BCXzvAcvSB7JzMWj?ed=2560fp=chrome
+- client-fingerprint: chrome
+  name: 15|US_speednode_0069
   network: ws
   port: 443
   server: 199.232.5.101
@@ -1968,85 +1977,10 @@ proxies:
       Host: mefa.ir
     path: /H?ed=2560fp=chrome
 - client-fingerprint: chrome
-  name: 15|US_speednode_0065
-  network: ws
-  port: 8080
-  server: 23.94.136.126
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560fp=chrome
-- client-fingerprint: chrome
-  name: 15|US_speednode_0066
-  network: ws
-  port: 587
-  server: 165.154.36.229
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560fp=chrome
-- client-fingerprint: chrome
-  name: 15|US_speednode_0067
-  network: ws
-  port: 587
-  server: 157.254.227.37
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560fp=chrome
-- client-fingerprint: chrome
-  name: 15|US_speednode_0068
-  network: ws
-  port: 55555
-  server: 162.244.208.173
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560fp=chrome
-- client-fingerprint: chrome
-  name: 15|US_speednode_0069
-  network: ws
-  port: 55555
-  server: 162.244.208.120
-  servername: vless.ifx.us.kg
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: vless.ifx.us.kg
-    path: /?ed=2560fp=chrome
-- client-fingerprint: chrome
   name: 15|US_speednode_0070
   network: ws
   port: 55555
-  server: 162.244.208.222
+  server: 38.145.210.77
   servername: vless.ifx.us.kg
   skip-cert-verify: false
   tfo: false
@@ -2061,7 +1995,82 @@ proxies:
   name: 15|US_speednode_0071
   network: ws
   port: 80
+  server: 104.17.147.22
+  servername: www.speedtest.net.nl1.72.18.432.20.20.20.20.ir.xn--g28h.dns-dynamic.net.
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 7d2dfb7a-2ecc-4448-bcbe-245a2092fe85
+  ws-opts:
+    headers:
+      Host: www.speedtest.net.nl1.72.18.432.20.20.20.20.ir.xn--g28h.dns-dynamic.net.
+    path: /Telegram-Xv2ry2?ed=512fp=chrome
+- client-fingerprint: chrome
+  name: 15|US_speednode_0078
+  network: ws
+  port: 587
+  server: 206.237.113.231
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560fp=chrome
+- client-fingerprint: chrome
+  name: 15|US_speednode_0088
+  network: ws
+  port: 80
   server: 162.159.129.60
+  servername: www.speedtest.net.nl1.72.18.432.20.20.20.20.ir.xn--g28h.dns-dynamic.net.
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 7d2dfb7a-2ecc-4448-bcbe-245a2092fe85
+  ws-opts:
+    headers:
+      Host: www.speedtest.net.nl1.72.18.432.20.20.20.20.ir.xn--g28h.dns-dynamic.net.
+    path: /Telegram-Xv2ry2?ed=512fp=chromefp=chromefp=chromefp=chrome
+- client-fingerprint: chrome
+  name: 15|US_speednode_0080
+  network: ws
+  port: 10001
+  server: 142.11.216.214
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560fp=chrome
+- client-fingerprint: chrome
+  name: 15|US_speednode_0083
+  network: ws
+  port: 54321
+  server: 35.212.206.193
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560fp=chrome
+- client-fingerprint: chrome
+  name: 15|US_speednode_0085
+  network: ws
+  port: 80
+  server: www.speedtest.net
   servername: www.speedtest.net.nl1.72.18.432.20.20.20.20.ir.xn--g28h.dns-dynamic.net.
   skip-cert-verify: false
   tfo: false
@@ -2073,23 +2082,10 @@ proxies:
       Host: www.speedtest.net.nl1.72.18.432.20.20.20.20.ir.xn--g28h.dns-dynamic.net.
     path: /Telegram-Xv2ry2?ed=512fp=chromefp=chrome
 - client-fingerprint: chrome
-  name: 15|US_speednode_0072
-  network: ws
-  password: auto
-  port: 27061
-  server: 103.170.72.120
-  skip-cert-verify: false
-  sni: trojanfree-76s.pages.dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: trojanfree-76s.pages.dev
-    path: //
-- client-fingerprint: chrome
-  name: 15|US_speednode_0073
+  name: 15|US_speednode_0086
   network: ws
   port: 587
-  server: 165.154.134.125
+  server: 165.154.163.236
   servername: vless.ifx.us.kg
   skip-cert-verify: false
   tfo: false
@@ -2101,10 +2097,10 @@ proxies:
       Host: vless.ifx.us.kg
     path: /?ed=2560fp=chrome
 - client-fingerprint: chrome
-  name: 15|US_speednode_0074
+  name: 15|US_speednode_0089
   network: ws
   port: 587
-  server: 74.207.225.147
+  server: 157.254.227.37
   servername: vless.ifx.us.kg
   skip-cert-verify: false
   tfo: false
@@ -2116,7 +2112,37 @@ proxies:
       Host: vless.ifx.us.kg
     path: /?ed=2560fp=chrome
 - client-fingerprint: chrome
-  name: 15|US_speednode_0075
+  name: 15|US_speednode_0090
+  network: ws
+  port: 587
+  server: 165.154.206.81
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560fp=chrome
+- client-fingerprint: chrome
+  name: 15|US_speednode_0091
+  network: ws
+  port: 80
+  server: 199.232.37.15
+  servername: sara193.ir
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: sara193.ir
+    path: /BCXzvAcvSB7JzMWj?ed=2560fp=chromefp=chromefp=chromefp=chrome
+- client-fingerprint: chrome
+  name: 15|US_speednode_0093
   network: ws
   port: 80
   server: 199.232.37.15
@@ -2131,33 +2157,65 @@ proxies:
       Host: sara193.ir
     path: /BCXzvAcvSB7JzMWj?ed=2560fp=chromefp=chrome
 - client-fingerprint: chrome
-  name: 15|US_speednode_0076
+  name: 15|US_speednode_0094
   network: ws
-  password: bpb-trojan
-  port: 443
-  server: 172.64.150.145
+  port: 587
+  server: 157.254.227.37
+  servername: vless.ifx.us.kg
   skip-cert-verify: false
-  sni: mindrOOm-5cz.pAgEs.dEV
-  type: trojan
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: mindrOOm-5cz.pAgEs.dEV
-    path: /trC8BM8bTsAF0AnLYL?ed=2560
+      Host: vless.ifx.us.kg
+    path: /?ed=2560fp=chromefp=chrome
 - client-fingerprint: chrome
-  name: 15|US_speednode_0077
+  name: 15|US_speednode_0095
   network: ws
-  port: 80
-  server: 151.101.2.216
-  servername: bas-kon-iranii.ir
+  port: 55555
+  server: 162.244.208.120
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560fp=chrome
+- client-fingerprint: chrome
+  name: 15|US_speednode_0096
+  network: ws
+  port: 55555
+  server: 162.244.208.173
+  servername: vless.ifx.us.kg
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: vless.ifx.us.kg
+    path: /?ed=2560fp=chrome
+- client-fingerprint: chrome
+  name: 15|US_speednode_0097
+  network: ws
+  port: 2052
+  server: www.speedtest.net
+  servername: www.digikala.com.joinTelegram.mosiv2.pl1.vless.Sitespeedtest.net.
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vless
-  uuid: e8a196c0-b131-411f-99b9-6e48ec21e552
+  uuid: bd51708b-07de-561f-9053-d2e90ca4ee20
   ws-opts:
     headers:
-      Host: bas-kon-iranii.ir
-    path: /@Alfred_Config/@Alfred_Config/@Alfred_Config/@Alfred_Config/@Alfred_Config/@Alfred_Config/@Alfred_Config/@Alfred_Config/@Alfred_Config/@Alfred_Config/@Alfred_Config/@Alfred_Config/@Alfred_Config/@Alfred_Config/@Alfred_Config/@Alfred_Config?ed=2048fp=chromefp=chrome
+      Host: www.digikala.com.joinTelegram.mosiv2.pl1.vless.Sitespeedtest.net.
+    path: /join-fp=chrome
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
