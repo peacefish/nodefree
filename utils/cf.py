@@ -3,134 +3,82 @@ import re
 import yaml
 from bs4 import BeautifulSoup
 from datetime import datetime
-def get_index_url(url='', tags='h2', cls=''):
-  headers = {
-      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
-      'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
-      # 其他请求头可以根据需要添加
-  }
 
-  # 发起 GET 请求
-  ymal_urls = []
-  try:
-      response = requests.get(url, headers=headers, verify=False)  # 禁用 SSL 验证
-      #print(f"状态码: {response.text}")
+HEADERS = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8'
+}
 
-      if response.status_code == 200:
-        soup = BeautifulSoup(response.text, 'html.parser')
-        # 找到所有的<a>标签
-        h3_tags = soup.find_all(tags, class_=cls)
-        for h3_tag in h3_tags:
-          # 在每个<h3>标签中找到<a>标签
-          a_tag = h3_tag.find('a')
-          # 获取<a>标签的href属性值
-          if a_tag:
-             return a_tag['href'] 
-          
-  except requests.exceptions.RequestException as e:
-      print(f"请求出现错误: {e}")
-  current_date = datetime.now()
-  formatted_date = current_date.strftime('%Y-%m-%d')
-  url = f"https://www.freeclashnode.com/free-node/{formatted_date}-free-subscribe-node.htm"
-  return url
-def get_indextt_url(url):
-  headers = {
-      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
-      'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
-      # 其他请求头可以根据需要添加
-  }
+def fetch_html(url):
+    """Helper function to fetch and parse HTML content."""
+    try:
+        response = requests.get(url, headers=HEADERS, verify=False)
+        response.raise_for_status()
+        return BeautifulSoup(response.text, 'html.parser')
+    except requests.exceptions.RequestException as e:
+        print(f"Error fetching URL '{url}': {e}")
+        return None
 
-  # 发起 GET 请求
-  ymal_urls = []
-  try:
-      response = requests.get(url, headers=headers, verify=False)  # 禁用 SSL 验证
-      #print(f"状态码: {response.text}")
+def get_index_url(base_url, tag='h2', cls=''):
+    soup = fetch_html(base_url)
+    if not soup:
+        return f"https://www.freeclashnode.com/free-node/{datetime.now().strftime('%Y-%m-%d')}-free-subscribe-node.htm"
+    
+    header_tags = soup.find_all(tag, class_=cls)
+    for header_tag in header_tags:
+        a_tag = header_tag.find('a')
+        if a_tag:
+            return a_tag['href']
+    return f"https://www.freeclashnode.com/free-node/{datetime.now().strftime('%Y-%m-%d')}-free-subscribe-node.htm"
 
-      if response.status_code == 200:
-        soup = BeautifulSoup(response.text, 'html.parser')
-        # 找到所有的<a>标签
-        h3_tags = soup.find_all('div', class_="col-3")
-        for h3_tag in h3_tags:
-          # 在每个<h3>标签中找到<a>标签
-          a_tag = h3_tag.find('a')
-          # 获取<a>标签的href属性值
-          if a_tag:
-             return a_tag['href'] 
-          
-  except requests.exceptions.RequestException as e:
-      print(f"请求出现错误: {e}")
-  current_date = datetime.now()
-  formatted_date = current_date.strftime('%Y-%m-%d')
-  url = f"https://www.freeclashnode.com/free-node/{formatted_date}-free-subscribe-node.htm"
-  return url
+def extract_links(url):
+    """Extract all .yaml URLs from the given page."""
+    soup = fetch_html(url)
+    if soup:
+        return re.findall(r'https?://[^\s<]+\.yaml', soup.text, re.IGNORECASE)
+    return []
 
-def extract_links_url(url):
-  # 设置请求头
-  headers = {
-      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
-      'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
-      # 其他请求头可以根据需要添加
-  }
+def extract_yaml_data(url):
+    """Fetch YAML data from the URL and parse the proxies."""
+    try:
+        response = requests.get(url, headers=HEADERS, verify=False)
+        response.encoding = 'utf-8'
+        yaml_content = response.text.replace('👉', '').replace('https://www.fuye.fun免费节点分享', '')
+        data = yaml.safe_load(yaml_content)
+        return data.get('proxies', [])
+    except (requests.exceptions.RequestException, yaml.YAMLError) as e:
+        print(f"Error fetching or parsing YAML from '{url}': {e}")
+        return []
 
-  # 发起 GET 请求
-  ymal_urls = []
-  try:
-      response = requests.get(url, headers=headers, verify=False)  # 禁用 SSL 验证
-      print(f"状态码: {response.status_code}")
-      if response.status_code == 200:
-        ymal_urls = re.findall(r'https?://[^\s<]+\.yaml', response.text,re.IGNORECASE)
-      print(ymal_urls)  # 打印响应内容
-  except requests.exceptions.RequestException as e:
-      print(f"请求出现错误: {e}")
-  return ymal_urls
-def extract_yaml_url(url):
-  # 设置请求头
-  headers = {
-      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
-      'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
-      # 其他请求头可以根据需要添加
-  }
-  # 发起 GET 请求
-  try:
-      response = requests.get(url, headers=headers, verify=False)  # 禁用 SSL 验证
-      response.encoding = 'utf-8'
-      #print(f"状态码: {response.status_code}")
-      dct = yaml.safe_load(response.text.replace('👉','').replace('https://www.fuye.fun免费节点分享','').replace('()','').replace('( https://www.fuye.fun/免费节点分享)',''))
-      #print(dct['proxies']) 
-      #print(response.text)  # 打印响应内容
-  except requests.exceptions.RequestException as e:
-      print(f"请求出现错误: {e}")
-  return dct['proxies']
+def process_urls(base_url, tag='h2', cls=''):
+    """Process a set of URLs to fetch and parse YAML links and proxies."""
+    index_url = get_index_url(base_url, tag, cls)
+    yaml_links = extract_links(index_url)
+    proxies = []
+    for link in yaml_links:
+        proxies.extend(extract_yaml_data(link))
+    return proxies
+
 def main():
-  s=get_index_url("https://www.cfmem.com/",tags="h2",cls="entry-title")
-  print(s)
-  url = s
-  file1 = open("./sub/proxy_cf.yaml", "w+",encoding='utf-8')
-  links = extract_links_url(url)
-  print(len(links))
-  a=[]
-  for link in links:
-    s=extract_yaml_url(link)
-    a=a+s
-  print(a)
-  tt=get_indextt_url("https://oneclash.cc/freenode")
-  links_tt = extract_links_url(tt)
-  b=[]
-  for link in links_tt:
-    s=extract_yaml_url(link)
-    b=b+s
-  c =extract_yaml_url('https://raw.githubusercontent.com/aiboboxx/clashfree/refs/heads/main/clash.yml')
+    sources = [
+        ("https://www.cfmem.com/", "h2", "entry-title"),
+        ("https://oneclash.cc/freenode", "div", "col-3"),
+        ("https://wanzhuanmi.com/freenode", "h2", ""),
+        ("https://www.mibei77.com/", "h2", "entry-title"),
+    ]
+    
+    all_proxies = []
+    for url, tag, cls in sources:
+        all_proxies.extend(process_urls(url, tag, cls))
+    
+    # Add proxies from a static URL as well
+    all_proxies.extend(extract_yaml_data('https://raw.githubusercontent.com/aiboboxx/clashfree/refs/heads/main/clash.yml'))
 
-  dts=get_index_url("https://wanzhuanmi.com/freenode",tags="h2")
-  links_dts = extract_links_url(dts)
-  d=[]
-  for link in links_dts:
-    s=extract_yaml_url(link)
-    d=d+s
-  #print(d)
-  yaml_content = yaml.dump({"proxies":a+b+c+d}, default_flow_style=False)
-  print(yaml_content)
-  file1.write(yaml_content)
-  file1.close()
+    # Save consolidated YAML file
+    with open("./proxy_cf.yaml", "w+", encoding='utf-8') as file:
+        yaml_content = yaml.dump({"proxies": all_proxies}, default_flow_style=False)
+        file.write(yaml_content)
+        print("YAML content successfully saved to proxy_cf.yaml")
+
 if __name__ == '__main__':
     main()
