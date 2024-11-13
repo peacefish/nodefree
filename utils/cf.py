@@ -75,7 +75,7 @@ def main():
     all_proxies.extend(extract_yaml_data('https://raw.githubusercontent.com/aiboboxx/clashfree/refs/heads/main/clash.yml'))
 
     # Save consolidated YAML file
-    with open("./proxy_cf.yaml", "w+", encoding='utf-8') as file:
+    with open("./sub/proxy_cf.yaml", "w+", encoding='utf-8') as file:
         yaml_content = yaml.dump({"proxies": all_proxies}, default_flow_style=False)
         file.write(yaml_content)
         print("YAML content successfully saved to proxy_cf.yaml")
