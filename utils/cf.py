@@ -70,15 +70,22 @@ def main():
         ("https://wanzhuanmi.com/freenode", "h2", ""),
         ("https://www.mibei77.com/", "h2", "entry-title"),
         ("https://clashgithub.com/category/clashnode", "div", "posts"),
-        ("https://www.85la.com/internet-access/free-network-nodes", "h3", "ceo-text-truncate"),
+       #("https://www.85la.com/internet-access/free-network-nodes", "h3", "ceo-text-truncate"),
     ]
-    
+    sourceslink =[
+        "http://175.178.182.178:12580/clash/proxies",
+        "http://50.114.40.56:12580/clash/proxies",
+        "http://194.32.144.180:8080/clash/proxies",
+        "https://pp.dcd.one/clash/proxies",
+        "https://raw.githubusercontent.com/aiboboxx/clashfree/refs/heads/main/clash.yml"
+    ]
     all_proxies = []
     for url, tag, cls in sources:
         all_proxies.extend(process_urls(url, tag, cls))
     
     # Add proxies from a static URL as well
-    all_proxies.extend(extract_yaml_data('https://raw.githubusercontent.com/aiboboxx/clashfree/refs/heads/main/clash.yml'))
+    for url in sourceslink:
+        all_proxies.extend(extract_yaml_data(url))
 
     # Save consolidated YAML file
     with open("./sub/proxy_cf.yaml", "w+", encoding='utf-8') as file:
