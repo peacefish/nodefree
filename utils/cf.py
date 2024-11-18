@@ -69,6 +69,8 @@ def main():
         ("https://oneclash.cc/freenode", "div", "col-3"),
         ("https://wanzhuanmi.com/freenode", "h2", ""),
         ("https://www.mibei77.com/", "h2", "entry-title"),
+        ("https://clashgithub.com/category/clashnode", "div", "posts"),
+        ("https://www.85la.com/internet-access/free-network-nodes", "h3", "ceo-text-truncate"),
     ]
     
     all_proxies = []
