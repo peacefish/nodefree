@@ -45,7 +45,7 @@ def extract_yaml_data(url):
         response.encoding = 'utf-8'
         yaml_content = response.text.replace('👉', '').replace('https://www.fuye.fun免费节点分享', '')
         data = yaml.safe_load(yaml_content)
-        return data.get('proxies', [])
+        return data.get('proxies', []) if data else [] 
     except (requests.exceptions.RequestException, yaml.YAMLError) as e:
         print(f"Error fetching or parsing YAML from '{url}': {e}")
         return []
@@ -56,7 +56,11 @@ def process_urls(base_url, tag='h2', cls=''):
     yaml_links = extract_links(index_url)
     proxies = []
     for link in yaml_links:
-        proxies.extend(extract_yaml_data(link))
+        data = extract_yaml_data(link)
+        if isinstance(data, list):
+            proxies.extend(data)  
+        else:
+            print(f"Warning: Skipping invalid data from '{link}'. Expected list, got {type(data)}.")
     return proxies
 
 def main():
