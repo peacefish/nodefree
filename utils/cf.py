@@ -45,7 +45,11 @@ def extract_yaml_data(url):
         response.encoding = 'utf-8'
         yaml_content = response.text.replace('👉', '').replace('https://www.fuye.fun免费节点分享', '')
         data = yaml.safe_load(yaml_content)
-        return data.get('proxies', []) if data else [] 
+        if isinstance(data, dict):
+            return data.get('proxies', [])
+        else:
+            return []
+        #return data.get('proxies', []) if data else [] 
     except (requests.exceptions.RequestException, yaml.YAMLError) as e:
         print(f"Error fetching or parsing YAML from '{url}': {e}")
         return []
