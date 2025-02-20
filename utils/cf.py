@@ -82,7 +82,6 @@ def main():
         "http://194.32.144.180:8080/clash/proxies",
         "https://pp.dcd.one/clash/proxies",
         "https://proxy.diele.me/clash/proxies",
-        "https://raw.githubusercontent.com/aiboboxx/clashfree/refs/heads/main/clash.yml"
     ]
     all_proxies = []
     for url, tag, cls in sources:
