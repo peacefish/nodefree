@@ -1,22 +1,27 @@
 proxies:
-- cipher: aes-256-cfb
-  name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD->\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD"
-  password: amazonskr05
-  port: 443
-  server: 34.217.100.159
+- cipher: chacha20-ietf-poly1305
+  name: "\U0001F1E7\U0001F1EA_BE_\u6BD4\u5229\u65F6"
+  password: e014f8ab71735926
+  port: 20568
+  server: 57.128.190.245
   type: ss
-- cipher: aes-256-cfb
-  name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD->\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD\
-    _1"
-  password: amazonskr05
-  port: 443
-  server: 34.219.71.252
-  type: ss
-- cipher: aes-256-cfb
-  name: "\U0001F1E9\U0001F1F0_DK_\u4E39\u9EA6"
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.186.79.53
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_1"
+  network: ws
+  port: 23008
+  server: 207.90.237.96
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: 5f3c5e30-7b83-403e-9a3d-8adacd160d21
+  ws-opts:
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: "\U0001F1E9\U0001F1EA_DE_\u5FB7\u56FD"
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  port: 8080
+  server: 45.87.175.188
   type: ss
 - cipher: aes-256-cfb
   name: "\U0001F1E8\U0001F1ED_CH_\u745E\u58EB"
@@ -25,221 +30,44 @@ proxies:
   server: 84.17.53.160
   type: ss
 - cipher: aes-256-cfb
-  name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD->\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD\
-    _2"
+  name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_3"
   password: amazonskr05
   port: 443
-  server: 18.237.73.216
+  server: 34.219.71.252
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_3"
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 38.165.233.18
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: "\U0001F1FA\U0001F1E6_UA_\u4E4C\u514B\u5170"
-  password: ZDljYmNh
-  port: 1443
-  server: 95.164.68.37
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD"
-  network: tcp
-  port: 41699
-  server: 183.236.51.38
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: chacha20-ietf-poly1305
-  name: "\U0001F1E9\U0001F1EA_DE_\u5FB7\u56FD"
-  password: 1RWwXhwfAB5gAEozU4G2Pg
+  name: "\U0001F1F3\U0001F1F1_NL_\u8377\u5170"
+  password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
-  server: 45.87.175.166
+  server: 45.158.171.110
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: "\U0001F1E9\U0001F1EA_DE_\u5FB7\u56FD->\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD"
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 45.87.175.199
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: "\U0001F1FA\U0001F1E6_UA_\u4E4C\u514B\u5170_1"
-  password: ZDljYmNh
-  port: 1443
-  server: de2.opensocks.site
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
-  port: 35565
-  server: 120.198.71.214
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: "\u6FB3\u5927\u5229\u4E9A(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB\
-    )"
-  password: Aimer
-  port: 443
-  server: 185.218.7.83
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: "DE\u5FB7\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: 45.87.175.166
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 2"
-  password: QF377GGQ00RATCMK
-  port: 21004
-  server: 8tv68qhq.slashdevslashnetslashtun.net
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
-  port: 41699
-  server: 183.236.51.38
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 2"
-  port: 44550
-  server: 120.232.153.40
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 3"
-  password: Pooria
-  port: 443
-  server: 104.17.148.22
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "KR\u97E9\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
-  password: Aimer
-  port: 12169
-  server: 119.195.104.2
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 4"
-  password: Aimer
-  port: 8443
-  server: 160.79.104.131
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 5"
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
   password: Aimer
   port: 11112
   server: 220.122.112.188
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: "\u5965\u5730\u5229(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
-  password: Aimer
-  port: 8443
-  server: 162.159.44.233
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- cipher: aes-256-gcm
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 6"
-  password: Y2U58S90E3GST1AQ
-  port: 21001
-  server: ti3hyra4.slashdevslashnetslashtun.net
-  type: ss
-  udp: true
-- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 7"
-  password: Pooria
-  port: 443
-  server: 104.17.148.22
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- cipher: aes-256-gcm
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 8"
-  password: LZQ0R9BL69GCC6FS
-  port: 15005
-  server: 8tv68qhq.slashdevslashnetslashtun.net
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: "JP\u65E5\u672C(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
-  password: Nk9asglDzHzjktVzTkvhaA
-  port: 443
-  server: arxfw2b78fi2q9hzylhn.freesocks.work
-  type: ss
-  udp: true
-- name: "\u5965\u5730\u5229(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 2"
-  password: Aimer
-  port: 443
-  server: damien.ns.cloudflare.com
-  skip-cert-verify: true
-  sni: damien.ns.cloudflare.com
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 9"
-  password: PI3ncxF2GPuPiB1l5gitcO
-  port: 63418
-  server: sto4.g.edgeservers.org
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 10"
+  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 2"
   password: WVU27LquAMOeXmYeStI897
   port: 32448
   server: sto3.g.edgeservers.org
   type: ss
   udp: true
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 3"
+  password: Aimer
+  port: 12169
+  server: 119.195.104.2
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - cipher: aes-256-gcm
-  name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 3"
-  password: WNW5MZJX57ZJUNQU
-  port: 16009
+  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 4"
+  password: LZQ0R9BL69GCC6FS
+  port: 15005
   server: 8tv68qhq.slashdevslashnetslashtun.net
   type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 11"
-  network: ws
-  port: 80
-  server: vless.rnmcnm.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2c308872-42b1-4504-9d64-8e081325bf4e
-  ws-headers:
-    Host: vless.rnmcnm.com
-  ws-path: /qwertyuiop123456
-- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 12"
-  password: Aimer
-  port: 443
-  server: 38.28.197.130
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 13"
-  password: Aimer
-  port: 443
-  server: 38.28.197.130
-  skip-cert-verify: true
-  type: trojan
   udp: true
 - alterId: 0
   cipher: auto
@@ -255,11 +83,52 @@ proxies:
   ws-headers:
     Host: 207.90.237.96
   ws-path: /
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 5"
+  password: Aimer
+  port: 8443
+  server: 160.79.104.131
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
+  port: 41699
+  server: 183.236.51.38
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 6"
+  password: Aimer
+  port: 443
+  server: 38.28.197.130
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 14"
-  password: 70Xwg0SbHSL8CuCkiLuGhO
-  port: 15128
-  server: sto2.g.edgeservers.org
+  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 7"
+  password: PI3ncxF2GPuPiB1l5gitcO
+  port: 63418
+  server: sto4.g.edgeservers.org
+  type: ss
+  udp: true
+- alterId: 64
+  cipher: auto
+  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 8"
+  port: 48712
+  server: 107.148.207.249
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: aes-256-gcm
+  name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 2"
+  password: FCEUOASRQJC0LN0K
+  port: 15009
+  server: qh62onjn.slashdevslashnetslashtun.net
   type: ss
   udp: true
 - alterId: 0
@@ -272,39 +141,25 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 0a7ca26f-9e4f-46a6-b64c-9e10d9195d32
+  uuid: 88bf1b4c-57c7-4f9e-8348-1ea977006d73
   ws-headers:
     Host: 207.90.237.96
   ws-path: /
-- alterId: 0
-  cipher: auto
-  name: "NL\u8377\u5170(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 3"
-  network: ws
-  port: 23008
-  server: 207.90.237.96
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 63b70310-a83f-4599-877e-8cccf4d82093
-  ws-headers:
-    Host: 207.90.237.96
-  ws-path: /
-- cipher: chacha20-ietf-poly1305
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 15"
-  password: x9CLmvtStnUITovXBClxhu
-  port: 54590
-  server: flank3.g.edgeservers.org
+- cipher: aes-256-gcm
+  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 9"
+  password: YMB3QL85L7F1KJR7
+  port: 18013
+  server: 8tv68qhq.slashdevslashnetslashtun.net
   type: ss
   udp: true
-- name: "DE\u5FB7\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 2"
+- name: "DE\u5FB7\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
   password: Aimer
   port: 8443
   server: 167.172.182.243
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 16"
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 10"
   password: Aimer
   port: 443
   server: 38.28.198.151
@@ -312,17 +167,17 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 17"
-  password: nxS1a7JNlIcbsN8Q4EKL5t
-  port: 36632
-  server: sto1.g.edgeservers.org
+  name: "NL\u8377\u5170(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 3"
+  password: 70Xwg0SbHSL8CuCkiLuGhO
+  port: 15128
+  server: sto2.g.edgeservers.org
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 18"
-  password: ZnU8yOY4AzV3fR3E7iNBm4
-  port: 7584
-  server: flank4.g.edgeservers.org
+- cipher: aes-256-gcm
+  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 11"
+  password: BFYCOKHTC8HIWWRB
+  port: 16006
+  server: ti3hyra4.slashdevslashnetslashtun.net
   type: ss
   udp: true
 - name: "\u5357\u975E(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
@@ -332,92 +187,80 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 19"
+- cipher: chacha20-ietf-poly1305
+  name: "NL\u8377\u5170(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 4"
+  password: nxS1a7JNlIcbsN8Q4EKL5t
+  port: 36632
+  server: sto1.g.edgeservers.org
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: "NL\u8377\u5170(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 5"
+  password: x9CLmvtStnUITovXBClxhu
+  port: 54590
+  server: flank3.g.edgeservers.org
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: "JP\u65E5\u672C(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
+  password: Nk9asglDzHzjktVzTkvhaA
+  port: 443
+  server: arxfw2b78fi2q9hzylhn.freesocks.work
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 3"
+  password: 4S85LF2Q3QK92171
+  port: 18008
+  server: w72tapyb.slashdevslashnetslashtun.net
+  type: ss
+  udp: true
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 12"
   password: Aimer
   port: 443
   server: 154.212.46.93
   skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 4"
-  port: 42055
-  server: 120.198.71.219
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 13"
+  password: Aimer
+  port: 443
+  server: 38.28.197.130
   skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-256-gcm
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 20"
-  password: 2H98UZT9LT1TE3X9
-  port: 15008
-  server: w72tapyb.slashdevslashnetslashtun.net
-  type: ss
-  udp: true
-- alterId: 64
-  cipher: auto
-  name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 5"
-  port: 53902
-  server: 183.236.51.38
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-256-gcm
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 21"
-  password: 4S85LF2Q3QK92171
-  port: 18008
-  server: w72tapyb.slashdevslashnetslashtun.net
-  type: ss
+  type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 22"
+  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 14"
   password: 2be0c954-4291-45ea-b47d-ca713180550b
   port: 52611
   server: hk01.x.quickcht3.club
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 6"
-  password: FCEUOASRQJC0LN0K
-  port: 15009
-  server: qh62onjn.slashdevslashnetslashtun.net
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: "NL\u8377\u5170(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 4"
-  network: ws
-  port: 23008
-  server: 207.90.237.96
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 88bf1b4c-57c7-4f9e-8348-1ea977006d73
-  ws-headers:
-    Host: 207.90.237.96
-  ws-path: /
-- cipher: aes-256-gcm
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 23"
-  password: 0407WKIEIXMTLGC6
-  port: 16007
-  server: qh62onjn.slashdevslashnetslashtun.net
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 24"
+  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 15"
   password: RBN1UNGVPF1BQXPK
   port: 15006
   server: ti3hyra4.slashdevslashnetslashtun.net
   type: ss
   udp: true
-- alterId: 0
+- cipher: aes-256-gcm
+  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 16"
+  password: QF377GGQ00RATCMK
+  port: 21004
+  server: 8tv68qhq.slashdevslashnetslashtun.net
+  type: ss
+  udp: true
+- name: "\u5965\u5730\u5229(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
+  password: Aimer
+  port: 443
+  server: damien.ns.cloudflare.com
+  skip-cert-verify: true
+  sni: damien.ns.cloudflare.com
+  type: trojan
+  udp: true
+- alterId: 64
   cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 25"
+  name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 4"
   port: 53902
   server: 183.236.51.38
   skip-cert-verify: true
@@ -425,41 +268,114 @@ proxies:
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-256-gcm
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 26"
-  password: BFYCOKHTC8HIWWRB
-  port: 16006
-  server: ti3hyra4.slashdevslashnetslashtun.net
-  type: ss
-  udp: true
-- name: "KR\u97E9\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 2"
-  password: Aimer
-  port: 10250
-  server: 220.80.154.29
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 27"
-  password: Aimer
+- cipher: aes-128-gcm
+  ip-version: dual
+  name: "6\u5143\u9AD8\u901F\u673A\u573A\uFF1Acczzuu.top"
+  password: 6601fb90e9b3
   port: 443
-  server: 154.17.13.180
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- cipher: aes-256-gcm
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 28"
-  password: YMB3QL85L7F1KJR7
-  port: 18013
-  server: 8tv68qhq.slashdevslashnetslashtun.net
+  server: 127.0.0.1
+  tls: false
   type: ss
-  udp: true
-- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 29"
-  password: Aimer
-  port: 50000
-  server: 14.36.240.158
-  skip-cert-verify: true
-  type: trojan
-  udp: true
+- cipher: aes-128-gcm
+  ip-version: dual
+  name: "\u91CD\u5EA6\u7528\u6237\u63A8\u8350\u4F7F\u7528\u673A\u573A"
+  password: 6601fb90e9b3
+  port: 443
+  server: 127.0.0.1
+  tls: false
+  type: ss
+- cipher: aes-128-gcm
+  ip-version: dual
+  name: "\u514D\u8D39\u8282\u70B9\u53EF\u80FD\u4F1A\u6CC4\u6F0F\u8BBF\u95EE\u8BB0\u5F55"
+  password: 6601fb90e9b3
+  port: 443
+  server: 127.0.0.1
+  tls: false
+  type: ss
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD->\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD\
+    _1"
+  password: amazonskr05
+  port: 443
+  server: 35.92.145.143
+  tls: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  ip-version: dual
+  name: "\U0001F1EE\U0001F1F3_IN_\u5370\u5EA6"
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 103.104.247.49
+  tls: false
+  type: ss
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: "\U0001F1E8\U0001F1ED_CH_\u745E\u58EB"
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 84.17.53.160
+  tls: false
+  type: ss
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: "\U0001F1EC\U0001F1E7_GB_\u82F1\u56FD"
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.27.48
+  tls: false
+  type: ss
+- cipher: aes-256-gcm
+  ip-version: dual
+  name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_1"
+  password: zDNVedRFPQexG9v
+  port: 6379
+  server: 69.50.95.86
+  tls: false
+  type: ss
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD->\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD\
+    _2"
+  password: amazonskr05
+  port: 443
+  server: 18.237.73.216
+  tls: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  ip-version: dual
+  name: "\U0001F1E9\U0001F1EA_DE_\u5FB7\u56FD"
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  port: 8080
+  server: 45.87.175.166
+  tls: false
+  type: ss
+- cipher: auto
+  ip-version: dual
+  name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD"
+  network: tcp
+  port: 41699
+  server: 183.236.51.38
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: chacha20-ietf-poly1305
+  ip-version: dual
+  name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_6"
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 38.165.233.18
+  tls: false
+  type: ss
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD->\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD\
+    _3"
+  password: amazonskr05
+  port: 443
+  server: 34.217.100.159
+  tls: false
+  type: ss
 - cipher: aes-256-cfb
   ip-version: dual
   name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD->\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD\
@@ -545,86 +461,50 @@ proxies:
   server: 34.217.100.159
   type: ss
   udp: true
-- cipher: aes-256-gcm
+- alterId: 0
+  cipher: auto
   name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9)"
-  password: LZQ0R9BL69GCC6FS
-  port: 15005
-  server: 8tv68qhq.slashdevslashnetslashtun.net
-  type: ss
+  port: 44550
+  server: 120.232.153.40
+  skip-cert-verify: true
+  tls: false
+  type: vmess
   udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: chacha20-ietf-poly1305
   name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 2"
-  password: nxS1a7JNlIcbsN8Q4EKL5t
-  port: 36632
-  server: sto1.g.edgeservers.org
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 3"
   password: WVU27LquAMOeXmYeStI897
   port: 32448
   server: sto3.g.edgeservers.org
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
+  name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 3"
+  password: x9CLmvtStnUITovXBClxhu
+  port: 54590
+  server: flank3.g.edgeservers.org
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
   name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 4"
-  password: PI3ncxF2GPuPiB1l5gitcO
-  port: 63418
-  server: sto4.g.edgeservers.org
+  password: nxS1a7JNlIcbsN8Q4EKL5t
+  port: 36632
+  server: sto1.g.edgeservers.org
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
+- alterId: 64
+  cipher: auto
   name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 5"
-  password: ZnU8yOY4AzV3fR3E7iNBm4
-  port: 7584
-  server: flank4.g.edgeservers.org
-  type: ss
-  udp: true
-- name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 6"
-  password: Aimer
-  port: 443
-  server: 38.28.198.151
+  port: 48712
+  server: 107.148.207.249
   skip-cert-verify: true
-  type: trojan
+  tls: false
+  type: vmess
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 7"
-  password: 70Xwg0SbHSL8CuCkiLuGhO
-  port: 15128
-  server: sto2.g.edgeservers.org
-  type: ss
-  udp: true
-- name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 8"
-  password: Aimer
-  port: 443
-  server: 38.28.197.130
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 9"
-  password: Aimer
-  port: 443
-  server: 154.212.46.93
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 10"
-  password: Aimer
-  port: 443
-  server: 45.205.235.157
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- cipher: aes-256-gcm
-  name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 11"
-  password: YMB3QL85L7F1KJR7
-  port: 18013
-  server: 8tv68qhq.slashdevslashnetslashtun.net
-  type: ss
-  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: "\u9999\u6E2F(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9)"
+  name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 6"
   port: 35565
   server: 120.198.71.214
   skip-cert-verify: true
@@ -632,69 +512,58 @@ proxies:
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: "\u5FB7\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9)"
+- cipher: chacha20-ietf-poly1305
+  name: "\u65E5\u672C(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9)"
+  password: Nk9asglDzHzjktVzTkvhaA
+  port: 443
+  server: arxfw2b78fi2q9hzylhn.freesocks.work
+  type: ss
+  udp: true
+- name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 7"
   password: Aimer
-  port: 8443
-  server: 167.172.182.243
+  port: 81
+  server: 87.120.237.36
   skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 12"
-  network: ws
-  port: 80
-  server: vless.rnmcnm.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2c308872-42b1-4504-9d64-8e081325bf4e
-  ws-headers:
-    Host: vless.rnmcnm.com
-  ws-path: /qwertyuiop123456
-- alterId: 0
-  cipher: auto
-  name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 13"
-  network: ws
-  port: 23008
-  server: 207.90.237.96
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 8bb8c731-0c35-48f1-8c3b-bca5183d2187
-  ws-headers:
-    Host: 207.90.237.96
-  ws-path: /
 - cipher: aes-256-gcm
-  name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 14"
-  password: QF377GGQ00RATCMK
-  port: 21004
+  name: "\u9999\u6E2F(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9)"
+  password: WNW5MZJX57ZJUNQU
+  port: 16009
   server: 8tv68qhq.slashdevslashnetslashtun.net
   type: ss
   udp: true
-- name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 15"
-  password: Aimer
-  port: 27194
-  server: 131.186.20.178
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - cipher: aes-256-gcm
-  name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 16"
-  password: 0407WKIEIXMTLGC6
-  port: 16007
-  server: qh62onjn.slashdevslashnetslashtun.net
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 17"
+  name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 8"
   password: BFYCOKHTC8HIWWRB
   port: 16006
   server: ti3hyra4.slashdevslashnetslashtun.net
   type: ss
   udp: true
+- cipher: aes-256-gcm
+  name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 9"
+  password: Y2U58S90E3GST1AQ
+  port: 21001
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 10"
+  password: YMB3QL85L7F1KJR7
+  port: 18013
+  server: 8tv68qhq.slashdevslashnetslashtun.net
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: "\u9999\u6E2F(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 2"
+  port: 42055
+  server: 120.198.71.219
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: "\u4FC4\u7F57\u65AF(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9)"
@@ -709,40 +578,26 @@ proxies:
   ws-headers:
     Host: yellow-paper-029c.yvonna.workers.dev
   ws-path: /az05.beyondy.cfd/link?/TM@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1/?ed=2560
-- cipher: aes-256-gcm
-  name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 18"
-  password: Y2U58S90E3GST1AQ
-  port: 21001
-  server: ti3hyra4.slashdevslashnetslashtun.net
-  type: ss
-  udp: true
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 19"
-  port: 35565
-  server: 120.198.71.214
+  name: "\u9999\u6E2F(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 3"
+  port: 53902
+  server: 183.236.51.38
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 20"
-  password: Aimer
-  port: 81
-  server: 87.120.237.36
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: "\u65E5\u672C(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9)"
-  password: Nk9asglDzHzjktVzTkvhaA
-  port: 443
-  server: arxfw2b78fi2q9hzylhn.freesocks.work
+- cipher: aes-256-gcm
+  name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 11"
+  password: RBN1UNGVPF1BQXPK
+  port: 15006
+  server: ti3hyra4.slashdevslashnetslashtun.net
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 21"
+  name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 12"
   network: ws
   port: 23008
   server: 207.90.237.96
@@ -750,20 +605,72 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 0a7ca26f-9e4f-46a6-b64c-9e10d9195d32
+  uuid: 88bf1b4c-57c7-4f9e-8348-1ea977006d73
   ws-headers:
     Host: 207.90.237.96
   ws-path: /
+- cipher: aes-256-gcm
+  name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 13"
+  password: QF377GGQ00RATCMK
+  port: 21004
+  server: 8tv68qhq.slashdevslashnetslashtun.net
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 22"
-  password: 2be0c954-4291-45ea-b47d-ca713180550b
-  port: 52611
-  server: hk01.x.quickcht3.club
+  name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 14"
+  password: 70Xwg0SbHSL8CuCkiLuGhO
+  port: 15128
+  server: sto2.g.edgeservers.org
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 23"
+  name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 15"
+  port: 53902
+  server: 183.236.51.38
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 16"
+  network: ws
+  port: 23008
+  server: 207.90.237.96
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4651cf71-e87e-41ef-8ed2-61a7f409e7d3
+  ws-headers:
+    Host: 207.90.237.96
+  ws-path: /
+- cipher: aes-256-gcm
+  name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 17"
+  password: LZQ0R9BL69GCC6FS
+  port: 15005
+  server: 8tv68qhq.slashdevslashnetslashtun.net
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 18"
+  password: 0407WKIEIXMTLGC6
+  port: 16007
+  server: qh62onjn.slashdevslashnetslashtun.net
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: "\u9999\u6E2F(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 4"
+  password: FCEUOASRQJC0LN0K
+  port: 15009
+  server: qh62onjn.slashdevslashnetslashtun.net
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 19"
   network: ws
   port: 23008
   server: 207.90.237.96
@@ -775,6 +682,48 @@ proxies:
   ws-headers:
     Host: 207.90.237.96
   ws-path: /
+- cipher: aes-256-gcm
+  name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 20"
+  password: 4S85LF2Q3QK92171
+  port: 18008
+  server: w72tapyb.slashdevslashnetslashtun.net
+  type: ss
+  udp: true
+- name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 21"
+  password: Aimer
+  port: 12403
+  server: 175.213.146.92
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 22"
+  password: Aimer
+  port: 10250
+  server: 220.80.154.29
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 23"
+  password: Aimer
+  port: 30113
+  server: 121.190.128.127
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "\u97E9\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9)"
+  password: Aimer
+  port: 50004
+  server: 222.114.4.16
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "\u97E9\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 2"
+  password: Aimer
+  port: 12314
+  server: 121.156.155.161
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 24"
@@ -789,196 +738,47 @@ proxies:
   ws-headers:
     Host: 207.90.237.96
   ws-path: /
-- cipher: aes-256-gcm
-  name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 25"
-  password: 4S85LF2Q3QK92171
-  port: 18008
-  server: w72tapyb.slashdevslashnetslashtun.net
-  type: ss
-  udp: true
-- name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 26"
-  password: Aimer
-  port: 10250
-  server: 220.80.154.29
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- alterId: 64
-  cipher: auto
-  name: "\u9999\u6E2F(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 2"
-  port: 53902
-  server: 183.236.51.38
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 27"
-  password: Aimer
-  port: 50000
-  server: 14.36.240.158
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 28"
-  port: 53902
-  server: 183.236.51.38
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-256-gcm
-  name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 29"
-  password: 2H98UZT9LT1TE3X9
-  port: 15008
-  server: w72tapyb.slashdevslashnetslashtun.net
-  type: ss
-  udp: true
-- name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 30"
-  password: Aimer
-  port: 12314
-  server: 121.156.155.161
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 31"
-  password: Aimer
-  port: 443
-  server: 154.17.13.180
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- cipher: aes-256-gcm
-  name: "\u9999\u6E2F(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 3"
-  password: WNW5MZJX57ZJUNQU
-  port: 16009
-  server: 8tv68qhq.slashdevslashnetslashtun.net
-  type: ss
-  udp: true
-- name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 32"
-  password: Aimer
-  port: 12403
-  server: 175.213.146.92
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "\u6FB3\u6D32(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9)"
-  password: Aimer
-  port: 443
-  server: 185.218.7.83
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 33"
-  password: Aimer
-  port: 11112
-  server: 220.122.112.188
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: "\u5FB7\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 2"
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: 45.87.175.166
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: "\u4E4C\u514B\u5170(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9)"
-  password: ZDljYmNh
-  port: 1443
-  server: de2.opensocks.site
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 34"
-  password: RBN1UNGVPF1BQXPK
-  port: 15006
-  server: ti3hyra4.slashdevslashnetslashtun.net
-  type: ss
-  udp: true
-- name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 35"
+- name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 25"
   password: Aimer
   port: 12169
   server: 119.195.104.2
   skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: "\u9999\u6E2F(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 4"
-  port: 42055
-  server: 120.198.71.219
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: chacha20-ietf-poly1305
-  name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 36"
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 38.165.233.18
-  type: ss
-  udp: true
-- name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 37"
+- name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 26"
   password: Aimer
-  port: 30113
-  server: 121.190.128.127
+  port: 50000
+  server: 14.36.240.158
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "\u97E9\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 3"
+  password: Aimer
+  port: 11112
+  server: 220.122.112.188
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 27"
+  password: Aimer
+  port: 48655
+  server: 154.17.27.8
   skip-cert-verify: true
   type: trojan
   udp: true
 - alterId: 0
   cipher: auto
-  name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 38"
-  network: ws
-  port: 23008
-  server: 207.90.237.96
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 88bf1b4c-57c7-4f9e-8348-1ea977006d73
-  ws-headers:
-    Host: 207.90.237.96
-  ws-path: /
-- name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 39"
-  password: Aimer
-  port: 443
-  server: 38.28.197.130
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- cipher: aes-256-gcm
   name: "\u9999\u6E2F(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 5"
-  password: FCEUOASRQJC0LN0K
-  port: 15009
-  server: qh62onjn.slashdevslashnetslashtun.net
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 40"
-  port: 44550
-  server: 120.232.153.40
+  port: 35565
+  server: 120.198.71.214
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: chacha20-ietf-poly1305
-  name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 41"
-  password: x9CLmvtStnUITovXBClxhu
-  port: 54590
-  server: flank3.g.edgeservers.org
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
-  name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 42"
+  name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 28"
   port: 41699
   server: 183.236.51.38
   skip-cert-verify: true
@@ -986,3 +786,38 @@ proxies:
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: chacha20-ietf-poly1305
+  name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 29"
+  password: 2be0c954-4291-45ea-b47d-ca713180550b
+  port: 52611
+  server: hk01.x.quickcht3.club
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 30"
+  network: ws
+  port: 23008
+  server: 207.90.237.96
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8bb8c731-0c35-48f1-8c3b-bca5183d2187
+  ws-headers:
+    Host: 207.90.237.96
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: "\u7F8E\u56FD(yudou66.com \u7389\u8C46\u514D\u8D39\u8282\u70B9) 31"
+  network: ws
+  port: 23008
+  server: 207.90.237.96
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 0a7ca26f-9e4f-46a6-b64c-9e10d9195d32
+  ws-headers:
+    Host: 207.90.237.96
+  ws-path: /
