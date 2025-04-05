@@ -1,93 +1,91 @@
 proxies:
-- cipher: aes-256-cfb
-  name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD"
-  password: amazonskr05
-  port: 443
-  server: 35.87.29.54
-  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: "\U0001F1E9\U0001F1EA_DE_\u5FB7\u56FD->\U0001F1F8\U0001F1EC_SG_\u65B0\u52A0\
-    \u5761"
+  name: "\U0001F1E9\U0001F1EA_DE_\u5FB7\u56FD"
   password: QCXDxuDlTTMD7jtgHUjIoj
   port: 8080
-  server: 45.87.175.166
+  server: 45.87.175.192
   type: ss
-- cipher: aes-256-cfb
-  name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_2"
-  password: amazonskr05
-  port: 443
-  server: 34.208.203.47
-  type: ss
-- name: "\U0001F1E6\U0001F1FA_AU_\u6FB3\u5927\u5229\u4E9A"
-  password: oIwjHDXpKePvYIg8
-  port: 443
-  server: 43.162.127.44
-  skip-cert-verify: false
-  sni: myvps.cfd
-  type: trojan
 - alterId: 2
   cipher: auto
-  name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD"
+  name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1E8\U0001F1E6_CA_\u52A0\u62FF\
+    \u5927"
   network: ws
-  port: 30807
-  server: v7.heduian.link
+  port: 30825
+  server: v25.heduian.link
+  skip-cert-verify: true
+  sni: ''
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      host: ocbc.com
+      host: v25.heduian.link
     path: /oooo
-- alpn:
-  - http/1.1
+- cipher: aes-256-gcm
   name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_3"
-  network: ws
-  password: d67cfeaf-b277-44ac-ab99-9dd02a7c5299
+  password: RexnBgU7EV5ADxG
+  port: 7002
+  server: 38.110.1.146
+  type: ss
+- cipher: aes-256-cfb
+  name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_4"
+  password: amazonskr05
   port: 443
-  server: 104.21.49.59
-  sni: Fgh9JkR5.890617.xYz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: fgh9jkr5.890617.xyz
-    path: /lWljHWvIMOj85lz42MdhsCLV
+  server: 54.218.67.209
+  type: ss
 - alpn:
   - http/1.1
-  name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_4"
-  network: ws
-  password: d67cfeaf-b277-44ac-ab99-9dd02a7c5299
-  port: 443
-  server: 172.67.159.56
-  sni: Fgh9JkR5.890617.xYz
+  name: "\U0001F1EC\U0001F1E7_GB_\u82F1\u56FD->\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD"
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 51.44.56.143
+  sni: trojan.burgerip.co.uk
   type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: fgh9jkr5.890617.xyz
-    path: /lWljHWvIMOj85lz42MdhsCLV
 - cipher: aes-256-cfb
   name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_5"
   password: amazonskr05
   port: 443
   server: 34.217.15.41
   type: ss
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD->\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD"
+  network: ws
+  port: 5210
+  server: 7f93c487-sub0g0-sv11pd-1g8k0.losa.plebai.net
+  type: vmess
+  uuid: d4018e28-e328-11ed-98a7-f23c913c8d2b
+  ws-opts:
+    headers:
+      host: 7f93c487-sub0g0-sv11pd-1g8k0.losa.plebai.net
+    path: /
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1F7\U0001F1FA_RU_\u4FC4\u7F57\u65AF"
+  network: tcp
+  port: 24529
+  server: 46.8.68.212
+  type: vmess
+  uuid: 70c6cbaa-a395-4014-8286-b447d1f316c3
+- alpn:
+  - http/1.1
+  name: "\U0001F1EE\U0001F1EA_IE_\u7231\u5C14\u5170->\U0001F1FA\U0001F1F8_US_\u7F8E\
+    \u56FD"
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 52.16.133.231
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - cipher: aes-256-cfb
   name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_6"
   password: amazonskr05
   port: 443
-  server: 52.37.220.218
-  type: ss
-- cipher: aes-256-cfb
-  name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD->\U0001F1F8\U0001F1EC_SG_\u65B0\u52A0\
-    \u5761"
-  password: amazonskr05
-  port: 443
-  server: 54.218.67.209
+  server: 35.94.124.230
   type: ss
 - alterId: 0
   cipher: auto
-  name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD\
-    _1"
+  name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD"
   network: ws
   port: 30840
   server: v40.heduian.link
@@ -100,679 +98,2160 @@ proxies:
     path: /index
 - cipher: aes-256-gcm
   name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD\
-    _2"
+    _1"
   password: 4bccdfb7-f45b-44bb-9cd3-fb6f8fc8072f
   port: 41705
   server: zf1.10101251.xyz
   type: ss
-- alterId: 2
-  cipher: auto
-  name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1F8\U0001F1EC_SG_\u65B0\u52A0\
-    \u5761"
+- name: HK
   network: ws
-  port: 30825
-  server: v25.heduian.link
+  port: 30002
+  server: 43.135.44.101
+  servername: zs.vs2025.cfd
   skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: baidu.com
-    path: /oooo
-- cipher: aes-256-cfb
-  name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_8"
-  password: amazonskr05
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: SG_1
+  network: ws
   port: 443
-  server: 35.94.124.230
-  type: ss
-- cipher: aes-256-cfb
-  name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_9"
-  password: amazonskr05
+  server: 8.219.241.208
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: SG_2
+  network: ws
+  port: 6666
+  server: 150.109.24.233
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: SIN_1
+  network: ws
+  password: Aimer
   port: 443
-  server: 34.216.142.212
-  type: ss
-- alpn:
-  - http/1.1
-  name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_10"
+  server: 8.219.138.100
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SG_3
+  network: ws
+  port: 443
+  server: 8.219.75.2
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: SG_4
+  network: ws
+  port: 443
+  server: 168.138.165.174
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- flow: xtls-rprx-vision
+  name: "dongtaiwang.com\u8282\u70B92_1"
   network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 63.177.150.62
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
-  port: 40105
-  server: 120.232.153.63
+  port: 19188
+  server: 195.154.200.156
+  servername: www.yahoo.com
   skip-cert-verify: true
   tls: false
-  type: vmess
+  type: vless
   udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
+  uuid: 22a54b72-9c39-4bb0-97d0-41bbaaca2a67
+- name: SG_5
+  network: ws
+  port: 33078
+  server: 46.3.99.94
+  servername: edccw.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SIN_2
+  network: ws
+  password: Aimer
+  port: 33078
+  server: 46.3.99.94
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- flow: xtls-rprx-vision
+  name: "dongtaiwang.com\u8282\u70B92_2"
+  network: tcp
+  port: 19188
+  server: 163.172.122.94
+  servername: www.yahoo.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 22a54b72-9c39-4bb0-97d0-41bbaaca2a67
+- name: HKG
+  network: ws
   password: Aimer
   port: 443
-  server: 154.197.64.67
+  server: 38.38.251.220
   skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: "\u4FC4\u7F57\u65AF(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
-  password: Aimer
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: JP_1
+  network: ws
+  port: 8882
+  server: 103.20.199.196
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: JP_2
+  network: ws
   port: 2053
-  server: 213.241.198.189
+  server: 140.238.58.181
+  servername: zs.vs2025.cfd
   skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: JP_3
+  network: ws
+  port: 2053
+  server: 132.145.127.203
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: JP_4
+  network: ws
+  port: 443
+  server: 140.238.50.112
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: FRA_1
+  network: ws
+  password: Aimer
+  port: 443
+  server: 38.59.228.139
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 2"
-  port: 31998
-  server: 120.234.102.229
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: FRA_2
+  network: ws
+  password: Aimer
+  port: 443
+  server: 3.75.170.179
   skip-cert-verify: true
-  tls: false
-  type: vmess
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
   udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 3"
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_1
+  network: ws
+  password: Aimer
+  port: 27738
+  server: 38.59.242.169
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: FRA_3
+  network: ws
+  password: Aimer
+  port: 8080
+  server: 18.185.51.67
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: LAX_1
+  network: ws
+  password: Aimer
+  port: 443
+  server: 154.17.228.203
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: NL_1
+  network: ws
+  port: 443
+  server: 152.70.57.182
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: LAX_2
+  network: ws
+  password: Aimer
+  port: 12348
+  server: 154.21.88.152
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_2
+  network: ws
+  password: Aimer
+  port: 587
+  server: 38.59.241.39
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: US_1
+  network: ws
+  port: 24863
+  server: 198.12.121.169
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: SJC_3
+  network: ws
+  password: Aimer
+  port: 80
+  server: 204.110.220.169
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: KR_1
+  network: ws
+  port: 18888
+  server: 183.106.162.127
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: KR_2
+  network: ws
+  port: 30012
+  server: 211.218.223.130
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: KR_3
+  network: ws
+  port: 30012
+  server: 220.118.248.123
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: KR_4
+  network: ws
+  port: 56271
+  server: 146.56.106.51
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: CN
+  network: ws
+  port: 443
+  server: 156.230.12.71
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: US_2
+  network: ws
+  port: 37190
+  server: 104.168.43.27
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: US_3
+  network: ws
+  port: 80
+  server: 204.110.220.182
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: SJC_4
+  network: ws
   password: Aimer
   port: 2087
-  server: 167.68.5.248
+  server: 154.197.64.189
   skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 4"
-  password: Aimer
-  port: 2083
-  server: 108.165.152.78
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 2"
-  port: 3683
-  server: 1387ebdd-su7b40-su6828-eme.b.fosant.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 16d93f14-af0e-11ee-8ebe-f23c93136cb3
-- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 5"
-  password: Aimer
-  port: 8443
-  server: 108.165.152.82
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "\u4FC4\u7F57\u65AF(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 2"
-  password: Aimer
-  port: 443
-  server: 46.254.92.191
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "\u4E9A\u7F8E\u5C3C\u4E9A(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB\
-    )"
-  password: Aimer
-  port: 2053
-  server: 188.164.159.25
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "\u4E9A\u7F8E\u5C3C\u4E9A(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB\
-    ) 2"
-  password: Aimer
-  port: 2096
-  server: 188.164.159.55
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "\u4FC4\u7F57\u65AF(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 3"
-  password: Aimer
-  port: 2053
-  server: 77.232.140.101
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 3"
-  password: Aimer
-  port: 443
-  server: 154.197.64.67
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "\u4FC4\u7F57\u65AF(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 4"
-  password: Aimer
-  port: 2096
-  server: 5.182.85.189
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "\u4FC4\u7F57\u65AF(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 5"
-  password: Aimer
-  port: 8443
-  server: 176.124.223.50
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 6"
-  password: Aimer
-  port: 443
-  server: damien.ns.cloudflare.com
-  skip-cert-verify: true
-  sni: damien.ns.cloudflare.com
-  type: trojan
-  udp: true
-- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 7"
-  password: Aimer
-  port: 443
-  server: 108.165.152.131
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 8"
-  password: Aimer
-  port: 443
-  server: 209.94.90.64
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 9"
-  password: Aimer
-  port: 443
-  server: kip.ns.cloudflare.com
-  skip-cert-verify: true
-  sni: kip.ns.cloudflare.com
-  type: trojan
-  udp: true
-- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 10"
-  password: Aimer
-  port: 443
-  server: theo.ns.cloudflare.com
-  skip-cert-verify: true
-  sni: theo.ns.cloudflare.com
-  type: trojan
-  udp: true
-- name: "\u4FC4\u7F57\u65AF(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 6"
-  password: Aimer
-  port: 2053
-  server: 77.232.140.114
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 11"
-  password: Aimer
-  port: 443
-  server: duke.ns.cloudflare.com
-  skip-cert-verify: true
-  sni: duke.ns.cloudflare.com
-  type: trojan
-  udp: true
-- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 12"
-  password: Aimer
-  port: 443
-  server: 209.94.90.64
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 13"
-  password: Aimer
-  port: 443
-  server: pranab.ns.cloudflare.com
-  skip-cert-verify: true
-  sni: pranab.ns.cloudflare.com
-  type: trojan
-  udp: true
-- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 14"
-  password: Aimer
-  port: 443
-  server: thaddeus.ns.cloudflare.com
-  skip-cert-verify: true
-  sni: thaddeus.ns.cloudflare.com
-  type: trojan
-  udp: true
-- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 15"
-  password: Aimer
-  port: 443
-  server: arvind.ns.cloudflare.com
-  skip-cert-verify: true
-  sni: arvind.ns.cloudflare.com
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 16"
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_5
   network: ws
-  port: 2095
-  server: s2.db-link01.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-headers:
-    Host: 100-65-56-224.s2.db-link01.top
-  ws-path: /dabai.in104.17.133.52
-- name: "\u4E9A\u7F8E\u5C3C\u4E9A(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB\
-    ) 3"
-  password: Aimer
-  port: 8443
-  server: 188.164.159.74
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 17"
-  password: Aimer
-  port: 443
-  server: kip.ns.cloudflare.com
-  skip-cert-verify: true
-  sni: kip.ns.cloudflare.com
-  type: trojan
-  udp: true
-- name: "\u4FC4\u7F57\u65AF(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 7"
-  password: Aimer
-  port: 2083
-  server: 45.67.214.41
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "\u4E9A\u7F8E\u5C3C\u4E9A(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB\
-    ) 4"
-  password: Aimer
-  port: 443
-  server: 188.164.159.171
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "\u4E9A\u7F8E\u5C3C\u4E9A(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB\
-    ) 5"
-  password: Aimer
-  port: 2083
-  server: 188.164.159.220
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "\u4E9A\u7F8E\u5C3C\u4E9A(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB\
-    ) 6"
-  password: Aimer
-  port: 443
-  server: 188.164.159.171
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 4"
-  password: Aimer
-  port: 8443
-  server: 154.197.64.240
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "\u4E9A\u7F8E\u5C3C\u4E9A(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB\
-    ) 7"
-  password: Aimer
-  port: 8443
-  server: 188.164.159.175
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "\u4FC4\u7F57\u65AF(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 8"
   password: Aimer
   port: 2096
-  server: 5.182.85.255
+  server: 156.225.72.199
   skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- cipher: aes-256-gcm
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 18"
-  password: PCnnH6SQSnfoS27
-  port: 8091
-  server: 38.110.1.146
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 19"
-  password: kDWvXYZoTBcGkC4
-  port: 8881
-  server: 38.110.1.146
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 20"
-  password: FoOiGlkAA9yPEGP
-  port: 7306
-  server: 38.107.226.14
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 21"
-  password: FoOiGlkAA9yPEGP
-  port: 7307
-  server: 23.150.248.199
-  type: ss
-  udp: true
-- name: "KR\u97E9\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_6
+  network: ws
   password: Aimer
-  port: 12209
-  server: 175.196.105.220
+  port: 2083
+  server: 154.197.64.219
   skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- cipher: aes-256-gcm
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 22"
-  password: cdBIDV42DCwnfIN
-  port: 8119
-  server: 38.110.1.146
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 23"
-  password: TEzjfAYq2IjtuoS
-  port: 6679
-  server: 23.150.248.199
-  type: ss
-  udp: true
-- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 24"
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: PDX
+  network: ws
   password: Aimer
   port: 443
   server: 154.9.207.173
   skip-cert-verify: true
+  sni: epccq.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- cipher: aes-256-gcm
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 25"
-  password: kDWvXYZoTBcGkC4
-  port: 8882
-  server: 38.110.1.146
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 26"
-  password: pKEW8JPByTVTLtM
-  port: 443
-  server: 38.110.1.146
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 27"
-  password: TEzjfAYq2IjtuoS
-  port: 6697
-  server: 23.150.248.199
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 28"
+  ws-opts:
+    headers:
+      host: epccq.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: US_4
   network: ws
-  port: 30840
-  server: v40.heduian.link
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-headers:
-    Host: api100-core-quic-lf.amemv.com
-  ws-path: /index
-- cipher: chacha20-ietf-poly1305
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 29"
-  password: Nk9asglDzHzjktVzTkvhaA
-  port: 443
-  server: arxfw2b78fi2q9hzylhn.freesocks.work
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 30"
-  port: 59554
-  server: 183.236.51.38
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-256-gcm
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 31"
-  password: g5MeD6Ft3CWlJId
-  port: 5004
-  server: 23.150.248.199
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 5"
-  port: 41002
-  server: 120.232.153.40
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-256-gcm
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 32"
-  password: RexnBgU7EV5ADxG
-  port: 7002
-  server: 38.110.1.146
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 6"
-  password: 4bccdfb7-f45b-44bb-9cd3-fb6f8fc8072f
-  port: 41705
-  server: zf1.10101251.xyz
-  type: ss
-  udp: true
-- name: "NL\u8377\u5170(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
-  password: Aimer
-  port: 52001
-  server: 45.87.103.154
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 7"
-  port: 51039
-  server: 183.236.51.38
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 33"
-  port: 56901
-  server: 183.236.51.38
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-256-gcm
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 34"
-  password: PCnnH6SQSnfoS27
-  port: 8090
-  server: 23.150.248.199
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 8"
-  port: 3683
-  server: b268cf3c-su7xc0-swx10p-cw9v.b.fosant.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: f39baabc-ef78-11ef-b714-f23c93136cb3
-- cipher: aes-256-gcm
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 35"
-  password: PCnnH6SQSnfoS27
-  port: 8090
-  server: 38.110.1.146
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 36"
-  network: ws
-  port: 443
-  server: us7-03.890606.XyZ
+  port: 80
+  server: 204.110.220.51
+  servername: zs.vs2025.cfd
   skip-cert-verify: true
   tls: true
-  type: vmess
+  type: vless
   udp: true
-  uuid: 4d04b30c-ef7b-4a07-8f9e-f581ec171f8a
-  ws-headers:
-    Host: us7-03.890606.xyz
-  ws-path: /bua2hMcbA8wMzbGFtV
-- cipher: aes-256-gcm
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 37"
-  password: faBAoD54k87UJG7
-  port: 2375
-  server: 23.150.248.199
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 9"
-  port: 51095
-  server: 120.198.71.219
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: US_5
+  network: ws
+  port: 443
+  server: 192.18.134.22
+  servername: zs.vs2025.cfd
   skip-cert-verify: true
-  tls: false
-  type: vmess
+  tls: true
+  type: vless
   udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: "KR\u97E9\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 2"
-  password: Aimer
-  port: 21316
-  server: 112.160.54.82
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 38"
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: "\u5B98\u65B9\u4F18\u9009_1"
+  network: ws
   password: Aimer
   port: 443
-  server: 47.79.88.27
+  server: ignacio.ns.cloudflare.com
   skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 10"
-  port: 34093
-  server: 120.198.71.214
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: "SG\u65B0\u52A0\u5761(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
-  password: Aimer
-  port: 2096
-  server: 27.50.49.188
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "\u4FC4\u7F57\u65AF(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 9"
-  password: Aimer
-  port: 8443
-  server: 92.243.74.239
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 11"
-  password: Aimer
-  port: 8443
-  server: 154.197.64.248
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "KR\u97E9\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 3"
-  password: Aimer
-  port: 32443
-  server: 121.175.42.160
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 39"
-  password: Aimer
-  port: 443
-  server: sage.ns.cloudflare.com
-  skip-cert-verify: true
-  sni: sage.ns.cloudflare.com
-  type: trojan
-  udp: true
-- name: "KR\u97E9\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 4"
-  password: Aimer
-  port: 12136
-  server: 121.150.230.201
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "JP\u65E5\u672C(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_7
+  network: ws
   password: Aimer
   port: 2083
-  server: 103.116.7.103
+  server: 135.84.74.254
   skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: "KR\u97E9\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 5"
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: LAX_3
+  network: ws
   password: Aimer
-  port: 10032
-  server: 183.102.173.114
+  port: 443
+  server: 23.185.168.180
   skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 40"
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: AT_1
+  network: ws
+  port: 443
+  server: 212.183.88.43
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: SJC_8
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 198.62.62.61
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_9
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 188.164.159.74
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_10
+  network: ws
+  password: Aimer
+  port: 443
+  server: 154.197.64.252
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_11
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 213.241.198.59
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: LAX_4
+  network: ws
+  password: Aimer
+  port: 443
+  server: 38.47.117.85
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: CMCC-IPV6_1
+  network: ws
+  port: 4700
+  server: '[2606'
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: SJC_12
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 108.165.152.225
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: AT_2
+  network: ws
+  port: 443
+  server: 212.183.88.136
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: "\u5B98\u65B9\u4F18\u9009_2"
+  network: ws
+  password: Aimer
+  port: 443
+  server: kip.ns.cloudflare.com
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_13
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 188.164.159.49
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_14
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 154.197.64.155
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: US_6
+  network: ws
+  port: 443
+  server: 63.141.128.209
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /ss.vs2024.us.kg
+- name: US_7
+  network: ws
+  port: 443
+  server: 135.84.76.110
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: SJC_15
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 154.211.8.12
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: BR
+  network: ws
+  port: 443
+  server: 185.133.35.167
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: SJC_16
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 176.124.223.133
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_17
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 167.68.5.248
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: US_8
+  network: ws
+  port: 443
+  server: 192.0.54.0
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: GB
+  network: ws
+  port: 443
+  server: 217.163.76.97
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: SJC_18
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 213.241.198.189
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: "\u5B98\u65B9\u4F18\u9009_3"
+  network: ws
+  password: Aimer
+  port: 443
+  server: thaddeus.ns.cloudflare.com
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: US_9
+  network: ws
+  port: 443
+  server: 63.141.128.102
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: LAX_5
+  network: ws
+  password: Aimer
+  port: 100
+  server: 154.40.33.77
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_19
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 188.164.159.91
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: "\u5B98\u65B9\u4F18\u9009_4"
+  network: ws
+  port: 443
+  server: lynn.ns.cloudflare.com
+  servername: edccw.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_20
+  network: ws
+  password: Aimer
+  port: 443
+  server: 108.165.152.207
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: AT_3
+  network: ws
+  port: 443
+  server: 212.183.88.193
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: SJC_21
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 188.164.159.74
+  skip-cert-verify: true
+  sni: epccq.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccq.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_22
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 160.79.105.80
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: RU
+  network: ws
+  port: 443
+  server: 45.67.215.117
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /ss.vs2024.us.kg
+- name: DE
+  network: ws
+  port: 443
+  server: 138.3.240.63
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: SJC_23
+  network: ws
+  password: Aimer
+  port: 443
+  server: 108.165.152.71
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_24
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 160.79.105.133
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_25
+  network: ws
+  password: Aimer
+  port: 443
+  server: 108.165.152.113
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: "\u5B98\u65B9\u4F18\u9009_5"
+  network: ws
+  port: 443
+  server: sage.ns.cloudflare.com
+  servername: edccw.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: AT_4
+  network: ws
+  port: 443
+  server: 212.183.88.193
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /ss.vs2024.us.kg
+- name: "\u5B98\u65B9\u4F18\u9009_6"
+  network: ws
+  password: Aimer
+  port: 443
+  server: damien.ns.cloudflare.com
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: "\u5B98\u65B9\u4F18\u9009_7"
+  network: ws
+  port: 443
+  server: thaddeus.ns.cloudflare.com
+  servername: edccw.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_26
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 108.165.152.18
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_27
+  network: ws
+  password: Aimer
+  port: 443
+  server: 154.197.64.67
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_28
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 5.182.84.52
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: US_10
+  network: ws
+  port: 443
+  server: 63.141.128.163
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /ss.vs2024.us.kg
+- name: US_11
+  network: ws
+  port: 443
+  server: 63.141.128.140
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: "\u5B98\u65B9\u4F18\u9009_8"
+  network: ws
+  password: Aimer
+  port: 443
+  server: thaddeus.ns.cloudflare.com
+  skip-cert-verify: true
+  sni: epccq.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccq.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: "\u52A0\u5165\u6211\u7684\u9891\u9053t.me/CMLiussss\u89E3\u9501\u66F4\u591A\
+    \u4F18\u9009\u8282\u70B9"
+  network: ws
+  port: 443
+  server: join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: "\u5B98\u65B9\u4F18\u9009_9"
+  network: ws
   password: Aimer
   port: 443
   server: lynn.ns.cloudflare.com
   skip-cert-verify: true
-  sni: lynn.ns.cloudflare.com
+  sni: epccw.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 41"
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: US_12
+  network: ws
+  port: 443
+  server: 63.141.128.193
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /ss.vs2024.us.kg
+- name: SG_6
+  network: ws
+  port: 2087
+  server: 27.50.48.18
+  servername: edccw.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_29
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 199.34.228.190
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_30
+  network: ws
   password: Aimer
   port: 443
-  server: sage.ns.cloudflare.com
+  server: 5.182.85.28
   skip-cert-verify: true
-  sni: sage.ns.cloudflare.com
+  sni: epccw.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: "\u4FC4\u7F57\u65AF(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 10"
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_31
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 154.197.64.228
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_32
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 192.0.54.221
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_33
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 27.50.48.18
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_34
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 154.211.8.152
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: "\u5B98\u65B9\u4F18\u9009_10"
+  network: ws
   password: Aimer
   port: 443
-  server: 5.182.84.120
+  server: duke.ns.cloudflare.com
   skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: "KR\u97E9\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 6"
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_35
+  network: ws
   password: Aimer
-  port: 12344
-  server: 211.196.12.95
+  port: 2087
+  server: 108.165.152.58
   skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: "KR\u97E9\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 7"
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_36
+  network: ws
   password: Aimer
-  port: 21242
-  server: 222.97.135.19
+  port: 2096
+  server: 167.68.4.223
   skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 12"
-  port: 42550
-  server: 183.236.51.38
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_37
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 188.164.159.25
   skip-cert-verify: true
-  tls: false
-  type: vmess
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
   udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_38
+  network: ws
+  password: Aimer
+  port: 443
+  server: 154.197.64.67
+  skip-cert-verify: true
+  sni: epccq.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccq.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_39
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 213.109.205.55
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_40
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 46.254.93.251
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_41
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 108.165.152.92
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_42
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 160.79.105.156
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_43
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 154.197.64.248
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_44
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 188.164.159.98
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: AMS_1
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 89.110.86.132
+  skip-cert-verify: true
+  sni: epccq.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccq.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: US_13
+  network: ws
+  port: 443
+  server: join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /ss.vs2024.us.kg
+- name: SJC_45
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 154.211.8.209
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: NL_2
+  network: ws
+  port: 5007
+  server: 45.154.98.230
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: SJC_46
+  network: ws
+  password: Aimer
+  port: 443
+  server: 188.164.159.171
+  skip-cert-verify: true
+  sni: epccq.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccq.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_47
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 66.81.247.88
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_48
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 154.197.64.104
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_49
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 167.68.42.113
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_50
+  network: ws
+  password: Aimer
+  port: 443
+  server: 209.94.90.64
+  skip-cert-verify: true
+  sni: epccq.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccq.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_51
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 104.129.166.131
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_52
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 108.165.152.14
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: CMCC-IPV6_2
+  network: ws
+  port: 4700
+  server: '[2606'
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: SJC_53
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 154.83.2.88
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: US_14
+  network: ws
+  port: 443
+  server: 150.136.87.192
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /ss.vs2024.us.kg
+- name: ICN
+  network: ws
+  password: Aimer
+  port: 10398
+  server: 119.200.93.101
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: CMCC-IPV6_3
+  network: ws
+  port: 4700
+  server: '[2606'
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: SG_7
+  network: ws
+  port: 443
+  server: 138.2.107.107
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: KR_5
+  network: ws
+  port: 10398
+  server: 119.200.93.101
+  servername: edccw.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: CMCC-IPV6_4
+  network: ws
+  port: 4700
+  server: '[2606'
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: US_15
+  network: ws
+  port: 443
+  server: 129.213.136.180
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: KR_6
+  network: ws
+  port: 30050
+  server: 125.137.50.78
+  servername: edccw.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_54
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 188.164.159.55
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: CMCC-IPV6_5
+  network: ws
+  port: 4700
+  server: '[2606'
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: US_16
+  network: ws
+  port: 8443
+  server: 104.129.166.131
+  servername: edccw.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: JP_5
+  network: ws
+  port: 443
+  server: 138.2.61.180
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: "\u5B98\u65B9\u4F18\u9009_11"
+  network: ws
+  password: Aimer
+  port: 443
+  server: arvind.ns.cloudflare.com
+  skip-cert-verify: true
+  sni: epccq.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccq.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_55
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 154.197.64.248
+  skip-cert-verify: true
+  sni: epccq.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccq.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: JP_6
+  network: ws
+  port: 443
+  server: 152.70.99.15
+  servername: edccw.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: JP_7
+  network: ws
+  port: 443
+  server: 131.186.38.213
+  servername: edccw.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: CA
+  network: ws
+  port: 443
+  server: 140.238.158.238
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: LHR_1
+  network: ws
+  password: Aimer
+  port: 443
+  server: 57.128.182.27
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: FRA_4
+  network: ws
+  password: Aimer
+  port: 443
+  server: 185.225.201.211
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: AMS_2
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 213.32.121.186
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_56
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 167.68.5.85
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: SJC_57
+  network: ws
+  password: Aimer
+  port: 443
+  server: 5.182.84.244
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: JP_8
+  network: ws
+  port: 8443
+  server: 141.147.147.28
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: JP_9
+  network: ws
+  port: 443
+  server: 64.110.104.30
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: FRA_5
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 51.195.85.90
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: LHR_2
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 57.128.176.37
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: IL
+  network: ws
+  port: 8443
+  server: 129.159.143.171
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: CMCC-IPV6_6
+  network: ws
+  port: 4700
+  server: '[2606'
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: NL_3
+  network: ws
+  port: 444
+  server: 45.154.98.230
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: CMCC-IPV6_7
+  network: ws
+  port: 4700
+  server: '[2606'
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: CMCC-IPV6_8
+  network: ws
+  port: 4700
+  server: '[2606'
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: CMCC-IPV6_9
+  network: ws
+  port: 4700
+  server: '[2606'
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: CMCC-IPV6_10
+  network: ws
+  port: 4700
+  server: '[2606'
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: CMCC-IPV6_11
+  network: ws
+  port: 4700
+  server: '[2606'
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: SJC_58
+  network: ws
+  password: Aimer
+  port: 443
+  server: 86.38.214.186
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: AE
+  network: ws
+  port: 443
+  server: 193.123.80.245
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: JP_10
+  network: ws
+  port: 443
+  server: 141.147.185.63
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: CDG
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 141.95.193.15
+  skip-cert-verify: true
+  sni: epccw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: CMCC-IPV6_12
+  network: ws
+  port: 4700
+  server: '[2606'
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- name: US_17
+  network: ws
+  port: 443
+  server: 47.90.141.204
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
 - cipher: aes-128-gcm
   ip-version: dual
   name: "6\u5143\u9AD8\u901F\u673A\u573A\uFF1Acczzuu.top"
@@ -977,84 +2456,3 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  ip-version: dual
-  name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD\
-    _1"
-  network: tcp
-  port: 3683
-  server: b268cf3c-su7xc0-swx10p-cw9v.b.fosant.com
-  type: vmess
-  udp: true
-  uuid: f39baabc-ef78-11ef-b714-f23c93136cb3
-- alterId: 2
-  cipher: auto
-  ip-version: dual
-  name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1E8\U0001F1F7_CR_\u54E5\u65AF\
-    \u8FBE\u9ECE\u52A0"
-  network: ws
-  port: 30837
-  server: v37.heduian.link
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: ocbc.com
-    path: /oooo
-- cipher: chacha20-ietf-poly1305
-  ip-version: dual
-  name: "\U0001F1E9\U0001F1EA_DE_\u5FB7\u56FD->\U0001F1F8\U0001F1EC_SG_\u65B0\u52A0\
-    \u5761_1"
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.154
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  ip-version: dual
-  name: "\U0001F1E9\U0001F1EA_DE_\u5FB7\u56FD->\U0001F1F8\U0001F1EC_SG_\u65B0\u52A0\
-    \u5761_2"
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 45.87.175.166
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_5"
-  password: amazonskr05
-  port: 443
-  server: 34.216.142.212
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  ip-version: dual
-  name: "\U0001F1E9\U0001F1EA_DE_\u5FB7\u56FD"
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: beesyar.org
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  ip-version: dual
-  name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD\
-    _2"
-  password: 4bccdfb7-f45b-44bb-9cd3-fb6f8fc8072f
-  port: 41705
-  server: zf1.10101251.xyz
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  ip-version: dual
-  name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD\
-    _3"
-  network: tcp
-  port: 3683
-  server: 1387ebdd-su7b40-su6828-eme.b.fosant.com
-  sni: ''
-  type: vmess
-  udp: true
-  uuid: 16d93f14-af0e-11ee-8ebe-f23c93136cb3
