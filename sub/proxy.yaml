@@ -1,6 +1,23 @@
 proxies:
-- name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD->\U0001F1E8\U0001F1E6_CA_\u52A0\u62FF\
-    \u5927"
+- alterId: 2
+  cipher: auto
+  name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD"
+  network: ws
+  port: 30835
+  server: v35.heduian.link
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v35.heduian.link
+    path: /oooo
+- cipher: aes-256-gcm
+  name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1EF\U0001F1F5_JP_\u65E5\u672C"
+  password: dwz1GtF7
+  port: 20406
+  server: 112.54.161.141
+  type: ss
+- name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD"
   network: ws
   password: 03e92910-34b1-4245-ac63-04a865f43cd5
   port: 443
@@ -12,30 +29,27 @@ proxies:
     headers:
       host: 3ert.4444916.xyz
     path: /bi35bFWoRrnPhIJoo2wcE6Q
-- alterId: 2
-  cipher: auto
-  name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1E8\U0001F1E6_CA_\u52A0\u62FF\
-    \u5927"
-  network: ws
-  port: 30825
-  server: v25.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v25.heduian.link
-    path: /oooo
+- name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD"
+  password: 1b4c16925f934c57b954a9f0f23dea33
+  port: 8842
+  server: 42.240.152.238
+  skip-cert-verify: true
+  sni: brwx.spvpv.com
+  type: trojan
+- name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD\
+    _1"
+  password: VdWBGFmg
+  port: 23770
+  server: 36.151.251.62
+  skip-cert-verify: true
+  sni: TG.WangCai2
+  type: trojan
 - cipher: aes-256-gcm
-  name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD"
-  password: e22b89ae-6996-4824-ac31-610ac7349e6a
-  port: 54831
-  server: zf2.10101251.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: "\U0001F1F7\U0001F1FA_RU_\u4FC4\u7F57\u65AF"
-  password: c40641c1f89e7acb
-  port: 57456
-  server: 62.133.63.212
+  name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1EF\U0001F1F5_JP_\u65E5\u672C\
+    _1"
+  password: dwz1GtF7
+  port: 30232
+  server: 112.54.160.36
   type: ss
 - cipher: aes-256-cfb
   name: "\U0001F1F2\U0001F1E9_MD_\u6469\u5C14\u591A\u74E6"
@@ -43,321 +57,75 @@ proxies:
   port: 989
   server: 185.153.197.5
   type: ss
+- alterId: 2
+  cipher: auto
+  name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD\
+    _2"
+  network: ws
+  port: 30825
+  server: 111.26.109.79
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v25.heduian.link
+    path: /oooo
+- cipher: chacha20-ietf-poly1305
+  name: "\U0001F1F7\U0001F1FA_RU_\u4FC4\u7F57\u65AF"
+  password: WTW3IKzimgbaBa0jELvP7R
+  port: 34218
+  server: 62.133.60.217
+  type: ss
 - name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD\
-    _1"
+    _3"
   network: tcp
   password: 2b1ed981-6547-4094-998b-06a3323d6f6c
   port: 21179
   server: 120.233.44.201
   sni: k30.tudou211.com
   type: trojan
-- name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD\
-    _2"
-  password: VdWBGFmg
-  port: 23770
-  server: 36.151.251.62
-  skip-cert-verify: true
-  sni: TG.WangCai2
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: "\U0001F1F7\U0001F1FA_RU_\u4FC4\u7F57\u65AF_1"
-  password: c40641c1f89e7acb
-  port: 57456
-  server: tr.vpnsparta.pro
-  type: ss
-- name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD\
-    _3"
-  password: 1b4c16925f934c57b954a9f0f23dea33
-  port: 8842
-  server: 42.240.152.238
-  skip-cert-verify: true
-  sni: brwx.spvpv.com
-  type: trojan
-- alterId: 2
-  cipher: auto
-  name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1E8\U0001F1E6_CA_\u52A0\u62FF\
-    \u5927_1"
-  network: ws
-  port: 30835
-  server: v35.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v35.heduian.link
-    path: /oooo
 - cipher: aes-256-cfb
-  name: "\U0001F1F0\U0001F1F7_KR_\u97E9\u56FD"
-  password: qwerREWQ@@
-  port: 15098
-  server: 125.141.31.72
+  name: "\U0001F1EE\U0001F1F9_IT_\u610F\u5927\u5229->\U0001F1F2\U0001F1E9_MD_\u6469\
+    \u5C14\u591A\u74E6"
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.213.23.226
   type: ss
-- name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1E8\U0001F1E6_CA_\u52A0\u62FF\
-    \u5927_2"
-  password: 85f133142f04dbf6547da33895cfabb3
-  port: 39001
-  server: 120.233.128.68
-  skip-cert-verify: true
-  sni: 120.233.128.68
-  type: trojan
-- name: "AU\u6FB3\u5927\u5229\u4E9A(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB\
-    )"
-  password: bd580569-aa39-46dd-88a8-6d164467349c
-  port: 443
-  server: ua.mjt000.com
-  skip-cert-verify: true
-  sni: ua.mjt000.com
-  type: trojan
-  udp: true
-- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
-  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  port: 21118
-  server: 120.233.44.201
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 2"
-  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  port: 21003
-  server: 120.233.44.201
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 3"
-  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  port: 21017
-  server: 120.233.44.201
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 4"
-  port: 31180
-  server: 120.198.71.214
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 5"
-  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  port: 21056
-  server: 120.233.44.201
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 6"
-  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
-  port: 8313
-  server: dozo01.flztjc.top
-  skip-cert-verify: true
-  sni: dozo01.flztjc.top
-  type: trojan
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 7"
-  network: ws
-  port: 30828
-  server: 111.26.109.79
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-headers:
-    Host: ocbc.com
-  ws-path: /oooo
-- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 8"
-  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
-  port: 8313
-  server: 183.232.235.2
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 9"
-  password: c40641c1f89e7acb
-  port: 57456
-  server: tr.vpnsparta.pro
+  name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1F5\U0001F1F1_PL_\u6CE2\u5170"
+  password: 7905a32b-012c-4711-89e2-73b6713eca75
+  port: 40030
+  server: pr.fastsoonlink.com
   type: ss
-  udp: true
-- name: "AU\u6FB3\u5927\u5229\u4E9A(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB\
-    ) 2"
-  password: bd580569-aa39-46dd-88a8-6d164467349c
-  port: 443
-  server: vn.mjt000.com
+- cipher: aes-256-cfb
+  name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_1"
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 38.165.233.93
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD_1"
+  password: dwz1GtF7
+  port: 30017
+  server: 111.45.33.5
+  type: ss
+- name: "SG\u65B0\u52A0\u5761(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
+  password: Aimer
+  port: 2087
+  server: 108.165.152.1
   skip-cert-verify: true
-  sni: vn.mjt000.com
   type: trojan
   udp: true
-- cipher: aes-256-gcm
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 10"
-  password: dwz1GtF7
-  port: 20406
-  server: 120.232.220.156
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 11"
-  port: 46920
-  server: 183.238.90.8
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 12"
-  port: 41302
-  server: 183.236.51.38
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
-  port: 41024
-  server: 183.236.51.38
+  port: 37805
+  server: 120.232.153.63
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 2
-  cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 13"
-  network: ws
-  port: 30828
-  server: v28.heduian.link
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-headers:
-    Host: ocbc.com
-  ws-path: /oooo
-- alterId: 0
-  cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 14"
-  network: ws
-  port: 443
-  server: xxxcvfgt6.huangshang.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 91565d37-e81a-479d-9cb0-9cb2d86cea2c
-  ws-headers:
-    Host: xxxcvfgt6.huangshang.dpdns.org
-  ws-path: /w8kFMmZlXlyP0d3nfCNbqCRr57Xa
-- alterId: 0
-  cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 15"
-  port: 41024
-  server: 183.236.51.38
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 2
-  cipher: auto
-  name: "CA\u52A0\u62FF\u5927(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
-  network: ws
-  port: 30808
-  server: v8.heduian.link
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-headers:
-    Host: v8.heduian.link
-  ws-path: /oooo
-- cipher: aes-256-gcm
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 16"
-  password: 3ee90aa9-8831-4ea3-9425-c361090a938d
-  port: 53771
-  server: zf1.10101251.xyz
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 17"
-  network: ws
-  port: 443
-  server: 3333333333eR.666470.XYZ
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 69678f53-fe48-4d6f-8da1-61f90a6a1ed7
-  ws-headers:
-    Host: 3333333333er.666470.xyz
-  ws-path: /yZ6ou0sUqPR6MznS
-- alterId: 0
-  cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 18"
-  port: 41175
-  server: 120.198.71.214
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 2
-  cipher: auto
-  name: "CA\u52A0\u62FF\u5927(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 2"
-  network: ws
-  port: 30825
-  server: v25.heduian.link
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-headers:
-    Host: v25.heduian.link
-  ws-path: /oooo
-- name: "AU\u6FB3\u5927\u5229\u4E9A(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB\
-    ) 3"
-  password: bd580569-aa39-46dd-88a8-6d164467349c
-  port: 443
-  server: waphk.mjt000.com
-  skip-cert-verify: true
-  sni: waphk.mjt000.com
-  type: trojan
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 19"
-  network: ws
-  port: 30809
-  server: v9.heduian.link
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-headers:
-    Host: baidu.com
-  ws-path: /oooo
-- cipher: aes-256-gcm
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 20"
-  password: e22b89ae-6996-4824-ac31-610ac7349e6a
-  port: 53771
-  server: zf2.10101251.xyz
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: "JP\u65E5\u672C(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
   password: Nk9asglDzHzjktVzTkvhaA
@@ -365,37 +133,17 @@ proxies:
   server: arxfw2b78fi2q9hzylhn.freesocks.work
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 21"
-  password: e22b89ae-6996-4824-ac31-610ac7349e6a
-  port: 54831
-  server: zf2.10101251.xyz
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 22"
-  network: ws
-  port: 80
-  server: twjxlnnoljxc.jkhkgj.xyz
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
+  password: Aimer
+  port: 443
+  server: lynn.ns.cloudflare.com
   skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b0af4d14-db9d-4217-b010-5fd2a4b80590
-  ws-headers:
-    Host: file.dingtalk.com
-  ws-path: /market/tw?ed=512
-- cipher: chacha20-ietf-poly1305
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 23"
-  password: c40641c1f89e7acb
-  port: 57456
-  server: 62.133.63.212
-  type: ss
+  sni: lynn.ns.cloudflare.com
+  type: trojan
   udp: true
 - alterId: 2
   cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 24"
+  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 2"
   network: ws
   port: 30832
   server: v32.heduian.link
@@ -407,72 +155,172 @@ proxies:
   ws-headers:
     Host: baidu.com
   ws-path: /oooo
-- cipher: chacha20-ietf-poly1305
-  name: "JP\u65E5\u672C(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 2"
-  password: Nk9asglDzHzjktVzTkvhaA
-  port: 443
-  server: arxfw2b78fi2q9hzylhn.freesocks.work
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
-  name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 2"
-  port: 49355
-  server: 120.198.71.219
+  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 3"
+  network: ws
+  port: 443
+  server: xxxcvfgt6.huangshang.dpdns.org
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
   udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 25"
-  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  port: 21079
-  server: 120.233.44.201
+  uuid: 91565d37-e81a-479d-9cb0-9cb2d86cea2c
+  ws-headers:
+    Host: xxxcvfgt6.huangshang.dpdns.org
+  ws-path: /w8kFMmZlXlyP0d3nfCNbqCRr57Xa
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 4"
+  password: Aimer
+  port: 2096
+  server: 188.164.159.55
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 26"
-  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  port: 21179
-  server: 120.233.44.201
+- name: "SG\u65B0\u52A0\u5761(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 2"
+  password: Aimer
+  port: 2096
+  server: 5.182.84.22
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 27"
-  password: bcc58e88-e147-11ec-b286-f23c91cfbbc9
-  port: 21233
-  server: 83242d49-sy41s0-szh3gf-ggww.cm5.cnkuaishou.com
+- name: "IN\u5370\u5EA6(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
+  password: Aimer
+  port: 2087
+  server: 108.165.152.143
   skip-cert-verify: true
-  sni: 83242d49-sy41s0-szh3gf-ggww.cm5.cnkuaishou.com
   type: trojan
   udp: true
-- cipher: aes-256-gcm
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 28"
-  password: dwz1GtF7
-  port: 20406
-  server: 120.232.220.156
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 29"
-  port: 49355
-  server: 120.198.71.219
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 30"
-  password: 03e92910-34b1-4245-ac63-04a865f43cd5
+- name: "SG\u65B0\u52A0\u5761(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 3"
+  password: Aimer
   port: 443
-  server: 104.21.84.242
+  server: 27.50.49.207
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "SG\u65B0\u52A0\u5761(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 4"
+  password: Aimer
+  port: 2087
+  server: 108.165.152.169
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 5"
+  password: Aimer
+  port: 2087
+  server: 108.165.152.98
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 6"
+  password: Aimer
+  port: 443
+  server: 192.0.54.7
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "SG\u65B0\u52A0\u5761(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 5"
+  password: Aimer
+  port: 2053
+  server: 167.68.4.7
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "IN\u5370\u5EA6(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 2"
+  password: Aimer
+  port: 2083
+  server: 135.84.74.254
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 7"
+  password: Aimer
+  port: 8443
+  server: 199.34.228.71
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 8"
+  password: Aimer
+  port: 2096
+  server: 5.182.85.255
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "RU\u4FC4\u7F57\u65AF(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
+  password: Aimer
+  port: 2087
+  server: 162.120.94.23
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "IN\u5370\u5EA6(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 3"
+  password: Aimer
+  port: 2096
+  server: 188.164.159.22
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "RU\u4FC4\u7F57\u65AF(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 2"
+  password: Aimer
+  port: 2083
+  server: 213.241.198.56
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "IN\u5370\u5EA6(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 4"
+  password: Aimer
+  port: 2096
+  server: 192.200.160.169
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 9"
+  password: Aimer
+  port: 443
+  server: theo.ns.cloudflare.com
+  skip-cert-verify: true
+  sni: theo.ns.cloudflare.com
+  type: trojan
+  udp: true
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 10"
+  password: Aimer
+  port: 443
+  server: 141.11.203.168
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "RU\u4FC4\u7F57\u65AF(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 3"
+  password: Aimer
+  port: 8443
+  server: 154.211.8.209
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 11"
+  password: Aimer
+  port: 443
+  server: pranab.ns.cloudflare.com
+  skip-cert-verify: true
+  sni: pranab.ns.cloudflare.com
+  type: trojan
+  udp: true
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 12"
+  password: Aimer
+  port: 2096
+  server: 188.164.159.107
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "IN\u5370\u5EA6(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 5"
+  password: Aimer
+  port: 2083
+  server: 104.21.10.106
   skip-cert-verify: true
   type: trojan
   udp: true
 - alterId: 0
   cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 31"
+  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 13"
   network: ws
   port: 443
   server: ssSSSD.00890604.Xyz
@@ -484,18 +332,426 @@ proxies:
   ws-headers:
     Host: sssssd.00890604.xyz
   ws-path: /9Vn0NRIFjaNIuRODgEtuBg2FAYIX
-- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 32"
+- name: "RU\u4FC4\u7F57\u65AF(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 4"
+  password: Aimer
+  port: 2096
+  server: 27.50.49.188
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 14"
+  password: Aimer
+  port: 2087
+  server: 108.165.152.163
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 15"
+  password: Aimer
+  port: 443
+  server: duke.ns.cloudflare.com
+  skip-cert-verify: true
+  sni: duke.ns.cloudflare.com
+  type: trojan
+  udp: true
+- name: "RU\u4FC4\u7F57\u65AF(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 5"
+  password: Aimer
+  port: 443
+  server: 148.135.15.148
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 16"
   password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  port: 21031
+  port: 21079
   server: 120.233.44.201
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 17"
+  password: Aimer
+  port: 2053
+  server: 108.165.152.92
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "RU\u4FC4\u7F57\u65AF(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 6"
+  password: Aimer
+  port: 443
+  server: 108.165.152.71
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 64
+  cipher: auto
+  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 18"
+  port: 46920
+  server: 183.238.90.8
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 19"
+  password: Aimer
+  port: 2083
+  server: 172.67.187.145
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "RU\u4FC4\u7F57\u65AF(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 7"
+  password: Aimer
+  port: 2083
+  server: 108.165.152.225
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "IN\u5370\u5EA6(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 6"
+  password: Aimer
+  port: 2083
+  server: 46.254.93.175
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "IN\u5370\u5EA6(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 7"
+  password: Aimer
+  port: 2096
+  server: 154.211.8.220
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "RU\u4FC4\u7F57\u65AF(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 8"
+  password: Aimer
+  port: 443
+  server: 108.165.152.131
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "IN\u5370\u5EA6(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 8"
+  password: Aimer
+  port: 2083
+  server: 108.165.152.93
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "IN\u5370\u5EA6(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 9"
+  password: Aimer
+  port: 8443
+  server: 172.66.206.205
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "RU\u4FC4\u7F57\u65AF(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 9"
+  password: Aimer
+  port: 2053
+  server: 176.124.223.40
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "RU\u4FC4\u7F57\u65AF(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 10"
+  password: Aimer
+  port: 2053
+  server: 154.219.5.242
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "RU\u4FC4\u7F57\u65AF(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 11"
+  password: Aimer
+  port: 2096
+  server: 167.68.4.10
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "IN\u5370\u5EA6(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 10"
+  password: Aimer
+  port: 2083
+  server: 154.197.64.228
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "SG\u65B0\u52A0\u5761(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 6"
+  password: Aimer
+  port: 2096
+  server: 104.21.16.71
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 20"
+  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
+  port: 8313
+  server: 183.232.235.2
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 21"
+  password: Aimer
+  port: 2087
+  server: 5.182.84.9
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 22"
+  password: Aimer
+  port: 2083
+  server: 154.211.8.18
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "IN\u5370\u5EA6(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 11"
+  password: Aimer
+  port: 2083
+  server: 188.164.159.138
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "IN\u5370\u5EA6(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 12"
+  password: Aimer
+  port: 443
+  server: 46.254.92.191
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "IN\u5370\u5EA6(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 13"
+  password: Aimer
+  port: 2096
+  server: 176.124.223.133
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "RU\u4FC4\u7F57\u65AF(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 12"
+  password: Aimer
+  port: 8443
+  server: 45.67.214.140
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "IN\u5370\u5EA6(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 14"
+  password: Aimer
+  port: 2083
+  server: 103.116.7.133
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "RU\u4FC4\u7F57\u65AF(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 13"
+  password: Aimer
+  port: 443
+  server: 172.67.77.127
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 23"
+  password: Aimer
+  port: 2087
+  server: 45.67.215.217
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "SG\u65B0\u52A0\u5761(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 7"
+  password: Aimer
+  port: 2053
+  server: 213.241.198.189
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 24"
+  network: ws
+  port: 443
+  server: ip.sb
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c9ddb489-7b5e-49ed-8b21-749f4a0ed56d
+  ws-headers:
+    Host: usshs.atlen.dpdns.org
+  ws-path: /c9ddb489-7b5e-49ed-8b21-749f4a0ed56d-vmess
+- cipher: aes-256-gcm
+  name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 2"
+  password: 781bb54c-f089-48df-8102-01288a81eb10
+  port: 44721
+  server: jsyd.piaomiaoxu.net
+  type: ss
+  udp: true
+- name: "RU\u4FC4\u7F57\u65AF(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 14"
+  password: Aimer
+  port: 2096
+  server: 156.225.72.199
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 25"
+  password: Aimer
+  port: 2083
+  server: 135.84.64.36
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "RU\u4FC4\u7F57\u65AF(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 15"
+  password: Aimer
+  port: 2053
+  server: 154.197.64.164
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 26"
+  password: Aimer
+  port: 2053
+  server: 199.34.228.50
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 27"
+  port: 41175
+  server: 120.198.71.214
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 28"
+  password: Aimer
+  port: 443
+  server: 143.42.66.91
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "IN\u5370\u5EA6(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 15"
+  password: Aimer
+  port: 2096
+  server: 199.34.228.143
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "IN\u5370\u5EA6(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 16"
+  password: Aimer
+  port: 2053
+  server: 199.34.228.66
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "IN\u5370\u5EA6(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 17"
+  password: Aimer
+  port: 2087
+  server: 209.94.90.87
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "RU\u4FC4\u7F57\u65AF(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 16"
+  password: Aimer
+  port: 8443
+  server: 199.34.228.178
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- cipher: aes-256-gcm
+  name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 3"
+  password: dwz1GtF7
+  port: 30017
+  server: 111.45.33.5
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 4"
+  port: 41024
+  server: 183.236.51.38
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 29"
+  password: Aimer
+  port: 2087
+  server: 104.19.239.137
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- cipher: aes-256-gcm
+  name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 5"
+  password: 3a8d690f-f908-4bd3-8dc2-e89294e4668d
+  port: 46989
+  server: jsyd.piaomiaoxu.net
+  type: ss
+  udp: true
+- name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 6"
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21003
+  server: 120.233.44.201
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 64
+  cipher: auto
+  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 30"
+  port: 41191
+  server: 183.236.51.38
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 7"
+  port: 49355
+  server: 120.198.71.219
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: chacha20-ietf-poly1305
+  name: "\u4FC4\u7F57\u65AF(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
+  password: WTW3IKzimgbaBa0jELvP7R
+  port: 34218
+  server: 62.133.60.217
+  type: ss
+  udp: true
+- name: "JP\u65E5\u672C(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 2"
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21179
+  server: 120.233.44.201
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 31"
+  network: ws
+  port: 30828
+  server: v28.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-headers:
+    Host: ocbc.com
+  ws-path: /oooo
+- cipher: chacha20-ietf-poly1305
+  name: "PL\u6CE2\u5170(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
+  password: 7905a32b-012c-4711-89e2-73b6713eca75
+  port: 40030
+  server: pr.fastsoonlink.com
+  type: ss
+  udp: true
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 32"
+  password: 03e92910-34b1-4245-ac63-04a865f43cd5
+  port: 443
+  server: 104.21.84.242
   skip-cert-verify: true
   type: trojan
   udp: true
 - alterId: 0
   cipher: auto
   name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 33"
-  port: 37805
-  server: 120.232.153.63
+  port: 41024
+  server: 183.236.51.38
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -504,6 +760,54 @@ proxies:
 - alterId: 0
   cipher: auto
   name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 34"
+  port: 31180
+  server: 120.198.71.214
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 35"
+  port: 41175
+  server: 120.198.71.214
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 36"
+  password: Aimer
+  port: 443
+  server: 156.230.12.71
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 37"
+  password: Aimer
+  port: 2083
+  server: 104.19.60.107
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 38"
+  password: Aimer
+  port: 443
+  server: 104.16.253.83
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 39"
+  password: Aimer
+  port: 2053
+  server: 3.1.116.161
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 40"
   port: 46920
   server: 183.238.90.8
   skip-cert-verify: true
@@ -511,26 +815,99 @@ proxies:
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
+- name: "JP\u65E5\u672C(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 3"
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21031
+  server: 120.233.44.201
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 64
   cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 35"
-  port: 39076
-  server: 183.238.90.8
+  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 41"
+  port: 49597
+  server: 120.232.153.41
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-256-gcm
-  name: "\u4FC4\u7F57\u65AF(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
-  password: 3ee90aa9-8831-4ea3-9425-c361090a938d
-  port: 64931
-  server: zf1.10101251.xyz
-  type: ss
+- alterId: 2
+  cipher: auto
+  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 42"
+  network: ws
+  port: 30809
+  server: v9.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-headers:
+    Host: baidu.com
+  ws-path: /oooo
+- name: "IN\u5370\u5EA6(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 18"
+  password: Aimer
+  port: 2083
+  server: 104.19.60.193
+  skip-cert-verify: true
+  type: trojan
   udp: true
 - alterId: 0
   cipher: auto
-  name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 3"
+  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 43"
+  port: 49355
+  server: 120.198.71.219
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 44"
+  password: Aimer
+  port: 8443
+  server: 107.172.190.130
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- cipher: aes-256-gcm
+  name: "JP\u65E5\u672C(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 4"
+  password: dwz1GtF7
+  port: 20406
+  server: 112.54.161.141
+  type: ss
+  udp: true
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 45"
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21017
+  server: 120.233.44.201
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 46"
+  network: ws
+  port: 30828
+  server: 111.26.109.79
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-headers:
+    Host: ocbc.com
+  ws-path: /oooo
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 47"
+  password: Aimer
+  port: 443
+  server: 192.9.250.241
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 8"
   port: 37805
   server: 120.232.153.63
   skip-cert-verify: true
@@ -538,23 +915,98 @@ proxies:
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 2
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 48"
+  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
+  port: 8313
+  server: dozo01.flztjc.top
+  skip-cert-verify: true
+  sni: dozo01.flztjc.top
+  type: trojan
+  udp: true
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 49"
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21056
+  server: 120.233.44.201
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 0
   cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 36"
-  network: ws
-  port: 30824
-  server: v24.heduian.link
+  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 50"
+  port: 46920
+  server: 183.238.90.8
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 51"
+  password: Aimer
+  port: 8443
+  server: 54.37.64.148
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 52"
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21118
+  server: 120.233.44.201
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "IN\u5370\u5EA6(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 19"
+  password: Aimer
+  port: 443
+  server: 168.138.13.201
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 53"
+  password: Aimer
+  port: 2053
+  server: 162.19.66.30
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 54"
+  network: ws
+  port: 443
+  server: ip.sb
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c9ddb489-7b5e-49ed-8b21-749f4a0ed56d
   ws-headers:
-    Host: v24.heduian.link
-  ws-path: /oooo
+    Host: usshs.atlen.dpdns.org
+  ws-path: /c9ddb489-7b5e-49ed-8b21-749f4a0ed56d-vmess
+- name: "IN\u5370\u5EA6(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 20"
+  password: Aimer
+  port: 443
+  server: 89.248.207.37
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "RU\u4FC4\u7F57\u65AF(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 17"
+  password: Aimer
+  port: 2087
+  server: 92.53.190.161
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 55"
+  password: 32bb70e5-84be-11ef-bb6b-bc241111d95d
+  port: 24109
+  server: js.wnwwv.cn
+  skip-cert-verify: true
+  sni: js.wnwwv.cn
+  type: trojan
+  udp: true
 - alterId: 2
   cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 37"
+  name: "JP\u65E5\u672C(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 5"
   network: ws
   port: 30812
   server: v12.heduian.link
@@ -568,21 +1020,7 @@ proxies:
   ws-path: /oooo
 - alterId: 0
   cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 38"
-  network: ws
-  port: 443
-  server: FfffFfffFG.999864.xYz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: a96cb093-b164-4bc6-bd27-deb0e385de07
-  ws-headers:
-    Host: fffffffffg.999864.xyz
-  ws-path: /J2fxBvo8k3PpIlRig3qizHXb
-- alterId: 0
-  cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 39"
+  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 56"
   network: ws
   port: 30840
   server: v40.heduian.link
@@ -594,232 +1032,21 @@ proxies:
   ws-headers:
     Host: api100-core-quic-lf.amemv.com
   ws-path: /index
-- alterId: 64
-  cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 40"
-  port: 41175
-  server: 120.198.71.214
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: "6\u5143\u9AD8\u901F\u673A\u573A\uFF1Acczzuu.top"
-  password: qawszxc123
-  port: 443
-  server: 13.250.23.45
-  tfo: false
-  type: ss
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F|@stairnode"
-  network: ws
-  port: 30809
-  server: v9.heduian.link
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: baidu.com
-    path: /oooo
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F2|@stairnode"
-  password: 1450cecfb93f
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: kh36v1.pmxiaonan.xyz
-    mode: websocket
-    mux: true
-    path: /simieepvt
-    skip-cert-verify: false
-    tls: true
-  port: 12441
-  server: kh36v1.pmxiaonan.xyz
-  tfo: false
-  type: ss
-- client-fingerprint: chrome
-  name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F3|@stairnode"
-  password: 85f133142f04dbf6547da33895cfabb3
-  port: 39001
-  server: 120.233.128.68
-  skip-cert-verify: true
-  sni: 120.233.128.68
-  type: trojan
-- client-fingerprint: chrome
-  name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F4|@stairnode"
-  password: 85f133142f04dbf6547da33895cfabb3
-  port: 39001
-  server: 113.99.140.184
-  skip-cert-verify: true
-  sni: www.yrtok.com
-  type: trojan
 - cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F5|@stairnode"
+  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 57"
   password: dwz1GtF7
   port: 20406
   server: 120.232.220.156
-  tfo: false
   type: ss
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F7|@stairnode"
-  network: ws
-  port: 30809
-  server: v9.heduian.link
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: baidu.com
-    path: /oooo
-- cipher: rc4-md5
-  client-fingerprint: chrome
-  name: "\U0001F1EF\U0001F1F5 \u65E5\u672C|@stairnode"
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202506131022370-N03InetROm.download.microsoft.com
-    mode: http
-  port: 8766
-  server: cn01.efan8867801.xyz
-  tfo: false
-  type: ss
-- client-fingerprint: chrome
-  name: "\U0001F1EF\U0001F1F5 \u65E5\u672C3|@stairnode"
-  password: 278d70a0-ac4b-41fd-a66a-8bd84cdd852c
-  port: 28713
-  server: wb.kaiqsz.com
-  skip-cert-verify: false
-  sni: mmbiz1.redapricotcloud.com
-  type: trojan
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: "\U0001F1EF\U0001F1F5 \u65E5\u672C2|@stairnode"
-  password: 9acff807c3cc
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: jplistv1.dashengjs.net
-    mode: websocket
-    mux: true
-    path: /bzdeylzmbo
-    skip-cert-verify: false
-    tls: true
-  port: 443
-  server: 163.61.206.64
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: "\U0001F1EF\U0001F1F5 \u65E5\u672C5|@stairnode"
-  password: dwz1GtF7
-  port: 30232
-  server: 112.54.160.36
-  tfo: false
-  type: ss
-- client-fingerprint: chrome
-  name: "\U0001F1F0\U0001F1F7 \u97E9\u56FD2|@stairnode"
-  password: 85f133142f04dbf6547da33895cfabb3
-  port: 39001
-  server: 203.156.253.12
-  skip-cert-verify: true
-  sni: www.yrtok.com
-  type: trojan
+  udp: true
 - cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: "\U0001F1F0\U0001F1F7 \u97E9\u56FD3|@stairnode"
-  password: qwerREWQ@@
-  port: 5344
-  server: 125.141.26.14
-  tfo: false
+  ip-version: dual
+  name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD"
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 38.165.233.93
   type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57612|@stairnode"
-  network: ws
-  port: 8080
-  server: 172.64.229.5
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 697343bc-9c91-47bb-a277-181ea7586313
-  ws-opts:
-    headers:
-      Host: xjp.yilex.icu
-    path: /
-- cipher: rc4-md5
-  client-fingerprint: chrome
-  name: "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57613|@stairnode"
-  password: fwjJxq
-  port: 29191
-  server: sgp05.htz.wtf
-  tfo: false
-  type: ss
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD|@stairnode"
-  network: ws
-  port: 30828
-  server: 111.26.109.79
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: ocbc.com
-    path: /oooo
-- cipher: rc4-md5
-  client-fingerprint: chrome
-  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD2|@stairnode"
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202506131022370-N03InetROm.download.microsoft.com
-    mode: http
-  port: 8774
-  server: cn01.efan8867801.xyz
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD3|@stairnode"
-  network: ws
-  port: 80
-  server: dddddDDDDD4.222560.xyZ
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 393b1061-d615-459a-8616-3f9447bdff5a
-  ws-opts:
-    headers:
-      Host: dddddddddd4.222560.xyz
-    path: /iXfi0mMmPYp9UA6Y34zWUk6JUQ
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: "\U0001F1F7\U0001F1FA \u4FC4\u7F57\u65AF|@stairnode"
-  password: ae627920168c1cce
-  port: 50120
-  server: 185.22.154.123
-  tfo: false
-  type: ss
+  udp: true
 - ip-version: dual
   name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD\
     _1"
@@ -830,138 +1057,60 @@ proxies:
   sni: TG.WangCai2
   type: trojan
   udp: true
-- ip-version: dual
-  name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD\
-    _2"
-  network: tcp
-  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  port: 21179
-  server: 120.233.44.201
-  sni: k30.tudou211.com
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: "\U0001F1F0\U0001F1F7_KR_\u97E9\u56FD_1"
-  password: qwerREWQ@@
-  port: 15098
-  server: 125.141.31.72
-  type: ss
-  udp: true
 - cipher: aes-256-gcm
   ip-version: dual
-  name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1E9\U0001F1EA_DE_\u5FB7\u56FD\
-    _1"
-  password: 3ee90aa9-8831-4ea3-9425-c361090a938d
-  port: 46924
-  server: zf1.10101251.xyz
+  name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1EF\U0001F1F5_JP_\u65E5\u672C"
+  password: dwz1GtF7
+  port: 20406
+  server: 112.54.161.141
   type: ss
   udp: true
 - cipher: aes-256-cfb
   ip-version: dual
-  name: "\U0001F1F0\U0001F1F7_KR_\u97E9\u56FD_2"
-  password: qwerREWQ@@
-  port: 5344
-  server: 125.141.26.14
-  type: ss
-  udp: true
-- ip-version: dual
-  name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1E9\U0001F1EA_DE_\u5FB7\u56FD\
-    _2"
-  network: tcp
-  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  port: 21102
-  server: 120.233.44.201
-  sni: k28.tudou211.com
-  type: trojan
-  udp: true
-- ip-version: dual
-  name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD->\U0001F1E9\U0001F1EA_DE_\u5FB7\u56FD\
-    _1"
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 63.178.28.207
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  ip-version: dual
-  name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD_1"
-  network: tcp
-  port: 50002
-  server: 120.26.55.225
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: "\U0001F1F0\U0001F1F7_KR_\u97E9\u56FD_3"
+  name: "\U0001F1EE\U0001F1F9_IT_\u610F\u5927\u5229->\U0001F1F2\U0001F1E9_MD_\u6469\
+    \u5C14\u591A\u74E6"
   password: f8f7aCzcPKbsF8p3
   port: 989
-  server: 154.223.16.212
+  server: 185.213.23.226
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: "\U0001F1EE\U0001F1F8_IS_\u51B0\u5C9B"
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 37.235.49.152
   type: ss
   udp: true
 - ip-version: dual
-  name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD->\U0001F1E9\U0001F1EA_DE_\u5FB7\u56FD\
+  name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD\
     _2"
-  password: telegram-id-directvpn
-  port: 22223
-  server: 63.178.28.207
-  sni: trojan.burgerip.co.uk
+  password: 1b4c16925f934c57b954a9f0f23dea33
+  port: 8842
+  server: 42.240.152.238
+  skip-cert-verify: true
+  sni: brwx.spvpv.com
   type: trojan
   udp: true
-- alterId: 2
-  cipher: auto
+- cipher: chacha20-ietf-poly1305
   ip-version: dual
-  name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD\
-    _3"
-  network: ws
-  port: 30829
-  server: v29.heduian.link
-  type: vmess
+  name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1F5\U0001F1F1_PL_\u6CE2\u5170"
+  password: 7905a32b-012c-4711-89e2-73b6713eca75
+  port: 40030
+  server: pr.fastsoonlink.com
+  type: ss
   udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: ocbc.com
-    path: /oooo
-- alterId: 2
-  cipher: auto
+- cipher: chacha20-ietf-poly1305
   ip-version: dual
-  name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD_2"
-  network: ws
-  port: 30835
-  server: v35.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
+  name: "\U0001F1F7\U0001F1FA_RU_\u4FC4\u7F57\u65AF"
+  password: WTW3IKzimgbaBa0jELvP7R
+  port: 34218
+  server: 62.133.60.217
+  type: ss
   udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v35.heduian.link
-    path: /oooo
-- alterId: 0
-  cipher: auto
-  ip-version: dual
-  name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1E8\U0001F1E6_CA_\u52A0\u62FF\
-    \u5927"
-  network: ws
-  port: 30840
-  server: v40.heduian.link
-  sni: ''
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: api100-core-quic-lf.amemv.com
-    path: /index
 - cipher: aes-256-cfb
   ip-version: dual
-  name: "\U0001F1F2\U0001F1E9_MD_\u6469\u5C14\u591A\u74E6->\U0001F1F0\U0001F1F7_KR_\u97E9\
-    \u56FD"
+  name: "\U0001F1F2\U0001F1E9_MD_\u6469\u5C14\u591A\u74E6"
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.153.197.5
