@@ -1,82 +1,59 @@
 proxies:
-- alterId: 2
-  cipher: auto
-  name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD"
-  network: ws
-  port: 30829
-  server: 111.26.109.79
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    path: /oooo
-- alterId: 0
-  cipher: auto
-  name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD"
-  network: tcp
-  port: 50002
-  server: 120.26.55.225
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  fingerprint: ''
-  name: "\U0001F1EE\U0001F1F7_IR_\u4F0A\u6717->\U0001F1E7\U0001F1EA_BE_\u6BD4\u5229\
-    \u65F6"
-  network: tcp
-  port: 5008
-  server: 37.152.173.192
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: 81647712-fcd8-4da9-8f80-bc7a149354f8
+- cipher: chacha20-ietf-poly1305
+  name: "\U0001F1E9\U0001F1EA_DE_\u5FB7\u56FD"
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.87.175.58
+  type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: "6\u5143\u9AD8\u901F\u673A\u573A\uFF1Acczzuu.top"
   password: awsps0501
   port: 443
-  server: 52.193.38.93
+  server: 52.195.220.57
   tfo: false
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F2|@stairnode"
-  password: 23d03aa704c7
+  password: fd86b4005afd
   plugin: v2ray-plugin
   plugin-opts:
-    host: cmihk3v1.dsjsapp.com
+    host: hkxwv1-5.dsjsapi.com
     mode: websocket
     mux: true
-    path: /grqhyifio
+    path: /bxpuuxbqsxeb
     skip-cert-verify: false
     tls: true
-  port: 636
-  server: 156.251.179.181
+  port: 10349
+  server: 134.122.155.213
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F3|@stairnode"
-  port: 59149
-  server: 43.247.134.201
-  skip-cert-verify: false
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)c47ab06:133288
+    mode: tls
+  port: 2377
+  server: 3ce8ee8.hb.gladns.com
   tfo: false
-  tls: false
-  type: vmess
-  uuid: efbdabeb-68df-4cd0-959d-7d4f4b508609
+  type: ss
 - client-fingerprint: chrome
   name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F4|@stairnode"
   password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 444
-  server: 36.151.192.61
+  port: 9141
+  server: 36.151.192.10
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
 - client-fingerprint: chrome
   name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F5|@stairnode"
   password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 51083
-  server: 36.151.192.58
+  port: 50723
+  server: 36.151.251.24
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
@@ -86,17 +63,41 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202507031938065-8k6EJ6kiGd.download.microsoft.com
+    host: 202507031938065-GRRLQrsxj2.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: "\U0001F1EF\U0001F1F5 \u65E5\u672C2|@stairnode"
+  password: 823e135ed103
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: jp7v1.lingjfjkm002.com
+    mode: websocket
+    mux: true
+    path: /dchlbvrbbotc
+    skip-cert-verify: false
+    tls: true
+  port: 636
+  server: 137.220.191.40
+  tfo: false
+  type: ss
 - client-fingerprint: chrome
   name: "\U0001F1EF\U0001F1F5 \u65E5\u672C3|@stairnode"
   password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 4445
-  server: 36.151.192.61
+  port: 21829
+  server: 36.151.251.58
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+- client-fingerprint: chrome
+  name: "\U0001F1EF\U0001F1F5 \u65E5\u672C4|@stairnode"
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 53067
+  server: 36.151.251.29
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
@@ -108,38 +109,14 @@ proxies:
   server: p222.panda001.net
   tfo: false
   type: ss
-- cipher: aes-256-gcm
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: "\U0001F1EF\U0001F1F5 \u65E5\u672C2|@stairnode"
-  password: 70a0b8103356
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: jp5v1.lingjfjkm002.com
-    mode: websocket
-    mux: true
-    path: /bezradrqccl
-    skip-cert-verify: false
-    tls: true
-  port: 636
-  server: 137.220.142.139
+  name: "\U0001F1F0\U0001F1F7 \u97E9\u56FD2|@stairnode"
+  password: feafc2ef-d5fd-4f6d-803b-fad4a5cc1f0e
+  port: 19852
+  server: h.cm2.xiaomi-api.xyz
   tfo: false
   type: ss
-- client-fingerprint: chrome
-  name: "\U0001F1EF\U0001F1F5 \u65E5\u672C4|@stairnode"
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 39701
-  server: 36.151.192.60
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- client-fingerprint: chrome
-  name: "\U0001F1F0\U0001F1F7 \u97E9\u56FD2|@stairnode"
-  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
-  port: 6668
-  server: 15.165.19.79
-  skip-cert-verify: true
-  sni: baidu.com
-  type: trojan
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
@@ -159,26 +136,42 @@ proxies:
 - client-fingerprint: chrome
   name: "\U0001F1F0\U0001F1F7 \u97E9\u56FD4|@stairnode"
   password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 20615
-  server: 36.151.192.61
+  port: 45203
+  server: 36.151.251.61
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
 - client-fingerprint: chrome
   name: "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761|@stairnode"
   password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 7571
-  server: 36.151.192.60
-  skip-cert-verify: false
+  port: 38482
+  server: 36.151.251.61
+  skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
 - client-fingerprint: chrome
   name: "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57612|@stairnode"
   password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 40621
-  server: 36.151.192.60
-  skip-cert-verify: false
+  port: 7041
+  server: 36.151.251.61
+  skip-cert-verify: true
   sni: www.baidu.com
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57613|@stairnode"
+  password: YjFmZ
+  port: 8388
+  server: sg.opensocks.site
+  tfo: false
+  type: ss
+- client-fingerprint: chrome
+  name: "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57614|@stairnode"
+  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  port: 6668
+  server: 13.215.50.90
+  skip-cert-verify: false
+  sni: baidu.com
   type: trojan
 - cipher: rc4-md5
   client-fingerprint: chrome
@@ -186,7 +179,7 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202507031938065-8k6EJ6kiGd.download.microsoft.com
+    host: 202507031938065-GRRLQrsxj2.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
@@ -211,8 +204,16 @@ proxies:
 - client-fingerprint: chrome
   name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD3|@stairnode"
   password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 4447
-  server: 36.151.192.61
+  port: 30534
+  server: 36.151.251.36
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+- client-fingerprint: chrome
+  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD4|@stairnode"
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 30495
+  server: 36.151.251.60
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
@@ -224,14 +225,6 @@ proxies:
   server: 103.163.218.2
   tfo: false
   type: ss
-- client-fingerprint: chrome
-  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD4|@stairnode"
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 5975
-  server: 36.151.251.56
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
 - cipher: aes-256-cfb
   ip-version: dual
   name: "\U0001F1F0\U0001F1F7_KR_\u97E9\u56FD"
@@ -348,385 +341,3309 @@ proxies:
   server: c3fe9cc6-sytz40-thv9l4-1jbj0.cm5.cnkuaishou.com
   type: trojan
   udp: true
-- name: "\u7F8E\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9)"
-  password: 64617ed2-4823-11ef-9f2d-f23c9164ca5d
-  port: 27231
-  server: 59507e3d-sytz40-tk30wc-eyem.cm5.cnkuaishou.com
+- name: TW_1
+  network: ws
+  port: 81
+  server: 210.61.97.241
+  servername: dv.bgm2024.dpdns.org
   skip-cert-verify: true
-  sni: 59507e3d-sytz40-tk30wc-eyem.cm5.cnkuaishou.com
-  type: trojan
+  tls: true
+  type: vless
   udp: true
-- name: "\u7F8E\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 2"
-  password: a2313fba-74a6-11ed-a8bf-f23c91cfbbc9
-  port: 14234
-  server: 452b8c75-sytz40-t8ivpf-z65w.cm5.cnkuaishou.com
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: JP_1
+  network: ws
+  port: 12333
+  server: 121.80.244.179
+  servername: jv.bgm2024.dpdns.org
   skip-cert-verify: true
-  sni: 452b8c75-sytz40-t8ivpf-z65w.cm5.cnkuaishou.com
-  type: trojan
+  tls: true
+  type: vless
   udp: true
-- name: "\u7F8E\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 3"
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: JP_2
+  network: ws
+  port: 12333
+  server: 121.80.244.179
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: TW_2
+  network: ws
+  port: 81
+  server: 210.61.97.241
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- alterId: '64'
+  cipher: auto
+  name: '|2.46Mb'
+  network: tcp
+  port: '50002'
+  server: 120.210.205.59
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: JP_3
+  network: ws
+  port: 11084
+  server: 121.80.244.179
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: JP_4
+  network: ws
+  port: 11084
+  server: 121.80.244.179
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: KR_1
+  network: ws
+  port: 19222
+  server: 121.163.244.186
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: KR_2
+  network: ws
+  port: 11111
+  server: 112.173.102.47
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SG_1
+  network: ws
+  port: 23023
+  server: 43.165.191.25
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: JP_5
+  network: ws
+  port: 443
+  server: 131.186.33.175
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: KR_3
+  network: ws
+  port: 443
+  server: 130.162.130.105
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SG_2
+  network: ws
+  port: 23023
+  server: 43.165.191.25
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: JP_6
+  network: ws
+  port: 443
+  server: 131.186.33.175
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: FRA_1
+  network: ws
   password: Aimer
   port: 81
   server: 45.80.209.25
   skip-cert-verify: true
+  sni: epmk.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: "\u7F8E\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 4"
-  password: ef18aaca-4711-11ec-a8bf-f23c91cfbbc9
-  port: 27231
-  server: 51b27fcb-sytz40-szvfpn-laev.cm5.cnkuaishou.com
-  skip-cert-verify: true
-  sni: 51b27fcb-sytz40-szvfpn-laev.cm5.cnkuaishou.com
-  type: trojan
-  udp: true
-- name: "\u7F8E\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 5"
-  password: 5cfee98c-0e3b-11ed-bd7c-f23c913c8d2b
-  port: 27233
-  server: 0c280045-sxp8g0-t0hae4-1curq.cm5.cnkuaishou.com
-  skip-cert-verify: true
-  sni: 0c280045-sxp8g0-t0hae4-1curq.cm5.cnkuaishou.com
-  type: trojan
-  udp: true
-- name: "\u7F8E\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 6"
-  password: Aimer
-  port: 50000
-  server: 121.178.51.126
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: "\u7F8E\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 7"
+  ws-opts:
+    headers:
+      host: epmk.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: KR_4
   network: ws
-  port: 30828
-  server: 111.26.109.79
+  port: 443
+  server: 130.162.130.105
+  servername: jv.bgm2024.dpdns.org
   skip-cert-verify: true
-  tls: false
-  type: vmess
+  tls: true
+  type: vless
   udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-headers:
-    Host: ocbc.com
-  ws-path: /oooo
-- alterId: 0
-  cipher: auto
-  name: "\u7F8E\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 8"
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SJC_1
   network: ws
-  port: 39207
-  server: v3.cdn.ewddns.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: dcdcb14e-8c34-3c0f-9801-01457dcf25f5
-  ws-headers:
-    Host: host=live.bilibili.com
-  ws-path: /62a88e27-2b1f-462f-8e4a-3e1359ac805c.live238.m3u8
-- name: "\u7F8E\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 9"
-  password: 629267d8-cf76-11ec-bb74-f23c9164ca5d
-  port: 27231
-  server: 96eb5655-sy5wg0-0-rfep.cm5.cnkuaishou.com
-  skip-cert-verify: true
-  sni: 96eb5655-sy5wg0-0-rfep.cm5.cnkuaishou.com
-  type: trojan
-  udp: true
-- name: "\u7F8E\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 10"
-  password: 3952a514-eaa7-11ef-97da-f23c91cfbbc9
-  port: 14234
-  server: b78ab8fe-sytz40-taksay-1tcuf.cm5.cnkuaishou.com
-  skip-cert-verify: true
-  sni: b78ab8fe-sytz40-taksay-1tcuf.cm5.cnkuaishou.com
-  type: trojan
-  udp: true
-- name: "\u7F8E\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 11"
-  password: Aimer
-  port: 50000
-  server: 112.162.203.5
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "\u7F8E\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 12"
-  password: 520b9126-9870-11ef-81b0-f23c9164ca5d
-  port: 27235
-  server: 9c2dfbe1-sytz40-szoau2-1slop.cm5.cnkuaishou.com
-  skip-cert-verify: true
-  sni: 9c2dfbe1-sytz40-szoau2-1slop.cm5.cnkuaishou.com
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: "\u7F8E\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 13"
-  port: 32209
-  server: 120.232.153.40
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: "\u52A0\u62FF\u5927(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9)"
-  network: ws
-  port: 30840
-  server: 111.26.109.79
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-headers:
-    Host: api100-core-quic-lf.amemv.com
-  ws-path: /index
-- name: "\u7F8E\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 14"
-  password: bcc58e88-e147-11ec-b286-f23c91cfbbc9
-  port: 21233
-  server: 83242d49-sy41s0-szh3gf-ggww.cm5.cnkuaishou.com
-  skip-cert-verify: true
-  sni: 83242d49-sy41s0-szh3gf-ggww.cm5.cnkuaishou.com
-  type: trojan
-  udp: true
-- name: "\u7F8E\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 15"
-  password: Aimer
-  port: 2053
-  server: 45.134.21.8
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "\u7F8E\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 16"
-  password: Aimer
-  port: 2083
-  server: 135.84.74.254
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "\u7F8E\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 17"
-  password: Aimer
-  port: 50000
-  server: 121.178.51.126
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "\u7F8E\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 18"
-  password: Aimer
-  port: 2096
-  server: 192.200.160.169
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "\u7F8E\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 19"
-  password: Aimer
-  port: 2087
-  server: 45.67.215.217
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "\u7F8E\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 20"
-  password: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  port: 27235
-  server: 69ba7db6-sytz40-t12cnj-1ol97.cm5.cnkuaishou.com
-  skip-cert-verify: true
-  sni: 69ba7db6-sytz40-t12cnj-1ol97.cm5.cnkuaishou.com
-  type: trojan
-  udp: true
-- name: "\u7F8E\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 21"
-  password: Aimer
-  port: 2083
-  server: 103.116.7.133
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "\u7F8E\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 22"
-  password: Aimer
-  port: 2083
-  server: 188.164.159.214
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "\u7F8E\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 23"
-  password: 5dc6fa05-a601-aba6-7761-ecde22d2b0fc
-  port: 27231
-  server: f24250ff-sytz40-t5qufl-8n27.cm5.cnkuaishou.com
-  skip-cert-verify: true
-  sni: f24250ff-sytz40-t5qufl-8n27.cm5.cnkuaishou.com
-  type: trojan
-  udp: true
-- name: "\u7F8E\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 24"
-  password: Aimer
-  port: 8443
-  server: 188.164.159.185
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "\u7F8E\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 25"
-  password: Aimer
-  port: 2083
-  server: 188.164.159.234
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "\u7F8E\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 26"
-  password: 0114339c-488d-11ee-8792-f23c9164ca5d
-  port: 14234
-  server: 4e32ab69-sytz40-tbpkla-1otc2.cm5.cnkuaishou.com
-  skip-cert-verify: true
-  sni: 4e32ab69-sytz40-tbpkla-1otc2.cm5.cnkuaishou.com
-  type: trojan
-  udp: true
-- name: "\u7F8E\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 27"
-  password: Aimer
-  port: 8443
-  server: 188.164.159.185
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "\u7F8E\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 28"
-  password: Aimer
-  port: 2053
-  server: 154.219.5.44
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "\u7F8E\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 29"
-  password: Aimer
-  port: 2087
-  server: 46.254.92.142
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "\u7F8E\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 30"
-  password: Aimer
-  port: 443
-  server: 31.43.179.27
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "\u7F8E\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 31"
-  password: Aimer
-  port: 443
-  server: 188.164.159.18
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "\u7F8E\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 32"
-  password: Aimer
-  port: 2096
-  server: 45.67.214.3
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "\u7F8E\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 33"
-  password: b1e0ecc4-c7af-11ed-a8bf-f23c91cfbbc9
-  port: 14234
-  server: cdcdacce-sytz40-szj6wo-8f7h.cm5.cnkuaishou.com
-  skip-cert-verify: true
-  sni: cdcdacce-sytz40-szj6wo-8f7h.cm5.cnkuaishou.com
-  type: trojan
-  udp: true
-- name: "\u7F8E\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 34"
-  password: Aimer
-  port: 2096
-  server: 108.165.152.55
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "\u7F8E\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 35"
-  password: Aimer
-  port: 443
-  server: 188.164.159.18
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "\u7F8E\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 36"
-  password: Aimer
-  port: 2087
-  server: 45.150.115.195
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "\u7F8E\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 37"
-  password: Aimer
-  port: 443
-  server: lynn.ns.cloudflare.com
-  skip-cert-verify: true
-  sni: lynn.ns.cloudflare.com
-  type: trojan
-  udp: true
-- name: "\u7F8E\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 38"
-  password: Aimer
-  port: 2096
-  server: 108.165.152.55
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "\u7F8E\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 39"
-  password: Aimer
-  port: 2096
-  server: 192.200.160.169
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "\u97E9\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9)"
-  password: Aimer
-  port: 50000
-  server: 112.162.203.5
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: "\u65E5\u672C(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9)"
-  network: ws
-  port: 30812
-  server: v12.heduian.link
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-headers:
-    Host: ocbc.com
-  ws-path: /oooo
-- name: "\u7F8E\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 40"
-  password: Aimer
-  port: 443
-  server: 167.68.4.58
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "\u7F8E\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 41"
-  password: 28213b50-7ed5-11ee-add6-f23c91369f2d
-  port: 27231
-  server: da4d52c3-sytz40-t7hmka-1plv4.cm5.cnkuaishou.com
-  skip-cert-verify: true
-  sni: da4d52c3-sytz40-t7hmka-1plv4.cm5.cnkuaishou.com
-  type: trojan
-  udp: true
-- name: "\u7F8E\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 42"
-  password: 629267d8-cf76-11ec-bb74-f23c9164ca5d
-  port: 27233
-  server: 96eb5655-sy5wg0-0-rfep.cm5.cnkuaishou.com
-  skip-cert-verify: true
-  sni: 96eb5655-sy5wg0-0-rfep.cm5.cnkuaishou.com
-  type: trojan
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: "\u65E5\u672C(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 2"
-  network: ws
-  port: 30807
-  server: 111.26.109.79
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-headers:
-    Host: ocbc.com
-  ws-path: /oooo
-- name: "\u7F8E\u56FD(yudou123.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 43"
   password: Aimer
   port: 443
   server: 5.182.84.244
   skip-cert-verify: true
+  sni: epmk.ambercc.filegear-sg.me
   type: trojan
   udp: true
+  ws-opts:
+    headers:
+      host: epmk.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: BR_1
+  network: ws
+  port: 443
+  server: 185.133.35.183
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CT_1
+  network: ws
+  port: 443
+  server: 162.159.152.53
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CMCC-IPV6_1
+  network: ws
+  port: 4700
+  server: '[2606'
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SJC_2
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 188.164.159.214
+  skip-cert-verify: true
+  sni: epml.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epml.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: US_1
+  network: ws
+  port: 443
+  server: 63.141.128.140
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: ICN_1
+  network: ws
+  password: Aimer
+  port: 50000
+  server: 121.167.230.98
+  skip-cert-verify: true
+  sni: epmk.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epmk.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: KR_5
+  network: ws
+  port: 19222
+  server: 121.163.244.186
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: BR_2
+  network: ws
+  port: 443
+  server: 185.133.35.183
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SJC_3
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 45.67.214.3
+  skip-cert-verify: true
+  sni: epmk.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epmk.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: BR_3
+  network: ws
+  port: 443
+  server: 185.133.35.22
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CMCC-IPV6_2
+  network: ws
+  port: 4700
+  server: '[2606'
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SJC_4
+  network: ws
+  password: Aimer
+  port: 443
+  server: 5.182.84.244
+  skip-cert-verify: true
+  sni: epml.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epml.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: US_2
+  network: ws
+  port: 443
+  server: 63.141.128.3
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SJC_5
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 154.219.5.44
+  skip-cert-verify: true
+  sni: epmk.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epmk.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: SJC_6
+  network: ws
+  password: Aimer
+  port: 443
+  server: 188.164.159.18
+  skip-cert-verify: true
+  sni: epml.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epml.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: CT_2
+  network: ws
+  port: 443
+  server: 162.159.153.239
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: US_3
+  network: ws
+  port: 443
+  server: 69.84.182.89
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CT_3
+  network: ws
+  port: 443
+  server: 162.159.153.212
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SJC_7
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 45.67.215.217
+  skip-cert-verify: true
+  sni: epml.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epml.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: CT_4
+  network: ws
+  port: 443
+  server: 162.159.153.239
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: AT_1
+  network: ws
+  port: 443
+  server: 212.183.88.94
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SJC_8
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 46.254.92.142
+  skip-cert-verify: true
+  sni: epmk.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epmk.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: SJC_9
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 46.254.93.243
+  skip-cert-verify: true
+  sni: epml.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epml.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: CMCC-IPV6_3
+  network: ws
+  port: 4700
+  server: '[2606'
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CMCC-IPV6_4
+  network: ws
+  port: 4700
+  server: '[2606'
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: US_4
+  network: ws
+  port: 443
+  server: 160.79.104.11
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: US_5
+  network: ws
+  port: 443
+  server: 160.79.105.89
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CT_5
+  network: ws
+  port: 443
+  server: 162.159.153.184
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SJC_10
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 167.68.4.223
+  skip-cert-verify: true
+  sni: epml.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epml.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: CMCC-IPV6_5
+  network: ws
+  port: 4700
+  server: '[2606'
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SJC_11
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 135.84.74.254
+  skip-cert-verify: true
+  sni: epmk.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epmk.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: CMCC-IPV6_6
+  network: ws
+  port: 4700
+  server: '[2606'
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CT_6
+  network: ws
+  port: 443
+  server: 162.159.152.81
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SJC_12
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 213.241.198.189
+  skip-cert-verify: true
+  sni: epmk.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epmk.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: CT_7
+  network: ws
+  port: 443
+  server: 162.159.153.217
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CMCC-IPV6_7
+  network: ws
+  port: 4700
+  server: '[2606'
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CT_8
+  network: ws
+  port: 443
+  server: 162.159.152.225
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: BR_4
+  network: ws
+  port: 443
+  server: 185.133.35.22
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CT_9
+  network: ws
+  port: 443
+  server: 162.159.153.194
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CT_10
+  network: ws
+  port: 443
+  server: 162.159.152.53
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SJC_13
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 192.200.160.169
+  skip-cert-verify: true
+  sni: epml.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epml.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: CT_11
+  network: ws
+  port: 443
+  server: 162.159.152.81
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CT_12
+  network: ws
+  port: 443
+  server: 162.159.153.216
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: US_6
+  network: ws
+  port: 443
+  server: 216.24.57.59
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CT_13
+  network: ws
+  port: 443
+  server: 162.159.153.212
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SJC_14
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 46.254.93.243
+  skip-cert-verify: true
+  sni: epmk.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epmk.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: SJC_15
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 199.34.228.178
+  skip-cert-verify: true
+  sni: epmk.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epmk.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: SJC_16
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 188.164.159.74
+  skip-cert-verify: true
+  sni: epml.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epml.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: US_7
+  network: ws
+  port: 443
+  server: 160.79.104.11
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CH_1
+  network: ws
+  port: 443
+  server: 140.238.212.95
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SJC_17
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 103.116.7.220
+  skip-cert-verify: true
+  sni: epmk.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epmk.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: SJC_18
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 45.67.214.3
+  skip-cert-verify: true
+  sni: epml.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epml.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: SJC_19
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 45.150.115.195
+  skip-cert-verify: true
+  sni: epml.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epml.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: SJC_20
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 188.164.159.234
+  skip-cert-verify: true
+  sni: epml.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epml.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: SJC_21
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 45.150.115.195
+  skip-cert-verify: true
+  sni: epmk.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epmk.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: US_8
+  network: ws
+  port: 443
+  server: 160.79.105.89
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: GB_1
+  network: ws
+  port: 443
+  server: 217.163.76.84
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SJC_22
+  network: ws
+  password: Aimer
+  port: 443
+  server: 188.164.159.18
+  skip-cert-verify: true
+  sni: epmk.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epmk.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: US_9
+  network: ws
+  port: 443
+  server: 63.141.128.88
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CMCC-IPV6_8
+  network: ws
+  port: 4700
+  server: '[2606'
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SJC_23
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 188.164.159.234
+  skip-cert-verify: true
+  sni: epmk.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epmk.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: US_10
+  network: ws
+  port: 443
+  server: 63.141.128.102
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: "CF\u968F\u673A\u8282\u70B9_1"
+  network: ws
+  port: 443
+  server: 104.24.170.151
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CMCC-IPV6_9
+  network: ws
+  port: 4700
+  server: '[2606'
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: US_11
+  network: ws
+  port: 443
+  server: 160.79.104.102
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: US_12
+  network: ws
+  port: 443
+  server: 63.141.128.140
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: US_13
+  network: ws
+  port: 443
+  server: 160.79.104.115
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: AMS_1
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 45.134.21.8
+  skip-cert-verify: true
+  sni: epmk.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epmk.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: SJC_24
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 135.84.74.254
+  skip-cert-verify: true
+  sni: epml.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epml.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: SJC_25
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 154.219.5.44
+  skip-cert-verify: true
+  sni: epml.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epml.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: "CF\u968F\u673A\u8282\u70B9_2"
+  network: ws
+  port: 443
+  server: 104.24.184.126
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SJC_26
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 188.164.159.74
+  skip-cert-verify: true
+  sni: epmk.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epmk.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: CMCC-IPV6_10
+  network: ws
+  port: 4700
+  server: '[2606'
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: US_14
+  network: ws
+  port: 443
+  server: 160.79.104.115
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SJC_27
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 188.164.159.185
+  skip-cert-verify: true
+  sni: epml.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epml.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: CMCC-IPV6_11
+  network: ws
+  port: 4700
+  server: '[2606'
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: GB_2
+  network: ws
+  port: 443
+  server: 217.163.76.201
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: RU_1
+  network: ws
+  port: 443
+  server: 45.67.215.92
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CMCC-IPV6_12
+  network: ws
+  port: 4700
+  server: '[2606'
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: US_15
+  network: ws
+  port: 443
+  server: 69.84.182.89
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SJC_28
+  network: ws
+  password: Aimer
+  port: 443
+  server: 154.197.64.206
+  skip-cert-verify: true
+  sni: epml.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epml.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: CT_14
+  network: ws
+  port: 443
+  server: 162.159.153.217
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SJC_29
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 108.165.152.55
+  skip-cert-verify: true
+  sni: epml.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epml.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: AT_2
+  network: ws
+  port: 443
+  server: 212.183.88.136
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CMCC-IPV6_13
+  network: ws
+  port: 4700
+  server: '[2606'
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CMCC-IPV6_14
+  network: ws
+  port: 4700
+  server: '[2606'
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SJC_30
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 5.182.85.255
+  skip-cert-verify: true
+  sni: epml.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epml.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: GB_3
+  network: ws
+  port: 443
+  server: 217.163.76.84
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CMCC-IPV6_15
+  network: ws
+  port: 4700
+  server: '[2606'
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CT_15
+  network: ws
+  port: 443
+  server: 162.159.153.216
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: "CF\u968F\u673A\u8282\u70B9_3"
+  network: ws
+  port: 443
+  server: 188.114.98.9
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: US_16
+  network: ws
+  port: 443
+  server: 160.79.105.76
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SJC_31
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 188.164.159.98
+  skip-cert-verify: true
+  sni: epmk.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epmk.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: SJC_32
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 188.164.159.98
+  skip-cert-verify: true
+  sni: epml.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epml.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: CT_16
+  network: ws
+  port: 443
+  server: 162.159.152.225
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: US_17
+  network: ws
+  port: 443
+  server: 160.79.104.102
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: "CF\u968F\u673A\u8282\u70B9_4"
+  network: ws
+  port: 443
+  server: 103.21.244.44
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SJC_33
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 45.67.215.217
+  skip-cert-verify: true
+  sni: epmk.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epmk.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: CMCC-IPV6_16
+  network: ws
+  port: 4700
+  server: '[2606'
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SJC_34
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 167.68.4.10
+  skip-cert-verify: true
+  sni: epmk.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epmk.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: SJC_35
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 167.68.4.10
+  skip-cert-verify: true
+  sni: epml.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epml.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: "CF\u968F\u673A\u8282\u70B9_5"
+  network: ws
+  port: 443
+  server: 188.114.98.9
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: US_18
+  network: ws
+  port: 443
+  server: 160.79.105.76
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: US_19
+  network: ws
+  port: 443
+  server: 63.141.128.102
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: "CF\u968F\u673A\u8282\u70B9_6"
+  network: ws
+  port: 443
+  server: 103.21.244.44
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CT_17
+  network: ws
+  port: 443
+  server: 162.159.153.194
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: AT_3
+  network: ws
+  port: 443
+  server: 212.183.88.94
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CMCC-IPV6_17
+  network: ws
+  port: 4700
+  server: '[2606'
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SJC_36
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 103.116.7.100
+  skip-cert-verify: true
+  sni: epmk.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epmk.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: "CF\u968F\u673A\u8282\u70B9_7"
+  network: ws
+  port: 443
+  server: 104.24.184.126
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CMCC-IPV6_18
+  network: ws
+  port: 4700
+  server: '[2606'
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: "CF\u968F\u673A\u8282\u70B9_8"
+  network: ws
+  port: 443
+  server: 104.24.2.106
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: AT_4
+  network: ws
+  port: 443
+  server: 212.183.88.16
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SJC_37
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 209.94.90.87
+  skip-cert-verify: true
+  sni: epml.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epml.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: CMCC-IPV6_19
+  network: ws
+  port: 4700
+  server: '[2606'
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CMCC-IPV6_20
+  network: ws
+  port: 4700
+  server: '[2606'
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: "CF\u968F\u673A\u8282\u70B9_9"
+  network: ws
+  port: 443
+  server: 104.24.170.151
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SJC_38
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 141.11.203.191
+  skip-cert-verify: true
+  sni: epml.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epml.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: SJC_39
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 108.165.152.14
+  skip-cert-verify: true
+  sni: epml.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epml.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: US_20
+  network: ws
+  port: 443
+  server: 192.0.54.42
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SJC_40
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 46.254.92.142
+  skip-cert-verify: true
+  sni: epml.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epml.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: GB_4
+  network: ws
+  port: 443
+  server: 217.163.76.201
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SJC_41
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 5.182.85.255
+  skip-cert-verify: true
+  sni: epmk.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epmk.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: CT_18
+  network: ws
+  port: 443
+  server: 162.159.153.184
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: "CF\u968F\u673A\u8282\u70B9_10"
+  network: ws
+  port: 443
+  server: 104.24.2.106
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SJC_42
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 103.116.7.133
+  skip-cert-verify: true
+  sni: epmk.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epmk.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: CT_19
+  network: ws
+  port: 443
+  server: 162.159.152.155
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: AT_5
+  network: ws
+  port: 443
+  server: 212.183.88.136
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SJC_43
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 108.165.152.14
+  skip-cert-verify: true
+  sni: epmk.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epmk.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: SJC_44
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 103.116.7.220
+  skip-cert-verify: true
+  sni: epml.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epml.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: US_21
+  network: ws
+  port: 443
+  server: 63.141.128.88
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: US_22
+  network: ws
+  port: 443
+  server: 192.0.54.42
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SJC_45
+  network: ws
+  password: Aimer
+  port: 443
+  server: 167.68.4.58
+  skip-cert-verify: true
+  sni: epmk.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epmk.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: CT_20
+  network: ws
+  port: 443
+  server: 162.159.152.69
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CT_21
+  network: ws
+  port: 443
+  server: 162.159.152.69
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: US_23
+  network: ws
+  port: 443
+  server: 216.24.57.59
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SJC_46
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 199.34.228.50
+  skip-cert-verify: true
+  sni: epml.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epml.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: SJC_47
+  network: ws
+  password: Aimer
+  port: 443
+  server: 31.43.179.27
+  skip-cert-verify: true
+  sni: epml.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epml.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: CT_22
+  network: ws
+  port: 443
+  server: 162.159.152.155
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: JP_7
+  network: ws
+  port: 443
+  server: 168.138.46.67
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SJC_48
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 103.116.7.103
+  skip-cert-verify: true
+  sni: epmk.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epmk.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: SJC_49
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 103.116.7.133
+  skip-cert-verify: true
+  sni: epml.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epml.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: AT_6
+  network: ws
+  port: 443
+  server: 212.183.88.16
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CMCC-IPV6_21
+  network: ws
+  port: 4700
+  server: '[2606'
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SJC_50
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 167.68.4.223
+  skip-cert-verify: true
+  sni: epmk.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epmk.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: SJC_51
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 188.164.159.214
+  skip-cert-verify: true
+  sni: epmk.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epmk.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: SJC_52
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 103.116.7.100
+  skip-cert-verify: true
+  sni: epml.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epml.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: RU_2
+  network: ws
+  port: 443
+  server: 45.67.215.92
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SJC_53
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 192.200.160.169
+  skip-cert-verify: true
+  sni: epmk.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epmk.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: CMCC_1
+  network: ws
+  port: 443
+  server: 198.41.208.23
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SJC_54
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 176.53.144.206
+  skip-cert-verify: true
+  sni: epmk.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epmk.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: SJC_55
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 103.116.7.103
+  skip-cert-verify: true
+  sni: epml.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epml.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: FRA_2
+  network: ws
+  password: Aimer
+  port: 81
+  server: 45.80.209.25
+  skip-cert-verify: true
+  sni: epml.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epml.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: CMCC-IPV6_22
+  network: ws
+  port: 4700
+  server: '[2606'
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SJC_56
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 31.43.179.60
+  skip-cert-verify: true
+  sni: epml.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epml.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: CMCC-IPV6_23
+  network: ws
+  port: 4700
+  server: '[2606'
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CMCC-IPV6_24
+  network: ws
+  port: 4700
+  server: '[2606'
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: US_24
+  network: ws
+  port: 443
+  server: 63.141.128.3
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SJC_57
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 199.34.228.50
+  skip-cert-verify: true
+  sni: epmk.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epmk.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: CMCC_2
+  network: ws
+  port: 443
+  server: 104.16.242.72
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CMCC_3
+  network: ws
+  port: 443
+  server: 104.17.223.37
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CMCC-IPV6_25
+  network: ws
+  port: 4700
+  server: '[2606'
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SJC_58
+  network: ws
+  password: Aimer
+  port: 443
+  server: 31.43.179.27
+  skip-cert-verify: true
+  sni: epmk.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epmk.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: CMCC-IPV6_26
+  network: ws
+  port: 4700
+  server: '[2606'
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CMCC_4
+  network: ws
+  port: 443
+  server: 104.17.104.243
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CH_2
+  network: ws
+  port: 443
+  server: 140.238.212.95
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SJC_59
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 199.34.228.178
+  skip-cert-verify: true
+  sni: epml.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epml.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: SJC_60
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 108.165.152.55
+  skip-cert-verify: true
+  sni: epmk.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epmk.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: SJC_61
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 209.94.90.87
+  skip-cert-verify: true
+  sni: epmk.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epmk.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: US_25
+  network: ws
+  port: 443
+  server: join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SJC_62
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 31.43.179.60
+  skip-cert-verify: true
+  sni: epmk.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epmk.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: CMCC_5
+  network: ws
+  port: 443
+  server: 104.17.101.175
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CMCC_6
+  network: ws
+  port: 443
+  server: 104.18.94.238
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CMCC_7
+  network: ws
+  port: 443
+  server: 104.18.82.55
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CMCC_8
+  network: ws
+  port: 443
+  server: 104.19.144.212
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CMCC_9
+  network: ws
+  port: 443
+  server: 104.17.104.243
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: AMS_2
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 45.134.21.8
+  skip-cert-verify: true
+  sni: epml.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epml.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: SJC_63
+  network: ws
+  password: Aimer
+  port: 443
+  server: 167.68.4.58
+  skip-cert-verify: true
+  sni: epml.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epml.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: "CF\u968F\u673A\u8282\u70B9_11"
+  network: ws
+  port: 443
+  server: 190.93.247.160
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: "CF\u968F\u673A\u8282\u70B9_12"
+  network: ws
+  port: 443
+  server: 104.16.134.46
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: "CF\u968F\u673A\u8282\u70B9_13"
+  network: ws
+  port: 443
+  server: 104.16.120.49
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CMCC_10
+  network: ws
+  port: 443
+  server: 104.17.223.37
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CMCC_11
+  network: ws
+  port: 443
+  server: 104.16.253.83
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CMCC_12
+  network: ws
+  port: 443
+  server: 104.17.210.171
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CMCC_13
+  network: ws
+  port: 443
+  server: 104.18.80.243
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: US_26
+  network: ws
+  port: 443
+  server: 129.213.136.180
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CMCC_14
+  network: ws
+  port: 443
+  server: 104.17.102.95
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: US_27
+  network: ws
+  port: 443
+  server: join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CMCC_15
+  network: ws
+  port: 443
+  server: 104.17.102.95
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CMCC_16
+  network: ws
+  port: 443
+  server: 104.18.82.55
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CMCC_17
+  network: ws
+  port: 443
+  server: 104.16.253.83
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CMCC_18
+  network: ws
+  port: 443
+  server: 104.19.144.212
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: JP_8
+  network: ws
+  port: 443
+  server: 168.138.46.67
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: "CF\u968F\u673A\u8282\u70B9_14"
+  network: ws
+  port: 443
+  server: 104.16.134.46
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CMCC_19
+  network: ws
+  port: 443
+  server: 104.19.150.163
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: "CF\u968F\u673A\u8282\u70B9_15"
+  network: ws
+  port: 443
+  server: 104.16.132.56
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CMCC_20
+  network: ws
+  port: 443
+  server: 104.19.150.163
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: "CF\u968F\u673A\u8282\u70B9_16"
+  network: ws
+  port: 443
+  server: 104.16.229.50
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: "CF\u968F\u673A\u8282\u70B9_17"
+  network: ws
+  port: 443
+  server: 190.93.247.160
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CMCC_21
+  network: ws
+  port: 443
+  server: 104.18.80.243
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CMCC_22
+  network: ws
+  port: 443
+  server: 104.18.86.131
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CMCC_23
+  network: ws
+  port: 443
+  server: 104.17.210.171
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CMCC_24
+  network: ws
+  port: 443
+  server: 198.41.208.23
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: US_28
+  network: ws
+  port: 2096
+  server: 152.70.155.147
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CMCC_25
+  network: ws
+  port: 443
+  server: 104.17.101.175
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: "CF\u968F\u673A\u8282\u70B9_18"
+  network: ws
+  port: 443
+  server: 104.16.120.49
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: AMS_3
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 5.35.68.249
+  skip-cert-verify: true
+  sni: epmk.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epmk.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: CMCC_26
+  network: ws
+  port: 443
+  server: 104.17.215.102
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: AU_1
+  network: ws
+  port: 443
+  server: 168.138.13.201
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: "CF\u968F\u673A\u8282\u70B9_19"
+  network: ws
+  port: 443
+  server: 104.16.132.56
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CMCC_27
+  network: ws
+  port: 443
+  server: 104.18.86.131
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CMCC_28
+  network: ws
+  port: 443
+  server: 104.17.215.102
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CMCC_29
+  network: ws
+  port: 443
+  server: 104.18.94.238
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SJC_64
+  network: ws
+  password: Aimer
+  port: 443
+  server: 154.197.64.206
+  skip-cert-verify: true
+  sni: epmk.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epmk.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: "CF\u968F\u673A\u8282\u70B9_20"
+  network: ws
+  port: 443
+  server: 104.16.229.50
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: US_29
+  network: ws
+  port: 443
+  server: 129.213.136.180
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: US_30
+  network: ws
+  port: 2096
+  server: 152.70.155.147
+  servername: jv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: jv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: CMCC_30
+  network: ws
+  port: 443
+  server: 104.16.242.72
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: SJC_65
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 141.11.203.191
+  skip-cert-verify: true
+  sni: epmk.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epmk.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: SJC_66
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 213.241.198.189
+  skip-cert-verify: true
+  sni: epml.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epml.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: SJC_67
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 176.53.144.206
+  skip-cert-verify: true
+  sni: epml.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epml.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: SJC_68
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 188.164.159.185
+  skip-cert-verify: true
+  sni: epmk.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epmk.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: AU_2
+  network: ws
+  port: 443
+  server: 168.138.13.201
+  servername: dv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: dv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: ICN_2
+  network: ws
+  password: Aimer
+  port: 50000
+  server: 121.167.230.98
+  skip-cert-verify: true
+  sni: epml.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epml.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: AMS_4
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 5.35.68.249
+  skip-cert-verify: true
+  sni: epml.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epml.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
