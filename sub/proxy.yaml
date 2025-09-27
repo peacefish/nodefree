@@ -1,27 +1,41 @@
 proxies:
-- cipher: aes-256-cfb
-  name: "\U0001F1EC\U0001F1E7_GB_\u82F1\u56FD"
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 51.15.17.169
-  type: ss
-- cipher: aes-256-cfb
-  name: "\U0001F1EC\U0001F1E7_GB_\u82F1\u56FD_1"
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 62.100.205.48
-  type: ss
+- name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD"
+  network: tcp
+  password: 1ce1df7962f71c6f
+  port: 8443
+  server: uk-03.allhubb.info
+  type: trojan
 - cipher: aes-256-cfb
   name: "\U0001F1E9\U0001F1EA_DE_\u5FB7\u56FD"
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 46.183.184.60
   type: ss
+- alterId: 2
+  cipher: auto
+  name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD"
+  network: ws
+  port: 30829
+  server: v29.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v29.heduian.link
+    path: /oooo
 - cipher: aes-256-cfb
-  name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD"
+  name: "\U0001F1F8\U0001F1EA_SE_\u745E\u5178"
   password: f8f7aCzcPKbsF8p3
   port: 989
-  server: 38.165.233.93
+  server: 192.71.166.100
+  type: ss
+- cipher: aes-256-cfb
+  name: "\U0001F1EC\U0001F1E7_GB_\u82F1\u56FD_1"
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 62.100.205.48
   type: ss
 - cipher: aes-256-cfb
   name: "\U0001F1EC\U0001F1E7_GB_\u82F1\u56FD_2"
@@ -31,278 +45,178 @@ proxies:
   protocol: origin
   server: 62.100.205.48
   type: ssr
-- cipher: chacha20-ietf-poly1305
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
-  password: Nk9asglDzHzjktVzTkvhaA
-  port: 443
-  server: arxfw2b78fi2q9hzylhn.freesocks.work
+- cipher: aes-256-cfb
+  name: "\U0001F1F0\U0001F1F7_KR_\u97E9\u56FD"
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.16.212
   type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 2"
-  password: p78naCf2EfOlRSLTX0wFVx
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: "6\u5143\u9AD8\u901F\u673A\u573A\uFF1Acczzuu.top"
+  password: amazonskr05
   port: 443
-  server: pupas-shirting-unsung.freesocks.work
+  server: 3.250.25.159
+  tfo: false
   type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 3"
-  password: RFK38Cg7APneSB5cWDcpbm
-  port: 443
-  server: switcher-nick-croquet.freesocks.work
-  type: ss
-  udp: true
-- alterId: 0
+- alterId: 2
   cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 4"
+  client-fingerprint: chrome
+  name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F|@stairnode"
   network: ws
-  port: 41317
-  server: xiaoniu.v.jsqcdn.bid
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: bd64d2a3-76a1-407f-af7f-bdcdcb78d21e
-  ws-headers:
-    Host: img14.360buyimg.com
-  ws-path: /obj
-- alterId: 0
-  cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 5"
-  network: ws
-  port: 41315
-  server: xiaoniu.v.jsqcdn.bid
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: bd64d2a3-76a1-407f-af7f-bdcdcb78d21e
-  ws-headers:
-    Host: img14.360buyimg.com
-  ws-path: /obj
-- alterId: 0
-  cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 6"
-  port: 41128
-  server: 72.249.200.122
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e699faa1-d333-4736-b5e5-e6edf9f5c2b5
-- alterId: 0
-  cipher: auto
-  name: "FR\u6CD5\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
-  network: ws
-  port: 44579
-  server: 2001:bc8:32d7:302::10
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-  ws-headers:
-    Host: 2001:bc8:32d7:302::10
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
-  network: ws
-  port: 41317
-  server: a.lyazzz.online
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: bd64d2a3-76a1-407f-af7f-bdcdcb78d21e
-  ws-headers:
-    Host: img14.360buyimg.com
-  ws-path: /obj
-- cipher: chacha20-ietf-poly1305
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 7"
-  password: 9tqhMdIrTkgQ46PvhyAtMH
-  port: 443
-  server: switcher-nick-croquet.freesocks.work
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 8"
-  network: ws
-  port: 80
-  server: yyhhnmjk.008880888.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: df36ace8-640b-42bb-8169-198901af6d9e
-  ws-headers:
-    Host: yyhhnmjk.008880888.xyz
-  ws-path: /YFhRqvQTiFgNjEuZUTo
-- name: "\u7F8E\u56FD_1"
-  network: tcp
-  password: 0C3YaEDx46ODTFTcaF8lXlZ3zeqSlF33wZagexzRjIyODa8RDwp8XSCO93ygCSYcSYABA
-  port: 18332
-  server: blength.appagent.net
-  sni: blength.appagent.net
-  tls: true
-  type: trojan
-- name: "\u7F8E\u56FD_2"
-  network: tcp
-  password: OaFFcTDe9pSlez6x3SY8AARXwClzCRRDwSN8F3OqZAEYC0SE6F8gp3wCTCSTDYllcNceagCDD2C59S3
-  port: 28332
-  server: bolster.appagent.net
-  tls: true
-  type: trojan
-- name: "\u7F8E\u56FD_3"
-  network: tcp
-  password: Npgx9nO3OBaZF5yxARYl93lFX08TlR3waDla733az8SqXe3YS3zjESECSZpAw428a6SID
-  port: 443
-  server: metallic.isquirrel.net
-  tls: true
-  type: trojan
-- name: "\u7F8E\u56FD_4"
-  network: tcp
-  password: 0C3YaEDx46ODTFTcaF8lXlZ3zeqSlF33wZagexzRjIyODa8RDwp8XSCO93ygCSYcSYABA
-  port: 18332
-  server: blength.appagent.net
-  tls: true
-  type: trojan
-- name: "\u7F8E\u56FD_5"
-  network: tcp
-  password: eYaw9xlNDu4695IF3CyY2leZOTnY8ZSOD3Xa3DClz0xqZy7Z3eaBFaTKOSwCSAOyEap4D
-  port: 28333
-  server: connect.appagent.net
-  sni: connect.appagent.net
-  tls: true
-  type: trojan
-- name: "\u7F8E\u56FD_6"
-  network: tcp
-  password: eYaw9xlNDu4695IF3CyY2leZOTnY8ZSOD3Xa3DClz0xqZy7Z3eaBFaTKOSwCSAOyEap4D
-  port: 28333
-  server: connect.appagent.net
-  tls: true
-  type: trojan
-- name: "\u7F8E\u56FD_7"
-  network: tcp
-  password: F9OKESxKjSDExSeaOw7XyINxDzaOZqeKxCeIczYYED8ewZ2Yl9AppAySO3XwFNy3lCaXDDCFnlACSB0
-  port: 28334
-  server: pricey.appagent.net
-  tls: true
-  type: trojan
-- name: "\u7F8E\u56FD_8"
-  network: tcp
-  password: Npgx9nO3OBaZF5yxARYl93lFX08TlR3waDla733az8SqXe3YS3zjESECSZpAw428a6SID
-  port: 443
-  server: metallic.isquirrel.net
-  sni: metallic.isquirrel.net
-  tls: true
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: "\u7F8E\u56FD_9"
-  password: Nk9asglDzHzjktVzTkvhaA
-  port: 443
-  server: arxfw2b78fi2q9hzylhn.freesocks.work
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: "\u7F8E\u56FD_10"
-  password: 9tqhMdIrTkgQ46PvhyAtMH
-  port: 443
-  server: switcher-nick-croquet.freesocks.work
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: "\u7F8E\u56FD_11"
-  password: RFK38Cg7APneSB5cWDcpbm
-  port: 443
-  server: switcher-nick-croquet.freesocks.work
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: "\u7F8E\u56FD_12"
-  network: ws
-  port: 80
-  server: 2606:4700:3030::6815:4001
-  servername: 4496a55e-a4bc-c238-2c1e-5e66f7b0829c.8900604.xyz
-  type: vmess
-  uuid: 681eda16-e94d-439c-9067-b55db0c0543f
-  ws-opts:
-    headers:
-      Host: 4496a55e-a4bc-c238-2c1e-5e66f7b0829c.8900604.xyz
-    path: /2uRsM4Z4Y8O5OsbJkA
-- alterId: 0
-  cipher: auto
-  name: "\u7F8E\u56FD_13"
-  network: ws
-  port: 44579
-  server: 2001:bc8:32d7:302::10
-  servername: ''
-  type: vmess
-  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
-- alterId: 0
-  cipher: auto
-  name: "\u7F8E\u56FD_14"
-  network: ws
-  port: 443
-  server: ssssssssssssfffffffgh.2032.pp.ua
-  servername: ssssssssssssfffffffgh.2032.pp.ua
-  tls: true
-  type: vmess
-  uuid: 4174b95d-115e-4d39-add6-1f8db95bb860
-  ws-opts:
-    headers:
-      Host: ssssssssssssfffffffgh.2032.pp.ua
-    path: /6We3U9Df1WGxgFnoFPw1
-- alterId: 0
-  cipher: auto
-  name: "\u7F8E\u56FD_15"
-  network: ws
-  port: 443
-  server: dddvvbn.931.pp.ua
-  servername: dddvvbn.931.pp.ua
-  tls: true
-  type: vmess
-  uuid: 4174b95d-115e-4d39-add6-1f8db95bb860
-  ws-opts:
-    headers:
-      Host: dddvvbn.931.pp.ua
-    path: /6We3U9Df1WGxgFnoFPw1
-- alterId: 0
-  cipher: auto
-  name: "\u7F8E\u56FD_16"
-  network: ws
-  port: 80
-  server: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
-  servername: broadcastlv.chat.bilibili.com
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: "\u7F8E\u56FD_17"
-  network: ws
-  port: 80
-  server: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
-  servername: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
-    path: /
-- auth: dongtaiwang.com
-  name: "[Hysteria2] \U0001F1FA\U0001F1F8 United States_Los Angeles_hy2_... #3"
-  password: dongtaiwang.com
-  port: 35205
-  server: 104.168.10.176
+  port: 30809
+  server: v9.heduian.link
   skip-cert-verify: false
-  sni: apple.com
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F2|@stairnode"
+  password: ccf426f1fe78
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: newroot2v1.dsjsapp.com
+    mode: websocket
+    mux: true
+    path: /zksuapgx
+    skip-cert-verify: false
+    tls: true
+  port: 443
+  server: 103.103.245.158
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F3|@stairnode"
+  port: 44601
+  server: 43.247.135.86
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 3bff49e6-b2e2-44ce-801f-06eab407e8bd
+- client-fingerprint: chrome
+  name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F4|@stairnode"
+  password: 253bc477d4e43c209f2d427272968280
+  port: 443
+  server: 203.198.123.86
+  skip-cert-verify: true
+  sni: fe2.update.microsoft.com
+  type: trojan
+- client-fingerprint: chrome
+  name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F6|@stairnode"
+  password: 253bc477d4e43c209f2d427272968280
+  port: 443
+  server: 221.128.195.239
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: "\U0001F1EF\U0001F1F5 \u65E5\u672C|@stairnode"
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202509242154338-Zr8tJCX9sq.download.microsoft.com
+    mode: http
+  port: 8766
+  server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
+- client-fingerprint: chrome
+  name: "\U0001F1EF\U0001F1F5 \u65E5\u672C2|@stairnode"
+  password: 253bc477d4e43c209f2d427272968280
+  port: 1331
+  server: 153.121.39.240
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- client-fingerprint: chrome
+  name: "\U0001F1EF\U0001F1F5 \u65E5\u672C3|@stairnode"
+  password: 253bc477d4e43c209f2d427272968280
+  port: 1331
+  server: 160.16.231.103
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- client-fingerprint: chrome
+  name: "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761|@stairnode"
+  password: 253bc477d4e43c209f2d427272968280
+  port: 2045
+  server: 160.16.130.66
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- client-fingerprint: chrome
+  name: "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57612|@stairnode"
+  password: 253bc477d4e43c209f2d427272968280
+  port: 4397
+  server: 160.16.117.182
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- alterId: 2
+  cipher: auto
+  client-fingerprint: chrome
+  name: "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57613|@stairnode"
+  network: ws
+  port: 30839
+  server: v39.heduian.link
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
+- client-fingerprint: chrome
+  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD|@stairnode"
+  password: 253bc477d4e43c209f2d427272968280
+  port: 1700
+  server: 160.16.87.174
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- client-fingerprint: chrome
+  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD2|@stairnode"
+  password: 253bc477d4e43c209f2d427272968280
+  port: 3296
+  server: 160.16.117.182
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: "\U0001F1FB\U0001F1F3 \u8D8A\u5357|@stairnode"
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.28
+  tfo: false
+  type: ss
+- auth: fabd2b79-693a-4a37-827c-6d299e8813b1
+  name: "[Hysteria2] Channel id: @ShadowProxy66\U0001F1EF\U0001F1F5"
+  password: fabd2b79-693a-4a37-827c-6d299e8813b1
+  port: 443
+  server: 133.18.163.202
+  skip-cert-verify: false
+  sni: www.microsoft.com
+  type: hysteria2
+- auth: 20050105zhu
+  name: '[Hysteria2] @FreakConfig'
+  password: 20050105zhu
+  port: 51541
+  server: 204.44.110.129
+  skip-cert-verify: false
+  sni: www.bing.com
   type: hysteria2
 - auth: 3QlSMKyqLp
   name: "[Hysteria2] @EXPRESSVPN_420 -> \u0647\u0645\u0647 \u0627\u067E\u0631\u0627\
@@ -336,6 +250,13 @@ proxies:
   password: 6803bc9b-1157-431b-8f73-970a6deb741f
   port: 29854
   server: fra-nb-02.linlujs.pw
+  skip-cert-verify: false
+  type: hysteria2
+- auth: 682c7978-e3eb-44e0-924c-607144495681
+  name: '[Hysteria2] telegram-@vpnserverrr'
+  password: 682c7978-e3eb-44e0-924c-607144495681
+  port: 24568
+  server: fra-nb-01.linlujs.pw
   skip-cert-verify: false
   type: hysteria2
 - auth: 70197404-7b40-45e4-bb9c-8bc8995012ae
@@ -394,7 +315,7 @@ proxies:
   sni: de.youyacloud.me
   type: hysteria2
 - auth: Telegram--%3E%40Ln2Ray
-  name: '[Hysteria2] WI-FI--@IRAN_V2RAY1 #1'
+  name: '[Hysteria2] @FreakConfig 2'
   obfs: salamander
   obfs-password: Telegram-->@Ln2Ray
   password: Telegram--%3E%40Ln2Ray
@@ -404,7 +325,7 @@ proxies:
   sni: gavazn.55994421.xyz
   type: hysteria2
 - auth: Yet-Another-Public-Config-1
-  name: '[Hysteria2] @V2RAYNG_1378'
+  name: '[Hysteria2] All-@IRAN_V2RAY1 #2'
   obfs: salamander
   obfs-password: Yet-Another-Public-Config-1
   password: Yet-Another-Public-Config-1
@@ -447,14 +368,6 @@ proxies:
   skip-cert-verify: false
   sni: YAPC-1.afshin.ir
   type: hysteria2
-- auth: c9edf5cb-67ef-4440-8684-b3d301df6488
-  name: "[Hysteria2] @vpnserverrr\U0001F448\U0001F3FB"
-  password: c9edf5cb-67ef-4440-8684-b3d301df6488
-  port: 21053
-  server: yue-ru.yuetoto.net
-  skip-cert-verify: false
-  sni: yue-ru.yuetoto.net
-  type: hysteria2
 - auth: dongtaiwang.com
   name: '[Hysteria2] WI-FI--@IRAN_V2RAY1 #2'
   password: dongtaiwang.com
@@ -464,7 +377,7 @@ proxies:
   sni: www.bing.com
   type: hysteria2
 - auth: f872db91-57c2-41c7-aad0-561b4cb674bf
-  name: '[Hysteria2] telegram-@ISVvpn #1'
+  name: '[Hysteria2] telegram-@ISVvpn #2'
   password: f872db91-57c2-41c7-aad0-561b4cb674bf
   port: 25684
   server: us-nb-01.linlujs.pw
@@ -474,7 +387,7 @@ proxies:
   name: "[SS] tg\u9891\u9053:@ripaojiedian"
   password: amazonskr05
   port: 443
-  server: 18.159.61.225
+  server: 54.72.237.123
   type: ss
 - alterId: 2
   cipher: auto
@@ -492,19 +405,19 @@ proxies:
     path: /oooo
 - cipher: aes-256-gcm
   name: "[SS] \U0001F1ED\U0001F1F0 \u9999\u6E2F2|@ripaojiedian"
-  password: 2b5fad3874e5
+  password: ccf426f1fe78
   port: 443
-  server: 156.251.179.135
+  server: 103.103.245.158
   type: ss
 - alterId: 0
   cipher: auto
   name: "[VMess] \U0001F1ED\U0001F1F0 \u9999\u6E2F3|@ripaojiedian"
-  port: 57405
-  server: 103.224.80.73
+  port: 44601
+  server: 43.247.135.86
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 282bc2b9-8aaf-400a-86eb-1cf981a8a1da
+  uuid: 3bff49e6-b2e2-44ce-801f-06eab407e8bd
 - name: "[Trojan] \U0001F1ED\U0001F1F0 \u9999\u6E2F4|@ripaojiedian"
   password: 253bc477d4e43c209f2d427272968280
   port: 443
@@ -525,12 +438,13 @@ proxies:
   port: 8766
   server: cn01.efan8867801.xyz
   type: ss
-- cipher: aes-256-gcm
-  name: "[SS] \U0001F1EF\U0001F1F5 \u65E5\u672C2|@ripaojiedian"
-  password: 8808e9f11454
-  port: 443
-  server: 137.220.142.139
-  type: ss
+- name: "[Trojan] \U0001F1EF\U0001F1F5 \u65E5\u672C2|@ripaojiedian"
+  password: 253bc477d4e43c209f2d427272968280
+  port: 3160
+  server: 160.16.68.250
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
 - name: "[Trojan] \U0001F1EF\U0001F1F5 \u65E5\u672C3|@ripaojiedian"
   password: 253bc477d4e43c209f2d427272968280
   port: 1331
@@ -538,27 +452,26 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: "[Trojan] \U0001F1EF\U0001F1F5 \u65E5\u672C4|@ripaojiedian"
-  password: 253bc477d4e43c209f2d427272968280
-  port: 3160
-  server: 160.16.68.250
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: "[VMess] \U0001F1EF\U0001F1F5 \u65E5\u672C5|@ripaojiedian"
+  name: "[VMess] \U0001F1EF\U0001F1F5 \u65E5\u672C4|@ripaojiedian"
   network: ws
   port: 41315
   server: a.lyazzz.online
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: c76b20d5-7f82-4990-9687-4bde24397493
+  uuid: bd64d2a3-76a1-407f-af7f-bdcdcb78d21e
   ws-opts:
     headers:
       Host: img14.360buyimg.com
     path: /obj
+- cipher: aes-256-cfb
+  name: "[SS] \U0001F1F0\U0001F1F7 \u97E9\u56FD|@ripaojiedian"
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.63.177
+  type: ss
 - name: "[Trojan] \U0001F1F8\U0001F1EC \u65B0\u52A0\u5761|@ripaojiedian"
   password: 253bc477d4e43c209f2d427272968280
   port: 2045
@@ -587,34 +500,14 @@ proxies:
     headers:
       Host: baidu.com
     path: /oooo
-- alterId: 0
-  cipher: auto
-  name: "[VMess] \U0001F1FA\U0001F1F8 \u7F8E\u56FD|@ripaojiedian"
-  network: ws
-  port: 41317
-  server: a.lyazzz.online
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c76b20d5-7f82-4990-9687-4bde24397493
-  ws-opts:
-    headers:
-      Host: img14.360buyimg.com
-    path: /obj
-- cipher: rc4-md5
-  name: "[SS] \U0001F1FA\U0001F1F8 \u7F8E\u56FD2|@ripaojiedian"
-  password: efanccyun
-  port: 8774
-  server: cn01.efan8867801.xyz
-  type: ss
-- name: "[Trojan] \U0001F1FA\U0001F1F8 \u7F8E\u56FD3|@ripaojiedian"
+- name: "[Trojan] \U0001F1FA\U0001F1F8 \u7F8E\u56FD|@ripaojiedian"
   password: 253bc477d4e43c209f2d427272968280
   port: 1700
-  server: 153.121.45.139
+  server: 160.16.87.174
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: "[Trojan] \U0001F1FA\U0001F1F8 \u7F8E\u56FD4|@ripaojiedian"
+- name: "[Trojan] \U0001F1FA\U0001F1F8 \u7F8E\u56FD2|@ripaojiedian"
   password: 253bc477d4e43c209f2d427272968280
   port: 3296
   server: 160.16.117.182
@@ -631,27 +524,33 @@ proxies:
   name: "[SS] tg\u9891\u9053:@ripaojiedian 2"
   password: //YWVzLTI1Ni1jZmI6YW1hem9uc2tyMDU
   port: 443
-  server: 18.159.61.225
+  server: 54.72.237.123
   type: ss
 - alterId: 0
   cipher: auto
   name: "[VMess] \U0001F1ED\U0001F1F0 \u9999\u6E2F3|@ripaojiedian 2"
-  port: 57405
-  server: 103.224.80.73
+  port: 44601
+  server: 43.247.135.86
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 282bc2b9-8aaf-400a-86eb-1cf981a8a1da
+  uuid: 3bff49e6-b2e2-44ce-801f-06eab407e8bd
+- cipher: ss
+  name: "[SS] \U0001F1F0\U0001F1F7 \u97E9\u56FD|@ripaojiedian 2"
+  password: //YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw
+  port: 989
+  server: 154.90.63.177
+  type: ss
 - cipher: ss
   name: "[SS] \U0001F1FB\U0001F1F3 \u8D8A\u5357|@ripaojiedian 2"
   password: //YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8lIyQjZkpBTXRzRUFFVU9wSC9ZV1l0WXFERm5UMFNW
   port: 38388
   server: 103.186.155.28
   type: ss
-- name: '[Vless] AT_speednode_0001'
+- name: '[Vless] AU_speednode_0001'
   network: ws
-  port: 2053
-  server: 77.73.131.77
+  port: 2096
+  server: 185.207.198.32
   servername: kejiland.freewarp.eu.org
   skip-cert-verify: false
   tls: false
@@ -660,8 +559,15 @@ proxies:
   ws-opts:
     headers:
       Host: kejiland.freewarp.eu.org
-    path: /snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560security=tls
-- name: '[Vless] BG_speednode_0002'
+    path: /snippetssecurity=tls
+- name: '[Trojan] AU_speednode_0002'
+  password: installshield
+  port: 8443
+  server: 176.97.68.153
+  skip-cert-verify: false
+  sni: 176.97.68.153
+  type: trojan
+- name: '[Vless] BG_speednode_0004'
   network: ws
   port: 443
   server: 91.215.153.85
@@ -674,23 +580,17 @@ proxies:
     headers:
       Host: kejiland.freewarp.eu.org
     path: /snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560security=tls
-- name: '[Vless] DE_speednode_0005'
-  network: ws
-  port: 2053
-  server: 89.169.53.131
-  servername: kejiland.freewarp.eu.org
+- name: '[Trojan] CN_speednode_0005'
+  password: 2fd0d127-266d-4d0b-b453-f94659a132fc
+  port: 12000
+  server: 106.75.134.1
   skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 01996549-6892-dbf0-0453-f700236936bd
-  ws-opts:
-    headers:
-      Host: kejiland.freewarp.eu.org
-    path: /snippets/ip=proxyip.fxxk.dedyn.io:443security=tls
-- name: '[Vless] FR_speednode_0006'
+  sni: aliyun.com
+  type: trojan
+- name: '[Vless] FI_speednode_0009'
   network: ws
-  port: 8443
-  server: 109.120.178.197
+  port: 443
+  server: 91.149.254.138
   servername: kejiland.freewarp.eu.org
   skip-cert-verify: false
   tls: false
@@ -700,10 +600,16 @@ proxies:
     headers:
       Host: kejiland.freewarp.eu.org
     path: /snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560security=tls
-- name: '[Vless] FR_speednode_0007'
-  network: ws
+- name: '[Trojan] FR_speednode_0010'
+  password: installshield
   port: 8443
-  server: 109.120.178.197
+  server: 23.162.152.30
+  skip-cert-verify: false
+  type: trojan
+- name: '[Vless] FR_speednode_0011'
+  network: ws
+  port: 2053
+  server: 89.168.43.31
   servername: kejiland.freewarp.eu.org
   skip-cert-verify: false
   tls: false
@@ -712,50 +618,63 @@ proxies:
   ws-opts:
     headers:
       Host: kejiland.freewarp.eu.org
-    path: /snippets/ip=proxyip.fxxk.dedyn.io:443security=tls
-- name: '[Vless] HK_speednode_0008'
+    path: /snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560security=tls
+- name: '[Vless] FR_speednode_0012'
   network: ws
-  port: 2083
-  server: 45.207.158.29
-  servername: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
+  port: 2053
+  server: 89.168.43.31
+  servername: kejiland.freewarp.eu.org
   skip-cert-verify: false
   tls: false
   type: vless
-  uuid: 019931aa-8cba-3a74-6c77-cb288ae52f2a
+  uuid: 01996549-6892-dbf0-0453-f700236936bd
   ws-opts:
     headers:
-      Host: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
-    path: /snippetssecurity=tls
-- name: '[Vless] HK_speednode_0009'
+      Host: kejiland.freewarp.eu.org
+    path: /snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560security=tls
+- name: '[Vless] FR_speednode_0013'
   network: ws
   port: 2096
-  server: 154.211.8.220
-  servername: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
+  server: 141.11.203.32
+  servername: kejiland.freewarp.eu.org
   skip-cert-verify: false
   tls: false
   type: vless
-  uuid: 019931aa-8cba-3a74-6c77-cb288ae52f2a
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
   ws-opts:
     headers:
-      Host: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
+      Host: kejiland.freewarp.eu.org
     path: /snippetssecurity=tls
-- name: '[Vless] HK_speednode_0010'
+- name: '[Vless] GB_speednode_0015'
   network: ws
-  port: 2083
-  server: 154.211.8.18
-  servername: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
+  port: 8080
+  server: 159.65.94.176
+  servername: kejiland.freewarp.eu.org
   skip-cert-verify: false
   tls: false
   type: vless
-  uuid: 019931aa-8cba-3a74-6c77-cb288ae52f2a
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
   ws-opts:
     headers:
-      Host: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
-    path: /snippetssecurity=tls
-- name: '[Vless] IN_speednode_0011'
+      Host: kejiland.freewarp.eu.org
+    path: /snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560security=tls
+- name: '[Vless] HK_speednode_0017'
   network: ws
-  port: 2053
-  server: 65.20.74.136
+  port: 2096
+  server: 154.211.8.32
+  servername: kejiland.freewarp.eu.org
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: /snippetssecurity=tls
+- name: '[Vless] IN_speednode_0019'
+  network: ws
+  port: 443
+  server: 65.20.82.22
   servername: kejiland.freewarp.eu.org
   skip-cert-verify: false
   tls: false
@@ -764,24 +683,11 @@ proxies:
   ws-opts:
     headers:
       Host: kejiland.freewarp.eu.org
-    path: /snippets/ip=proxyip.fxxk.dedyn.io:443security=tls
-- name: '[Vless] IT_speednode_0013'
+    path: /snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560security=tls
+- name: '[Vless] IN_speednode_0020'
   network: ws
-  port: 7035
-  server: pizaitaliano.gojustore.site
-  servername: filimo.com
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: e265fc78-e269-46b2-9b6a-85f573dab3d5
-  ws-opts:
-    headers:
-      Host: filimo.com
-    path: /
-- name: '[Vless] JP_speednode_0014'
-  network: ws
-  port: 22735
-  server: 140.83.57.183
+  port: 8443
+  server: 65.20.76.125
   servername: kejiland.freewarp.eu.org
   skip-cert-verify: false
   tls: false
@@ -790,89 +696,89 @@ proxies:
   ws-opts:
     headers:
       Host: kejiland.freewarp.eu.org
-    path: /snippets/ip=proxyip.fxxk.dedyn.io:443security=tls
-- name: '[Vless] JP_speednode_0015'
+    path: /snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560security=tls
+- name: '[Vless] JP_speednode_0022'
   network: ws
-  port: 18650
-  server: 152.70.82.101
-  servername: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
+  port: 51037
+  server: 141.147.161.249
+  servername: kejiland.freewarp.eu.org
   skip-cert-verify: false
   tls: false
   type: vless
-  uuid: 019931aa-8cba-3a74-6c77-cb288ae52f2a
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
   ws-opts:
     headers:
-      Host: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
+      Host: kejiland.freewarp.eu.org
+    path: /snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560security=tls
+- name: '[Vless] JP_speednode_0023'
+  network: ws
+  port: 43257
+  server: 132.226.8.109
+  servername: kejiland.freewarp.eu.org
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 01996549-6892-dbf0-0453-f700236936bd
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: /snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560security=tls
+- name: '[Vless] KR_speednode_0025'
+  network: ws
+  port: 8443
+  server: 158.180.82.203
+  servername: kejiland.freewarp.eu.org
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: /snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560security=tls
+- name: '[Vless] KR_speednode_0026'
+  network: ws
+  port: 50000
+  server: 124.48.225.132
+  servername: kejiland.freewarp.eu.org
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: /snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560security=tls
+- name: '[Vless] KR_speednode_0027'
+  network: ws
+  port: 30067
+  server: 112.156.154.95
+  servername: kejiland.freewarp.eu.org
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: /snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560security=tls
+- name: '[Vless] NL_speednode_0028'
+  network: ws
+  port: 2096
+  server: 160.153.1.32
+  servername: kejiland.freewarp.eu.org
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
     path: /snippetssecurity=tls
-- name: '[Vless] KR_speednode_0017'
-  network: ws
-  port: 21572
-  server: 183.109.161.20
-  servername: kejiland.freewarp.eu.org
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-  ws-opts:
-    headers:
-      Host: kejiland.freewarp.eu.org
-    path: /snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560security=tls
-- name: '[Vless] LV_speednode_0018'
-  network: ws
-  port: 443
-  server: 138.124.182.204
-  servername: kejiland.freewarp.eu.org
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-  ws-opts:
-    headers:
-      Host: kejiland.freewarp.eu.org
-    path: /snippets/ip=proxyip.fxxk.dedyn.io:443security=tls
-- name: '[Vless] NL_speednode_0020'
-  network: ws
-  port: 8000
-  server: 176.222.53.140
-  servername: kejiland.freewarp.eu.org
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-  ws-opts:
-    headers:
-      Host: kejiland.freewarp.eu.org
-    path: /snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560security=tls
-- name: '[Vless] NL_speednode_0021'
-  network: ws
-  port: 8000
-  server: 176.222.53.140
-  servername: kejiland.freewarp.eu.org
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-  ws-opts:
-    headers:
-      Host: kejiland.freewarp.eu.org
-    path: /snippets/ip=proxyip.fxxk.dedyn.io:443security=tls
-- name: '[Vless] NL_speednode_0022'
-  network: ws
-  port: 443
-  server: 89.110.125.45
-  servername: kejiland.freewarp.eu.org
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-  ws-opts:
-    headers:
-      Host: kejiland.freewarp.eu.org
-    path: /snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560security=tls
-- name: '[Vless] RU_speednode_0023'
+- name: '[Vless] RU_speednode_0029'
   network: ws
   port: 8443
-  server: 85.193.91.193
+  server: 81.200.158.206
   servername: kejiland.freewarp.eu.org
   skip-cert-verify: false
   tls: false
@@ -882,20 +788,7 @@ proxies:
     headers:
       Host: kejiland.freewarp.eu.org
     path: /snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560security=tls
-- name: '[Vless] RU_speednode_0024'
-  network: ws
-  port: 8443
-  server: 92.42.102.73
-  servername: kejiland.freewarp.eu.org
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-  ws-opts:
-    headers:
-      Host: kejiland.freewarp.eu.org
-    path: /snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560security=tls
-- name: '[Vless] RU_speednode_0025'
+- name: '[Vless] RU_speednode_0030'
   network: ws
   port: 2053
   server: 89.169.160.84
@@ -907,47 +800,8 @@ proxies:
   ws-opts:
     headers:
       Host: kejiland.freewarp.eu.org
-    path: /snippets/ip=proxyip.fxxk.dedyn.io:443security=tls
-- name: '[Vless] RU_speednode_0026'
-  network: ws
-  port: 443
-  server: 147.45.143.22
-  servername: kejiland.freewarp.eu.org
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-  ws-opts:
-    headers:
-      Host: kejiland.freewarp.eu.org
-    path: /snippets/ip=proxyip.fxxk.dedyn.io:443security=tls
-- name: '[Vless] SE_speednode_0027'
-  network: ws
-  port: 2053
-  server: 89.22.230.152
-  servername: kejiland.freewarp.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-  ws-opts:
-    headers:
-      Host: kejiland.freewarp.eu.org
-    path: /snippets/ip=proxyip.fxxk.dedyn.io:443fp=chrome
-- name: '[Vless] SE_speednode_0028'
-  network: ws
-  port: 443
-  server: 91.184.240.243
-  servername: kejiland.freewarp.eu.org
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-  ws-opts:
-    headers:
-      Host: kejiland.freewarp.eu.org
-    path: /snippets/ip=proxyip.fxxk.dedyn.io:443security=tls
-- name: '[Vless] SE_speednode_0029'
+    path: /snippets/ip=proxyip.fxxk.dedyn.io:443security=tlssecurity=tls
+- name: '[Vless] SE_speednode_0031'
   network: ws
   port: 2020
   server: 89.22.239.42
@@ -959,11 +813,24 @@ proxies:
   ws-opts:
     headers:
       Host: kejiland.freewarp.eu.org
-    path: /snippets/ip=proxyip.fxxk.dedyn.io:443security=tls
-- name: '[Vless] SG_speednode_0030'
+    path: /snippets/ip=proxyip.fxxk.dedyn.io:443security=tlssecurity=tls
+- name: '[Vless] SG_speednode_0033'
   network: ws
-  port: 43254
-  server: 138.2.89.238
+  port: 2096
+  server: 92.243.75.32
+  servername: kejiland.freewarp.eu.org
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: /snippetssecurity=tls
+- name: '[Vless] US_speednode_0035'
+  network: ws
+  port: 443
+  server: 67.226.221.102
   servername: kejiland.freewarp.eu.org
   skip-cert-verify: false
   tls: false
@@ -973,23 +840,23 @@ proxies:
     headers:
       Host: kejiland.freewarp.eu.org
     path: /snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560security=tls
-- name: '[Vless] SG_speednode_0031'
+- name: '[Vless] US_speednode_0037'
   network: ws
-  port: 2087
-  server: 92.243.75.49
-  servername: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
+  port: 443
+  server: 67.226.221.102
+  servername: kejiland.freewarp.eu.org
   skip-cert-verify: false
   tls: false
   type: vless
-  uuid: 019931aa-8cba-3a74-6c77-cb288ae52f2a
+  uuid: 01996549-6892-dbf0-0453-f700236936bd
   ws-opts:
     headers:
-      Host: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
-    path: /snippetssecurity=tls
-- name: '[Vless] US_speednode_0034'
+      Host: kejiland.freewarp.eu.org
+    path: /snippets/ip=proxyip.fxxk.dedyn.io:443security=tls
+- name: '[Vless] US_speednode_0038'
   network: ws
-  port: 8443
-  server: 142.171.166.116
+  port: 2096
+  server: 141.193.27.32
   servername: kejiland.freewarp.eu.org
   skip-cert-verify: false
   tls: false
@@ -998,65 +865,67 @@ proxies:
   ws-opts:
     headers:
       Host: kejiland.freewarp.eu.org
-    path: /snippets/ip=proxyip.fxxk.dedyn.io:443security=tls
-- name: '[Vless] US_speednode_0036'
+    path: /snippetssecurity=tls
+- name: '[Vless] US_speednode_0039'
   network: ws
-  port: 2052
-  server: dl5-us4-cdn.fastfilecdn.org
-  servername: dl5-us4-cdn.fastfilecdn.org
+  port: 2096
+  server: 195.13.45.32
+  servername: kejiland.freewarp.eu.org
   skip-cert-verify: false
   tls: false
   type: vless
-  uuid: 8ef1b0db-5954-447c-85e5-4f62b107ed61
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
   ws-opts:
     headers:
-      Host: dl5-us4-cdn.fastfilecdn.org
-    path: /
-- cipher: aes-256-gcm
-  name: "[SS] \U0001F1EF\U0001F1F5 \u65E5\u672C2|@ripaojiedian 2"
-  password: 8808e9f11454
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: jp5v1.lingjfjkm002.com
-    mode: websocket
-    mux: false
-    path: /nvcnjrmkggoy
-    skip-cert-verify: false
-    tls: true
-  port: 443
-  server: 137.220.142.139
-  type: ss
-- cipher: aes-256-gcm
-  name: "[SS] \U0001F1ED\U0001F1F0 \u9999\u6E2F2|@ripaojiedian 2"
-  password: 2b5fad3874e5
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: hk6v1.dsjsapp.com
-    mode: websocket
-    mux: true
-    path: /aqwshiog
-    skip-cert-verify: false
-    tls: true
-  port: 443
-  server: 156.251.179.135
-  type: ss
-- cipher: rc4-md5
-  name: "[SS] \U0001F1FA\U0001F1F8 \u7F8E\u56FD2|@ripaojiedian 2"
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202509121565513-d3qOpZwqIw.download.microsoft.com
-    mode: http
-  port: 8774
-  server: cn01.efan8867801.xyz
-  type: ss
+      Host: kejiland.freewarp.eu.org
+    path: /snippetssecurity=tls
+- name: '[Vless] US_speednode_0040'
+  network: ws
+  port: 2096
+  server: 160.79.105.32
+  servername: kejiland.freewarp.eu.org
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: /snippetssecurity=tls
+- name: '[Vless] US_speednode_0041'
+  network: ws
+  port: 2096
+  server: 166.62.106.32
+  servername: kejiland.freewarp.eu.org
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: /snippetssecurity=tls
 - cipher: rc4-md5
   name: "[SS] \U0001F1EF\U0001F1F5 \u65E5\u672C|@ripaojiedian 2"
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202509121565513-d3qOpZwqIw.download.microsoft.com
+    host: 202509242154338-Zr8tJCX9sq.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
+  type: ss
+- cipher: aes-256-gcm
+  name: "[SS] \U0001F1ED\U0001F1F0 \u9999\u6E2F2|@ripaojiedian 2"
+  password: ccf426f1fe78
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: newroot2v1.dsjsapp.com
+    mode: websocket
+    mux: true
+    path: /zksuapgx
+    skip-cert-verify: false
+    tls: true
+  port: 443
+  server: 103.103.245.158
   type: ss
