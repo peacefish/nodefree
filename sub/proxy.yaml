@@ -1,33 +1,15 @@
 proxies:
-- alterId: 2
-  cipher: auto
-  name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD"
-  network: ws
-  port: 30829
-  server: v29.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: ocbc.com
-    path: /oooo
-- alterId: 0
-  cipher: auto
-  name: "\U0001F1EA\U0001F1F8_ES_\u897F\u73ED\u7259->\U0001F1FA\U0001F1F8_US_\u7F8E\
-    \u56FD"
-  network: ws
-  port: 25169
-  server: 212.192.15.176
-  sni: ''
-  type: vmess
-  uuid: 566bf452-a086-41f0-a474-d7ae067956ee
-  ws-opts:
-    path: /
-- cipher: chacha20-ietf-poly1305
-  name: "\U0001F1F3\U0001F1F1_NL_\u8377\u5170"
-  password: 6hWNCD6EzQuP3V2aEFURwS
-  port: 23822
-  server: 178.208.78.170
+- name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD->\U0001F1EF\U0001F1F5_JP_\u65E5\u672C"
+  password: BxceQaOe
+  port: 26876
+  server: 36.156.102.115
+  skip-cert-verify: true
+  type: trojan
+- cipher: aes-256-cfb
+  name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_1"
+  password: amazonskr05
+  port: 443
+  server: 13.38.44.116
   type: ss
 - alterId: 2
   cipher: auto
@@ -47,16 +29,30 @@ proxies:
   cipher: auto
   name: "FR\u6CD5\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
   network: ws
-  port: 33200
-  server: 2001:bc8:32d7:30b::201
+  port: 443
+  server: '2001:41d0:70e:c100::'
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
   udp: true
-  uuid: 82dc5319-662c-4ca5-8e82-69744d2300c1
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-headers:
-    Host: www.bing.com
-  ws-path: /github.com/Alvin9999
+    Host: serkat.org
+  ws-path: /linkvws
+- cipher: chacha20-ietf-poly1305
+  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
+  password: 9tqhMdIrTkgQ46PvhyAtMH
+  port: 443
+  server: switcher-nick-croquet.freesocks.work
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 2"
+  password: RFK38Cg7APneSB5cWDcpbm
+  port: 443
+  server: switcher-nick-croquet.freesocks.work
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: "FR\u6CD5\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 2"
@@ -75,20 +71,6 @@ proxies:
   cipher: auto
   name: "FR\u6CD5\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 3"
   network: ws
-  port: 44579
-  server: 2001:bc8:32d7:302::10
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-  ws-headers:
-    Host: 2001:bc8:32d7:302::10
-  ws-path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
-- alterId: 0
-  cipher: auto
-  name: "FR\u6CD5\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 4"
-  network: ws
   port: 33200
   server: 2001:bc8:32d7:30b::201
   skip-cert-verify: true
@@ -101,60 +83,18 @@ proxies:
   ws-path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
+  name: "FR\u6CD5\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 4"
   network: ws
-  port: 443
-  server: bestcdn1.868863.xyz
+  port: 44579
+  server: 2001:bc8:32d7:302::10
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   udp: true
-  uuid: 07fe5ad4-6157-4857-91fe-8270ebd648d9
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
   ws-headers:
-    Host: vv-a2-cdn.the-best-airport.top
-  ws-path: /aejynik
-- alterId: 0
-  cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 2"
-  network: ws
-  port: 443
-  server: bestcdn3.868863.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 07fe5ad4-6157-4857-91fe-8270ebd648d9
-  ws-headers:
-    Host: vv-c2-cdn.the-best-airport.top
-  ws-path: /aejynik
-- alterId: 0
-  cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 3"
-  network: ws
-  port: 443
-  server: bestcdn1.868863.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 07fe5ad4-6157-4857-91fe-8270ebd648d9
-  ws-headers:
-    Host: vv-a4-cdn.the-best-airport.top
-  ws-path: /aejynik
-- cipher: chacha20-ietf-poly1305
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 4"
-  password: RFK38Cg7APneSB5cWDcpbm
-  port: 443
-  server: switcher-nick-croquet.freesocks.work
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 5"
-  password: 9tqhMdIrTkgQ46PvhyAtMH
-  port: 443
-  server: switcher-nick-croquet.freesocks.work
-  type: ss
-  udp: true
+    Host: 2001:bc8:32d7:302::10
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: "FR\u6CD5\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 5"
@@ -168,7 +108,7 @@ proxies:
   uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
   ws-headers:
     Host: 2001:bc8:32d7:302::10
-  ws-path: /
+  ws-path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: "6\u5143\u9AD8\u901F\u673A\u573A\uFF1Acczzuu.top"
@@ -222,86 +162,94 @@ proxies:
   uuid: 7f75e117-5cfe-40b9-b18f-d46fa6add969
 - client-fingerprint: chrome
   name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F4|@stairnode"
-  password: c53647f3153f784b3c695ffbe5fb43c0
-  port: 2381
-  server: 202.181.103.235
+  password: ea39fa94f1ee00999337ea1fd3318e69
+  port: 443
+  server: 203.198.122.55
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - client-fingerprint: chrome
   name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F5|@stairnode"
   password: BxceQaOe
-  port: 4556
-  server: 36.151.195.112
+  port: 4451
+  server: 36.150.215.138
   skip-cert-verify: true
   type: trojan
 - client-fingerprint: chrome
   name: "\U0001F1EF\U0001F1F5 \u65E5\u672C|@stairnode"
   password: BxceQaOe
-  port: 811
+  port: 2145
   server: 36.151.251.18
   skip-cert-verify: true
   type: trojan
 - client-fingerprint: chrome
   name: "\U0001F1EF\U0001F1F5 \u65E5\u672C2|@stairnode"
-  password: c53647f3153f784b3c695ffbe5fb43c0
-  port: 1331
-  server: 160.16.57.238
-  skip-cert-verify: true
-  sni: www.baidu.com
+  password: ea39fa94f1ee00999337ea1fd3318e69
+  port: 4452
+  server: 160.16.136.130
+  skip-cert-verify: false
+  sni: www.nintendogames.net
   type: trojan
 - client-fingerprint: chrome
   name: "\U0001F1EF\U0001F1F5 \u65E5\u672C3|@stairnode"
-  password: c53647f3153f784b3c695ffbe5fb43c0
-  port: 3161
-  server: 160.16.57.238
-  skip-cert-verify: true
-  sni: www.baidu.com
+  password: ea39fa94f1ee00999337ea1fd3318e69
+  port: 1331
+  server: 160.16.136.130
+  skip-cert-verify: false
+  sni: www.nintendogames.net
   type: trojan
 - client-fingerprint: chrome
   name: "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761|@stairnode"
-  password: c53647f3153f784b3c695ffbe5fb43c0
-  port: 5041
-  server: 202.181.103.246
+  password: ea39fa94f1ee00999337ea1fd3318e69
+  port: 5321
+  server: 160.16.68.250
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - client-fingerprint: chrome
   name: "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57612|@stairnode"
-  password: c53647f3153f784b3c695ffbe5fb43c0
+  password: ea39fa94f1ee00999337ea1fd3318e69
   port: 2283
   server: 202.181.103.246
   skip-cert-verify: true
-  sni: www.nintendogames.net
+  sni: www.baidu.com
   type: trojan
 - client-fingerprint: chrome
   name: "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57613|@stairnode"
   password: BxceQaOe
-  port: 44095
+  port: 2088
   server: 36.156.102.115
   skip-cert-verify: true
   type: trojan
-- cipher: chacha20-ietf
+- alterId: 2
+  cipher: auto
   client-fingerprint: chrome
   name: "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57614|@stairnode"
-  password: asd123456
-  port: 8388
-  server: 103.36.91.32
+  network: ws
+  port: 30839
+  server: v39.heduian.link
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
 - client-fingerprint: chrome
   name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD|@stairnode"
-  password: c53647f3153f784b3c695ffbe5fb43c0
-  port: 2381
-  server: 202.181.103.235
+  password: ea39fa94f1ee00999337ea1fd3318e69
+  port: 2467
+  server: 160.16.68.250
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - client-fingerprint: chrome
   name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD2|@stairnode"
-  password: c53647f3153f784b3c695ffbe5fb43c0
-  port: 2467
-  server: 202.181.103.235
+  password: ea39fa94f1ee00999337ea1fd3318e69
+  port: 2381
+  server: 160.16.68.250
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -314,22 +262,15 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: "\u7F8E\u56FD_1"
-  network: tcp
-  port: 47084
-  server: entrance04.qqa678.cc
-  servername: ''
+  client-fingerprint: chrome
+  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD4|@stairnode"
+  port: 47083
+  server: 124.236.46.114
+  skip-cert-verify: false
+  tfo: false
+  tls: false
   type: vmess
-  uuid: a6560b60-5122-40d7-bcb6-650c98c88ea5
-- alterId: 0
-  cipher: auto
-  name: "\u7F8E\u56FD_2"
-  network: tcp
-  port: 47081
-  server: entrance04.qqa678.cc
-  servername: ''
-  type: vmess
-  uuid: a6560b60-5122-40d7-bcb6-650c98c88ea5
+  uuid: fd49381f-9fd8-4403-8698-48331a4d775d
 - alterId: 0
   cipher: auto
   name: "\u6CD5\u56FD_1"
@@ -342,10 +283,36 @@ proxies:
   ws-opts:
     headers:
       Host: ''
-    path: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: "\u6CD5\u56FD_2"
+  network: ws
+  port: 33200
+  server: 2001:bc8:32d7:30b::201
+  servername: www.bing.com
+  type: vmess
+  uuid: 82dc5319-662c-4ca5-8e82-69744d2300c1
+  ws-opts:
+    headers:
+      Host: www.bing.com
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: "\u6CD5\u56FD_3"
+  network: ws
+  port: 33200
+  server: 2001:bc8:32d7:30b::201
+  servername: www.bing.com
+  type: vmess
+  uuid: 82dc5319-662c-4ca5-8e82-69744d2300c1
+  ws-opts:
+    headers:
+      Host: www.bing.com
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: "\u6CD5\u56FD_4"
   network: ws
   port: 44579
   server: 2001:bc8:32d7:302::10
@@ -355,42 +322,65 @@ proxies:
   ws-opts:
     headers:
       Host: ''
-    path: /
+    path: ''
+- alterId: 0
+  cipher: auto
+  name: "\u6CD5\u56FD_5"
+  network: ws
+  port: 44579
+  server: 2001:bc8:32d7:302::10
+  servername: ''
+  type: vmess
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  ws-opts:
+    headers:
+      Host: ''
+    path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
+- alterId: 0
+  cipher: auto
+  name: "\u7F8E\u56FD_1"
+  network: ws
+  port: 443
+  server: bestcdn3.868863.xyz
+  servername: vv-c2-cdn.the-best-airport.top
+  tls: true
+  type: vmess
+  uuid: 07fe5ad4-6157-4857-91fe-8270ebd648d9
+  ws-opts:
+    headers:
+      Host: vv-c2-cdn.the-best-airport.top
+    path: /aejynik
+- alterId: 0
+  cipher: auto
+  name: "\u7F8E\u56FD_2"
+  network: ws
+  port: 443
+  server: bestcdn1.868863.xyz
+  servername: vv-a2-cdn.the-best-airport.top
+  tls: true
+  type: vmess
+  uuid: 07fe5ad4-6157-4857-91fe-8270ebd648d9
+  ws-opts:
+    headers:
+      Host: vv-a2-cdn.the-best-airport.top
+    path: /aejynik
 - alterId: 0
   cipher: auto
   name: "\u7F8E\u56FD_3"
   network: ws
   port: 443
-  server: 172.67.160.44
-  servername: 7c681e58-53be-8513-d3ea-bd425436e356.huangshang.site
+  server: bestcdn1.868863.xyz
+  servername: vv-a4-cdn.the-best-airport.top
   tls: true
   type: vmess
-  uuid: 086c655d-0c12-47dd-9d5a-2670089201ee
+  uuid: 07fe5ad4-6157-4857-91fe-8270ebd648d9
   ws-opts:
     headers:
-      Host: 7c681e58-53be-8513-d3ea-bd425436e356.huangshang.site
-    path: /ri9mOOVJuAimB74kgXZ
+      Host: vv-a4-cdn.the-best-airport.top
+    path: /aejynik
 - alterId: 0
   cipher: auto
-  name: "\u7F8E\u56FD_4"
-  network: tcp
-  port: 47083
-  server: entrance02.qqa678.cc
-  servername: ''
-  type: vmess
-  uuid: a6560b60-5122-40d7-bcb6-650c98c88ea5
-- alterId: 0
-  cipher: auto
-  name: "\u7F8E\u56FD_5"
-  network: tcp
-  port: 47084
-  server: entrance01.qqa678.cc
-  servername: ''
-  type: vmess
-  uuid: 8e94ed0e-3717-4c46-aa13-6757a89b392e
-- alterId: 0
-  cipher: auto
-  name: "\u7F8E\u56FD_6"
+  name: "\u6CD5\u56FD_6"
   network: ws
   port: 443
   server: '2001:41d0:70e:c100::'
@@ -402,354 +392,23 @@ proxies:
     headers:
       Host: serkat.org
     path: /linkvws
-- alterId: 2
-  cipher: auto
-  name: "\u7F8E\u56FD_7"
-  network: ws
-  port: 30808
-  server: v8.heduian.link
-  servername: v8.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v8.heduian.link
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  name: "\u7F8E\u56FD_8"
-  network: ws
-  port: 30829
-  server: v29.heduian.link
-  servername: ocbc.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: ocbc.com
-    path: /oooo
 - cipher: chacha20-ietf-poly1305
-  name: "\u7F8E\u56FD_9"
+  name: "\u7F8E\u56FD_4"
   password: 9tqhMdIrTkgQ46PvhyAtMH
   port: 443
   server: switcher-nick-croquet.freesocks.work
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: "\u5FB7\u56FD_1"
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 45.87.175.155
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: "\u5FB7\u56FD_2"
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 45.87.175.174
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: "\u7F8E\u56FD_10"
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 151.242.251.152
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: "\u5FB7\u56FD_3"
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 45.87.175.197
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: "\u7F8E\u56FD_11"
+  name: "\u7F8E\u56FD_5"
   password: RFK38Cg7APneSB5cWDcpbm
   port: 443
   server: switcher-nick-croquet.freesocks.work
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: "\u7F8E\u56FD_12"
-  password: Nk9asglDzHzjktVzTkvhaA
-  port: 443
-  server: arxfw2b78fi2q9hzylhn.freesocks.work
-  type: ss
 - encryption: none
-  name: "\u7F8E\u56FD_13"
-  network: ws
-  port: 8443
-  server: medrd.vtpmng.top
-  servername: medrd.vtpmng.top
-  tls: true
-  type: vless
-  uuid: 8339a5e8-6141-41f1-9abc-bbf1a06ac5ae
-  ws-opts:
-    headers:
-      Host: medrd.vtpmng.top
-    path: /
-- encryption: none
-  name: "\u7F8E\u56FD_14"
-  network: tcp
-  port: 48600
-  server: fin7.ipstatic.info
-  servername: Uewuy.divarcdn.com
-  type: vless
-  uuid: 35db9be8-2cd3-4085-9bb3-6b2472e05e7d
-- encryption: none
-  name: "\u7F8E\u56FD_15"
+  name: "\u65E5\u672C_1"
   network: ws
   port: 443
-  server: time.is
-  servername: a.azadnet002.ddns-ip.net
-  tls: true
-  type: vless
-  uuid: d0298536-d670-4045-bbb1-ddd5ea68683e
-  ws-opts:
-    headers:
-      Host: a.azadnet002.ddns-ip.net
-    path: /
-- alpn:
-  - h2
-  encryption: none
-  name: "\u7F8E\u56FD_16"
-  network: grpc
-  port: 443
-  server: all.tellmethetrue.shop
-  servername: pqh30v1.hiddendom.shop
-  tls: true
-  type: vless
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- encryption: none
-  name: "\u7F8E\u56FD_17"
-  network: ws
-  port: 443
-  server: 172.67.160.44
-  servername: 8dbc269c-38ed-0d38-7a26-970a14604a96.huangshang.site
-  tls: true
-  type: vless
-  uuid: 1ae6dcb3-8d05-4eee-b550-32904c88c312
-  ws-opts:
-    headers:
-      Host: 8dbc269c-38ed-0d38-7a26-970a14604a96.huangshang.site
-    path: /0SCvfqSaeeB74kgXZ
-- encryption: none
-  name: "\u7F8E\u56FD_18"
-  network: tcp
-  port: 11443
-  server: 183.240.179.88
-  type: vless
-  uuid: df245bf8-8253-4029-90d8-ef30cfac75f1
-- encryption: none
-  name: "\u7F8E\u56FD_19"
-  network: ws
-  port: 80
-  server: small-meal.oneeat.co
-  servername: small-meal.oneeat.co
-  type: vless
-  uuid: d1e44075-8c92-4698-9db0-e71d7015b757
-  ws-opts:
-    headers:
-      Host: small-meal.oneeat.co
-    path: /
-- encryption: none
-  name: "\u7F8E\u56FD_20"
-  network: ws
-  port: 80
-  server: handsome-device.oneeat.co
-  servername: handsome-device.oneeat.co
-  type: vless
-  uuid: 2ad87f95-7a0b-4018-8497-5ecaac2f0ddf
-  ws-opts:
-    headers:
-      Host: handsome-device.oneeat.co
-    path: /?---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG
-- encryption: none
-  name: "\u7F8E\u56FD_21"
-  network: ws
-  port: 443
-  server: 172.67.160.44
-  servername: cb93136c-7ed8-136d-45b5-5254c891e290.huangshang.site
-  tls: true
-  type: vless
-  uuid: 086c655d-0c12-47dd-9d5a-2670089201ee
-  ws-opts:
-    headers:
-      Host: cb93136c-7ed8-136d-45b5-5254c891e290.huangshang.site
-    path: /0SCvfqSaeeB74kgXZ
-- encryption: none
-  name: "\u7F8E\u56FD_22"
-  network: ws
-  port: 443
-  server: 147.79.20.47
-  servername: swus.zyk.biz.id
-  tls: true
-  type: vless
-  uuid: 0de36d61-ac9e-4105-92cd-8fe97921b48b
-  ws-opts:
-    headers:
-      Host: swus.zyk.biz.id
-    path: /
-- encryption: none
-  name: "\u7F8E\u56FD_23"
-  network: ws
-  port: 80
-  server: sweet-combination.seotoolsforyou.co.uk
-  type: vless
-  uuid: 05020a61-3c0c-4ead-b256-7851ff905a75
-  ws-opts:
-    path: /
-- encryption: none
-  name: "\u7F8E\u56FD_24"
-  network: ws
-  port: 443
-  server: join-raiv2mmr-telegram.koyeb.app
-  tls: true
-  type: vless
-  uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9
-  ws-opts:
-    path: /@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr
-- encryption: none
-  name: "\u7F8E\u56FD_25"
-  network: ws
-  port: 443
-  server: 190.93.246.137
-  servername: abc.vpneee.top
-  tls: true
-  type: vless
-  uuid: 8250d638-45df-41fa-b06f-160d1cb1de0c
-  ws-opts:
-    headers:
-      Host: abc.vpneee.top
-    path: /YnqGMcAt/
-- alpn:
-  - http/1.1
-  encryption: none
-  name: "\u7F8E\u56FD_26"
-  network: ws
-  port: 443
-  server: ef7c2383-03bb-fec2-327b-34f6b2ace7cb.freevpnatm2025.dpdns.org
-  servername: ef7c2383-03bb-fec2-327b-34f6b2ace7cb.freevpnatm2025.dpdns.org
-  tls: true
-  type: vless
-  uuid: 34a7da0c-a43a-49b8-a8d0-64b43100090e
-  ws-opts:
-    headers:
-      Host: ef7c2383-03bb-fec2-327b-34f6b2ace7cb.freevpnatm2025.dpdns.org
-    path: /z4RnlCBxj2oeA85VyjPCYXwETL
-- encryption: none
-  name: "\u7F8E\u56FD_27"
-  network: ws
-  port: 443
-  server: join-raiv2mmr-telegram.koyeb.app
-  servername: JOIN-RAIV2MMR-TELEGRAM.koyeb.app
-  tls: true
-  type: vless
-  uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9
-  ws-opts:
-    path: /@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr
-- encryption: none
-  name: "\u7F8E\u56FD_28"
-  network: ws
-  port: 443
-  server: cloudflare-ip.mofashi.ltd
-  servername: 2.294294.xyz
-  tls: true
-  type: vless
-  uuid: dea991b4-696f-4e9e-9761-1e1b31bb02de
-  ws-opts:
-    headers:
-      Host: 2.294294.xyz
-    path: /snippets
-- encryption: none
-  name: "\u7F8E\u56FD_29"
-  network: ws
-  port: 443
-  server: join-raiv2mmr-telegram.koyeb.app
-  servername: join-raiv2mmr-telegram.koyeb.app
-  tls: true
-  type: vless
-  uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9
-  ws-opts:
-    headers:
-      Host: join-raiv2mmr-telegram.koyeb.app
-    path: /@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr
-- encryption: none
-  name: "\u7F8E\u56FD_30"
-  network: ws
-  port: 2096
-  server: 188.42.145.253
-  servername: gaosir.unfeeling.sbs
-  tls: true
-  type: vless
-  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  ws-opts:
-    headers:
-      Host: gaosir.unfeeling.sbs
-    path: /Telegram@freecodes/?ed=2560
-- encryption: none
-  name: "\u7F8E\u56FD_31"
-  network: ws
-  port: 2096
-  server: 188.42.145.253
-  servername: gaosir.unfeeling.sbs
-  tls: true
-  type: vless
-  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  ws-opts:
-    headers:
-      Host: gaosir.unfeeling.sbs
-    path: "/freecodes@\u8282\u70B9\u72C2\u9B54/?ed=2560"
-- encryption: none
-  name: "\u7F8E\u56FD_32"
-  network: ws
-  port: 443
-  server: net2026cd.zanddynastyofpersia.org
-  servername: net2026cd.zanddynastyofpersia.org
-  tls: true
-  type: vless
-  uuid: 0ec8c120-33fa-4658-9bed-3a51cb04c55c
-  ws-opts:
-    path: /eJsVXFVZ6iavNx1EFxOyH861WH
-- encryption: none
-  name: "\u7F8E\u56FD_33"
-  network: ws
-  port: 443
-  server: 104.21.36.57
-  servername: profit.fullmargintraders.com
-  tls: true
-  type: vless
-  uuid: 6f6e8f09-c1b3-48fd-ab00-18f921d875ef
-  ws-opts:
-    headers:
-      Host: profit.fullmargintraders.com
-    path: /wsv/6f6e8f09-c1b3-48fd-ab00-18f921d875ef
-- encryption: none
-  name: "\u7F8E\u56FD_34"
-  network: ws
-  port: 443
-  server: wwwopensignalcom-goodspeed-8xx.pages.dev.
-  servername: WwW.OPENSIgnaL.cOm.NaynaY09.dynv6.nET
-  tls: true
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: WwW.OPENSIgnaL.cOm.NaynaY09.dynv6.nET
-    path: //
-- encryption: none
-  name: "\u7F8E\u56FD_35"
-  network: ws
-  port: 2096
-  server: 188.42.145.253
-  servername: gaosir.unfeeling.sbs
-  tls: true
-  type: vless
-  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  ws-opts:
-    headers:
-      Host: gaosir.unfeeling.sbs
-    path: /
-- encryption: none
-  name: "\u7F8E\u56FD_36"
-  network: ws
-  port: 2096
-  server: 188.42.145.253
+  server: 158.101.80.84
   servername: gaosir.unfeeling.sbs
   tls: true
   type: vless
@@ -759,102 +418,609 @@ proxies:
       Host: gaosir.unfeeling.sbs
     path: "/Telegram\U0001F1E8\U0001F1F3@WangCai2/?ed=2560"
 - encryption: none
-  name: "\u7F8E\u56FD_37"
+  name: "\u65E5\u672C_2"
   network: ws
-  port: 443
-  server: nrtcfdns.zone.id
-  servername: 2.294294.xyz
+  port: 12553
+  server: 113.37.149.36
+  servername: gaosir.unfeeling.sbs
   tls: true
   type: vless
-  uuid: dea991b4-696f-4e9e-9761-1e1b31bb02de
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
   ws-opts:
     headers:
-      Host: 2.294294.xyz
-    path: /snippets
-- name: "\u7F8E\u56FD_38"
+      Host: gaosir.unfeeling.sbs
+    path: Telegram@freecodes/?ed=2560
+- encryption: none
+  name: "\u7F8E\u56FD_6"
   network: ws
-  password: iwangjie
-  port: 443
-  server: 138.124.118.34
-  sni: nodes.830901.xyz
+  port: 8443
+  server: 64.49.14.41
+  servername: gaosir.unfeeling.sbs
   tls: true
-  type: trojan
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
   ws-opts:
     headers:
-      Host: nodes.830901.xyz
-    path: /proxyip=proxyip.fxxk.dedyn.io
-- name: "\u7F8E\u56FD_39"
-  network: tcp
-  password: ef269dbc-0486-451f-b94b-d0c354bc3f1c
-  port: 443
-  server: tuntro001.instconn.com
-  sni: awshk.686911.xyz
-  tls: true
-  type: trojan
-- name: "\u7F8E\u56FD_40"
+      Host: gaosir.unfeeling.sbs
+    path: "/X@\u8282\u70B9\u72C2\u9B54/"
+- encryption: none
+  name: "\u65E5\u672C_3"
   network: ws
-  password: iwangjie
+  port: 443
+  server: 160.16.203.210
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /Telegram@freecodes/?ed=2560
+- encryption: none
+  name: "\u7F8E\u56FD_7"
+  network: ws
   port: 2053
-  server: 141.94.68.216
-  sni: nodes.830901.xyz
+  server: 217.60.38.191
+  servername: gaosir.unfeeling.sbs
   tls: true
-  type: trojan
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
   ws-opts:
     headers:
-      Host: nodes.830901.xyz
-    path: /?ed=2560
-- name: "\u7F8E\u56FD_41"
+      Host: gaosir.unfeeling.sbs
+    path: freecodes/?ed=2560
+- encryption: none
+  name: "\u7F8E\u56FD_8"
   network: ws
-  password: iwangjie
   port: 2053
-  server: 135.125.232.253
-  sni: nodes.830901.xyz
+  server: 31.192.238.71
+  servername: gaosir.unfeeling.sbs
   tls: true
-  type: trojan
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
   ws-opts:
     headers:
-      Host: nodes.830901.xyz
-    path: /?ed=2560
-- name: "\u7F8E\u56FD_42"
+      Host: gaosir.unfeeling.sbs
+    path: "/X@\u8282\u70B9\u72C2\u9B54/?ed=2560"
+- encryption: none
+  name: "\u7F8E\u56FD_9"
   network: ws
-  password: iwangjie
-  port: 443
-  server: 83.147.254.185
-  sni: nodes.830901.xyz
+  port: 49153
+  server: 47.79.90.37
+  servername: gaosir.unfeeling.sbs
   tls: true
-  type: trojan
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
   ws-opts:
     headers:
-      Host: nodes.830901.xyz
-    path: /?ed=2560
+      Host: gaosir.unfeeling.sbs
+    path: /Telegram@freecodes/?ed=2560
+- encryption: none
+  name: "\u7F8E\u56FD_10"
+  network: ws
+  port: 10042
+  server: 61.83.202.17
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: "X@\u8282\u70B9\u72C2\u9B54/?ed=2560"
+- encryption: none
+  name: "\u65E5\u672C_4"
+  network: ws
+  port: 12553
+  server: 113.37.149.36
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: "/X@\u8282\u70B9\u72C2\u9B54/"
+- encryption: none
+  name: "\u65E5\u672C_5"
+  network: ws
+  port: 12553
+  server: 113.37.149.36
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: "X@\u8282\u70B9\u72C2\u9B54/?ed=2560"
+- encryption: none
+  name: "\u9999\u6E2F_1"
+  network: ws
+  port: 443
+  server: 202.85.53.74
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: "/X@\u8282\u70B9\u72C2\u9B54/?ed=2560"
+- encryption: none
+  name: "\u9999\u6E2F_2"
+  network: ws
+  port: 443
+  server: 202.85.53.74
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /X@freecodes/?ed=2560
+- encryption: none
+  name: "\u7F8E\u56FD_11"
+  network: ws
+  port: 443
+  server: 202.85.53.74
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: "/Telegram\U0001F1E8\U0001F1F3@WangCai2/?ed=2560"
+- encryption: none
+  name: "\u7F8E\u56FD_12"
+  network: ws
+  port: 2053
+  server: 31.192.238.71
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: "/Telegram\U0001F1E8\U0001F1F3@WangCai2/?ed=2560"
+- encryption: none
+  name: "\u65E5\u672C_6"
+  network: ws
+  port: 443
+  server: 153.121.45.101
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /X@freecodes/?ed=2560
+- encryption: none
+  name: "\u7F8E\u56FD_13"
+  network: ws
+  port: 43
+  server: 220.128.110.108
+  servername: mf.xmma.xyz
+  tls: true
+  type: vless
+  uuid: e258977b-e413-4718-a3af-02d75492c349
+  ws-opts:
+    headers:
+      Host: mf.xmma.xyz
+    path: /?ed=2048
+- encryption: none
+  name: "\u9999\u6E2F_3"
+  network: ws
+  port: 18622
+  server: 210.6.207.42
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /X@freecodes/?ed=2560
+- encryption: none
+  name: "\u7F8E\u56FD_14"
+  network: ws
+  port: 2053
+  server: 31.192.238.71
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /Telegram@freecodes/?ed=2560
+- encryption: none
+  name: "\u65E5\u672C_7"
+  network: ws
+  port: 443
+  server: 160.16.203.210
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /X@freecodes/?ed=2560
+- encryption: none
+  name: "\u7F8E\u56FD_15"
+  network: ws
+  port: 43
+  server: 61.220.128.226
+  servername: mf.xmma.xyz
+  tls: true
+  type: vless
+  uuid: e258977b-e413-4718-a3af-02d75492c349
+  ws-opts:
+    headers:
+      Host: mf.xmma.xyz
+    path: /?ed=2048
+- encryption: none
+  name: "\u65E5\u672C_8"
+  network: ws
+  port: 12553
+  server: 113.37.149.36
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /X@freecodes/
+- encryption: none
+  name: "\u65E5\u672C_9"
+  network: ws
+  port: 443
+  server: 160.16.203.210
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /X@freecodes/
+- encryption: none
+  name: "\u65E5\u672C_10"
+  network: ws
+  port: 443
+  server: 153.121.45.101
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: "/X@\u8282\u70B9\u72C2\u9B54/?ed=2560"
+- encryption: none
+  name: "\u7F8E\u56FD_16"
+  network: ws
+  port: 18622
+  server: 210.6.207.42
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: "/X@\u8282\u70B9\u72C2\u9B54/?ed=2560"
+- encryption: none
+  name: "\u65E5\u672C_11"
+  network: ws
+  port: 443
+  server: 160.16.203.210
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: "/X@\u8282\u70B9\u72C2\u9B54/?ed=2560"
+- encryption: none
+  name: "\u7F8E\u56FD_17"
+  network: ws
+  port: 2053
+  server: 31.192.238.71
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /X@freecodes/
+- encryption: none
+  name: "\u82F1\u56FD"
+  network: ws
+  port: 443
+  server: 141.11.43.124
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: "/X@\u8282\u70B9\u72C2\u9B54/"
+- encryption: none
+  name: "\u7F8E\u56FD_18"
+  network: ws
+  port: 443
+  server: 47.79.91.168
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: X@freecodes/?ed=2560
+- encryption: none
+  name: "\u7F8E\u56FD_19"
+  network: ws
+  port: 2053
+  server: 31.192.238.71
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: "/X@\u8282\u70B9\u72C2\u9B54/"
+- encryption: none
+  name: "\u97E9\u56FD"
+  network: ws
+  port: 12902
+  server: 121.167.146.253
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: X@freecodes/?ed=2560
+- encryption: none
+  name: "\u7F8E\u56FD_20"
+  network: ws
+  port: 50001
+  server: 220.72.245.245
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: "/X@\u8282\u70B9\u72C2\u9B54/?ed=2560"
+- encryption: none
+  name: "\u7F8E\u56FD_21"
+  network: ws
+  port: 12902
+  server: 121.167.146.253
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: "/X@\u8282\u70B9\u72C2\u9B54/?ed=2560"
+- encryption: none
+  name: "\u65E5\u672C_12"
+  network: ws
+  port: 443
+  server: 160.16.203.210
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: "/X@\u8282\u70B9\u72C2\u9B54/"
+- encryption: none
+  name: "\u9999\u6E2F_4"
+  network: ws
+  port: 443
+  server: 202.85.53.74
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /Telegram@freecodes/?ed=2560
+- encryption: none
+  name: "\u7F8E\u56FD_22"
+  network: ws
+  port: 12147
+  server: 182.31.70.92
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: "X@\u8282\u70B9\u72C2\u9B54/?ed=2560"
+- encryption: none
+  name: "\u7F8E\u56FD_23"
+  network: ws
+  port: 27443
+  server: 211.229.77.184
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: "X@\u8282\u70B9\u72C2\u9B54/?ed=2560"
+- encryption: none
+  name: "\u7F8E\u56FD_24"
+  network: ws
+  port: 10249
+  server: 121.176.175.54
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: "X@\u8282\u70B9\u72C2\u9B54/?ed=2560"
+- encryption: none
+  name: "\u7F8E\u56FD_25"
+  network: ws
+  port: 2053
+  server: 31.192.238.71
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: "Telegram\U0001F1E8\U0001F1F3@WangCai2/?ed=2560"
+- encryption: none
+  name: "\u7F8E\u56FD_26"
+  network: ws
+  port: 50000
+  server: 211.57.90.42
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: "/X@\u8282\u70B9\u72C2\u9B54/?ed=2560"
+- encryption: none
+  name: "\u7F8E\u56FD_27"
+  network: ws
+  port: 2053
+  server: 31.192.238.71
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: X@freecodes/?ed=2560
+- encryption: none
+  name: "\u65E5\u672C_13"
+  network: ws
+  port: 443
+  server: 153.121.45.101
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /Telegram@freecodes/?ed=2560
+- encryption: none
+  name: "\u7F8E\u56FD_28"
+  network: ws
+  port: 50001
+  server: 211.177.114.117
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: "X@\u8282\u70B9\u72C2\u9B54/?ed=2560"
+- encryption: none
+  name: "\u7F8E\u56FD_29"
+  network: ws
+  port: 2053
+  server: 31.192.238.71
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: "X@\u8282\u70B9\u72C2\u9B54/?ed=2560"
+- encryption: none
+  name: "\u7F8E\u56FD_30"
+  network: ws
+  port: 8443
+  server: 31.192.238.71
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: "X@\u8282\u70B9\u72C2\u9B54/?ed=2560"
+- encryption: none
+  name: "\u9999\u6E2F_5"
+  network: ws
+  port: 443
+  server: 202.85.53.74
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: "/X@\u8282\u70B9\u72C2\u9B54/"
+- encryption: none
+  name: "\u7F8E\u56FD_31"
+  network: ws
+  port: 10004
+  server: 222.113.18.206
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: freecodes/?ed=2560
+- encryption: none
+  name: "\u7F8E\u56FD_32"
+  network: ws
+  port: 2096
+  server: 188.42.145.253
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: "/XU0001F1E8U0001F1F3@\u8282\u70B9\u72C2\u9B54/?ed=2560fp=chrome"
 - flow: xtls-rprx-vision
   name: "\u7F8E\u570B_1"
   network: tcp
   port: 443
   server: 212.18.104.19
   servername: nspk.ru
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7
-- flow: xtls-rprx-vision
-  name: "\u4FC4\u7F57\u65AF_1"
-  network: tcp
-  port: 443
-  server: 81.19.140.131
-  servername: vk.cc
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7
-- flow: xtls-rprx-vision
-  name: "\u5E0C\u81D8"
-  network: tcp
-  port: 443
-  server: 185.39.207.121
-  servername: vk.cc
   skip-cert-verify: true
   tls: false
   type: vless
@@ -874,245 +1040,16 @@ proxies:
 - flow: xtls-rprx-vision
   name: "\u7F8E\u56FD_1"
   network: tcp
-  port: 22008
-  server: 212.129.5.242
-  servername: www.yahoo.com
+  port: 443
+  server: 77.110.109.72
+  servername: ad.mail.ru
   skip-cert-verify: true
   tls: false
   type: vless
   udp: true
-  uuid: 77a33d77-7af9-4c33-9556-d6711becca04
+  uuid: 045eb821-bdae-43c5-8945-9cb181e65dcb
 - flow: xtls-rprx-vision
-  name: "\u571F\u8033\u5176_1"
-  network: tcp
-  port: 443
-  server: 185.39.204.70
-  servername: nspk.ru
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7
-- name: "\u4F0A\u6717_1"
-  port: 80
-  server: mci.dl101movis.ir
-  skip-cert-verify: true
-  type: vless
-  uuid: 117ca567-3180-4d62-abcc-8fc0104c93ff
-- name: "\u5FB7\u56FD_1"
-  network: ws
-  port: 443
-  server: join-raiv2mmr-telegram.koyeb.app
-  servername: join-raiv2mmr-telegram.koyeb.app
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9
-  ws-opts:
-    headers:
-      host: join-raiv2mmr-telegram.koyeb.app
-    path: /@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr
-- name: "\u5FB7\u56FD_2"
-  network: ws
-  port: 443
-  server: join-raiv2mmr-telegram.koyeb.app
-  servername: JOIN-RAIV2MMR-TELEGRAM.koyeb.app
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9
-  ws-opts:
-    headers:
-      host: JOIN-RAIV2MMR-TELEGRAM.koyeb.app
-    path: /@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr
-- name: "\u7F8E\u56FD_2"
-  network: ws
-  port: 443
-  server: join-raiv2mmr-telegram.koyeb.app
-  servername: JOIN-RAIV2MMR-TELEGRAM.koyeb.app
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9
-  ws-opts:
-    headers:
-      host: JOIN-RAIV2MMR-TELEGRAM.koyeb.app
-    path: /@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr
-- name: "\u7F8E\u56FD_3"
-  network: ws
-  port: 443
-  server: join-raiv2mmr-telegram.koyeb.app
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9
-  ws-opts:
-    path: /@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr
-- name: "\u7F8E\u56FD_4"
-  network: ws
-  port: 443
-  server: join-raiv2mmr-telegram.koyeb.app
-  servername: JOIN-RAIV2MMR-TELEGRAM.koyeb.app
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9
-  ws-opts:
-    headers:
-      host: JOIN-RAIV2MMR-TELEGRAM.koyeb.app
-    path: /@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr
-- name: "\u7F8E\u56FD_5"
-  network: ws
-  port: 443
-  server: join-raiv2mmr-telegram.koyeb.app
-  servername: JOIN-RAIV2MMR-TELEGRAM.koyeb.app
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9
-  ws-opts:
-    headers:
-      host: JOIN-RAIV2MMR-TELEGRAM.koyeb.app
-    path: /@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr
-- name: "\u7F8E\u56FD_6"
-  network: ws
-  port: 443
-  server: join-raiv2mmr-telegram.koyeb.app
-  servername: JOIN-RAIV2MMR-TELEGRAM.koyeb.app
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9
-  ws-opts:
-    headers:
-      host: JOIN-RAIV2MMR-TELEGRAM.koyeb.app
-    path: /@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr
-- name: "\u7F8E\u56FD_7"
-  network: ws
-  port: 443
-  server: join-raiv2mmr-telegram.koyeb.app
-  servername: join-raiv2mmr-telegram.koyeb.app
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9
-  ws-opts:
-    headers:
-      host: join-raiv2mmr-telegram.koyeb.app
-    path: /@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr
-- name: "\u7F8E\u56FD_8"
-  network: ws
-  port: 443
-  server: join-raiv2mmr-telegram.koyeb.app
-  servername: JOIN-RAIV2MMR-TELEGRAM.koyeb.app
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9
-  ws-opts:
-    headers:
-      host: JOIN-RAIV2MMR-TELEGRAM.koyeb.app
-    path: /@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr
-- name: "\u7F8E\u56FD_9"
-  network: ws
-  port: 443
-  server: join-raiv2mmr-telegram.koyeb.app
-  servername: join-raiv2mmr-telegram.koyeb.app
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9
-  ws-opts:
-    headers:
-      host: join-raiv2mmr-telegram.koyeb.app
-    path: /@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr
-- name: "\u7F8E\u56FD_10"
-  network: ws
-  port: 443
-  server: 104.20.31.27
-  servername: JOIN-RAIV2MMR-TELEGRAM.koyeb.app
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9
-  ws-opts:
-    headers:
-      host: JOIN-RAIV2MMR-TELEGRAM.koyeb.app
-    path: /@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr
-- name: "\u7F8E\u570B_3"
-  network: ws
-  port: 443
-  server: join-raiv2mmr-telegram.koyeb.app
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9
-  ws-opts:
-    path: /@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr
-- name: "\u7F8E\u56FD_11"
-  network: ws
-  port: 443
-  server: join-raiv2mmr-telegram.koyeb.app
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9
-  ws-opts:
-    path: /@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr
-- name: "\u7F8E\u570B_4"
-  network: ws
-  port: 443
-  server: join-raiv2mmr-telegram.koyeb.app
-  servername: JOIN-RAIV2MMR-TELEGRAM.koyeb.app
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9
-  ws-opts:
-    headers:
-      host: JOIN-RAIV2MMR-TELEGRAM.koyeb.app
-    path: /@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr
-- name: "\u5FB7\u56FD_3"
-  network: ws
-  port: 443
-  server: join-raiv2mmr-telegram.koyeb.app
-  servername: JOIN-RAIV2MMR-TELEGRAM.koyeb.app
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9
-  ws-opts:
-    headers:
-      host: JOIN-RAIV2MMR-TELEGRAM.koyeb.app
-    path: /@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr
-- flow: xtls-rprx-vision
-  name: "\u4FC4\u7F57\u65AF_2"
-  network: tcp
-  port: 443
-  server: 81.19.140.131
-  servername: vk.cc
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7
-- flow: xtls-rprx-vision
-  name: "\u82AC\u5170"
+  name: "\u82AC\u5170_1"
   network: tcp
   port: 443
   server: 109.172.54.49
@@ -1123,49 +1060,27 @@ proxies:
   udp: true
   uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7
 - flow: xtls-rprx-vision
-  name: "\u7F8E\u56FD_12"
-  network: tcp
-  port: 9443
-  server: a1-direct.the-best-airport.top
-  servername: icloud.cdn-apple.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 07fe5ad4-6157-4857-91fe-8270ebd648d9
-- flow: xtls-rprx-vision
-  name: "\u7F8E\u56FD_13"
-  network: tcp
-  port: 8443
-  server: b1-direct.the-best-airport.top
-  servername: icloud.cdn-apple.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 07fe5ad4-6157-4857-91fe-8270ebd648d9
-- flow: xtls-rprx-vision
-  name: "\u7F8E\u56FD_14"
-  network: tcp
-  port: 4443
-  server: c1-direct.the-best-airport.top
-  servername: icloud.cdn-apple.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 07fe5ad4-6157-4857-91fe-8270ebd648d9
-- flow: xtls-rprx-vision
-  name: "\u7F8E\u56FD_15"
+  name: "\u4FC4\u7F57\u65AF"
   network: tcp
   port: 443
-  server: 77.110.109.72
-  servername: ad.mail.ru
+  server: 81.19.140.131
+  servername: vk.cc
   skip-cert-verify: true
   tls: false
   type: vless
   udp: true
-  uuid: 045eb821-bdae-43c5-8945-9cb181e65dcb
+  uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7
+- flow: xtls-rprx-vision
+  name: "\u571F\u8033\u5176"
+  network: tcp
+  port: 443
+  server: 185.39.204.70
+  servername: nspk.ru
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7
 - name: "\u65E5\u672C_1"
   network: tcp
   port: 443
@@ -1177,7 +1092,165 @@ proxies:
   udp: true
   uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
 - flow: xtls-rprx-vision
-  name: "\u745E\u58EB"
+  name: "\u65B0\u897F\u5170"
+  network: tcp
+  port: 22008
+  server: 212.129.5.242
+  servername: www.yahoo.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 77a33d77-7af9-4c33-9556-d6711becca04
+- flow: xtls-rprx-vision
+  name: "\u5E0C\u81D8"
+  network: tcp
+  port: 443
+  server: 185.39.207.121
+  servername: vk.cc
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7
+- name: "\u65E5\u672C_2"
+  network: tcp
+  port: 443
+  server: 160.187.111.222
+  servername: images-na.ssl-images-amazon.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
+- name: US_1
+  network: ws
+  port: 443
+  server: bestcdn3.868863.xyz
+  servername: v-fp-b1.the-best-airport.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8580842a-c8ae-46c7-86e1-0a28ed1d38d5
+  ws-opts:
+    headers:
+      host: v-fp-b1.the-best-airport.top
+    path: /aejynik
+- name: US_2
+  network: ws
+  port: 443
+  server: cdn.2020111.xyz
+  servername: v-fp-c1.the-best-airport.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8580842a-c8ae-46c7-86e1-0a28ed1d38d5
+  ws-opts:
+    headers:
+      host: v-fp-c1.the-best-airport.top
+    path: /aejynik
+- name: US_3
+  network: ws
+  port: 443
+  server: cloudflare.182682.xyz
+  servername: v-fp-b1.the-best-airport.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8580842a-c8ae-46c7-86e1-0a28ed1d38d5
+  ws-opts:
+    headers:
+      host: v-fp-b1.the-best-airport.top
+    path: /aejynik
+- name: "\u7F8E\u56FD_2"
+  network: ws
+  port: 443
+  server: bestcf.top
+  servername: v-fp-b1.the-best-airport.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8580842a-c8ae-46c7-86e1-0a28ed1d38d5
+  ws-opts:
+    headers:
+      host: v-fp-b1.the-best-airport.top
+    path: /aejynik
+- name: "\u7F8E\u56FD_3"
+  network: ws
+  port: 443
+  server: bestcdn3.868863.xyz
+  servername: v-fp-a1.the-best-airport.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8580842a-c8ae-46c7-86e1-0a28ed1d38d5
+  ws-opts:
+    headers:
+      host: v-fp-a1.the-best-airport.top
+    path: /aejynik
+- name: "\u7F8E\u56FD_4"
+  network: ws
+  port: 443
+  server: bestcdn2.868863.xyz
+  servername: v-fp-c1.the-best-airport.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8580842a-c8ae-46c7-86e1-0a28ed1d38d5
+  ws-opts:
+    headers:
+      host: v-fp-c1.the-best-airport.top
+    path: /aejynik
+- name: US_4
+  network: ws
+  port: 443
+  server: cloudflare.182682.xyz
+  servername: v-fp-a1.the-best-airport.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8580842a-c8ae-46c7-86e1-0a28ed1d38d5
+  ws-opts:
+    headers:
+      host: v-fp-a1.the-best-airport.top
+    path: /aejynik
+- name: US_5
+  network: ws
+  port: 443
+  server: cdn.2020111.xyz
+  servername: v-fp-b1.the-best-airport.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8580842a-c8ae-46c7-86e1-0a28ed1d38d5
+  ws-opts:
+    headers:
+      host: v-fp-b1.the-best-airport.top
+    path: /aejynik
+- name: "\u7F8E\u56FD_5"
+  network: ws
+  port: 443
+  server: cdn.2020111.xyz
+  servername: v-fp-a1.the-best-airport.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8580842a-c8ae-46c7-86e1-0a28ed1d38d5
+  ws-opts:
+    headers:
+      host: v-fp-a1.the-best-airport.top
+    path: /aejynik
+- flow: xtls-rprx-vision
+  name: "\u745E\u58EB_1"
   network: tcp
   port: 443
   server: 212.18.104.19
@@ -1187,17 +1260,308 @@ proxies:
   type: vless
   udp: true
   uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7
+- name: "\u7F8E\u56FD_6"
+  network: ws
+  port: 443
+  server: bestcf.top
+  servername: v-fp-c1.the-best-airport.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8580842a-c8ae-46c7-86e1-0a28ed1d38d5
+  ws-opts:
+    headers:
+      host: v-fp-c1.the-best-airport.top
+    path: /aejynik
 - flow: xtls-rprx-vision
-  name: "\u571F\u8033\u5176_2"
+  name: "\u82AC\u5170_2"
   network: tcp
   port: 443
-  server: 185.39.204.70
-  servername: nspk.ru
+  server: 109.172.54.49
+  servername: vk.cc
   skip-cert-verify: true
   tls: false
   type: vless
   udp: true
   uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7
+- name: US_6
+  network: ws
+  port: 443
+  server: bestcdn2.868863.xyz
+  servername: v-fp-b1.the-best-airport.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8580842a-c8ae-46c7-86e1-0a28ed1d38d5
+  ws-opts:
+    headers:
+      host: v-fp-b1.the-best-airport.top
+    path: /aejynik
+- name: US_7
+  network: ws
+  port: 443
+  server: bestcdn3.868863.xyz
+  servername: v-fp-c1.the-best-airport.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8580842a-c8ae-46c7-86e1-0a28ed1d38d5
+  ws-opts:
+    headers:
+      host: v-fp-c1.the-best-airport.top
+    path: /aejynik
+- name: "\u7F8E\u56FD_7"
+  network: ws
+  port: 443
+  server: bestcdn1.868863.xyz
+  servername: v-fp-a1.the-best-airport.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8580842a-c8ae-46c7-86e1-0a28ed1d38d5
+  ws-opts:
+    headers:
+      host: v-fp-a1.the-best-airport.top
+    path: /aejynik
+- name: US_8
+  network: ws
+  port: 443
+  server: bestcdn.cloudflare.182682.xyz
+  servername: v-fp-a1.the-best-airport.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8580842a-c8ae-46c7-86e1-0a28ed1d38d5
+  ws-opts:
+    headers:
+      host: v-fp-a1.the-best-airport.top
+    path: /aejynik
+- name: US_9
+  network: ws
+  port: 443
+  server: cloudflare.182682.xyz
+  servername: v-fp-c1.the-best-airport.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8580842a-c8ae-46c7-86e1-0a28ed1d38d5
+  ws-opts:
+    headers:
+      host: v-fp-c1.the-best-airport.top
+    path: /aejynik
+- name: US_10
+  network: ws
+  port: 443
+  server: berryisfast.cloudflare.182682.xyz
+  servername: v-fp-c1.the-best-airport.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8580842a-c8ae-46c7-86e1-0a28ed1d38d5
+  ws-opts:
+    headers:
+      host: v-fp-c1.the-best-airport.top
+    path: /aejynik
+- name: mg
+  network: ws
+  port: 443
+  server: berryisfast.cloudflare.182682.xyz
+  servername: v-fp-a1.the-best-airport.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8580842a-c8ae-46c7-86e1-0a28ed1d38d5
+  ws-opts:
+    headers:
+      host: v-fp-a1.the-best-airport.top
+    path: /aejynik
+- name: US_11
+  network: ws
+  port: 443
+  server: bestcdn1.868863.xyz
+  servername: v-fp-b1.the-best-airport.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8580842a-c8ae-46c7-86e1-0a28ed1d38d5
+  ws-opts:
+    headers:
+      host: v-fp-b1.the-best-airport.top
+    path: /aejynik
+- name: "\u7F8E\u56FD_8"
+  network: ws
+  port: 443
+  server: berryisbest.cloudflare.182682.xyz
+  servername: v-fp-a1.the-best-airport.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8580842a-c8ae-46c7-86e1-0a28ed1d38d5
+  ws-opts:
+    headers:
+      host: v-fp-a1.the-best-airport.top
+    path: /aejynik
+- name: US_12
+  network: ws
+  port: 443
+  server: berryisbest.cloudflare.182682.xyz
+  servername: v-fp-c1.the-best-airport.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8580842a-c8ae-46c7-86e1-0a28ed1d38d5
+  ws-opts:
+    headers:
+      host: v-fp-c1.the-best-airport.top
+    path: /aejynik
+- name: "\u7F8E\u56FD_9"
+  network: ws
+  port: 443
+  server: berryisbest.cloudflare.182682.xyz
+  servername: v-fp-b1.the-best-airport.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8580842a-c8ae-46c7-86e1-0a28ed1d38d5
+  ws-opts:
+    headers:
+      host: v-fp-b1.the-best-airport.top
+    path: /aejynik
+- name: "\u7F8E\u56FD_10"
+  network: ws
+  port: 443
+  server: bestcf.top
+  servername: v-fp-a1.the-best-airport.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8580842a-c8ae-46c7-86e1-0a28ed1d38d5
+  ws-opts:
+    headers:
+      host: v-fp-a1.the-best-airport.top
+    path: /aejynik
+- name: US_13
+  network: ws
+  port: 443
+  server: bestcdn.cloudflare.182682.xyz
+  servername: v-fp-b1.the-best-airport.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8580842a-c8ae-46c7-86e1-0a28ed1d38d5
+  ws-opts:
+    headers:
+      host: v-fp-b1.the-best-airport.top
+    path: /aejynik
+- flow: xtls-rprx-vision
+  name: US_14
+  network: tcp
+  port: 8443
+  server: b1-direct.the-best-airport.top
+  servername: icloud.cdn-apple.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 8580842a-c8ae-46c7-86e1-0a28ed1d38d5
+- name: "\u7F8E\u56FD_11"
+  network: ws
+  port: 443
+  server: bestcdn.cloudflare.182682.xyz
+  servername: v-fp-c1.the-best-airport.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8580842a-c8ae-46c7-86e1-0a28ed1d38d5
+  ws-opts:
+    headers:
+      host: v-fp-c1.the-best-airport.top
+    path: /aejynik
+- name: US_15
+  network: ws
+  port: 443
+  server: bestcdn1.868863.xyz
+  servername: v-fp-b1.the-best-airport.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8580842a-c8ae-46c7-86e1-0a28ed1d38d5
+  ws-opts:
+    headers:
+      host: v-fp-b1.the-best-airport.top
+    path: /aejynik
+- name: US_16
+  network: ws
+  port: 443
+  server: bestcdn1.868863.xyz
+  servername: v-fp-c1.the-best-airport.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8580842a-c8ae-46c7-86e1-0a28ed1d38d5
+  ws-opts:
+    headers:
+      host: v-fp-c1.the-best-airport.top
+    path: /aejynik
+- name: US_17
+  network: ws
+  port: 443
+  server: berryisfast.cloudflare.182682.xyz
+  servername: v-fp-b1.the-best-airport.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8580842a-c8ae-46c7-86e1-0a28ed1d38d5
+  ws-opts:
+    headers:
+      host: v-fp-b1.the-best-airport.top
+    path: /aejynik
+- name: US_18
+  network: ws
+  port: 443
+  server: bestcdn1.868863.xyz
+  servername: v-fp-b1.the-best-airport.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8580842a-c8ae-46c7-86e1-0a28ed1d38d5
+  ws-opts:
+    headers:
+      host: v-fp-b1.the-best-airport.top
+    path: /aejynik
+- name: "\u7F8E\u56FD_12"
+  network: ws
+  port: 443
+  server: bestcdn2.868863.xyz
+  servername: v-fp-a1.the-best-airport.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8580842a-c8ae-46c7-86e1-0a28ed1d38d5
+  ws-opts:
+    headers:
+      host: v-fp-a1.the-best-airport.top
+    path: /aejynik
 - flow: xtls-rprx-vision
   name: "\u5E0C\u814A"
   network: tcp
@@ -1210,7 +1574,51 @@ proxies:
   udp: true
   uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7
 - flow: xtls-rprx-vision
-  name: "\u65B0\u897F\u5170"
+  name: "\u7F8E\u56FD_13"
+  network: tcp
+  port: 443
+  server: 77.110.109.72
+  servername: ad.mail.ru
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 045eb821-bdae-43c5-8945-9cb181e65dcb
+- flow: xtls-rprx-vision
+  name: US_19
+  network: tcp
+  port: 4443
+  server: c1-direct.the-best-airport.top
+  servername: icloud.cdn-apple.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 8580842a-c8ae-46c7-86e1-0a28ed1d38d5
+- flow: xtls-rprx-vision
+  name: "\u745E\u58EB_2"
+  network: tcp
+  port: 443
+  server: 212.18.104.19
+  servername: nspk.ru
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7
+- flow: xtls-rprx-vision
+  name: US_20
+  network: tcp
+  port: 9443
+  server: a1-direct.the-best-airport.top
+  servername: icloud.cdn-apple.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 8580842a-c8ae-46c7-86e1-0a28ed1d38d5
+- flow: xtls-rprx-vision
+  name: "\u7F8E\u56FD_14"
   network: tcp
   port: 22008
   server: 212.129.5.242
@@ -1220,55 +1628,7 @@ proxies:
   type: vless
   udp: true
   uuid: 77a33d77-7af9-4c33-9556-d6711becca04
-- name: "\u4F0A\u6717_2"
-  port: 80
-  server: mci.dl101movis.ir
-  skip-cert-verify: true
-  type: vless
-  uuid: 117ca567-3180-4d62-abcc-8fc0104c93ff
-- name: "\u7F8E\u56FD_16"
-  network: ws
-  port: 80
-  server: 172.66.156.81
-  servername: websocket.network.www.speedtest.net.flutter.dev.russia.pyt.vegaskala.com.
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 01cea818-a80b-4945-a883-f5164cde4ad3
-  ws-opts:
-    headers:
-      host: websocket.network.www.speedtest.net.flutter.dev.russia.pyt.vegaskala.com.
-    path: /@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy
-- name: "\u7F8E\u56FD_17"
-  network: ws
-  port: 80
-  server: 172.66.156.81
-  servername: websocket.network.www.speedtest.net.flutter.dev.russia.pyt.vegaskala.com.
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 01cea818-a80b-4945-a883-f5164cde4ad3
-  ws-opts:
-    headers:
-      host: websocket.network.www.speedtest.net.flutter.dev.russia.pyt.vegaskala.com.
-    path: /@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy
-- name: "\u7F8E\u56FD_18"
-  network: ws
-  port: 443
-  server: 104.20.31.27
-  servername: JOIN-RAIV2MMR-TELEGRAM.koyeb.app
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9
-  ws-opts:
-    headers:
-      host: JOIN-RAIV2MMR-TELEGRAM.koyeb.app
-    path: /@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr
-- name: "\u65E5\u672C_2"
+- name: "\u65E5\u672C_3"
   network: tcp
   password: BxceQaOe
   port: 811
@@ -1284,7 +1644,7 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: "\u7F8E\u56FD_19"
+- name: "\u7F8E\u56FD_15"
   network: tcp
   password: BxceQaOe
   port: 26876
@@ -1292,59 +1652,32 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: "\u5FB7\u56FD_4"
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 63.180.33.188
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- name: "\u65E5\u672C_3"
-  network: tcp
-  password: c53647f3153f784b3c695ffbe5fb43c0
-  port: 2283
-  server: 202.181.103.246
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-  udp: true
-- name: "\u65E5\u672C_4"
-  network: tcp
-  password: c53647f3153f784b3c695ffbe5fb43c0
-  port: 2283
-  server: 202.181.103.246
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "\u65E5\u672C_5"
+- name: "\u4E2D\u56FD"
   network: tcp
   password: BxceQaOe
-  port: 4556
-  server: 36.151.195.112
-  skip-cert-verify: true
-  sni: 36.151.195.112
-  type: trojan
-  udp: true
-- name: "\u9999\u6E2F"
-  network: tcp
-  password: BxceQaOe
-  port: 4556
-  server: 36.151.195.112
+  port: 26876
+  server: 36.156.102.115
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: "\u7F8E\u56FD_20"
+- name: "\u7F8E\u56FD_16"
   network: ws
-  password: 07fe5ad4-6157-4857-91fe-8270ebd648d9
+  password: 8580842a-c8ae-46c7-86e1-0a28ed1d38d5
   port: 443
-  server: bestcdn3.868863.xyz
+  server: bestcdn1.868863.xyz
   skip-cert-verify: true
-  sni: tt-c4-cdn.the-best-airport.top
+  sni: tt-a1-cdn.the-best-airport.top
   type: trojan
   udp: true
   ws-opts:
     headers:
-      host: tt-c4-cdn.the-best-airport.top
-    path: /videomuaawe
+      host: tt-a1-cdn.the-best-airport.top
+    path: /agraeabtegrrh
+- name: "\u7F8E\u56FD_17"
+  network: tcp
+  password: BxceQaOe
+  port: 26876
+  server: 36.156.102.115
+  skip-cert-verify: true
+  type: trojan
+  udp: true
