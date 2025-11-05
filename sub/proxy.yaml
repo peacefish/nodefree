@@ -1,49 +1,252 @@
 proxies:
-- cipher: aes-256-gcm
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
-  password: 4194ce5b1f36f660
-  port: 10810
-  server: 45.129.2.145
+- name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD"
+  network: tcp
+  password: adbac894-90b9-4913-b77e-a715a8d4ebc8
+  port: 20021
+  server: oss-cn-shanghai.letssepub.com
+  sni: dingding-doc.com
+  tls: true
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD_1"
+  password: 403c8b4f-05cc-4609-9ad5-a46cf84327b1
+  port: 23203
+  server: future.chenyi.pw
   type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 2"
-  password: d989ff3d46a63f63
-  port: 10081
-  server: 185.22.154.86
+- cipher: 2022-blake3-aes-128-gcm
+  name: "\U0001F1FB\U0001F1F3_VN_\u8D8A\u5357"
+  password: ZjZmYjhhMTM3MTYwYzk4ZQ==:MGUzY2RiOWEtYmI2OC00OA==
+  port: 22030
+  server: yue-zz-xy.yuetoto.net
   type: ss
-  udp: true
-- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 3"
+- name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD"
+  password: 7a2512b4-09ee-11f0-8d46-f23c9313b177
+  port: 1743
+  server: 67e01b04-t3dk00-tcm6ys-deip.la.shifen.uk
+  type: hysteria2
+- alpn:
+  - h3
+  client-fingerprint: chrome
+  encryption: none
+  name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_1"
+  network: ws
+  port: 443
+  server: 104.18.82.55
+  servername: vless.hubp.de
+  tls: true
+  type: vless
+  uuid: 29187857-4a1f-4d1e-88eb-0016771e0dbb
+  ws-opts:
+    headers:
+      Host: vless.hubp.de
+- cipher: 2022-blake3-aes-128-gcm
+  name: "\U0001F1FB\U0001F1F3_VN_\u8D8A\u5357_1"
+  password: ZjZmYjhhMTM3MTYwYzk4ZQ==:MGUzY2RiOWEtYmI2OC00OA==
+  port: 22003
+  server: yue-zz-xy.yuetoto.net
+  type: ss
+- client-fingerprint: chrome
+  encryption: none
+  name: "\U0001F1F7\U0001F1FA_RU_\u4FC4\u7F57\u65AF"
+  network: ws
+  port: 2096
+  server: 94.247.142.61
+  servername: vless.hubp.de
+  tls: true
+  type: vless
+  uuid: 12345678-1234-1234-1234-123456789123
+  ws-opts:
+    headers:
+      Host: vless.hubp.de
+    path: /snippets
+- cipher: 2022-blake3-aes-128-gcm
+  name: "\U0001F1F0\U0001F1F7_KR_\u97E9\u56FD"
+  password: ZjZmYjhhMTM3MTYwYzk4ZQ==:MGUzY2RiOWEtYmI2OC00OA==
+  port: 22016
+  server: yue-zz.yuetoto.net
+  type: ss
+- client-fingerprint: chrome
+  encryption: none
+  name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_2"
+  network: ws
+  port: 443
+  server: 104.18.13.51
+  servername: rAyAn-cOnFiG-fr-2.pArSa.dPdNs.oRg
+  tls: true
+  type: vless
+  uuid: 4710b85a-66e6-411b-b492-0e0f7366ad21
+  ws-opts:
+    headers:
+      Host: rAyAn-cOnFiG-fr-2.pArSa.dPdNs.oRg
+    path: /ws
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_3"
+  network: ws
+  port: 8443
+  server: ipe3.alighan.ir
+  servername: ipe4.alighan.ir
+  tls: true
+  type: vless
+  uuid: af9fdedf-dca8-405d-9aa4-98ebcc99e84b
+  ws-opts:
+    headers:
+      Host: s.alighan.ir
+    path: /?ed=2048
+- name: "\U0001F1EC\U0001F1E7_GB_\u82F1\u56FD"
+  password: 73746dab-cdf5-4ff5-9313-a1f4c55edd49
+  port: 48961
+  server: de1.jueduibupao.top
+  skip-cert-verify: true
+  sni: de1.jueduibupao.top
+  type: hysteria2
+- name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD_2"
+  network: tcp
   password: bca467b8c15211d189008a93c7519d3b
   port: 443
   server: 58.152.53.42
-  skip-cert-verify: true
+  sni: www.nintendogames.net
   type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 4"
+- name: "\U0001F3F3\uFE0F_unKnow_\u672A\u77E5"
+  password: cd9aec4d-3343-4808-aab0-d49cbc311a0d
+  port: 8080
+  server: usm1.473221.xyz
+  sni: usm1.473221.xyz
+  type: hysteria2
+- name: "\U0001F1EE\U0001F1F7_IR_\u4F0A\u6717"
+  password: a9feb139-7578-49c7-abe7-509dadc71dc3
+  port: 54265
+  server: banmabanmabanmabanmabanmabanma1.wanlidag.top
+  skip-cert-verify: true
+  sni: banmabanmabanmabanmabanmabanma1.wanlidag.top
+  type: hysteria2
+- name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_4"
+  password: 6286105c-fb6d-11ef-be96-f23c93136cb3
+  port: 1743
+  server: cc65f71a-t4v9c0-t5waci-4550.la.shifen.uk
+  type: hysteria2
+- cipher: 2022-blake3-aes-128-gcm
+  name: "\U0001F1F0\U0001F1F7_KR_\u97E9\u56FD_1"
+  password: ZjZmYjhhMTM3MTYwYzk4ZQ==:MGUzY2RiOWEtYmI2OC00OA==
+  port: 22021
+  server: yue-zz.yuetoto.net
+  type: ss
+- name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_5"
+  password: 17cdeb6c-f046-11ee-bdac-f23c93141fad
+  port: 1743
+  server: 6adab57e-t53wg0-tdvgqe-2gok.la.shifen.uk
+  type: hysteria2
+- name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_6"
+  password: 712bdc36-24be-11ee-be53-f23c9313b177
+  port: 1743
+  server: 68407ef0-t3dk00-tcl9of-5fdt.la.shifen.uk
+  type: hysteria2
+- client-fingerprint: chrome
+  encryption: none
+  name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_7"
   network: ws
   port: 443
-  server: 104.21.46.90
-  skip-cert-verify: true
+  server: check-host.net
+  servername: rAyAn-cOnFiG-pl-1.pArIsA.DpDnS.OrG
   tls: true
+  type: vless
+  uuid: ddab5550-3938-4aba-943c-f23a08d07dc5
+  ws-opts:
+    headers:
+      Host: rAyAn-cOnFiG-pl-1.pArIsA.DpDnS.OrG
+    path: /ws
+- alterId: 0
+  cipher: auto
+  name: "\U0001F3C1RELAY-104.21.46.90-0774"
+  network: ws
+  port: 80
+  server: ea596492-e849-fedb-4940-add11fdfa131.freevpnatm.dpdns.org
+  servername: ea596492-e849-fedb-4940-add11fdfa131.freevpnatm.dpdns.org
   type: vmess
-  udp: true
-  uuid: 1ae6dcb3-8d05-4eee-b550-32904c88c312
-  ws-headers:
-    Host: fde63b24-7fe1-5a22-949e-a30c5a39eb58.freevpnatm.dpdns.org
-  ws-path: /ri9mOOVJuAimB74kgXZ
-- cipher: aes-256-gcm
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 5"
-  password: 9ca2803c16de72cd
-  port: 10081
-  server: 45.135.135.89
+  uuid: 34a7da0c-a43a-49b8-a8d0-64b43100090e
+  ws-opts:
+    headers:
+      Host: ea596492-e849-fedb-4940-add11fdfa131.freevpnatm.dpdns.org
+    path: /e7JS5ETJeA85VyjPCYXwETL
+- name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_8"
+  password: 1b609740-eec2-11ef-8543-f23c93136cb3
+  port: 1743
+  server: eb8d3417-t4teo0-tdtx5w-au6.la.shifen.uk
+  type: hysteria2
+- cipher: 2022-blake3-aes-128-gcm
+  name: "\U0001F1F0\U0001F1F7_KR_\u97E9\u56FD_2"
+  password: ZjZmYjhhMTM3MTYwYzk4ZQ==:MGUzY2RiOWEtYmI2OC00OA==
+  port: 22040
+  server: yue-zz.yuetoto.net
+  type: ss
+- name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_9"
+  password: 16955d72-1794-11f0-a035-f23c95b6f51d
+  port: 1743
+  server: fecc1dc4-t4v9c0-t5ht86-dnss.la.shifen.uk
+  type: hysteria2
+- name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_10"
+  password: 94931862-1484-11f0-9ab7-f23c95b6f51d
+  port: 1743
+  server: 98f4acfe-t4un40-tdini3-cdfn.la.shifen.uk
+  type: hysteria2
+- encryption: none
+  name: "\U0001F1E7\U0001F1F7_BR_\u5DF4\u897F"
+  network: ws
+  port: 443
+  server: 188.114.96.3
+  servername: net2026cd.zanddynastyofpersia.org
+  tls: true
+  type: vless
+  uuid: 0ec8c120-33fa-4658-9bed-3a51cb04c55c
+  ws-opts:
+    headers:
+      Host: net2026cd.zanddynastyofpersia.org
+    path: /eJsVXFVZ6iavNx1EFxOyH861WH?ed=2048
+- name: "\U0001F1FA\U0001F1F8_US_\u7F8E\u56FD_11"
+  network: ws
+  port: 443
+  server: 104.21.9.137
+  servername: ec51ebe7-9b61-2397-41bf-1f00f6163852.huangshang.site
+  tls: true
+  type: vless
+  uuid: e159a810-7d2c-4ce6-bc22-9727feb12fac
+  ws-opts:
+    headers:
+      Host: ec51ebe7-9b61-2397-41bf-1f00f6163852.huangshang.site
+    path: /0SCvfqSaeeB74kgXZ
+- cipher: chacha20-ietf-poly1305
+  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
+  password: 014e90df-a3ee-4654-a9f6-d118e02dd02a
+  port: 41047
+  server: sl.fgmcx.top
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 6"
+  name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
+  network: ws
+  port: 80
+  server: 185.146.173.126
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  ws-headers:
+    Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+  ws-path: /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
+- cipher: chacha20-ietf-poly1305
+  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 2"
+  password: e0AuSSE9kqrZnpK1RgcuPt
+  port: 50589
+  server: 78.40.116.11
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 3"
   network: ws
   port: 44579
   server: 2001:bc8:32d7:302::10
@@ -56,32 +259,18 @@ proxies:
     Host: 2001:bc8:32d7:302::10
   ws-path: ?ed=2048
 - cipher: chacha20-ietf-poly1305
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 7"
+  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 4"
   password: e0AuSSE9kqrZnpK1RgcuPt
   port: 50589
   server: 78.40.116.11
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 8"
-  password: 9tqhMdIrTkgQ46PvhyAtMH
-  port: 443
-  server: switcher-nick-croquet.freesocks.work
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: "SG\u65B0\u52A0\u5761(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
-  password: pPMNzFdvbgWRPXaFKZmsFW
-  port: 35291
-  server: 80.66.72.11
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
-  name: "RU\u4FC4\u7F57\u65AF(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
+  name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 2"
   network: ws
   port: 80
-  server: 77.37.33.25
+  server: 77.37.33.227
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -90,13 +279,47 @@ proxies:
   ws-headers:
     Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
   ws-path: /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
-- cipher: chacha20-ietf-poly1305
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 9"
-  password: 014e90df-a3ee-4654-a9f6-d118e02dd02a
-  port: 41047
-  server: sl.fgmcx.top
+- cipher: aes-256-gcm
+  name: "SG\u65B0\u52A0\u5761(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
+  password: bd080898-b41a-48ae-b164-1baae4124627
+  port: 8443
+  server: 15.235.186.140
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 3"
+  port: 10086
+  server: 103.243.26.209
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c5ec2e3f-c058-46a8-a148-1831824bb94b
+- alterId: 0
+  cipher: auto
+  name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 4"
+  network: ws
+  port: 80
+  server: 77.37.33.77
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  ws-headers:
+    Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+  ws-path: /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
+- alterId: 0
+  cipher: auto
+  name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 5"
+  port: 11819
+  server: 36.133.73.36
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: de32752c-0661-467e-82d3-35bc740a787f
 - alterId: 0
   cipher: auto
   name: "KR\u97E9\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
@@ -107,8 +330,32 @@ proxies:
   type: vmess
   udp: true
   uuid: bb9c3993-a4b9-4dad-aeb9-ac86371ae68b
+- alterId: 0
+  cipher: auto
+  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 5"
+  port: 8080
+  server: 103.243.26.209
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: bc7e6840-ab83-4570-eaae-d9aff1e2da09
+- alterId: 0
+  cipher: auto
+  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 6"
+  network: ws
+  port: 23187
+  server: 212.192.13.86
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 739f55bf-1f92-421c-9886-b07c83017275
+  ws-headers:
+    Host: 212.192.13.86
+  ws-path: /
 - cipher: chacha20-ietf-poly1305
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 10"
+  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 7"
   password: RFK38Cg7APneSB5cWDcpbm
   port: 443
   server: switcher-nick-croquet.freesocks.work
@@ -116,48 +363,34 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
-  port: 11819
-  server: 36.133.73.36
+  name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 6"
+  port: 22433
+  server: 47.245.106.193
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: de32752c-0661-467e-82d3-35bc740a787f
-- alterId: 0
-  cipher: auto
-  name: "SG\u65B0\u52A0\u5761(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 2"
-  network: ws
-  port: 80
-  server: 77.37.33.25
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
-  ws-headers:
-    Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
-  ws-path: /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
+  uuid: bfcb103f-2133-4965-8684-6b4c8ef7a774
 - cipher: chacha20-ietf-poly1305
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 11"
-  password: 9tqhMdIrTkgQ46PvhyAtMH
-  port: 443
-  server: switcher-nick-croquet.freesocks.work
+  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 8"
+  password: 014e90df-a3ee-4654-a9f6-d118e02dd02a
+  port: 41047
+  server: sl.fgmcx.top
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 2"
+  name: "FR\u6CD5\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
   network: ws
-  port: 80
-  server: 77.37.33.67
+  port: 44579
+  server: 2001:bc8:32d7:302::10
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
   ws-headers:
-    Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+    Host: 2001:bc8:32d7:302::10
   ws-path: /
 - alterId: 0
   cipher: auto
@@ -173,12 +406,26 @@ proxies:
   ws-headers:
     Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
   ws-path: /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
+- name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 9"
+  password: bca467b8c15211d189008a93c7519d3b
+  port: 443
+  server: 58.152.53.42
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 10"
+  password: 9tqhMdIrTkgQ46PvhyAtMH
+  port: 443
+  server: switcher-nick-croquet.freesocks.work
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 12"
+  name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 7"
   network: ws
   port: 80
-  server: 77.37.33.67
+  server: 141.101.121.3
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -187,48 +434,6 @@ proxies:
   ws-headers:
     Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
   ws-path: /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
-- alterId: 0
-  cipher: auto
-  name: "DE\u5FB7\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 2"
-  network: ws
-  port: 80
-  server: 77.37.33.227
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
-  ws-headers:
-    Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
-  ws-path: /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
-- alterId: 0
-  cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 13"
-  network: ws
-  port: 80
-  server: 77.37.33.108
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
-  ws-headers:
-    Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 14"
-  network: ws
-  port: 80
-  server: 77.37.33.25
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
-  ws-headers:
-    Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
-  ws-path: /
 - name: "JP\u65E5\u672C(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
   password: adbac894-90b9-4913-b77e-a715a8d4ebc8
   port: 20021
@@ -237,19 +442,16 @@ proxies:
   sni: oss-cn-shanghai.letssepub.com
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 15"
-  port: 10086
-  server: 103.243.26.209
-  skip-cert-verify: true
-  tls: false
-  type: vmess
+- cipher: chacha20-ietf-poly1305
+  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 11"
+  password: RFK38Cg7APneSB5cWDcpbm
+  port: 443
+  server: switcher-nick-croquet.freesocks.work
+  type: ss
   udp: true
-  uuid: c5ec2e3f-c058-46a8-a148-1831824bb94b
 - alterId: 0
   cipher: auto
-  name: "FR\u6CD5\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB)"
+  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 12"
   network: ws
   port: 44579
   server: 2001:bc8:32d7:302::10
@@ -274,14 +476,7 @@ proxies:
   uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
   ws-headers:
     Host: 2001:bc8:32d7:302::10
-  ws-path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
-- cipher: chacha20-ietf-poly1305
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 16"
-  password: RFK38Cg7APneSB5cWDcpbm
-  port: 443
-  server: switcher-nick-croquet.freesocks.work
-  type: ss
-  udp: true
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: "FR\u6CD5\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 3"
@@ -298,30 +493,6 @@ proxies:
   ws-path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
 - alterId: 0
   cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 17"
-  network: ws
-  port: 44579
-  server: 2001:bc8:32d7:302::10
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-  ws-headers:
-    Host: 2001:bc8:32d7:302::10
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 3"
-  port: 10086
-  server: 103.243.26.209
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c5ec2e3f-c058-46a8-a148-1831824bb94b
-- alterId: 0
-  cipher: auto
   name: "FR\u6CD5\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 4"
   network: ws
   port: 44579
@@ -333,23 +504,65 @@ proxies:
   uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
   ws-headers:
     Host: 2001:bc8:32d7:302::10
-  ws-path: /
+  ws-path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
 - alterId: 0
   cipher: auto
-  name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 4"
-  port: 22433
-  server: 47.245.106.193
+  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 13"
+  port: 10086
+  server: 103.243.26.209
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: bfcb103f-2133-4965-8684-6b4c8ef7a774
+  uuid: c5ec2e3f-c058-46a8-a148-1831824bb94b
 - alterId: 0
   cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 18"
+  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 14"
+  network: ws
+  port: 23008
+  server: 2001:bc8:1203:209::50
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e994b804-345c-4e8b-a827-7e005694d146
+  ws-headers:
+    Host: www.bing.com
+  ws-path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: "DE\u5FB7\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 2"
   network: ws
   port: 80
-  server: 77.37.33.67
+  server: 141.101.120.130
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  ws-headers:
+    Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+  ws-path: /?---@AZARBAYKAB1---@AZARBAYJAB1---@AZARBAYJAB1---@AZARBAYJAB1---@AZARBAYJAB1/?ed=2560
+- alterId: 0
+  cipher: auto
+  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 15"
+  network: ws
+  port: 80
+  server: 2316e60d-2696-1730-3566-36bc54b14e75.999161.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 34a7da0c-a43a-49b8-a8d0-64b43100090e
+  ws-headers:
+    Host: 2316e60d-2696-1730-3566-36bc54b14e75.999161.xyz
+  ws-path: /e7JS5ETJeA85VyjPCYXwETL
+- alterId: 0
+  cipher: auto
+  name: "DE\u5FB7\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 3"
+  network: ws
+  port: 80
+  server: 77.37.33.227
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -358,20 +571,171 @@ proxies:
   ws-headers:
     Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
   ws-path: /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
-- alterId: 0
+- cipher: chacha20-ietf-poly1305
+  name: "HK\u9999\u6E2F(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 8"
+  password: 9tqhMdIrTkgQ46PvhyAtMH
+  port: 443
+  server: switcher-nick-croquet.freesocks.work
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: "6\u5143\u9AD8\u901F\u673A\u573A\uFF1Acczzuu.top"
+  password: amazonskr05
+  port: 443
+  server: 3.9.17.198
+  tfo: false
+  type: ss
+- alterId: 2
   cipher: auto
-  name: "US\u7F8E\u56FD(mibei77.com \u7C73\u8D1D\u8282\u70B9\u5206\u4EAB) 19"
+  client-fingerprint: chrome
+  name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F|@stairnode"
   network: ws
-  port: 80
-  server: 77.37.33.108
-  skip-cert-verify: true
+  port: 30809
+  server: v9.heduian.link
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
-  udp: true
-  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
-  ws-headers:
-    Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
-  ws-path: /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F2|@stairnode"
+  password: ccf426f1fe78
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: newroot2v1.dsjsapp.com
+    mode: websocket
+    mux: true
+    path: /zksuapgx
+    skip-cert-verify: false
+    tls: true
+  port: 443
+  server: 103.103.245.158
+  tfo: false
+  type: ss
+- client-fingerprint: chrome
+  name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F3|@stairnode"
+  password: e4e262d453466988575c397a30562337
+  port: 443
+  server: 58.152.53.42
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- client-fingerprint: chrome
+  name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F4|@stairnode"
+  password: BxceQaOe
+  port: 1655
+  server: 36.150.215.231
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- client-fingerprint: chrome
+  name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F5|@stairnode"
+  password: BxceQaOe
+  port: 443
+  server: 203.198.122.129
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F6|@stairnode"
+  port: 11819
+  server: 36.133.73.36
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: de32752c-0661-467e-82d3-35bc740a787f
+- client-fingerprint: chrome
+  name: "\U0001F1EF\U0001F1F5 \u65E5\u672C|@stairnode"
+  password: BxceQaOe
+  port: 5156
+  server: 36.150.215.137
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- client-fingerprint: chrome
+  name: "\U0001F1EF\U0001F1F5 \u65E5\u672C2|@stairnode"
+  password: e4e262d453466988575c397a30562337
+  port: 316
+  server: 117.172.176.23
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- client-fingerprint: chrome
+  name: "\U0001F1EF\U0001F1F5 \u65E5\u672C3|@stairnode"
+  password: e4e262d453466988575c397a30562337
+  port: 1332
+  server: 117.172.176.23
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: "\U0001F1F0\U0001F1F7 \u97E9\u56FD|@stairnode"
+  port: 53115
+  server: 45.94.68.117
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 7eebdcd7-9d77-4663-bde4-b67a51d13975
+- client-fingerprint: chrome
+  name: "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761|@stairnode"
+  password: e4e262d453466988575c397a30562337
+  port: 2283
+  server: 117.172.176.23
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- client-fingerprint: chrome
+  name: "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57612|@stairnode"
+  password: e4e262d453466988575c397a30562337
+  port: 2283
+  server: 117.172.176.23
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- client-fingerprint: chrome
+  name: "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57613|@stairnode"
+  password: BxceQaOe
+  port: 9713
+  server: 36.150.215.137
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- client-fingerprint: chrome
+  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD|@stairnode"
+  password: e4e262d453466988575c397a30562337
+  port: 4553
+  server: 117.172.176.23
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- client-fingerprint: chrome
+  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD2|@stairnode"
+  password: e4e262d453466988575c397a30562337
+  port: 3777
+  server: 160.16.231.103
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- client-fingerprint: chrome
+  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD3|@stairnode"
+  password: BxceQaOe
+  port: 9269
+  server: 36.150.215.245
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
 - name: "\U0001F1E8\U0001F1F3_CN_\u4E2D\u56FD"
   network: tcp
   password: adbac894-90b9-4913-b77e-a715a8d4ebc8
@@ -510,3 +874,561 @@ proxies:
       Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
     path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
       TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
+- alterId: 0
+  cipher: auto
+  name: "\u7F8E\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9)"
+  network: ws
+  port: 80
+  server: 185.146.173.126
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  ws-headers:
+    Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+  ws-path: /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
+- alterId: 0
+  cipher: auto
+  name: "\u7F8E\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 2"
+  network: ws
+  port: 80
+  server: 141.101.121.3
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  ws-headers:
+    Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+  ws-path: /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
+- cipher: chacha20-ietf-poly1305
+  name: "\u7F8E\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 3"
+  password: 9tqhMdIrTkgQ46PvhyAtMH
+  port: 443
+  server: switcher-nick-croquet.freesocks.work
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: "\u7F8E\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 4"
+  password: RFK38Cg7APneSB5cWDcpbm
+  port: 443
+  server: switcher-nick-croquet.freesocks.work
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: "\u7F8E\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 5"
+  network: ws
+  port: 80
+  server: 141.101.123.11
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  ws-headers:
+    Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+  ws-path: /?---@AZARBAYKAB1---@AZARBAYJAB1---@AZARBAYJAB1---@AZARBAYJAB1---@AZARBAYJAB1/?ed=2560
+- alterId: 0
+  cipher: auto
+  name: "\u6CD5\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9)"
+  network: ws
+  port: 44579
+  server: 2001:bc8:32d7:302::10
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  ws-headers:
+    Host: 2001:bc8:32d7:302::10
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: "\u6CD5\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 2"
+  network: ws
+  port: 44579
+  server: 2001:bc8:32d7:302::10
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  ws-headers:
+    Host: 2001:bc8:32d7:302::10
+  ws-path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
+- alterId: 0
+  cipher: auto
+  name: "\u6CD5\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 3"
+  network: ws
+  port: 44579
+  server: 2001:bc8:32d7:302::10
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  ws-headers:
+    Host: 2001:bc8:32d7:302::10
+  ws-path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
+- alterId: 0
+  cipher: auto
+  name: "\u7F8E\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 6"
+  network: ws
+  port: 23008
+  server: 2001:bc8:1203:209::50
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e994b804-345c-4e8b-a827-7e005694d146
+  ws-headers:
+    Host: www.bing.com
+  ws-path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: "\u6CD5\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 4"
+  network: ws
+  port: 44579
+  server: 2001:bc8:32d7:302::10
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  ws-headers:
+    Host: 2001:bc8:32d7:302::10
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: "\u7F8E\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 7"
+  network: ws
+  port: 44579
+  server: 2001:bc8:32d7:302::10
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  ws-headers:
+    Host: 2001:bc8:32d7:302::10
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: "\u7F8E\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 8"
+  network: ws
+  port: 80
+  server: 141.101.121.120
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  ws-headers:
+    Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+  ws-path: /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
+- alterId: 0
+  cipher: auto
+  name: "\u5FB7\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9)"
+  network: ws
+  port: 80
+  server: 77.37.33.77
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  ws-headers:
+    Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+  ws-path: /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
+- alterId: 0
+  cipher: auto
+  name: "\u7F8E\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 9"
+  port: 11819
+  server: 36.133.73.36
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: de32752c-0661-467e-82d3-35bc740a787f
+- alterId: 0
+  cipher: auto
+  name: "\u7F8E\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 10"
+  network: ws
+  port: 80
+  server: 141.101.120.130
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  ws-headers:
+    Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+  ws-path: /?---@AZARBAYKAB1---@AZARBAYJAB1---@AZARBAYJAB1---@AZARBAYJAB1---@AZARBAYJAB1/?ed=2560
+- alterId: 0
+  cipher: auto
+  name: "\u7F8E\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 11"
+  network: ws
+  port: 80
+  server: 141.101.121.251
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  ws-headers:
+    Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+  ws-path: /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
+- alterId: 0
+  cipher: auto
+  name: "\u7F8E\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 12"
+  network: ws
+  port: 443
+  server: cf.090227.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
+  ws-headers:
+    Host: sgal.dagrate.eu.org
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: "\u7F8E\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 13"
+  network: ws
+  port: 80
+  server: 2316e60d-2696-1730-3566-36bc54b14e75.999161.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 34a7da0c-a43a-49b8-a8d0-64b43100090e
+  ws-headers:
+    Host: 2316e60d-2696-1730-3566-36bc54b14e75.999161.xyz
+  ws-path: /e7JS5ETJeA85VyjPCYXwETL
+- alterId: 0
+  cipher: auto
+  name: "\u7F8E\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 14"
+  network: ws
+  port: 80
+  server: 765bcf12-7d35-b90d-2383-17ec5be67cd7.999161.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 34a7da0c-a43a-49b8-a8d0-64b43100090e
+  ws-headers:
+    Host: 765bcf12-7d35-b90d-2383-17ec5be67cd7.999161.xyz
+  ws-path: /e7JS5ETJeA85VyjPCYXwETL
+- alterId: 0
+  cipher: auto
+  name: "\u7F8E\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 15"
+  network: ws
+  port: 80
+  server: 7cac7e2e-12c8-7a4f-6c77-b8acc2792294.999161.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 34a7da0c-a43a-49b8-a8d0-64b43100090e
+  ws-headers:
+    Host: 7cac7e2e-12c8-7a4f-6c77-b8acc2792294.999161.xyz
+  ws-path: /e7JS5ETJeA85VyjPCYXwETL
+- alterId: 0
+  cipher: auto
+  name: "\u7F8E\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 16"
+  network: ws
+  port: 80
+  server: 141.101.120.60
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  ws-headers:
+    Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+  ws-path: /?---@AZARBAYKAB1---@AZARBAYJAB1---@AZARBAYJAB1---@AZARBAYJAB1---@AZARBAYJAB1/?ed=2560
+- alterId: 0
+  cipher: auto
+  name: "\u97E9\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9)"
+  port: 80
+  server: 152.70.92.69
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: bb9c3993-a4b9-4dad-aeb9-ac86371ae68b
+- cipher: aes-256-gcm
+  name: "\u7F8E\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 17"
+  password: bd080898-b41a-48ae-b164-1baae4124627
+  port: 8443
+  server: 15.235.186.140
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: "\u7F8E\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 18"
+  network: ws
+  port: 80
+  server: 185.146.173.24
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  ws-headers:
+    Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+  ws-path: /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
+- name: "\u7F8E\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 19"
+  password: adbac894-90b9-4913-b77e-a715a8d4ebc8
+  port: 20021
+  server: oss-cn-shanghai.letssepub.com
+  skip-cert-verify: true
+  sni: oss-cn-shanghai.letssepub.com
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: "\u7F8E\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 20"
+  password: e0AuSSE9kqrZnpK1RgcuPt
+  port: 50589
+  server: 78.40.116.11
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: "\u7F8E\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 21"
+  network: ws
+  port: 80
+  server: a4932bbe-005c-1509-7b27-51aa7b17a6fb.999161.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 34a7da0c-a43a-49b8-a8d0-64b43100090e
+  ws-headers:
+    Host: a4932bbe-005c-1509-7b27-51aa7b17a6fb.999161.xyz
+  ws-path: /e7JS5ETJeA85VyjPCYXwETL
+- alterId: 0
+  cipher: auto
+  name: "\u5FB7\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 2"
+  network: ws
+  port: 80
+  server: 77.37.33.227
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  ws-headers:
+    Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+  ws-path: /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
+- alterId: 0
+  cipher: auto
+  name: "\u7F8E\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 22"
+  network: ws
+  port: 80
+  server: 185.146.173.117
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  ws-headers:
+    Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+  ws-path: /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
+- alterId: 0
+  cipher: auto
+  name: "\u7F8E\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 23"
+  port: 22433
+  server: 47.245.106.193
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: bfcb103f-2133-4965-8684-6b4c8ef7a774
+- alterId: 0
+  cipher: auto
+  name: "\u7F8E\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 24"
+  network: ws
+  port: 80
+  server: 185.146.173.82
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  ws-headers:
+    Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+  ws-path: /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
+- alterId: 0
+  cipher: auto
+  name: "\u7F8E\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 25"
+  network: ws
+  port: 443
+  server: 172.67.200.13
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
+  ws-headers:
+    Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
+  ws-path: /azumase.ren
+- cipher: chacha20-ietf-poly1305
+  name: "\u7F8E\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 26"
+  password: 014e90df-a3ee-4654-a9f6-d118e02dd02a
+  port: 41047
+  server: sl.fgmcx.top
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: "\u7F8E\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 27"
+  network: ws
+  port: 80
+  server: 104.18.240.238
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  ws-headers:
+    Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+  ws-path: /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
+- alterId: 0
+  cipher: auto
+  name: "\u7F8E\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 28"
+  network: ws
+  port: 443
+  server: azerb.net
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
+  ws-headers:
+    Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
+  ws-path: /azumase.ren#TM(@AZARBAYJAB1)/TM(@AZARBAYJAB1)/?ed=2560
+- alterId: 0
+  cipher: auto
+  name: "\u7F8E\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 29"
+  network: ws
+  port: 80
+  server: 185.146.173.16
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  ws-headers:
+    Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+  ws-path: /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
+- alterId: 0
+  cipher: auto
+  name: "\u7F8E\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 30"
+  network: ws
+  port: 80
+  server: 141.101.121.26
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  ws-headers:
+    Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+  ws-path: /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
+- alterId: 0
+  cipher: auto
+  name: "\u7F8E\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 31"
+  port: 10086
+  server: 103.243.26.209
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c5ec2e3f-c058-46a8-a148-1831824bb94b
+- alterId: 0
+  cipher: auto
+  name: "\u7F8E\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 32"
+  port: 8080
+  server: 103.243.26.209
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: bc7e6840-ab83-4570-eaae-d9aff1e2da09
+- alterId: 0
+  cipher: auto
+  name: "\u7F8E\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 33"
+  network: ws
+  port: 80
+  server: 141.101.121.250
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  ws-headers:
+    Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+  ws-path: /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
+- alterId: 0
+  cipher: auto
+  name: "\u7F8E\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 34"
+  network: ws
+  port: 44579
+  server: 2001:bc8:32d7:302::10
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  ws-headers:
+    Host: 2001:bc8:32d7:302::10
+  ws-path: ?ed=2048
+- alterId: 0
+  cipher: auto
+  name: "\u7F8E\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 35"
+  port: 10086
+  server: 103.243.26.209
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c5ec2e3f-c058-46a8-a148-1831824bb94b
+- name: "\u7F8E\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 36"
+  password: bca467b8c15211d189008a93c7519d3b
+  port: 443
+  server: 58.152.53.42
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: "\u7F8E\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 37"
+  network: ws
+  port: 23187
+  server: 212.192.13.86
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 739f55bf-1f92-421c-9886-b07c83017275
+  ws-headers:
+    Host: 212.192.13.86
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: "\u7F8E\u56FD(yudou6677.top \u7389\u8C46\u514D\u8D39\u8282\u70B9) 38"
+  network: ws
+  port: 80
+  server: 141.101.120.250
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  ws-headers:
+    Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+  ws-path: /?---@AZARBAYKAB1---@AZARBAYJAB1---@AZARBAYJAB1---@AZARBAYJAB1---@AZARBAYJAB1/?ed=2560
