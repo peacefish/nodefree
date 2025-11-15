@@ -1187,19 +1187,41 @@ proxies:
   port: 443
   server: 23.95.75.146
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: _03
+  password: 0KDTVV9wFm2pvQUnQftJDWgXbaY8kIfG
+  port: 443
+  server: 51.158.204.165
+  type: ss
+  udp: true
+- name: _04
+  password: telegram-id-directvpn
+  port: 22223
+  server: 51.45.34.73
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
 - cipher: aes-256-cfb
   country: "\U0001F1E6\U0001F1EBAF"
-  name: "\U0001F1E6\U0001F1EBAF_03"
+  name: disney_SE
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 121.127.46.147
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F1E6\U0001F1F7 AR"
+  name: "\U0001F1E6\U0001F1F7 AR_06"
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 38.54.45.129
   type: ss
 - alterId: 0
   cipher: auto
   country: "\U0001F1E6\U0001F1F9AT"
   h2-opts: {}
   http-opts: {}
-  name: "\U0001F1E6\U0001F1F9AT_04"
+  name: "\U0001F1E6\U0001F1F9AT_07"
   network: tcp
   port: 443
   server: 89.31.120.192
@@ -1211,7 +1233,7 @@ proxies:
   country: "\U0001F1E6\U0001F1FAAU"
   h2-opts: {}
   http-opts: {}
-  name: "\U0001F1E6\U0001F1FAAU_05"
+  name: "\U0001F1E6\U0001F1FAAU_08"
   network: none
   port: 16407
   server: 54.206.192.9
@@ -1220,35 +1242,45 @@ proxies:
   uuid: 08f45028-1db6-4e93-bf51-d344b6c71e19
 - cipher: aes-256-cfb
   country: "\U0001F1E7\U0001F1EA BE"
-  name: "\U0001F1E7\U0001F1EA BE_06"
+  name: "\U0001F1E7\U0001F1EA BE_09"
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 192.71.249.78
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: "\U0001F1E7\U0001F1EABE"
-  name: "\U0001F1E7\U0001F1EABE_07"
+  name: "\U0001F1E7\U0001F1EABE_10"
   password: k1v5g9FefdoO
   port: 8388
   server: 57.129.140.88
   type: ss
+- alterId: 0
+  cipher: auto
+  country: "\U0001F1E7\U0001F1EABE"
+  h2-opts: {}
+  http-opts: {}
+  name: "\U0001F1E7\U0001F1EABE_11"
+  network: ws
+  port: 80
+  server: 57.129.132.223
+  servername: google.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
+  ws-opts:
+    headers:
+      HOST: google.com
+    path: /vmess/
 - cipher: chacha20-ietf-poly1305
   country: "\U0001F1E7\U0001F1F4 BO"
-  name: "\U0001F1E7\U0001F1F4 BO_08"
+  name: "\U0001F1E7\U0001F1F4 BO_12"
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 185.93.173.60
   type: ss
 - cipher: aes-256-cfb
   country: "\U0001F1E7\U0001F1F7 BR"
-  name: "\U0001F1E7\U0001F1F7 BR_09"
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 38.54.57.90
-  type: ss
-- cipher: aes-256-cfb
-  country: "\U0001F1E7\U0001F1F7 BR"
-  name: "\U0001F1E7\U0001F1F7 BR_10"
+  name: "\U0001F1E7\U0001F1F7 BR_13"
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.62.168
@@ -1258,39 +1290,13 @@ proxies:
   country: "\U0001F1E7\U0001F1F7BR"
   h2-opts: {}
   http-opts: {}
-  name: "\U0001F1E7\U0001F1F7BR_11"
+  name: "\U0001F1E7\U0001F1F7BR_14"
   network: none
-  port: 31835
+  port: 11331
   server: 45.231.132.46
   skip-cert-verify: true
   type: vmess
-  uuid: 7732d904-8d36-4382-8c48-69ba039f445f
-- alterId: 0
-  cipher: auto
-  country: "\U0001F1E7\U0001F1F7BR"
-  h2-opts: {}
-  http-opts: {}
-  name: "\U0001F1E7\U0001F1F7BR_12"
-  network: none
-  port: 20294
-  server: 45.231.132.44
-  skip-cert-verify: true
-  type: vmess
-  uuid: 2eb510a2-9779-4e49-a2f2-aea96e348243
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1E8\U0001F1E6 CA"
-  name: "Relay_\U0001F1E8\U0001F1E6 CA-\U0001F1E8\U0001F1E6CA_13"
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: ca225.vpnbook.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1E8\U0001F1E6 CA"
-  name: "\U0001F1E8\U0001F1E6 CA_14"
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
-  type: ss
+  uuid: 6a659a6f-33cb-44cc-909c-2e37a08e2f7d
 - cipher: chacha20-ietf-poly1305
   country: "\U0001F1E8\U0001F1E6 CA"
   name: "Pool_\U0001F1E8\U0001F1E6 CA_15"
@@ -1301,65 +1307,92 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   country: "\U0001F1E8\U0001F1E6 CA"
   name: "\U0001F1E8\U0001F1E6 CA_16"
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F1E8\U0001F1E6 CA"
+  name: "\U0001F1E8\U0001F1E6 CA_17"
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 64.74.163.130
   type: ss
-- alterId: 64
+- alterId: 0
+  cipher: auto
+  country: "\U0001F1E8\U0001F1E6CA"
+  h2-opts: {}
+  http-opts: {}
+  name: "\U0001F1E8\U0001F1E6CA_18"
+  network: ws
+  port: 80
+  server: 51.79.103.76
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  skip-cert-verify: true
+  type: vmess
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  ws-opts:
+    headers:
+      HOST: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /IOebhLMhl1CTbFHbL95myfRX2
+- alterId: 0
+  cipher: auto
+  country: "\U0001F1E8\U0001F1E6CA"
+  h2-opts: {}
+  http-opts: {}
+  name: "\U0001F1E8\U0001F1E6CA_19"
+  network: ws
+  port: 80
+  server: 15.235.41.200
+  skip-cert-verify: true
+  type: vmess
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  ws-opts:
+    path: /IOebhLMhl1CTbFHbL95myfRX2
+- alterId: 0
   cipher: auto
   country: "\U0001F1E8\U0001F1F3 CN"
   h2-opts: {}
   http-opts: {}
-  name: "\U0001F1E8\U0001F1F3 CN_17"
+  name: "\U0001F1E8\U0001F1F3 CN_20"
   network: tcp
-  port: 59003
-  server: 183.236.51.36
+  port: 50002
+  server: 139.129.20.6
   skip-cert-verify: true
   type: vmess
+  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1E8\U0001F1F3 TW"
-  name: netflix_TW
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 223.165.4.173
-  type: ss
 - cipher: aes-256-cfb
   country: "\U0001F1E8\U0001F1F3 TW"
-  name: "\U0001F1E8\U0001F1F3 TW_19"
+  name: "\U0001F1E8\U0001F1F3 TW_21"
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.20.79
   type: ss
-- alterId: 0
-  cipher: auto
-  country: "\U0001F1E8\U0001F1F3CN"
-  h2-opts: {}
-  http-opts: {}
-  name: "\U0001F1E8\U0001F1F3CN_20"
-  network: none
-  port: 59674
-  server: 43.162.114.137
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6a4ce5b9-0d60-4a21-a8fe-897798019500
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F1E8\U0001F1F3 TW"
+  name: "\U0001F1E8\U0001F1F3 TW_22"
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 223.165.4.173
+  type: ss
 - cipher: chacha20-ietf-poly1305
   country: "\U0001F1E8\U0001F1FE CY"
-  name: "\U0001F1E8\U0001F1FE CY_21"
+  name: "\U0001F1E8\U0001F1FE CY_23"
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 134.255.210.49
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: "\U0001F1E8\U0001F1FF CZ"
-  name: "\U0001F1E8\U0001F1FF CZ_22"
+  name: "\U0001F1E8\U0001F1FF CZ_24"
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 195.181.160.6
   type: ss
 - cipher: aes-256-cfb
   country: "\U0001F1E8\U0001F1FFCZ"
-  name: "Pool_\U0001F1E8\U0001F1FFCZ_23"
+  name: "Pool_\U0001F1E8\U0001F1FFCZ_25"
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 79.127.233.170
@@ -1369,21 +1402,7 @@ proxies:
   country: "\U0001F1E9\U0001F1EADE"
   h2-opts: {}
   http-opts: {}
-  name: "\U0001F1E9\U0001F1EADE_24"
-  network: ws
-  port: 2052
-  server: 176.9.178.52
-  skip-cert-verify: true
-  type: vmess
-  uuid: 94452e78-daad-490f-f14e-5a143e752bf8
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  country: "\U0001F1E9\U0001F1EADE"
-  h2-opts: {}
-  http-opts: {}
-  name: "\U0001F1E9\U0001F1EADE_25"
+  name: "\U0001F1E9\U0001F1EADE_26"
   network: tcp
   port: 28011
   server: 62.146.235.193
@@ -1392,17 +1411,10 @@ proxies:
   uuid: cfc5a87f-3c13-4e25-b556-176cdd6b5c6a
 - cipher: aes-256-cfb
   country: "\U0001F1E9\U0001F1F0 DK"
-  name: "\U0001F1E9\U0001F1F0 DK_26"
+  name: "\U0001F1E9\U0001F1F0 DK_27"
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 192.36.27.94
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1E9\U0001F1FF DZ"
-  name: "\U0001F1E9\U0001F1FF DZ_27"
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 197.140.29.76
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: "\U0001F1EA\U0001F1E8 EC"
@@ -1418,27 +1430,28 @@ proxies:
   port: 990
   server: 45.154.206.192
   type: ss
-- cipher: aes-256-cfb
-  country: "\U0001F1EA\U0001F1F8 ES"
-  name: "\U0001F1EA\U0001F1F8 ES_30"
-  password: M3t2ZEQcMGRWBjRa
-  port: 9011
-  server: 5.188.181.201
-  type: ss
 - cipher: chacha20-ietf-poly1305
   country: "\U0001F1EA\U0001F1F8 ES"
-  name: "\U0001F1EA\U0001F1F8 ES_31"
+  name: "\U0001F1EA\U0001F1F8 ES_30"
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 37.143.130.203
   type: ss
 - cipher: aes-256-cfb
   country: "\U0001F1EB\U0001F1EE FI"
-  name: "\U0001F1EB\U0001F1EE FI_32"
+  name: "\U0001F1EB\U0001F1EE FI_31"
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 37.143.129.230
   type: ss
+- cipher: aes-256-cfb
+  country: "\U0001F1EB\U0001F1F7 FR"
+  name: "\U0001F1EB\U0001F1F7 FR_32"
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 195.154.169.198
+  type: ss
+  udp: true
 - cipher: aes-256-cfb
   country: "\U0001F1EB\U0001F1F7 FR"
   name: "\U0001F1EB\U0001F1F7 FR_33"
@@ -1453,49 +1466,9 @@ proxies:
   port: 1080
   server: 51.195.119.47
   type: ss
-- cipher: aes-256-cfb
-  country: "\U0001F1EB\U0001F1F7 FR"
-  name: "\U0001F1EB\U0001F1F7 FR_35"
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 195.154.169.198
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  country: "\U0001F1EB\U0001F1F7FR"
-  h2-opts: {}
-  http-opts: {}
-  name: "\U0001F1EB\U0001F1F7FR_36"
-  network: ws
-  port: 443
-  server: 141.94.155.229
-  servername: pelang.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      HOST: pelang.org
-    path: linkvws
-- cipher: aes-128-gcm
-  country: "\U0001F1EC\U0001F1E7 GB"
-  name: "\U0001F1EC\U0001F1E7 GB_37"
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1EC\U0001F1E7 GB"
-  name: disney_NL
-  password: VpKABcOpNNA0l5G2AVOmw8
-  port: 62685
-  server: 213.109.147.242
-  type: ss
 - cipher: aes-128-gcm
   country: "\U0001F1EC\U0001F1E7GB"
-  name: netflix_JP
+  name: "\U0001F1EC\U0001F1E7GB_35"
   password: shadowsocks
   port: 443
   server: 149.22.87.204
@@ -1505,7 +1478,7 @@ proxies:
   country: "\U0001F1EC\U0001F1E7GB"
   h2-opts: {}
   http-opts: {}
-  name: "\U0001F1EC\U0001F1E7GB_40"
+  name: "\U0001F1EC\U0001F1E7GB_36"
   network: tcp
   port: 39674
   server: 82.197.69.131
@@ -1514,38 +1487,38 @@ proxies:
   uuid: 5a89386a-827b-4f54-8778-2f1b5122c6ef
 - cipher: chacha20-ietf-poly1305
   country: "\U0001F1EC\U0001F1EEGI"
-  name: "\U0001F1EC\U0001F1EEGI_41"
+  name: "\U0001F1EC\U0001F1EEGI_37"
   password: SDaFISr3Gfm6YkBSSrFIEwwWjEEU7Xbo
   port: 443
   server: 95.164.10.228
   type: ss
 - cipher: aes-256-cfb
   country: "\U0001F1EC\U0001F1F7GR"
-  name: "\U0001F1EC\U0001F1F7GR_42"
+  name: "\U0001F1EC\U0001F1F7GR_38"
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 192.71.166.100
   type: ss
+- cipher: aes-256-cfb
+  country: "\U0001F1ED\U0001F1F0 HK"
+  name: "\U0001F1ED\U0001F1F0 HK_39"
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.16.212
+  type: ss
 - cipher: chacha20-ietf-poly1305
   country: "\U0001F1ED\U0001F1F0 HK"
-  name: "\U0001F1ED\U0001F1F0 HK_43"
+  name: netflix_HK
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 203.23.128.33
-  type: ss
-- cipher: chacha20-ietf
-  country: "\U0001F1ED\U0001F1F0 HK"
-  name: disney_HK
-  password: asd123456
-  port: 8388
-  server: 103.149.182.191
   type: ss
 - alterId: 2
   cipher: auto
   country: "\U0001F1ED\U0001F1F0 HK"
   h2-opts: {}
   http-opts: {}
-  name: "Relay_\U0001F1ED\U0001F1F0 HK-\U0001F1ED\U0001F1F0HK_45"
+  name: "Relay_\U0001F1ED\U0001F1F0 HK-\U0001F1ED\U0001F1F0HK_41"
   network: ws
   port: 80
   server: 25109257-sv4n40-t5qfe2-1khwf.hk3.p5pv.com
@@ -1557,6 +1530,65 @@ proxies:
     headers:
       HOST: broadcastlv.chat.bilibili.com
     path: /
+- alterId: 2
+  cipher: auto
+  country: "\U0001F1ED\U0001F1F0 HK"
+  h2-opts: {}
+  http-opts: {}
+  name: "Relay_\U0001F1ED\U0001F1F0 HK-\U0001F1ED\U0001F1F0HK_42"
+  network: ws
+  port: 80
+  server: ac1aede0-sv2sg0-t5qfe2-1khwf.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 92bd8c68-6434-11ee-b644-f23c91cfbbc9
+  ws-opts:
+    headers:
+      HOST: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  country: "\U0001F1ED\U0001F1F0 HK"
+  h2-opts: {}
+  http-opts: {}
+  name: "Relay_\U0001F1ED\U0001F1F0 HK-\U0001F1ED\U0001F1F0HK_43"
+  network: ws
+  port: 80
+  server: 3be014a6-sv0xs0-svpmdc-nx3b.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 32315324-cf6b-11ed-979b-f23c9164ca5d
+  ws-opts:
+    headers:
+      HOST: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  country: "\U0001F1ED\U0001F1F0 HK"
+  h2-opts: {}
+  http-opts: {}
+  name: "Relay_\U0001F1ED\U0001F1F0 HK-\U0001F1ED\U0001F1F0HK_44"
+  network: ws
+  port: 80
+  server: fb6f1580-sv2sg0-svpmdc-nx3b.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 32315324-cf6b-11ed-979b-f23c9164ca5d
+  ws-opts:
+    headers:
+      HOST: broadcastlv.chat.bilibili.com
+    path: /
+- country: "\U0001F1ED\U0001F1F0 HK"
+  name: disney_HK
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.98
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - country: "\U0001F1ED\U0001F1F0 HK"
   name: "\U0001F1ED\U0001F1F0 HK_46"
   password: 1640ef52-2db0-44ab-b3f3-8690b762ebc9
@@ -1565,6 +1597,20 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- cipher: chacha20-ietf
+  country: "\U0001F1ED\U0001F1F0HK"
+  name: "\U0001F1ED\U0001F1F0HK_47"
+  password: asd123456
+  port: 8388
+  server: 103.149.183.200
+  type: ss
+- cipher: chacha20-ietf
+  country: "\U0001F1ED\U0001F1F0HK"
+  name: "\U0001F1ED\U0001F1F0HK_48"
+  password: asd123456
+  port: 8388
+  server: 103.149.182.86
+  type: ss
 - alterId: 0
   cipher: auto
   country: "\U0001F1ED\U0001F1F0HK"
@@ -1576,73 +1622,44 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-- alterId: 0
-  cipher: auto
-  country: "\U0001F1ED\U0001F1F0HK"
-  h2-opts: {}
-  http-opts: {}
-  name: "\U0001F1ED\U0001F1F0HK_48"
-  network: ws
-  port: 20522
-  server: 47.243.39.173
-  skip-cert-verify: true
-  type: vmess
-  uuid: 8993ea91-d437-4899-a6d9-1dcc0aa17820
-  ws-opts:
-    path: /telegram_@sswia
-- alterId: 0
-  cipher: auto
-  country: "\U0001F1ED\U0001F1F0HK"
-  h2-opts: {}
-  http-opts: {}
-  name: "\U0001F1ED\U0001F1F0HK_49"
-  network: ws
-  port: 20522
-  server: 8.210.52.211
-  skip-cert-verify: true
-  type: vmess
-  uuid: 37827036-1fc5-41ea-9fc5-111af1db49dc
-  ws-opts:
-    path: /telegram_@sswia
 - country: "\U0001F1ED\U0001F1F0HK"
-  name: disney_HK
+  name: "Relay_\U0001F1ED\U0001F1F0HK-\U0001F1FA\U0001F1F8US_50"
   password: BxceQaOe
-  port: 443
-  server: 112.120.34.55
+  port: 4569
+  server: us.wyau.cn
   skip-cert-verify: true
   sni: t.me/ripaojiedian
   type: trojan
   udp: true
 - country: "\U0001F1ED\U0001F1F0HK"
   name: "\U0001F1ED\U0001F1F0HK_51"
-  password: BxceQaOe
+  password: 2274c52572e721086f8bd8f88984643c
   port: 443
-  server: 58.152.110.20
+  server: 58.152.110.216
   skip-cert-verify: true
-  sni: t.me/ripaojiedian
+  sni: www.nintendogames.net
   type: trojan
   udp: true
-- cipher: aes-256-cfb
-  country: "\U0001F1ED\U0001F1F7 HR"
-  name: "\U0001F1ED\U0001F1F7 HR_52"
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 46.183.184.60
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F1ED\U0001F1FAHU"
+  name: disney_LU
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 109.61.46.43
   type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   country: "\U0001F1EE\U0001F1F3 IN"
   name: "\U0001F1EE\U0001F1F3 IN_53"
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 134.209.147.198
+  password: 360e21d21977dc11
+  port: 57456
+  server: 103.111.114.29
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: "\U0001F1EE\U0001F1F3 IN"
   name: "\U0001F1EE\U0001F1F3 IN_54"
-  password: 360e21d21977dc11
-  port: 57456
-  server: 103.111.114.29
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 134.209.147.198
   type: ss
 - cipher: aes-256-cfb
   country: "\U0001F1EE\U0001F1F3IN"
@@ -1679,7 +1696,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   country: "\U0001F1EF\U0001F1F5JP"
-  name: disney_JP
+  name: disney_netflix_JP
   password: '10086'
   port: 10087
   server: 153.121.43.183
@@ -1696,15 +1713,13 @@ proxies:
   country: "\U0001F1EF\U0001F1F5JP"
   h2-opts: {}
   http-opts: {}
-  name: "\U0001F1EF\U0001F1F5JP_61"
-  network: ws
-  port: 20522
-  server: 8.211.164.215
+  name: disney_netflix_JP
+  network: tcp
+  port: 14760
+  server: 45.32.45.45
   skip-cert-verify: true
   type: vmess
-  uuid: 73193cce-7ca1-4b08-93ff-4ee8b0147374
-  ws-opts:
-    path: /telegram_@sswia
+  uuid: dbf7a6e4-d518-4f9b-a55e-27ef892ffac1
 - alterId: 0
   cipher: auto
   country: "\U0001F1EF\U0001F1F5JP"
@@ -1722,65 +1737,21 @@ proxies:
   country: "\U0001F1EF\U0001F1F5JP"
   h2-opts: {}
   http-opts: {}
-  name: "\U0001F1EF\U0001F1F5JP_63"
+  name: "Relay_\U0001F1EF\U0001F1F5JP-\U0001F1EF\U0001F1F5JP_63"
   network: ws
-  port: 80
-  server: 172.111.146.64
+  port: 443
+  server: n1744454498.lie5d.cyou
+  servername: n1744454498.lie5d.cyou
   skip-cert-verify: true
+  tls: true
   type: vmess
-  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+  uuid: cd26abca-0d84-43d0-8f69-9c1143b569e9
   ws-opts:
-    path: /vmess/
-- alterId: 0
-  cipher: auto
-  country: "\U0001F1EF\U0001F1F5JP"
-  h2-opts: {}
-  http-opts: {}
-  name: "\U0001F1EF\U0001F1F5JP_64"
-  network: tcp
-  port: 14760
-  server: 45.32.45.45
-  skip-cert-verify: true
-  type: vmess
-  uuid: dbf7a6e4-d518-4f9b-a55e-27ef892ffac1
+    headers:
+      HOST: n1744454498.lie5d.cyou
+    path: /
 - country: "\U0001F1EF\U0001F1F5JP"
-  name: "Relay_\U0001F1EF\U0001F1F5JP-\U0001F1EF\U0001F1F5JP_65"
-  password: 2274c52572e721086f8bd8f88984643c
-  port: 3169
-  server: 160.16.196.59
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-  udp: true
-- country: "\U0001F1EF\U0001F1F5JP"
-  name: "Relay_\U0001F1EF\U0001F1F5JP-\U0001F1EF\U0001F1F5JP_66"
-  password: 2274c52572e721086f8bd8f88984643c
-  port: 1334
-  server: 160.16.204.136
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-  udp: true
-- country: "\U0001F1EF\U0001F1F5JP"
-  name: "Relay_\U0001F1EF\U0001F1F5JP-\U0001F1EF\U0001F1F5JP_67"
-  password: 2274c52572e721086f8bd8f88984643c
-  port: 1334
-  server: 160.16.132.158
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-  udp: true
-- country: "\U0001F1EF\U0001F1F5JP"
-  name: "Relay_\U0001F1EF\U0001F1F5JP-\U0001F1F8\U0001F1ECSG_68"
-  password: 2274c52572e721086f8bd8f88984643c
-  port: 5552
-  server: 160.16.236.32
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-  udp: true
-- country: "\U0001F1EF\U0001F1F5JP"
-  name: "Relay_\U0001F1EF\U0001F1F5JP-\U0001F1F3\U0001F1F1NL_69"
+  name: "Relay_\U0001F1EF\U0001F1F5JP-\U0001F1F3\U0001F1F1NL_64"
   password: 2274c52572e721086f8bd8f88984643c
   port: 2760
   server: 160.16.81.84
@@ -1789,25 +1760,16 @@ proxies:
   type: trojan
   udp: true
 - country: "\U0001F1EF\U0001F1F5JP"
-  name: "Relay_\U0001F1EF\U0001F1F5JP-\U0001F1EF\U0001F1F5JP_70"
+  name: "Relay_\U0001F1EF\U0001F1F5JP-\U0001F1EF\U0001F1F5JP_65"
   password: 2274c52572e721086f8bd8f88984643c
   port: 1334
-  server: 160.16.57.238
+  server: 160.16.204.136
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
   udp: true
 - country: "\U0001F1EF\U0001F1F5JP"
-  name: "Relay_\U0001F1EF\U0001F1F5JP-\U0001F1EF\U0001F1F5JP_71"
-  password: 2274c52572e721086f8bd8f88984643c
-  port: 3169
-  server: 202.181.103.235
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-  udp: true
-- country: "\U0001F1EF\U0001F1F5JP"
-  name: "Relay_\U0001F1EF\U0001F1F5JP-\U0001F1EF\U0001F1F5JP_72"
+  name: "Relay_\U0001F1EF\U0001F1F5JP-\U0001F1EF\U0001F1F5JP_66"
   password: BxceQaOe
   port: 1924
   server: 160.16.227.93
@@ -1816,25 +1778,25 @@ proxies:
   type: trojan
   udp: true
 - country: "\U0001F1EF\U0001F1F5JP"
-  name: "Relay_\U0001F1EF\U0001F1F5JP-\U0001F1FA\U0001F1F8US_73"
+  name: "Relay_\U0001F1EF\U0001F1F5JP-\U0001F1EF\U0001F1F5JP_67"
   password: 2274c52572e721086f8bd8f88984643c
-  port: 4211
+  port: 3169
+  server: 202.181.103.235
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+  udp: true
+- country: "\U0001F1EF\U0001F1F5JP"
+  name: "Relay_\U0001F1EF\U0001F1F5JP-\U0001F1EF\U0001F1F5JP_68"
+  password: 2274c52572e721086f8bd8f88984643c
+  port: 1334
   server: 160.16.57.238
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
   udp: true
 - country: "\U0001F1EF\U0001F1F5JP"
-  name: "Relay_\U0001F1EF\U0001F1F5JP-\U0001F1F8\U0001F1ECSG_74"
-  password: 2274c52572e721086f8bd8f88984643c
-  port: 127
-  server: 153.121.51.29
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-  udp: true
-- country: "\U0001F1EF\U0001F1F5JP"
-  name: "Relay_\U0001F1EF\U0001F1F5JP-\U0001F1F8\U0001F1ECSG_75"
+  name: "Relay_\U0001F1EF\U0001F1F5JP-\U0001F1F8\U0001F1ECSG_69"
   password: 2274c52572e721086f8bd8f88984643c
   port: 5553
   server: 160.16.124.55
@@ -1843,21 +1805,32 @@ proxies:
   type: trojan
   udp: true
 - country: "\U0001F1EF\U0001F1F5JP"
-  name: "Relay_\U0001F1EF\U0001F1F5JP-\U0001F1EF\U0001F1F5JP_76"
+  name: "Relay_\U0001F1EF\U0001F1F5JP-\U0001F1F8\U0001F1ECSG_70"
   password: 2274c52572e721086f8bd8f88984643c
-  port: 4095
-  server: 160.16.214.6
+  port: 5552
+  server: 160.16.236.32
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
   udp: true
-- cipher: aes-256-cfb
-  country: "\U0001F1F0\U0001F1F7 KR"
-  name: "\U0001F1F0\U0001F1F7 KR_77"
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.63.177
-  type: ss
+- country: "\U0001F1EF\U0001F1F5JP"
+  name: "Relay_\U0001F1EF\U0001F1F5JP-\U0001F1FA\U0001F1F8US_71"
+  password: 2274c52572e721086f8bd8f88984643c
+  port: 4211
+  server: 160.16.57.238
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+  udp: true
+- country: "\U0001F1EF\U0001F1F5JP"
+  name: "Relay_\U0001F1EF\U0001F1F5JP-\U0001F1F8\U0001F1ECSG_72"
+  password: 2274c52572e721086f8bd8f88984643c
+  port: 127
+  server: 153.121.51.29
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+  udp: true
 - cipher: aes-256-cfb
   country: "\U0001F1F0\U0001F1F7 KR"
   name: disney_KR
@@ -1867,32 +1840,17 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   country: "\U0001F1F0\U0001F1F7 KR"
-  name: "\U0001F1F0\U0001F1F7 KR_79"
-  password: qwerREWQ@@
-  port: 4652
-  server: 218.237.185.230
+  name: "\U0001F1F0\U0001F1F7 KR_74"
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.63.177
   type: ss
-- alterId: 0
-  cipher: auto
-  country: "\U0001F1F0\U0001F1F7 KR"
-  h2-opts: {}
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: "\U0001F1F0\U0001F1F7 KR_80"
-  network: http
-  port: 80
-  server: 152.70.92.69
-  type: vmess
-  udp: true
-  uuid: bb9c3993-a4b9-4dad-aeb9-ac86371ae68b
 - alterId: 0
   cipher: auto
   country: "\U0001F1F0\U0001F1F7KR"
   h2-opts: {}
   http-opts: {}
-  name: netflix_KR
+  name: "\U0001F1F0\U0001F1F7KR_75"
   network: none
   port: 443
   server: 140.238.2.250
@@ -1913,469 +1871,351 @@ proxies:
   uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
 - cipher: chacha20-ietf-poly1305
   country: "\U0001F1F0\U0001F1FF KZ"
-  name: "\U0001F1F0\U0001F1FF KZ_83"
+  name: "\U0001F1F0\U0001F1FF KZ_77"
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 45.159.250.190
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_84"
+  name: "\U0001F1F1\U0001F1F9 LT_78"
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.87.175.65
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F1F1\U0001F1F9 LT"
+  name: "\U0001F1F1\U0001F1F9 LT_79"
   password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.181
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_85"
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: 45.87.175.171
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_86"
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.166
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_87"
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: 45.87.175.166
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_88"
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.164
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_89"
-  password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
   server: 45.87.175.157
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_90"
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: 45.87.175.181
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_91"
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.87.175.58
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_92"
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_93"
+  name: "\U0001F1F1\U0001F1F9 LT_80"
   password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.192
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_94"
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_95"
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.87.175.92
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_96"
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 45.87.175.199
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_97"
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.187
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_98"
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 45.87.175.157
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_99"
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 45.87.175.174
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_100"
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.181
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_101"
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.166
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_102"
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 443
-  server: 45.87.175.166
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_103"
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.199
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_104"
-  password: 1RWwXhwfAB5gAEozU4G2Pg
   port: 8080
   server: 45.87.175.188
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_105"
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.193
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_106"
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 45.87.175.197
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_107"
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.188
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_108"
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.171
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_109"
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.177
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_110"
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.87.175.35
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_111"
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 45.87.175.155
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_112"
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.87.175.69
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_113"
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.164
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_114"
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: 45.87.175.164
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_115"
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.154
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_116"
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: 45.87.175.199
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_117"
-  password: cvII85TrW6n0OGyfpHVS1u
+  name: "\U0001F1F1\U0001F1F9 LT_81"
+  password: QCXDxuDlTTMD7jtgHUjIoj
   port: 8080
   server: 45.87.175.157
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_118"
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 45.87.175.181
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_119"
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 45.87.175.192
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_120"
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: 45.87.175.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_121"
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.154
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_122"
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 45.87.175.166
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_123"
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 45.87.175.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_124"
+  name: "\U0001F1F1\U0001F1F9 LT_82"
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 45.87.175.28
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_125"
-  password: 4a2rfixophdjffa8KVA4Aa
+  name: "\U0001F1F1\U0001F1F9 LT_83"
+  password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
-  server: 45.87.175.188
+  server: 45.87.175.164
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_126"
+  name: "\U0001F1F1\U0001F1F9 LT_84"
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 45.87.175.164
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F1F1\U0001F1F9 LT"
+  name: "\U0001F1F1\U0001F1F9 LT_85"
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 45.87.175.199
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F1F1\U0001F1F9 LT"
+  name: "\U0001F1F1\U0001F1F9 LT_86"
   password: QCXDxuDlTTMD7jtgHUjIoj
   port: 8080
   server: 45.87.175.154
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_127"
+  name: "\U0001F1F1\U0001F1F9 LT_87"
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  port: 443
+  server: 45.87.175.166
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F1F1\U0001F1F9 LT"
+  name: "\U0001F1F1\U0001F1F9 LT_88"
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 45.87.175.192
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F1F1\U0001F1F9 LT"
+  name: "\U0001F1F1\U0001F1F9 LT_89"
   password: 1RWwXhwfAB5gAEozU4G2Pg
   port: 8080
   server: 45.87.175.192
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: "\U0001F1F1\U0001F1F9 LT"
-  name: "\U0001F1F1\U0001F1F9 LT_128"
+  name: "\U0001F1F1\U0001F1F9 LT_90"
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  port: 8080
+  server: 45.87.175.166
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F1F1\U0001F1F9 LT"
+  name: "\U0001F1F1\U0001F1F9 LT_91"
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.87.175.92
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F1F1\U0001F1F9 LT"
+  name: "\U0001F1F1\U0001F1F9 LT_92"
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.181
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F1F1\U0001F1F9 LT"
+  name: "\U0001F1F1\U0001F1F9 LT_93"
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.188
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F1F1\U0001F1F9 LT"
+  name: "\U0001F1F1\U0001F1F9 LT_94"
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 45.87.175.154
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F1F1\U0001F1F9 LT"
+  name: "\U0001F1F1\U0001F1F9 LT_95"
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.177
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F1F1\U0001F1F9 LT"
+  name: "\U0001F1F1\U0001F1F9 LT_96"
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 45.87.175.192
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F1F1\U0001F1F9 LT"
+  name: "\U0001F1F1\U0001F1F9 LT_97"
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 45.87.175.181
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F1F1\U0001F1F9 LT"
+  name: "\U0001F1F1\U0001F1F9 LT_98"
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 45.87.175.155
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F1F1\U0001F1F9 LT"
+  name: "\U0001F1F1\U0001F1F9 LT_99"
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 45.87.175.199
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F1F1\U0001F1F9 LT"
+  name: "\U0001F1F1\U0001F1F9 LT_100"
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  port: 8080
+  server: 45.87.175.188
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F1F1\U0001F1F9 LT"
+  name: "\U0001F1F1\U0001F1F9 LT_101"
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  port: 8080
+  server: 45.87.175.164
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F1F1\U0001F1F9 LT"
+  name: "\U0001F1F1\U0001F1F9 LT_102"
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 45.87.175.157
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F1F1\U0001F1F9 LT"
+  name: "\U0001F1F1\U0001F1F9 LT_103"
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  port: 8080
+  server: 45.87.175.178
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F1F1\U0001F1F9 LT"
+  name: "\U0001F1F1\U0001F1F9 LT_104"
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  port: 8080
+  server: 45.87.175.181
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F1F1\U0001F1F9 LT"
+  name: "\U0001F1F1\U0001F1F9 LT_105"
   password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
   server: 45.87.175.192
   type: ss
 - cipher: chacha20-ietf-poly1305
+  country: "\U0001F1F1\U0001F1F9 LT"
+  name: "\U0001F1F1\U0001F1F9 LT_106"
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  port: 8080
+  server: 45.87.175.199
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F1F1\U0001F1F9 LT"
+  name: "\U0001F1F1\U0001F1F9 LT_107"
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.199
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F1F1\U0001F1F9 LT"
+  name: "\U0001F1F1\U0001F1F9 LT_108"
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 45.87.175.197
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F1F1\U0001F1F9 LT"
+  name: "\U0001F1F1\U0001F1F9 LT_109"
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.193
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F1F1\U0001F1F9 LT"
+  name: "\U0001F1F1\U0001F1F9 LT_110"
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 45.87.175.166
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F1F1\U0001F1F9 LT"
+  name: "\U0001F1F1\U0001F1F9 LT_111"
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.87.175.35
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F1F1\U0001F1F9 LT"
+  name: "\U0001F1F1\U0001F1F9 LT_112"
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.187
+  type: ss
+- cipher: chacha20-ietf-poly1305
   country: "\U0001F1F1\U0001F1F9LT"
-  name: "\U0001F1F1\U0001F1F9LT_129"
+  name: "\U0001F1F1\U0001F1F9LT_113"
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 45.87.175.158
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: "\U0001F1F1\U0001F1F9LT"
-  name: "\U0001F1F1\U0001F1F9LT_130"
+  name: "\U0001F1F1\U0001F1F9LT_114"
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 45.87.175.22
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F2\U0001F1E6 MA"
-  name: "\U0001F1F2\U0001F1E6 MA_131"
+  country: "\U0001F1F1\U0001F1FA LU"
+  name: "\U0001F1F1\U0001F1FA LU_115"
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
-  server: 188.214.157.58
+  server: 109.61.39.28
   type: ss
 - cipher: chacha20-ietf-poly1305
+  country: "\U0001F1F1\U0001F1FB LV"
+  name: "\U0001F1F1\U0001F1FB LV_116"
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 46.183.217.204
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F1F2\U0001F1E9 MD"
+  name: "\U0001F1F2\U0001F1E9 MD_117"
+  password: pl2XtR0pzwknQOGwewbwXtPYDw1zn9Vu
+  port: 443
+  server: 213.159.66.206
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
   country: "\U0001F1F2\U0001F1E9MD"
-  name: "\U0001F1F2\U0001F1E9MD_132"
+  name: "\U0001F1F2\U0001F1E9MD_118"
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 188.214.157.30
   type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F3\U0001F1F1 NL"
-  name: "Relay_\U0001F1F3\U0001F1F1 NL-\U0001F1F3\U0001F1F1NL_133"
-  password: o5osZg269v5zHpYjr1xY9s
-  port: 8080
-  server: 151.242.251.137
+- cipher: aes-256-cfb
+  country: "\U0001F1F2\U0001F1F0 MK"
+  name: "\U0001F1F2\U0001F1F0 MK_119"
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 46.183.185.37
   type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F3\U0001F1F1 NL"
-  name: "Relay_\U0001F1F3\U0001F1F1 NL-\U0001F1F3\U0001F1F1NL_134"
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 151.242.251.147
+- cipher: aes-256-cfb
+  country: "\U0001F1F2\U0001F1F9 MT"
+  name: "\U0001F1F2\U0001F1F9 MT_120"
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 171.22.254.17
   type: ss
+- alterId: 0
+  cipher: auto
+  country: "\U0001F1F2\U0001F1FEMY"
+  h2-opts: {}
+  http-opts: {}
+  name: "\U0001F1F2\U0001F1FEMY_121"
+  network: ws
+  port: 8613
+  server: 47.250.45.234
+  skip-cert-verify: true
+  type: vmess
+  uuid: 80039b4d-bac0-4f89-82c7-54fad3b0a1ea
+  ws-opts:
+    path: /arki?ed=2048
 - cipher: chacha20-ietf-poly1305
   country: "\U0001F1F3\U0001F1F1 NL"
-  name: "Relay_\U0001F1F3\U0001F1F1 NL-\U0001F1F3\U0001F1F1NL_135"
+  name: "Relay_\U0001F1F3\U0001F1F1 NL-\U0001F1F3\U0001F1F1NL_122"
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 151.242.251.142
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: "\U0001F1F3\U0001F1F1 NL"
-  name: "\U0001F1F3\U0001F1F1 NL_136"
+  name: "\U0001F1F3\U0001F1F1 NL_123"
   password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
-  server: 193.29.139.179
+  server: 193.29.139.189
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: "\U0001F1F3\U0001F1F1 NL"
-  name: "Relay_\U0001F1F3\U0001F1F1 NL-\U0001F1F3\U0001F1F1NL_137"
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 151.242.251.131
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F3\U0001F1F1 NL"
-  name: "\U0001F1F3\U0001F1F1 NL_138"
+  name: "\U0001F1F3\U0001F1F1 NL_124"
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 193.29.139.251
   type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F3\U0001F1F1 NL"
-  name: "Relay_\U0001F1F3\U0001F1F1 NL-\U0001F1F3\U0001F1F1NL_139"
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.158.171.70
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F3\U0001F1F1 NL"
-  name: "Relay_\U0001F1F3\U0001F1F1 NL-\U0001F1F3\U0001F1F1NL_140"
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: beesyar.org
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F3\U0001F1F1 NL"
-  name: "Relay_\U0001F1F3\U0001F1F1 NL-\U0001F1F3\U0001F1F1NL_141"
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: beesyar.org
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F3\U0001F1F1 NL"
-  name: "\U0001F1F3\U0001F1F1 NL_142"
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 193.29.139.202
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F3\U0001F1F1 NL"
-  name: "\U0001F1F3\U0001F1F1 NL_143"
-  password: SjdGCHwafjktt1rzpGxTKYTvVBWb8Xa6E5DTr6MzbdHQSwvpLiDczj3n6MBjy2uyFSzgqgvCWsDQmpM4VQzfPzyGYF58wdyD
-  port: 42029
-  server: 208.67.105.196
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F3\U0001F1F1 NL"
-  name: "Relay_\U0001F1F3\U0001F1F1 NL-\U0001F1F3\U0001F1F1NL_144"
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.158.171.66
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F3\U0001F1F1 NL"
-  name: "\U0001F1F3\U0001F1F1 NL_145"
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 193.29.139.189
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F3\U0001F1F1 NL"
-  name: "Relay_\U0001F1F3\U0001F1F1 NL-\U0001F1F3\U0001F1F1NL_146"
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 151.242.251.153
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F3\U0001F1F1 NL"
-  name: "Relay_\U0001F1F3\U0001F1F1 NL-\U0001F1F3\U0001F1F1NL_147"
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: beesyar.org
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F3\U0001F1F1 NL"
-  name: "\U0001F1F3\U0001F1F1 NL_148"
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 193.29.139.189
-  type: ss
 - cipher: aes-128-cfb
   country: "\U0001F1F3\U0001F1F1 NL"
-  name: "\U0001F1F3\U0001F1F1 NL_149"
+  name: "\U0001F1F3\U0001F1F1 NL_125"
   password: shadowsocks
   port: 443
   server: 109.201.152.181
@@ -2383,42 +2223,105 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: "\U0001F1F3\U0001F1F1 NL"
-  name: "Relay_\U0001F1F3\U0001F1F1 NL-\U0001F1F3\U0001F1F1NL_150"
+  name: "\U0001F1F3\U0001F1F1 NL_126"
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 193.29.139.227
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F1F3\U0001F1F1 NL"
+  name: "Relay_\U0001F1F3\U0001F1F1 NL-\U0001F1F3\U0001F1F1NL_127"
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 151.242.251.131
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F1F3\U0001F1F1 NL"
+  name: "Relay_\U0001F1F3\U0001F1F1 NL-\U0001F1F3\U0001F1F1NL_128"
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.158.171.70
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F1F3\U0001F1F1 NL"
+  name: "\U0001F1F3\U0001F1F1 NL_129"
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 193.29.139.179
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F1F3\U0001F1F1 NL"
+  name: "Relay_\U0001F1F3\U0001F1F1 NL-\U0001F1F3\U0001F1F1NL_130"
+  password: o5osZg269v5zHpYjr1xY9s
+  port: 8080
+  server: 151.242.251.137
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F1F3\U0001F1F1 NL"
+  name: "Relay_\U0001F1F3\U0001F1F1 NL-\U0001F1F3\U0001F1F1NL_131"
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 151.242.251.144
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F1F3\U0001F1F1 NL"
+  name: "Relay_\U0001F1F3\U0001F1F1 NL-\U0001F1F3\U0001F1F1NL_132"
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 151.242.251.133
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: "\U0001F1F3\U0001F1F1 NL"
-  name: "\U0001F1F3\U0001F1F1 NL_151"
+  name: "Relay_\U0001F1F3\U0001F1F1 NL-\U0001F1F3\U0001F1F1NL_133"
   password: QCXDxuDlTTMD7jtgHUjIoj
   port: 8080
-  server: 193.29.139.227
+  server: 151.242.251.147
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F1F3\U0001F1F1 NL"
+  name: "\U0001F1F3\U0001F1F1 NL_134"
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 193.29.139.189
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F1F3\U0001F1F1 NL"
+  name: "Relay_\U0001F1F3\U0001F1F1 NL-\U0001F1F3\U0001F1F1NL_135"
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 151.242.251.153
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F1F3\U0001F1F1 NL"
+  name: "Relay_\U0001F1F3\U0001F1F1 NL-\U0001F1F3\U0001F1F1NL_136"
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 151.242.251.152
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: "\U0001F1F3\U0001F1F1NL"
-  name: "\U0001F1F3\U0001F1F1NL_152"
+  name: "\U0001F1F3\U0001F1F1NL_137"
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 193.29.139.240
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: "\U0001F1F3\U0001F1F1NL"
-  name: "\U0001F1F3\U0001F1F1NL_153"
+  name: "\U0001F1F3\U0001F1F1NL_138"
   password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
   server: 193.29.139.157
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: "\U0001F1F3\U0001F1F1NL"
-  name: "\U0001F1F3\U0001F1F1NL_154"
+  name: "\U0001F1F3\U0001F1F1NL_139"
   password: QCXDxuDlTTMD7jtgHUjIoj
   port: 8080
   server: 193.29.139.217
   type: ss
 - cipher: aes-256-cfb
   country: "\U0001F1F3\U0001F1F1NL"
-  name: "\U0001F1F3\U0001F1F1NL_155"
+  name: "\U0001F1F3\U0001F1F1NL_140"
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 51.15.17.169
@@ -2428,124 +2331,89 @@ proxies:
   country: "\U0001F1F3\U0001F1F1NL"
   h2-opts: {}
   http-opts: {}
-  name: "\U0001F1F3\U0001F1F1NL_156"
+  name: netflix_KR
   network: none
   port: 56867
   server: 130.162.152.253
   skip-cert-verify: true
   type: vmess
   uuid: 5206bb9f-2cbc-44ac-de2a-471439a23707
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F5\U0001F1E6PA"
-  name: "\U0001F1F5\U0001F1E6PA_157"
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 138.186.142.80
-  type: ss
 - cipher: aes-256-cfb
   country: "\U0001F1F5\U0001F1F1 PL"
-  name: "\U0001F1F5\U0001F1F1 PL_158"
-  password: ueLXVkvh4hckhErQ
-  port: 9060
-  server: 217.30.10.18
-  type: ss
-- cipher: aes-256-cfb
-  country: "\U0001F1F5\U0001F1F1 PL"
-  name: "\U0001F1F5\U0001F1F1 PL_159"
-  password: GA9KzeEgvfxNrgmM
-  port: 9019
-  server: 217.30.10.18
-  type: ss
-- cipher: aes-256-cfb
-  country: "\U0001F1F5\U0001F1F1 PL"
-  name: "\U0001F1F5\U0001F1F1 PL_160"
+  name: "\U0001F1F5\U0001F1F1 PL_142"
   password: UTJA57ypk2XKQpnm
   port: 9033
   server: 217.30.10.18
   type: ss
 - cipher: aes-256-cfb
   country: "\U0001F1F5\U0001F1F1PL"
-  name: "\U0001F1F5\U0001F1F1PL_161"
-  password: wfLC2y7rzZyCmuyt
-  port: 9093
-  server: 217.30.10.70
-  type: ss
-- cipher: aes-256-cfb
-  country: "\U0001F1F5\U0001F1F1PL"
-  name: "\U0001F1F5\U0001F1F1PL_162"
-  password: BNmAXXxAHYpTRdzu
-  port: 9020
-  server: 217.30.10.70
-  type: ss
-- cipher: aes-256-cfb
-  country: "\U0001F1F5\U0001F1F1PL"
-  name: "\U0001F1F5\U0001F1F1PL_163"
-  password: rpgbNnU9rDDU4aWZ
-  port: 9094
-  server: 217.30.10.70
-  type: ss
-- cipher: aes-256-cfb
-  country: "\U0001F1F5\U0001F1F1PL"
-  name: "\U0001F1F5\U0001F1F1PL_164"
-  password: Lp27rqyJq72bZsqX
-  port: 9045
-  server: 217.30.10.70
-  type: ss
-- cipher: aes-256-cfb
-  country: "\U0001F1F5\U0001F1F1PL"
-  name: "\U0001F1F5\U0001F1F1PL_165"
-  password: HSZuyJQcWe8dxNdF
-  port: 9043
-  server: 217.30.10.70
-  type: ss
-- cipher: aes-256-cfb
-  country: "\U0001F1F5\U0001F1F1PL"
-  name: "\U0001F1F5\U0001F1F1PL_166"
-  password: NvS8N4Vf8qAGPSCL
-  port: 9046
-  server: 217.30.10.70
-  type: ss
-- cipher: aes-256-cfb
-  country: "\U0001F1F5\U0001F1F1PL"
-  name: "\U0001F1F5\U0001F1F1PL_167"
-  password: XPtzA9sCug3SPR4c
-  port: 9025
-  server: 217.30.10.70
-  type: ss
-- cipher: aes-256-cfb
-  country: "\U0001F1F5\U0001F1F1PL"
-  name: "\U0001F1F5\U0001F1F1PL_168"
+  name: "\U0001F1F5\U0001F1F1PL_143"
   password: BejrQvtu9sqUeNuZ
   port: 9024
   server: 217.30.10.70
   type: ss
 - cipher: aes-256-cfb
   country: "\U0001F1F5\U0001F1F1PL"
-  name: "\U0001F1F5\U0001F1F1PL_169"
-  password: y9VURyNzJWNRYEGQ
-  port: 9008
+  name: "\U0001F1F5\U0001F1F1PL_144"
+  password: NvS8N4Vf8qAGPSCL
+  port: 9046
+  server: 217.30.10.70
+  type: ss
+- cipher: aes-256-cfb
+  country: "\U0001F1F5\U0001F1F1PL"
+  name: "\U0001F1F5\U0001F1F1PL_145"
+  password: HSZuyJQcWe8dxNdF
+  port: 9043
+  server: 217.30.10.70
+  type: ss
+- cipher: aes-256-cfb
+  country: "\U0001F1F5\U0001F1F1PL"
+  name: "\U0001F1F5\U0001F1F1PL_146"
+  password: cp8pRSUAyLhTfVWH
+  port: 9064
+  server: 217.30.10.70
+  type: ss
+- cipher: aes-256-cfb
+  country: "\U0001F1F5\U0001F1F1PL"
+  name: "\U0001F1F5\U0001F1F1PL_147"
+  password: FAdUvMJUq5vDgKEq
+  port: 9006
+  server: 217.30.10.70
+  type: ss
+- cipher: aes-256-cfb
+  country: "\U0001F1F5\U0001F1F1PL"
+  name: "\U0001F1F5\U0001F1F1PL_148"
+  password: rpgbNnU9rDDU4aWZ
+  port: 9094
+  server: 217.30.10.70
+  type: ss
+- cipher: aes-256-cfb
+  country: "\U0001F1F5\U0001F1F1PL"
+  name: "\U0001F1F5\U0001F1F1PL_149"
+  password: BNmAXXxAHYpTRdzu
+  port: 9020
   server: 217.30.10.70
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: "\U0001F1F5\U0001F1F7 PR"
-  name: "\U0001F1F5\U0001F1F7 PR_170"
+  name: "\U0001F1F5\U0001F1F7 PR_150"
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.47.255.22
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: "\U0001F1F7\U0001F1F4 RO"
-  name: "\U0001F1F7\U0001F1F4 RO_171"
+  name: "\U0001F1F7\U0001F1F4 RO_151"
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.126.237.38
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F7\U0001F1F4RO"
-  name: "\U0001F1F7\U0001F1F4RO_172"
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  country: "\U0001F1F7\U0001F1FA RU"
+  name: "\U0001F1F7\U0001F1FA RU_152"
+  password: f8f7aCzcPKbsF8p3
   port: 990
-  server: 89.46.239.231
+  server: 185.126.239.250
   type: ss
 - alterId: 0
   cipher: auto
@@ -2554,23 +2422,11 @@ proxies:
   http-opts: {}
   name: disney_US
   network: none
-  port: 6511
+  port: 6513
   server: 193.124.24.247
   skip-cert-verify: true
   type: vmess
-  uuid: 5ef4e89b-262f-4c74-e793-c7332079f251
-- alterId: 0
-  cipher: auto
-  country: "\U0001F1F7\U0001F1FARU"
-  h2-opts: {}
-  http-opts: {}
-  name: disney_US
-  network: none
-  port: 6503
-  server: 193.124.24.247
-  skip-cert-verify: true
-  type: vmess
-  uuid: 978d0097-dc80-48db-935a-348a08dff336
+  uuid: 5cf7fcbc-e2c1-42c4-d0d7-79c45a7d588d
 - alterId: 0
   cipher: auto
   country: "\U0001F1F7\U0001F1FARU"
@@ -2583,6 +2439,30 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: 2f3c646a-37f3-483a-a2a5-6bc1c5e526ae
+- alterId: 0
+  cipher: auto
+  country: "\U0001F1F7\U0001F1FARU"
+  h2-opts: {}
+  http-opts: {}
+  name: disney_US
+  network: none
+  port: 6509
+  server: 193.124.24.247
+  skip-cert-verify: true
+  type: vmess
+  uuid: 605e3022-96a4-4f4a-a933-a1fa5ff869c6
+- alterId: 0
+  cipher: auto
+  country: "\U0001F1F7\U0001F1FARU"
+  h2-opts: {}
+  http-opts: {}
+  name: disney_US
+  network: none
+  port: 6508
+  server: 193.124.24.247
+  skip-cert-verify: true
+  type: vmess
+  uuid: b68fead5-5b0b-43a1-c34a-804467f0f368
 - alterId: 0
   cipher: auto
   country: "\U0001F1F7\U0001F1FARU"
@@ -2614,59 +2494,11 @@ proxies:
   http-opts: {}
   name: disney_US
   network: none
-  port: 6502
+  port: 6505
   server: 193.124.24.247
   skip-cert-verify: true
   type: vmess
-  uuid: 242f22a3-29d9-4a94-d8ba-88043f2e1921
-- alterId: 0
-  cipher: auto
-  country: "\U0001F1F7\U0001F1FARU"
-  h2-opts: {}
-  http-opts: {}
-  name: disney_US
-  network: none
-  port: 6510
-  server: 193.124.24.247
-  skip-cert-verify: true
-  type: vmess
-  uuid: 8f44f672-e53b-44fb-b502-c886d37107b5
-- alterId: 0
-  cipher: auto
-  country: "\U0001F1F7\U0001F1FARU"
-  h2-opts: {}
-  http-opts: {}
-  name: disney_US
-  network: none
-  port: 6501
-  server: 193.124.24.247
-  skip-cert-verify: true
-  type: vmess
-  uuid: 89dc2652-e0a0-4a5c-e203-f837d9f44ce1
-- alterId: 0
-  cipher: auto
-  country: "\U0001F1F7\U0001F1FARU"
-  h2-opts: {}
-  http-opts: {}
-  name: disney_US
-  network: none
-  port: 6508
-  server: 193.124.24.247
-  skip-cert-verify: true
-  type: vmess
-  uuid: b68fead5-5b0b-43a1-c34a-804467f0f368
-- alterId: 0
-  cipher: auto
-  country: "\U0001F1F7\U0001F1FARU"
-  h2-opts: {}
-  http-opts: {}
-  name: disney_US
-  network: none
-  port: 6509
-  server: 193.124.24.247
-  skip-cert-verify: true
-  type: vmess
-  uuid: 605e3022-96a4-4f4a-a933-a1fa5ff869c6
+  uuid: b34732f9-2856-4974-8bae-1351928e347f
 - alterId: 0
   cipher: auto
   country: "\U0001F1F7\U0001F1FARU"
@@ -2686,11 +2518,11 @@ proxies:
   http-opts: {}
   name: disney_US
   network: none
-  port: 6513
+  port: 6503
   server: 193.124.24.247
   skip-cert-verify: true
   type: vmess
-  uuid: 5cf7fcbc-e2c1-42c4-d0d7-79c45a7d588d
+  uuid: 978d0097-dc80-48db-935a-348a08dff336
 - alterId: 0
   cipher: auto
   country: "\U0001F1F7\U0001F1FARU"
@@ -2698,11 +2530,11 @@ proxies:
   http-opts: {}
   name: disney_US
   network: none
-  port: 6505
+  port: 6510
   server: 193.124.24.247
   skip-cert-verify: true
   type: vmess
-  uuid: b34732f9-2856-4974-8bae-1351928e347f
+  uuid: 8f44f672-e53b-44fb-b502-c886d37107b5
 - alterId: 0
   cipher: auto
   country: "\U0001F1F7\U0001F1FARU"
@@ -2715,26 +2547,55 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: c362d735-01a8-48eb-baa2-ae7aa63bfdc3
+- alterId: 0
+  cipher: auto
+  country: "\U0001F1F7\U0001F1FARU"
+  h2-opts: {}
+  http-opts: {}
+  name: disney_US
+  network: none
+  port: 6501
+  server: 193.124.24.247
+  skip-cert-verify: true
+  type: vmess
+  uuid: 89dc2652-e0a0-4a5c-e203-f837d9f44ce1
+- alterId: 0
+  cipher: auto
+  country: "\U0001F1F7\U0001F1FARU"
+  h2-opts: {}
+  http-opts: {}
+  name: disney_US
+  network: none
+  port: 6502
+  server: 193.124.24.247
+  skip-cert-verify: true
+  type: vmess
+  uuid: 242f22a3-29d9-4a94-d8ba-88043f2e1921
+- alterId: 0
+  cipher: auto
+  country: "\U0001F1F7\U0001F1FARU"
+  h2-opts: {}
+  http-opts: {}
+  name: disney_US
+  network: none
+  port: 6511
+  server: 193.124.24.247
+  skip-cert-verify: true
+  type: vmess
+  uuid: 5ef4e89b-262f-4c74-e793-c7332079f251
 - cipher: chacha20-ietf-poly1305
   country: "\U0001F1F8\U0001F1E8 SC"
-  name: "\U0001F1F8\U0001F1E8 SC_187"
+  name: "\U0001F1F8\U0001F1E8 SC_167"
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 154.205.159.100
-  type: ss
-- cipher: chacha20-ietf
-  country: "\U0001F1F8\U0001F1EC SG"
-  name: disney_SG
-  password: asd123456
-  port: 8388
-  server: 103.36.91.23
   type: ss
 - alterId: 0
   cipher: auto
   country: "\U0001F1F8\U0001F1EC SG"
   h2-opts: {}
   http-opts: {}
-  name: "\U0001F1F8\U0001F1EC SG_189"
+  name: "\U0001F1F8\U0001F1EC SG_168"
   network: ws
   port: 20522
   server: 8.217.92.110
@@ -2747,22 +2608,20 @@ proxies:
   cipher: auto
   country: "\U0001F1F8\U0001F1EC SG"
   h2-opts: {}
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: "\U0001F1F8\U0001F1EC SG_190"
-  network: http
-  port: 22286
+  http-opts: {}
+  name: "\U0001F1F8\U0001F1EC SG_169"
+  network: none
+  port: 56536
   server: 47.245.106.193
+  skip-cert-verify: true
   type: vmess
-  uuid: 8646218f-a600-4b73-8721-aa5d4567819e
+  uuid: 42a7444d-39b0-4549-88d6-c4bbf290af18
 - alterId: 0
   cipher: auto
   country: "\U0001F1F8\U0001F1EC SG"
   h2-opts: {}
   http-opts: {}
-  name: "\U0001F1F8\U0001F1EC SG_191"
+  name: "\U0001F1F8\U0001F1EC SG_170"
   network: none
   port: 43158
   server: 66.42.63.36
@@ -2773,70 +2632,40 @@ proxies:
   cipher: auto
   country: "\U0001F1F8\U0001F1EC SG"
   h2-opts: {}
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: "\U0001F1F8\U0001F1EC SG_192"
-  network: http
-  port: 22525
-  server: 47.245.106.193
-  type: vmess
-  uuid: cabe905a-28ea-4e7e-c34d-2fa38604001f
-- alterId: 0
-  cipher: auto
-  country: "\U0001F1F8\U0001F1EC SG"
-  h2-opts: {}
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: "\U0001F1F8\U0001F1EC SG_193"
-  network: http
-  port: 22433
-  server: 47.245.106.193
-  type: vmess
-  uuid: bfcb103f-2133-4965-8684-6b4c8ef7a774
-- alterId: 0
-  cipher: auto
-  country: "\U0001F1F8\U0001F1EC SG"
-  h2-opts: {}
   http-opts: {}
-  name: "\U0001F1F8\U0001F1EC SG_194"
+  name: "\U0001F1F8\U0001F1EC SG_171"
   network: none
-  port: 56536
-  server: 47.245.106.193
+  port: 37189
+  server: 66.42.63.36
   skip-cert-verify: true
   type: vmess
-  uuid: 42a7444d-39b0-4549-88d6-c4bbf290af18
+  uuid: 3bd93acb-71bb-4088-88d4-09638ed9febd
 - country: "\U0001F1F8\U0001F1EC SG"
-  name: "\U0001F1F8\U0001F1EC SG_195"
+  name: "\U0001F1F8\U0001F1EC SG_172"
   password: G9CHhXltVx
   port: 12646
   server: 96.9.213.108
   skip-cert-verify: true
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F8\U0001F1ECSG"
-  name: disney_JP
-  password: beed149e-d2a2-4944-82c7-3d1afb8a6e4f
-  port: 12222
-  server: 134.122.174.192
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1F8\U0001F1ECSG"
-  name: disney_JP
-  password: 5662368d-15f5-4283-88da-9116767478ac
-  port: 12222
-  server: 134.122.174.192
-  type: ss
 - alterId: 0
   cipher: auto
   country: "\U0001F1F8\U0001F1ECSG"
   h2-opts: {}
   http-opts: {}
-  name: "\U0001F1F8\U0001F1ECSG_198"
+  name: "\U0001F1F8\U0001F1ECSG_173"
+  network: none
+  port: 29636
+  server: 66.42.63.36
+  skip-cert-verify: true
+  type: vmess
+  uuid: 9a7ef6bd-2a08-4e3f-e4f7-b76a014997b7
+- alterId: 0
+  cipher: auto
+  country: "\U0001F1F8\U0001F1ECSG"
+  h2-opts: {}
+  http-opts: {}
+  name: "\U0001F1F8\U0001F1ECSG_174"
   network: none
   port: 37459
   server: 66.42.63.36
@@ -2848,7 +2677,19 @@ proxies:
   country: "\U0001F1F8\U0001F1ECSG"
   h2-opts: {}
   http-opts: {}
-  name: "\U0001F1F8\U0001F1ECSG_199"
+  name: "\U0001F1F8\U0001F1ECSG_175"
+  network: none
+  port: 57879
+  server: 66.42.63.36
+  skip-cert-verify: true
+  type: vmess
+  uuid: 2357620b-a3ad-451e-ced7-3be649b0a38c
+- alterId: 0
+  cipher: auto
+  country: "\U0001F1F8\U0001F1ECSG"
+  h2-opts: {}
+  http-opts: {}
+  name: "\U0001F1F8\U0001F1ECSG_176"
   network: none
   port: 30993
   server: 66.42.63.36
@@ -2860,13 +2701,37 @@ proxies:
   country: "\U0001F1F8\U0001F1ECSG"
   h2-opts: {}
   http-opts: {}
-  name: "\U0001F1F8\U0001F1ECSG_200"
-  network: ws
-  port: 15233
-  server: 8.218.26.234
+  name: "\U0001F1F8\U0001F1ECSG_177"
+  network: none
+  port: 57540
+  server: 66.42.63.36
   skip-cert-verify: true
   type: vmess
-  uuid: 8a638047-8de4-4034-9b24-d8bf9fb18fa4
+  uuid: 8155e379-745b-409b-9cfe-74c4aee4c078
+- alterId: 0
+  cipher: auto
+  country: "\U0001F1F8\U0001F1ECSG"
+  h2-opts: {}
+  http-opts: {}
+  name: "\U0001F1F8\U0001F1ECSG_178"
+  network: none
+  port: 54442
+  server: 66.42.63.36
+  skip-cert-verify: true
+  type: vmess
+  uuid: c321f137-0325-4d5b-c304-908cf148f56c
+- alterId: 0
+  cipher: auto
+  country: "\U0001F1F8\U0001F1ECSG"
+  h2-opts: {}
+  http-opts: {}
+  name: "\U0001F1F8\U0001F1ECSG_179"
+  network: ws
+  port: 13589
+  server: 8.218.140.27
+  skip-cert-verify: true
+  type: vmess
+  uuid: 9297b311-b73a-4332-9016-bb25cbe475ee
   ws-opts:
     path: /arki?ed=2048
 - alterId: 0
@@ -2874,7 +2739,55 @@ proxies:
   country: "\U0001F1F8\U0001F1ECSG"
   h2-opts: {}
   http-opts: {}
-  name: "\U0001F1F8\U0001F1ECSG_201"
+  name: "\U0001F1F8\U0001F1ECSG_180"
+  network: none
+  port: 27555
+  server: 66.42.63.36
+  skip-cert-verify: true
+  type: vmess
+  uuid: 852b7a0d-7817-4473-9473-546080ce951e
+- alterId: 0
+  cipher: auto
+  country: "\U0001F1F8\U0001F1ECSG"
+  h2-opts: {}
+  http-opts: {}
+  name: "\U0001F1F8\U0001F1ECSG_181"
+  network: none
+  port: 30681
+  server: 66.42.63.36
+  skip-cert-verify: true
+  type: vmess
+  uuid: e2612ec7-d25a-41a7-c523-0ec8dffc75a9
+- alterId: 0
+  cipher: auto
+  country: "\U0001F1F8\U0001F1ECSG"
+  h2-opts: {}
+  http-opts: {}
+  name: "\U0001F1F8\U0001F1ECSG_182"
+  network: none
+  port: 30183
+  server: 66.42.63.36
+  skip-cert-verify: true
+  type: vmess
+  uuid: e10bd225-b2e3-4e23-9732-e7da9cd6b995
+- alterId: 0
+  cipher: auto
+  country: "\U0001F1F8\U0001F1ECSG"
+  h2-opts: {}
+  http-opts: {}
+  name: "\U0001F1F8\U0001F1ECSG_183"
+  network: none
+  port: 23601
+  server: 66.42.63.36
+  skip-cert-verify: true
+  type: vmess
+  uuid: 996ce5de-4dd5-4ac6-bff7-765a5e506b59
+- alterId: 0
+  cipher: auto
+  country: "\U0001F1F8\U0001F1ECSG"
+  h2-opts: {}
+  http-opts: {}
+  name: "\U0001F1F8\U0001F1ECSG_184"
   network: ws
   port: 12345
   server: 45.76.181.246
@@ -2888,76 +2801,16 @@ proxies:
   country: "\U0001F1F8\U0001F1ECSG"
   h2-opts: {}
   http-opts: {}
-  name: "\U0001F1F8\U0001F1ECSG_202"
-  network: none
-  port: 49131
-  server: 66.42.63.36
-  skip-cert-verify: true
-  type: vmess
-  uuid: 2bb542f9-6e40-401f-b99d-2bb32f739714
-- alterId: 0
-  cipher: auto
-  country: "\U0001F1F8\U0001F1ECSG"
-  h2-opts: {}
-  http-opts: {}
-  name: "\U0001F1F8\U0001F1ECSG_203"
-  network: none
-  port: 23601
-  server: 66.42.63.36
-  skip-cert-verify: true
-  type: vmess
-  uuid: 996ce5de-4dd5-4ac6-bff7-765a5e506b59
-- alterId: 0
-  cipher: auto
-  country: "\U0001F1F8\U0001F1ECSG"
-  h2-opts: {}
-  http-opts: {}
-  name: "\U0001F1F8\U0001F1ECSG_204"
-  network: none
-  port: 42064
-  server: 66.42.63.36
-  skip-cert-verify: true
-  type: vmess
-  uuid: e9d7c99e-ee55-4d2c-8bcb-3ada0729b348
-- alterId: 0
-  cipher: auto
-  country: "\U0001F1F8\U0001F1ECSG"
-  h2-opts: {}
-  http-opts: {}
-  name: "\U0001F1F8\U0001F1ECSG_205"
+  name: "\U0001F1F8\U0001F1ECSG_185"
   network: none
   port: 24041
   server: 66.42.63.36
   skip-cert-verify: true
   type: vmess
   uuid: bd3c6b2a-5389-4374-db41-c947cddd7d1d
-- alterId: 0
-  cipher: auto
-  country: "\U0001F1F8\U0001F1ECSG"
-  h2-opts: {}
-  http-opts: {}
-  name: "\U0001F1F8\U0001F1ECSG_206"
-  network: none
-  port: 57879
-  server: 66.42.63.36
-  skip-cert-verify: true
-  type: vmess
-  uuid: 2357620b-a3ad-451e-ced7-3be649b0a38c
-- alterId: 0
-  cipher: auto
-  country: "\U0001F1F8\U0001F1ECSG"
-  h2-opts: {}
-  http-opts: {}
-  name: "\U0001F1F8\U0001F1ECSG_207"
-  network: none
-  port: 30183
-  server: 66.42.63.36
-  skip-cert-verify: true
-  type: vmess
-  uuid: e10bd225-b2e3-4e23-9732-e7da9cd6b995
 - cipher: aes-256-cfb
   country: "\U0001F1F8\U0001F1EE SI"
-  name: "\U0001F1F8\U0001F1EE SI_208"
+  name: "\U0001F1F8\U0001F1EE SI_186"
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 192.71.244.150
@@ -2965,7 +2818,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: "\U0001F1F9\U0001F1F7 TR"
-  name: "\U0001F1F9\U0001F1F7 TR_209"
+  name: "\U0001F1F9\U0001F1F7 TR_187"
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.123.101.241
@@ -2973,50 +2826,46 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: "\U0001F1F9\U0001F1F7 TR"
-  name: "\U0001F1F9\U0001F1F7 TR_210"
+  name: "\U0001F1F9\U0001F1F7 TR_188"
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.123.101.241
   type: ss
-- cipher: aes-128-gcm
+- cipher: chacha20-ietf-poly1305
   country: "\U0001F1FA\U0001F1F8 US"
-  name: "\U0001F1FA\U0001F1F8 US_211"
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.170
-  type: ss
-- cipher: aes-128-gcm
-  country: "\U0001F1FA\U0001F1F8 US"
-  name: "\U0001F1FA\U0001F1F8 US_212"
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.167
+  name: netflix_US
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 104.192.226.106
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: "\U0001F1FA\U0001F1F8 US"
-  name: "\U0001F1FA\U0001F1F8 US_213"
+  name: "\U0001F1FA\U0001F1F8 US_190"
   password: HfAiyrdFbKJuKIQkGjvJrDFefmH8YDSC
   port: 443
   server: 45.83.131.43
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: "\U0001F1FA\U0001F1F8 US"
-  name: disney_netflix_US
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 104.192.226.106
+  name: "\U0001F1FA\U0001F1F8 US_191"
+  password: LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj
+  port: 52952
+  server: exchange.gameaurela.click
   type: ss
-- alterId: 0
-  cipher: auto
+- cipher: aes-128-gcm
   country: "\U0001F1FA\U0001F1F8 US"
-  h2-opts: {}
-  http-opts: {}
-  name: disney_US
-  network: tcp
+  name: "\U0001F1FA\U0001F1F8 US_192"
+  password: shadowsocks
   port: 443
-  server: 165.140.216.141
-  type: vmess
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  server: 156.146.38.170
+  type: ss
+- cipher: aes-128-gcm
+  country: "\U0001F1FA\U0001F1F8 US"
+  name: "\U0001F1FA\U0001F1F8 US_193"
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.167
+  type: ss
 - alterId: 0
   cipher: auto
   country: "\U0001F1FA\U0001F1F8 US"
@@ -3036,68 +2885,39 @@ proxies:
   http-opts: {}
   name: disney_HK
   network: none
-  port: 38141
-  server: 45.136.12.37
-  skip-cert-verify: true
-  type: vmess
-  uuid: fd291be6-b48d-43a1-da38-66c7f80e2f80
-- alterId: 0
-  cipher: auto
-  country: "\U0001F1FA\U0001F1F8 US"
-  h2-opts: {}
-  http-opts: {}
-  name: "\U0001F1FA\U0001F1F8 US_218"
-  network: ws
-  port: 20521
-  server: 45.89.107.51
-  skip-cert-verify: true
-  type: vmess
-  uuid: 3dbaa5c3-f493-4ad1-9c5d-8525f4962a6c
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  country: "\U0001F1FA\U0001F1F8 US"
-  h2-opts: {}
-  http-opts: {}
-  name: "\U0001F1FA\U0001F1F8 US_219"
-  network: ws
-  port: 20521
-  server: 45.136.12.37
-  skip-cert-verify: true
-  type: vmess
-  uuid: 090d0bd9-f9c4-4c3b-8aae-ffa678765935
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  country: "\U0001F1FA\U0001F1F8 US"
-  h2-opts: {}
-  http-opts: {}
-  name: disney_HK
-  network: none
   port: 19365
   server: 2.59.62.63
   skip-cert-verify: true
   type: vmess
   uuid: 9583a647-b0ba-47b0-d4b0-4e12a0201d67
+- alterId: 0
+  cipher: auto
+  country: "\U0001F1FA\U0001F1F8 US"
+  h2-opts: {}
+  http-opts: {}
+  name: disney_US
+  network: tcp
+  port: 443
+  server: 165.140.216.141
+  type: vmess
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F1FA\U0001F1F8US"
+  name: "\U0001F1FA\U0001F1F8US_197"
+  password: ODfxioK0VkKxTdpVQJ4rv8HglAu0vzv6
+  port: 443
+  server: 146.19.49.251
+  type: ss
 - cipher: aes-256-cfb
   country: "\U0001F1FA\U0001F1F8US"
-  name: "\U0001F1FA\U0001F1F8US_221"
+  name: "\U0001F1FA\U0001F1F8US_198"
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 104.192.226.106
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: "\U0001F1FA\U0001F1F8US"
-  name: "\U0001F1FA\U0001F1F8US_222"
-  password: ODfxioK0VkKxTdpVQJ4rv8HglAu0vzv6
-  port: 443
-  server: 146.19.49.251
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1FA\U0001F1F8US"
-  name: "\U0001F1FA\U0001F1F8US_223"
+  name: "\U0001F1FA\U0001F1F8US_199"
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 38.54.59.180
@@ -3107,44 +2927,38 @@ proxies:
   country: "\U0001F1FA\U0001F1F8US"
   h2-opts: {}
   http-opts: {}
-  name: "\U0001F1FA\U0001F1F8US_224"
-  network: ws
-  port: 443
-  server: 209.126.84.189
-  servername: 209.126.84.189
+  name: "\U0001F1FA\U0001F1F8US_200"
+  network: none
+  port: 43966
+  server: 209.54.104.219
   skip-cert-verify: true
   type: vmess
-  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
-  ws-opts:
-    headers:
-      HOST: 209.126.84.189
-    path: /vmessws
+  uuid: 0e3606ae-321a-4d0b-85ec-5f4352f4bc24
 - alterId: 0
   cipher: auto
   country: "\U0001F1FA\U0001F1F8US"
   h2-opts: {}
   http-opts: {}
-  name: "\U0001F1FA\U0001F1F8US_225"
-  network: ws
-  port: 8443
-  server: 216.173.69.250
+  name: disney_HK
+  network: none
+  port: 11325
+  server: 68.64.176.148
   skip-cert-verify: true
   type: vmess
-  uuid: 91382092-2330-455b-8a1c-9c129cfe661a
-  ws-opts:
-    path: /
+  uuid: 8afb5b6d-51f6-4bf8-f4e2-0378822200b3
 - alterId: 0
   cipher: auto
   country: "\U0001F1FA\U0001F1F8US"
   h2-opts: {}
   http-opts: {}
-  name: "\U0001F1FA\U0001F1F8US_226"
-  network: tcp
-  port: 29800
-  server: 103.124.107.144
+  name: "\U0001F1FA\U0001F1F8US_202"
+  network: none
+  port: 2052
+  server: 38.54.98.110
   skip-cert-verify: true
+  tls: true
   type: vmess
-  uuid: cc31ddfc-d92e-4dab-cd06-00dfb84af8ac
+  uuid: 665d9b8f-153d-4907-adac-de12afd9c851
 - alterId: 0
   cipher: auto
   country: "\U0001F1FA\U0001F1F8US"
@@ -3162,7 +2976,43 @@ proxies:
   country: "\U0001F1FA\U0001F1F8US"
   h2-opts: {}
   http-opts: {}
-  name: disney_netflix_US
+  name: disney_TH
+  port: 1036
+  server: th0603-1.ysds168.shop
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 5893c6cd-c14f-4e99-a9ae-6c2ca7456584
+- alterId: 0
+  cipher: auto
+  country: "\U0001F1FA\U0001F1F8US"
+  h2-opts: {}
+  http-opts: {}
+  name: disney_HK
+  network: none
+  port: 46100
+  server: www.liuye.space
+  skip-cert-verify: true
+  type: vmess
+  uuid: 71dbcca9-1116-4bb0-c641-12f50b9ce41e
+- alterId: 0
+  cipher: auto
+  country: "\U0001F1FA\U0001F1F8US"
+  h2-opts: {}
+  http-opts: {}
+  name: disney_FR
+  network: none
+  port: 27092
+  server: 208.76.223.218
+  skip-cert-verify: true
+  type: vmess
+  uuid: a0596ba6-72a3-4366-8992-77088da65bd8
+- alterId: 0
+  cipher: auto
+  country: "\U0001F1FA\U0001F1F8US"
+  h2-opts: {}
+  http-opts: {}
+  name: disney_US
   network: none
   port: 12299
   server: 154.29.158.139
@@ -3186,82 +3036,6 @@ proxies:
   country: "\U0001F1FA\U0001F1F8US"
   h2-opts: {}
   http-opts: {}
-  name: "Relay_\U0001F1FA\U0001F1F8US-\U0001F1E8\U0001F1FFCZ_230"
-  network: tcp
-  port: 45291
-  server: 216.227.168.157
-  servername: lt.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- alterId: 0
-  cipher: auto
-  country: "\U0001F1FA\U0001F1F8US"
-  h2-opts: {}
-  http-opts: {}
-  name: "\U0001F1FA\U0001F1F8US_231"
-  network: ws
-  port: 7040
-  server: 47.239.102.115
-  skip-cert-verify: true
-  type: vmess
-  uuid: 1bf931d3-2ae5-4137-9b26-298833bf7576
-  ws-opts:
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
-  country: "\U0001F1FA\U0001F1F8US"
-  h2-opts: {}
-  http-opts: {}
-  name: disney_HK
-  network: none
-  port: 11325
-  server: 68.64.176.148
-  skip-cert-verify: true
-  type: vmess
-  uuid: 8afb5b6d-51f6-4bf8-f4e2-0378822200b3
-- alterId: 0
-  cipher: auto
-  country: "\U0001F1FA\U0001F1F8US"
-  h2-opts: {}
-  http-opts: {}
-  name: "Relay_\U0001F1FA\U0001F1F8US-\U0001F1F0\U0001F1F7KR_233"
-  network: tcp
-  port: 45245
-  server: 216.227.168.157
-  servername: ye.fxlcn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- alterId: 0
-  cipher: auto
-  country: "\U0001F1FA\U0001F1F8US"
-  h2-opts: {}
-  http-opts: {}
-  name: disney_HK
-  network: none
-  port: 46100
-  server: www.liuye.space
-  skip-cert-verify: true
-  type: vmess
-  uuid: 71dbcca9-1116-4bb0-c641-12f50b9ce41e
-- alterId: 0
-  cipher: auto
-  country: "\U0001F1FA\U0001F1F8US"
-  h2-opts: {}
-  http-opts: {}
-  name: disney_TH
-  port: 1036
-  server: th0603-1.ysds168.shop
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 5893c6cd-c14f-4e99-a9ae-6c2ca7456584
-- alterId: 0
-  cipher: auto
-  country: "\U0001F1FA\U0001F1F8US"
-  h2-opts: {}
-  http-opts: {}
   name: disney_HK
   network: ws
   port: 20521
@@ -3271,75 +3045,6 @@ proxies:
   uuid: 496cec71-a0fd-4f25-bba1-cba9e9d5a52f
   ws-opts:
     path: /
-- alterId: 32
-  cipher: auto
-  country: "\U0001F1FA\U0001F1F8US"
-  h2-opts: {}
-  http-opts: {}
-  name: "Relay_\U0001F1FA\U0001F1F8US-\U0001F1F8\U0001F1ECSG_237"
-  network: ws
-  port: 443
-  server: vc.fly.dev
-  servername: vc.fly.dev
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
-  ws-opts:
-    headers:
-      HOST: vc.fly.dev
-    path: /vc
-- alterId: 0
-  cipher: auto
-  country: "\U0001F1FA\U0001F1F8US"
-  h2-opts: {}
-  http-opts: {}
-  name: "\U0001F1FA\U0001F1F8US_238"
-  network: none
-  port: 2052
-  server: 38.54.98.110
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 665d9b8f-153d-4907-adac-de12afd9c851
-- alterId: 0
-  cipher: auto
-  country: "\U0001F1FA\U0001F1F8US"
-  h2-opts: {}
-  http-opts: {}
-  name: "\U0001F1FA\U0001F1F8US_239"
-  network: none
-  port: 43966
-  server: 209.54.104.219
-  skip-cert-verify: true
-  type: vmess
-  uuid: 0e3606ae-321a-4d0b-85ec-5f4352f4bc24
-- alterId: 0
-  cipher: auto
-  country: "\U0001F1FA\U0001F1F8US"
-  h2-opts: {}
-  http-opts: {}
-  name: disney_FR
-  network: none
-  port: 27092
-  server: 208.76.223.218
-  skip-cert-verify: true
-  type: vmess
-  uuid: a0596ba6-72a3-4366-8992-77088da65bd8
-- alterId: 0
-  cipher: auto
-  country: "\U0001F1FA\U0001F1F8US"
-  h2-opts: {}
-  http-opts: {}
-  name: "\U0001F1FA\U0001F1F8US_241"
-  network: none
-  port: 1037
-  server: 38.60.195.254
-  servername: ml0605.ysds168.shop
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 2d978341-a391-4b54-8623-12284dc24525
 - alterId: 0
   cipher: auto
   country: "\U0001F1FA\U0001F1F8US"
@@ -3352,17 +3057,26 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: ba50e1fe-055f-4587-fd0d-36c8d6615192
-- country: "\U0001F1FA\U0001F1F8US"
-  name: "\U0001F1FA\U0001F1F8US_243"
-  password: BxceQaOe
+- alterId: 0
+  cipher: auto
+  country: "\U0001F1FA\U0001F1F8US"
+  h2-opts: {}
+  http-opts: {}
+  name: "Relay_\U0001F1FA\U0001F1F8US-\U0001F1EB\U0001F1F7FR_211"
+  network: ws
   port: 443
-  server: 38.180.191.251
+  server: 172.67.204.19
+  servername: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
   skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  type: trojan
-  udp: true
+  tls: true
+  type: vmess
+  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
+  ws-opts:
+    headers:
+      HOST: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
+    path: /azumase.ren
 - country: "\U0001F1FA\U0001F1F8US"
-  name: "\U0001F1FA\U0001F1F8US_244"
+  name: "\U0001F1FA\U0001F1F8US_212"
   password: installshield
   port: 8443
   server: 38.180.249.177
@@ -3370,60 +3084,74 @@ proxies:
   sni: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  country: "\U0001F1FB\U0001F1F3 VN"
-  name: disney_VN
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 103.163.218.2
-  type: ss
+- country: "\U0001F1FA\U0001F1F8US"
+  name: "\U0001F1FA\U0001F1F8US_213"
+  password: BxceQaOe
+  port: 443
+  server: 38.180.191.251
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  type: trojan
+  udp: true
 - cipher: aes-256-cfb
   country: "\U0001F1FB\U0001F1F3 VN"
-  name: disney_VN
+  name: "\U0001F1FB\U0001F1F3 VN_214"
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 103.163.218.2
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: "\U0001F1FF\U0001F1E6 ZA"
-  name: "\U0001F1FF\U0001F1E6 ZA_247"
+  name: "\U0001F1FF\U0001F1E6 ZA_215"
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 156.38.168.58
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: "\U0001F3C1 ZZ"
-  name: "\U0001F3C1 ZZ_248"
+  name: disney_DZ
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 102.207.216.176
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F3C1 ZZ"
+  name: disney_VN
+  password: Nk9asglDzHzjktVzTkvhaA
+  port: 443
+  server: arxfw2b78fi2q9hzylhn.freesocks.work
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F3C1 ZZ"
+  name: "\U0001F3C1 ZZ_218"
+  password: Nk9asglDzHzjktVzTkvhaA
+  port: 443
+  server: 160.19.78.75
   type: ss
 - alterId: 0
   cipher: auto
   country: "\U0001F3C1ZZ"
   h2-opts: {}
   http-opts: {}
-  name: "\U0001F3C1ZZ_249"
+  name: "\U0001F3C1ZZ_219"
+  network: tcp
+  port: 37313
+  server: 45.128.54.84
+  skip-cert-verify: true
+  type: vmess
+  uuid: 72feb833-4196-4a70-a3f5-aeb011f7d534
+- alterId: 0
+  cipher: auto
+  country: "\U0001F3C1ZZ"
+  h2-opts: {}
+  http-opts: {}
+  name: "\U0001F3C1ZZ_220"
   network: tcp
   port: 40878
   server: 85.195.101.122
   skip-cert-verify: true
   type: vmess
   uuid: f3d4167e-b15e-4e46-82e9-9286ef93fda7
-- alterId: 0
-  cipher: auto
-  country: "\U0001F3C1ZZ"
-  h2-opts: {}
-  http-opts: {}
-  name: "\U0001F3C1ZZ_250"
-  network: ws
-  port: 54693
-  server: 103.127.218.91
-  skip-cert-verify: true
-  type: vmess
-  uuid: 1cef03ad-6343-408c-8121-cbd1fda2ee9d
-  ws-opts:
-    path: /1cef03ad
 - alterId: 0
   cipher: auto
   country: "\U0001F3C1ZZ"
@@ -3439,15 +3167,3 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: 841550b4-d4bf-4e3e-de9c-cff7baa47df3
-- alterId: 0
-  cipher: auto
-  country: "\U0001F3C1ZZ"
-  h2-opts: {}
-  http-opts: {}
-  name: "\U0001F3C1ZZ_252"
-  network: tcp
-  port: 37313
-  server: 45.128.54.84
-  skip-cert-verify: true
-  type: vmess
-  uuid: 72feb833-4196-4a70-a3f5-aeb011f7d534
