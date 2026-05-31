@@ -656,49 +656,41 @@ proxies:
   tls: false
   type: vmess
   uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
-- name: "\U0001F1E8\U0001F1F3 \u53F0\u6E7E\u7701 starcorenode.com"
-  password: gcuCpQfaiVeDBdWG
-  port: 19128
-  server: 211.76.176.98
-  skip-cert-verify: false
-  sni: yazhou10.dynu.net
-  type: trojan
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD starcorenode.com"
-  password: Tu1fZjElnkRg0ECRj0sI0u54PY8ptUmATg
+- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD Akamai\u79D1\u6280\u516C\u53F8CDN\u7F51\
+    \u7EDC\u8282\u70B9"
+  password: s_WEN9lMmufG+qDIsn-4C7JOVAnDdbS3Ui
   port: 443
-  server: 65.20.90.225
+  server: 172.236.220.10
   skip-cert-verify: false
-  sni: www.sandbox-cloud.click
+  sni: 172.236.220.10
   type: trojan
-- name: "\U0001F1EA\U0001F1F8 \u897F\u73ED\u7259 starcorenode.com"
-  network: ws
-  port: 2096
-  server: 185.18.250.127
-  servername: 69565ce3109804e7813f98ee.mmdbay.blog
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD starcorenode.com"
+  port: 6001
+  server: gtm-sg-cc54q7d1q01.365cloud0285.com
   skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 2ee26119-94e5-40b4-ba3a-16354021b600
+  tls: false
+  type: vmess
+  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
+- name: "\U0001F1FA\U0001F1F8 \u5317\u7F8E\u5730\u533A starcorenode.com"
+  network: ws
+  password: rYuChHcwQZskq9E0zdoR
+  port: 443
+  server: 104.152.48.205
+  skip-cert-verify: false
+  sni: vpn5.rnmcnm.com
+  type: trojan
   ws-opts:
     headers:
-      Host: 69565ce3109804e7813f98ee.mmdbay.blog
-    path: /graphql
-- client-fingerprint: chrome
-  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9"
-  network: ws
-  port: 443
-  server: 104.19.229.21
-  servername: cyylr.eu.cc
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: cc752a3e-1537-4e86-bb50-1b897bf7b33c
-  ws-opts:
-    headers:
-      Host: cyylr.eu.cc
-    path: /sg-melbi
+      Host: vpn5.rnmcnm.com
+    path: /ws-79dffb8106db
+- cipher: aes-256-gcm
+  name: "\U0001F1F7\U0001F1FA \u4FC4\u7F57\u65AF \u83AB\u65AF\u79D1JustHost"
+  password: c5fcdf7829112cb4
+  port: 30129
+  server: 45.140.169.216
+  type: ss
 - alterId: 0
   cipher: auto
   name: "\U0001F1EC\U0001F1E7 \u82F1\u56FD starcorenode.com"
@@ -708,12 +700,32 @@ proxies:
   tls: false
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- cipher: aes-256-gcm
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: /
   name: "\U0001F1F7\U0001F1FA \u4FC4\u7F57\u65AF starcorenode.com"
-  password: 7e1dd4c55bf85da5
-  port: 20129
-  server: 212.192.15.225
-  type: ss
+  network: grpc
+  port: 40470
+  reality-opts:
+    public-key: kn16KgkUCMVfqSIwKI9fd0yDy6VcavlTt56LqE_7JWI
+    short-id: 1fad87
+  server: 85.198.85.193
+  servername: 5post-gate.x5.ru
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: b43c896e-d9b8-4606-b902-b1bf6d10d2f9
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1EC\U0001F1E7 \u82F1\u56FD starcorenode.com 2"
+  port: 180
+  server: 82.198.246.214
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: "\U0001F1F2\U0001F1E9 \u6469\u5C14\u591A\u74E6 starcorenode.com"
@@ -729,30 +741,12 @@ proxies:
   tls: true
   type: vless
   uuid: 1b43419a-b711-40d4-a0ee-eb5c73e60c92
-- client-fingerprint: chrome
-  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 2"
-  network: ws
-  port: 443
-  server: 198.41.223.61
-  servername: edgetunnell-1dc.pages.dev
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 7f3faff8-41db-403d-8329-6b9072aaabe2
-  ws-opts:
-    headers:
-      Host: edgetunnell-1dc.pages.dev
-    path: /
-- alterId: 0
-  cipher: auto
-  name: "\u4E9A\u592A\u5730\u533A starcorenode.com"
-  port: 51556
-  server: 103.181.164.145
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: chacha20-ietf-poly1305
+  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD starcorenode.com 2"
+  password: GyZ5Xo0ht41vYmW3H4
+  port: 816
+  server: 149.28.255.6
+  type: ss
 - cipher: aes-256-cfb
   country: 'NULL'
   name: 'NULL'
