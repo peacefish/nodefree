@@ -418,42 +418,101 @@ proxies:
   tls: false
   type: vmess
   uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9"
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.21.40.34
-  skip-cert-verify: false
-  sni: www.gossipglove.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.gossipglove.com
-    path: /assignment
 - name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD Akamai\u79D1\u6280\u516C\u53F8CDN\u7F51\
     \u7EDC\u8282\u70B9"
+  password: s_WEN9lMmufG+qDIsn-4C7JOVAnDdbS3Ui
+  port: 443
+  server: 172.236.220.10
+  skip-cert-verify: false
+  sni: 172.236.220.10
+  type: trojan
+- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD Akamai\u79D1\u6280\u516C\u53F8CDN\u7F51\
+    \u7EDC\u8282\u70B9 2"
   password: r-_YbwF.j0TtHVewoFIppramjAnmSfqYzJ
   port: 443
   server: 172.238.120.124
   skip-cert-verify: false
   type: trojan
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD starcorenode.com"
+- alpn:
+  - http%2F1.1
+  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9"
   network: ws
-  password: 386bd471-4e29-4e79-9a3c-6bc6076ce4b6
+  password: humanity
   port: 443
-  server: 208.103.161.170
+  server: 104.20.6.134
   skip-cert-verify: false
-  sni: edu.ruangguru.com.cyylr.eu.cc
+  sni: www.calmloud.com
   type: trojan
   ws-opts:
     headers:
-      Host: edu.ruangguru.com.cyylr.eu.cc
-    path: /id-tksi
-- name: "\U0001F1F8\U0001F1EA \u745E\u5178 starcorenode.com"
+      Host: www.calmloud.com
+    path: /assignment
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD starcorenode.com"
+  port: 6004
+  server: gtm-sg-cc54q7d1q01.365cloud0285.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
+- client-fingerprint: chrome
+  name: "\U0001F1EE\U0001F1F7 \u4F0A\u6717 starcorenode.com"
+  network: tcp
+  port: 55013
+  reality-opts:
+    public-key: vxdmULi_cO7dha2aQnsjSViARO15hvI9HWyo0pVPlkQ
+    short-id: c385
+  server: host13.virgool.best
+  servername: www.digikala.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 1d2f9718-b0a4-4c4d-90e6-b297b23d8999
+- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 2"
+  network: ws
+  port: 443
+  server: 172.64.33.162
+  servername: octopusss5.info
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: c35050ce-01ab-45a9-91b8-54cec637d0a8
+  ws-opts:
+    headers:
+      Host: octopusss5.info
+    path: /udfyfws
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1EC\U0001F1E7 \u82F1\u56FD starcorenode.com"
+  port: 180
+  server: 82.198.246.37
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: "\U0001F1F7\U0001F1FA \u4FC4\u7F57\u65AF starcorenode.com"
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: FurqA-2jJHS4vNj92Ya5i2ZTxf0sWSjUTaz5Y_KMBgk
+    short-id: 57cc65bfd5ef7465
+  server: 185.212.117.34
+  servername: www.scaleway.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: bb2b0112-577f-4862-886a-3c2ee004ca23
+- name: "\U0001F1E6\U0001F1FA \u6FB3\u5927\u5229\u4E9A starcorenode.com"
   network: ws
   password: rYuChHcwQZskq9E0zdoR
   port: 443
-  server: 193.180.209.21
+  server: 125.7.24.251
   skip-cert-verify: false
   sni: vpn5.rnmcnm.com
   type: trojan
@@ -461,56 +520,6 @@ proxies:
     headers:
       Host: vpn5.rnmcnm.com
     path: /ws-79dffb8106db
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 2"
-  network: ws
-  port: 80
-  server: cyylr.eu.cc
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  uuid: bbcfe26b-32a3-49b1-a357-d4b9d28ac919
-  ws-opts:
-    headers:
-      Host: ads.ruangguru.com.cyylr.eu.cc
-    path: /id-tksi
-- client-fingerprint: chrome
-  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 3"
-  network: ws
-  port: 443
-  server: 162.159.44.45
-  servername: picassooo.info
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 7270612b-49f6-4b04-999c-34d8263da767
-  ws-opts:
-    headers:
-      Host: picassooo.info
-    path: /aymdlws
-- client-fingerprint: chrome
-  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 4"
-  network: ws
-  port: 443
-  server: 104.18.189.153
-  servername: gddy.hhlfy.de5.net
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 5b9fa73b-b549-480b-add9-c45e650d236f
-  ws-opts:
-    headers:
-      Host: gddy.hhlfy.de5.net
-    path: /fp=chrome
-- name: "\U0001F1F7\U0001F1F4 \u7F57\u9A6C\u5C3C\u4E9A starcorenode.com"
-  password: hxn2jK9Uzezogua0oHuq9Y8viN=UCe.2Jd
-  port: 443
-  server: 185.137.157.254
-  skip-cert-verify: false
-  sni: www.directorypipeline.click
-  type: trojan
 - name: "\U0001F1E8\U0001F1F3 \u53F0\u6E7E\u7701 starcorenode.com"
   password: gcuCpQfaiVeDBdWG
   port: 19128
@@ -518,115 +527,24 @@ proxies:
   skip-cert-verify: false
   sni: yazhou10.dynu.net
   type: trojan
-- name: "\U0001F1E7\U0001F1F7 \u5DF4\u897F\u5723\u4FDD\u7F57 CloudFlare\u8282\u70B9"
+- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare"
   network: ws
-  password: humanity
   port: 443
-  server: 188.114.98.0
-  skip-cert-verify: false
-  sni: www.calmlunch.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: /assignment
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD Akamai\u79D1\u6280\u516C\u53F8CDN\u7F51\
-    \u7EDC\u8282\u70B9 2"
-  password: A3uIh_5NqMg3hFa.gDYWT.afz0UuJ6=VIM
-  port: 443
-  server: 172.237.145.189
-  skip-cert-verify: false
-  sni: 172.237.145.189
-  type: trojan
-- name: "\U0001F1F7\U0001F1FA \u4FC4\u7F57\u65AF starcorenode.com"
-  password: tunnel-ljlcf
-  port: 8441
-  server: tr-1.stunnel.cc
-  skip-cert-verify: false
-  type: trojan
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: "\U0001F1F7\U0001F1FA \u4FC4\u7F57\u65AF starcorenode.com 2"
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: uz1Lb_2451iPvrwWCZ-4I9_WHdYm7ML0yjeJAZwBk3E
-    short-id: 73b4306eb38fe3d6
-  server: kz-1.nodes.ac
-  servername: kz-1.nodes.ac
+  server: 162.159.18.105
+  servername: juzi.qea.ccwu.cc
   skip-cert-verify: false
   tfo: false
   tls: true
   type: vless
-  uuid: 593f4d6c-aff1-4832-87a7-b5d8e71584ea
-- cipher: chacha20-ietf-poly1305
-  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD Xerox"
-  password: 792e0bdb-01db-450c-94c4-925151eb396e
-  port: 16688
-  server: ss.041.node-for-bigairport.win
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: "\U0001F1F7\U0001F1FA \u4FC4\u7F57\u65AF starcorenode.com 3"
-  network: ws
-  port: 443
-  server: renderer-stream-1-411.mirra.now
-  servername: renderer-stream-1-411.mirra.now
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
+  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
   ws-opts:
     headers:
-      Host: renderer-stream-1-411.mirra.now
-    path: /api/v1/gpu-stream/socket
-- client-fingerprint: chrome
-  name: "\U0001F1EC\U0001F1F7 \u5E0C\u814A starcorenode.com"
-  network: ws
-  port: 443
-  server: 95.179.251.232
-  servername: germany2.samanidempire.org
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 54327070-1d45-42ac-9ebb-8dffcb343c93
-  ws-opts:
-    headers:
-      Host: germany2.samanidempire.org
-    path: /hZvWArgsaxqa
-- client-fingerprint: chrome
-  name: "\U0001F1EA\U0001F1F8 \u897F\u73ED\u7259 starcorenode.com"
-  network: tcp
-  port: 2040
-  reality-opts:
-    public-key: LidllyozUeeSbuzJ0ZfieGoy8YjVzqXX9H2m9whPaG0
-    short-id: 53197c66aef53c44
-  server: riga-node.datamove.online
-  servername: tradingview.com
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 17451fec-af94-4715-8c2f-7f6839130d0a
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD starcorenode.com 2"
-  network: ws
-  port: 443
-  server: 45.130.125.0
-  servername: support.zoom.us.cyylr.eu.cc
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 1eb8c38b-0bc2-4a6f-a860-5239c446abc8
-  ws-opts:
-    headers:
-      Host: support.zoom.us.cyylr.eu.cc
-    path: /sg-amz
-- name: "\U0001F1F7\U0001F1FA \u4FC4\u7F57\u65AF starcorenode.com 4"
+      Host: juzi.qea.ccwu.cc
+    path: /
+- name: "\U0001F1EC\U0001F1E7 \u82F1\u56FD starcorenode.com 2"
   network: tcp
   port: 8443
-  server: cdn9-33.vk-cdnvideo.com
+  server: cdn7-39.vk-cdnvideo.com
   skip-cert-verify: false
   tfo: false
   tls: true
@@ -637,13 +555,20 @@ proxies:
   name: "\u6B27\u76DF starcorenode.com"
   network: tcp
   port: 9443
-  server: bero-1.bexum.fun
+  server: 45.82.122.112
   servername: bero-1.bexum.fun
   skip-cert-verify: false
   tfo: false
   tls: true
   type: vless
   uuid: ae5ba4be-7262-4199-bd62-210ed8999b9f
+- name: "\U0001F1E8\U0001F1F3 \u53F0\u6E7E\u7701 starcorenode.com 2"
+  password: gcuCpQfaiVeDBdWG
+  port: 19128
+  server: jpbgp.netvigor.cc
+  skip-cert-verify: false
+  sni: yazhou10.dynu.net
+  type: trojan
 - cipher: aes-256-cfb
   country: 'NULL'
   name: 'NULL'
