@@ -418,72 +418,97 @@ proxies:
   tls: false
   type: vmess
   uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
+- cipher: chacha20-ietf-poly1305
+  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD starcorenode.com"
+  password: Ll6cYfXM5DzQbdtMMb72A_jqVnNljU3yqe
+  port: 21273
+  server: 149.104.109.74
+  type: ss
+- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD Akamai\u79D1\u6280\u516C\u53F8CDN\u7F51\
+    \u7EDC\u8282\u70B9"
+  password: bX_lNHWoW6ywq82mI=KUr+8i__VSp0Hs_E
+  port: 443
+  server: 172.235.63.252
+  skip-cert-verify: false
+  type: trojan
+- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD Akamai\u79D1\u6280\u516C\u53F8CDN\u7F51\
+    \u7EDC\u8282\u70B9 2"
+  password: s_WEN9lMmufG+qDIsn-4C7JOVAnDdbS3Ui
+  port: 443
+  server: 172.236.220.10
+  skip-cert-verify: false
+  sni: 172.236.220.10
+  type: trojan
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: "\U0001F1EC\U0001F1E7 \u82F1\u56FD starcorenode.com"
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: QVkd5uoSbUA7rHVLtIoJB4iRp4l0zuw0H9qzQBh3lHs
+    short-id: 7a3f9e2b1c8d4f6a
+  server: 31.76.91.12
+  servername: jp.s3-cloud.org
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD starcorenode.com 2"
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: M1a5zeQ6Ckoo1UybbRYD8696xaWb-fRcCY-7iaQ4wCA
+    short-id: fd3f0f2bce8083fe
+  server: nld02.helpbot.click
+  servername: nld02.helpbot.click
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: b95e6017-d54e-4016-b651-91c86aeaa463
+- http-opts:
+    headers:
+      Host:
+      - www.google.com
+    method: GET
+    path:
+    - /@napsternetv20
+  name: "\U0001F1E9\U0001F1EA \u5FB7\u56FD \u9ED1\u68EE\u5DDE\u6CD5\u5170\u514B\u798F\
+    DigitalOcean\u6570\u636E\u4E2D\u5FC3"
+  network: http
+  port: 36424
+  server: 157.230.96.148
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: f85d180d-8e11-4b76-9af4-8d5e2a091a72
+- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u79D1\u7F57\u62C9\u591A\u5DDE\u963F\u62C9\
+    \u5E15\u970D\u53BF\u683C\u6797\u4F0D\u5FB7\u6751\u5E02NTT\u7F8E\u56FD\u80A1\u4EFD\
+    \u6709\u9650\u516C\u53F8"
+  password: s.wRSE4ANZp4=4h.=B_9Qbetw6XUc0V1SV
+  port: 443
+  server: 130.94.107.171
+  skip-cert-verify: false
+  sni: www.logger-guard.click
+  type: trojan
+- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD Akamai\u79D1\u6280\u516C\u53F8CDN\u7F51\
+    \u7EDC\u8282\u70B9 3"
+  password: E_hUHrn0+6VeZO=v9=fLgoPDXZWGfcrejg
+  port: 443
+  server: 172.238.19.11
+  skip-cert-verify: false
+  sni: 172.238.19.11
+  type: trojan
 - alpn:
   - http%2F1.1
-  client-fingerprint: chrome
-  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u52A0\u5DDE"
+  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9"
   network: ws
   port: 443
-  server: 216.24.57.1
-  servername: support.zoom.us.cyylr.eu.cc
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 77777777-7777-4777-8777-777777777777
-  ws-opts:
-    headers:
-      Host: support.zoom.us.cyylr.eu.cc
-    path: /sg-melbi
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: "\U0001F1EF\U0001F1F5 \u65E5\u672C starcorenode.com"
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: JE82iOR_U_H7ffxJ5yfoxXeRkMlE-aVu1wxR7n6jrVM
-    short-id: 473277e2
-  server: tw3.miyazono-kaori.com
-  servername: dlcdnets.asus.com
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: bce38beb-a6d0-41d7-9c0a-26eed9a6634d
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD starcorenode.com"
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: vegx20Xc9XIkr8nfdEB7LZnficXNURVnDbB8_ND97Dw
-  server: ee.connectv.net
-  servername: ee.connectv.net
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: c4c9bfd7-4bdc-4078-ae64-185ffb553ae6
-- auth: github.com%2FAlvin9999-newpac%2Ffanqiang
-  name: "\U0001F1EB\U0001F1F7 \u6CD5\u56FD ONLINE S.A.S.\u6570\u636E\u4E2D\u5FC3"
-  password: github.com%2FAlvin9999-newpac%2Ffanqiang
-  port: 64772
-  server: 62.210.29.98
-  skip-cert-verify: false
-  sni: bing.com
-  type: hysteria2
-- name: "\U0001F1E9\U0001F1EA \u5FB7\u56FD starcorenode.com"
-  password: I1vtf6pjYsAu-nFnraWAMjKTy90AHitdAz
-  port: 443
-  server: 91.233.8.25
-  skip-cert-verify: false
-  sni: fra34.tracker-ws.click
-  type: trojan
-- client-fingerprint: chrome
-  name: "\U0001F1E7\U0001F1F7 \u5DF4\u897F\u5723\u4FDD\u7F57 CloudFlare\u8282\u70B9"
-  network: ws
-  port: 443
-  server: 188.114.97.3
+  server: 172.64.146.68
   servername: octopusss4.com
   skip-cert-verify: false
   tfo: false
@@ -496,7 +521,7 @@ proxies:
     path: /tsghdws
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: "\U0001F1EC\U0001F1E7 \u82F1\u56FD starcorenode.com"
+  name: "\U0001F1EC\U0001F1E7 \u82F1\u56FD starcorenode.com 2"
   network: tcp
   port: 443
   reality-opts:
@@ -509,58 +534,13 @@ proxies:
   tls: true
   type: vless
   uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
-- alpn:
-  - http%2F1.1
-  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9"
-  network: ws
-  password: humanity
+- name: "\U0001F1E9\U0001F1EA \u5FB7\u56FD starcorenode.com"
+  password: qDVh0NalwefxyZlHh3Ni2JSlhErcuC3Wiq
   port: 443
-  server: 162.159.195.173
+  server: 91.233.8.138
   skip-cert-verify: false
-  sni: www.calmloud.com
+  sni: www.homelywebs.click
   type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmloud.com
-    path: /assignment
-- cipher: aes-256-gcm
-  name: "\U0001F1EF\U0001F1F5 \u65E5\u672C starcorenode.com 2"
-  password: 6c4bd474-ac23-47fc-8742-c8f990357836
-  port: 19287
-  server: ss.021.node-for-bigairport.win
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: "\U0001F1E8\U0001F1F3 \u53F0\u6E7E\u7701\u53F0\u5317\u5E02 \u4E2D\u534E\u7535\
-    \u4FE1"
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  port: 50099
-  server: r3mrcg00129437x.cybervena.com
-  type: ss
-- auth: github.com%2FAlvin9999-newpac%2Ffanqiang
-  name: "\U0001F1EB\U0001F1F7 \u6CD5\u56FD ONLINE S.A.S.\u6570\u636E\u4E2D\u5FC3 2"
-  password: github.com%2FAlvin9999-newpac%2Ffanqiang
-  port: 64772
-  server: 62.210.26.173
-  skip-cert-verify: false
-  sni: bing.com
-  type: hysteria2
-- client-fingerprint: chrome
-  name: "\U0001F1ED\U0001F1F7 \u514B\u7F57\u5730\u4E9A starcorenode.com"
-  network: tcp
-  port: 8443
-  server: 46.229.243.69
-  servername: cdn7-39.vk-cdnvideo.com
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
-- cipher: chacha20-ietf-poly1305
-  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD starcorenode.com 2"
-  password: Ll6cYfXM5DzQbdtMMb72A_jqVnNljU3yqe
-  port: 21273
-  server: 149.104.109.74
-  type: ss
 - cipher: aes-256-cfb
   country: 'NULL'
   name: 'NULL'
