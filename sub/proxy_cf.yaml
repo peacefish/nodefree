@@ -419,33 +419,23 @@ proxies:
   type: vmess
   uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
 - client-fingerprint: chrome
-  name: "\U0001F1E7\U0001F1F7 \u5DF4\u897F\u5723\u4FDD\u7F57 CloudFlare\u8282\u70B9"
-  network: ws
+  flow: xtls-rprx-vision
+  name: "\U0001F1F3\U0001F1F4 \u632A\u5A01 starcorenode.com"
+  network: tcp
   port: 443
-  server: 188.114.98.0
-  servername: octopusss4.com
+  reality-opts:
+    public-key: A3PWLCRX9oeSyPvrmrwj2jUXcLo2uCwAISRBHtNE1Xw
+  server: w6.homestorage.online
+  servername: 5post-gate.x5.ru
   skip-cert-verify: false
   tfo: false
   tls: true
   type: vless
-  uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
-  ws-opts:
-    headers:
-      Host: octopusss4.com
-    path: /tsghdws
-- auth: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  name: "\U0001F1E9\U0001F1EA \u5FB7\u56FD \u9ED1\u68EE\u5DDE\u6CD5\u5170\u514B\u798F\
-    AMazon\u6570\u636E\u4E2D\u5FC3"
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  port: 443
-  server: vpn-de-002.fastervpn.world
-  skip-cert-verify: false
-  sni: vpn-de-002.fastervpn.world
-  type: hysteria2
+  uuid: 5481bfe3-bf42-425c-b561-cb9d64bff7ff
 - name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9"
   network: ws
   port: 443
-  server: 172.64.32.75
+  server: 172.64.147.137
   servername: octopusss4.com
   skip-cert-verify: false
   tfo: false
@@ -456,9 +446,72 @@ proxies:
     headers:
       Host: octopusss4.com
     path: /tsghdws
+- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD Fastly\u5168\u7403Anycast\u8282\u70B9"
+  network: ws
+  port: 80
+  server: 151.101.0.1
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+    path: /
+- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u52A0\u5229\u798F\u5C3C\u4E9A"
+  password: iGccGWTMHtoXtBhGYK4mogg7iIUhGbcvCf
+  port: 443
+  server: 64.176.65.85
+  skip-cert-verify: false
+  sni: 64.176.65.85
+  type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
+  name: "\U0001F1EC\U0001F1E7 \u82F1\u56FD starcorenode.com"
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: _M0MBe7f2r36dqtjltSRSOOBlclR2q7uY3Rje5r_mgY
+    short-id: '73'
+  server: 2.26.135.131
+  servername: lada.mycdn-me.ru
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 0a963275-4865-452b-8d65-ac67344f913a
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
   name: "\U0001F1F7\U0001F1FA \u4FC4\u7F57\u65AF starcorenode.com"
+  network: tcp
+  port: 443
+  server: 85.234.114.53
+  servername: r1.mizulina.top
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+- cipher: chacha20-ietf-poly1305
+  name: "\U0001F1E8\U0001F1F3 \u53F0\u6E7E\u7701\u5F70\u5316\u53BF \u4E2D\u534E\u7535\
+    \u4FE1"
+  password: a5115845-cc23-4082-905e-869fe212dfef
+  port: 38320
+  server: account-center.zzdy25.com
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1EE\U0001F1F7 \u4F0A\u6717 starcorenode.com"
+  port: 1020
+  server: nlt.reata.ir
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 6244c41a-f4c1-4733-a654-c38f7729b13c
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: "\U0001F1F7\U0001F1FA \u4FC4\u7F57\u65AF starcorenode.com 2"
   network: tcp
   port: 8443
   reality-opts:
@@ -471,50 +524,6 @@ proxies:
   tls: true
   type: vless
   uuid: 888403d1-621b-481a-b5dc-7aca518a787b
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD starcorenode.com"
-  password: PtRV8to08i8FMsY.Uw7=yMuIaR3eVTGmvA
-  port: 443
-  server: 149.104.87.182
-  skip-cert-verify: false
-  sni: www.jewelapp.click
-  type: trojan
-- alpn:
-  - http%2F1.1
-  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 2"
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.17.121.9
-  skip-cert-verify: false
-  sni: www.calmlunch.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: /assignment
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u52A0\u5229\u798F\u5C3C\u4E9A"
-  password: iGccGWTMHtoXtBhGYK4mogg7iIUhGbcvCf
-  port: 443
-  server: 64.176.65.85
-  skip-cert-verify: false
-  type: trojan
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u5FB7\u514B\u8428\u65AF\u5DDE\u8FBE\u62C9\
-    \u65AFLinode\u6570\u636E\u4E2D\u5FC3"
-  password: rXyShM8Jni+5Sbq3k4gkyr5Lq0zOMRL2Uf
-  port: 443
-  server: 45.79.8.17
-  skip-cert-verify: false
-  sni: 45.79.8.17
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: "\U0001F1EE\U0001F1F7 \u4F0A\u6717 starcorenode.com"
-  port: 1020
-  server: nlt.reata.ir
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 6244c41a-f4c1-4733-a654-c38f7729b13c
 - cipher: aes-256-cfb
   country: 'NULL'
   name: 'NULL'
