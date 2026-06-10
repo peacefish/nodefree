@@ -418,23 +418,37 @@ proxies:
   tls: false
   type: vmess
   uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9"
-  network: ws
-  password: humanity
-  port: 443
-  server: www.gossipglove.com
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1EC\U0001F1E7 \u82F1\u56FD starcorenode.com"
+  port: 180
+  server: 82.198.246.250
   skip-cert-verify: false
-  type: trojan
-  ws-opts:
-    path: /assignment
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u5FB7\u514B\u8428\u65AF\u5DDE\u8FBE\u62C9\
-    \u65AFLinode\u6570\u636E\u4E2D\u5FC3"
-  password: rXyShM8Jni+5Sbq3k4gkyr5Lq0zOMRL2Uf
-  port: 443
-  server: 45.79.8.17
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD starcorenode.com"
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: 8qHRGcCezzSu4S-Cz9l19BNRLWm4MkaSwZV3dNrLEwc
+    short-id: d037f6f67cc90016
+  server: ch-gt-01.com
+  servername: storage.yandex.net
   skip-cert-verify: false
-  sni: 45.79.8.17
-  type: trojan
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 3b7950ed-e076-4a51-8df2-222a88689700
+- cipher: chacha20-ietf-poly1305
+  name: "\U0001F1E8\U0001F1F3 \u53F0\u6E7E\u7701\u53F0\u4E2D\u5E02 \u4E2D\u534E\u7535\
+    \u4FE1"
+  password: a5115845-cc23-4082-905e-869fe212dfef
+  port: 36321
+  server: account-center.zzdy25.com
+  type: ss
 - name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD Fastly\u5168\u7403Anycast\u8282\u70B9"
   network: ws
   port: 80
@@ -448,20 +462,57 @@ proxies:
     headers:
       Host: max-gb1.global.ssl.fastly.net
     path: /
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 2"
+- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD starcorenode.com 2"
   network: ws
-  port: 443
-  server: 104.17.121.71
-  servername: octopusss4.com
+  port: 80
+  server: 167.82.0.1
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+    path: /
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: "\U0001F1F7\U0001F1FA \u4FC4\u7F57\u65AF starcorenode.com"
+  network: tcp
+  port: 22231
+  server: r1.mizulina.top
+  servername: r1.mizulina.top
   skip-cert-verify: false
   tfo: false
   tls: true
   type: vless
-  uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9"
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.20.6.134
+  skip-cert-verify: false
+  sni: www.calmloud.com
+  type: trojan
   ws-opts:
     headers:
-      Host: octopusss4.com
-    path: /tsghdws
+      Host: www.calmloud.com
+    path: /%2Fassignment
+- name: "\U0001F1F7\U0001F1F4 \u7F57\u9A6C\u5C3C\u4E9A starcorenode.com"
+  password: hxn2jK9Uzezogua0oHuq9Y8viN=UCe.2Jd
+  port: 443
+  server: 185.137.157.254
+  skip-cert-verify: false
+  sni: www.directorypipeline.click
+  type: trojan
+- name: "\U0001F1EC\U0001F1E7 \u82F1\u56FD starcorenode.com 2"
+  password: BSs5IAVMQdYuykvDsOYZoa6gNPSGBjAbLL
+  port: 443
+  server: 185.126.236.44
+  skip-cert-verify: false
+  sni: www.mesaly.click
+  type: trojan
 - name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD Fastly\u5168\u7403Anycast\u8282\u70B9 2"
   network: ws
   port: 80
@@ -471,71 +522,6 @@ proxies:
   tls: false
   type: vless
   uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-    path: /
-- cipher: chacha20-ietf-poly1305
-  name: "\U0001F1FA\U0001F1E6 \u4E4C\u514B\u5170 starcorenode.com"
-  password: VZNRwzYN2qGsP7jqTdvpq5k6j3g7hU2dbM4Lkd3n9Uox324inf6PPUih2Qo9wfXEoGNCBhdDsrVutLmmvUZihMsmsuGpMu7R
-  port: 48877
-  server: 94.131.127.154
-  type: ss
-- name: "\U0001F1EA\U0001F1F8 \u897F\u73ED\u7259 starcorenode.com"
-  network: ws
-  password: humanity
-  port: 443
-  server: 185.18.250.245
-  skip-cert-verify: false
-  sni: www.calmlunch.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: /assignment
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 3"
-  network: ws
-  password: humanity
-  port: 443
-  server: 172.64.147.24
-  skip-cert-verify: false
-  sni: www.gossipglove.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.gossipglove.com
-    path: /assignment
-- cipher: chacha20-ietf-poly1305
-  name: "\U0001F1E8\U0001F1F3 \u53F0\u6E7E\u7701\u5F70\u5316\u53BF \u4E2D\u534E\u7535\
-    \u4FE1"
-  password: a5115845-cc23-4082-905e-869fe212dfef
-  port: 36321
-  server: account-center.zzdy25.com
-  type: ss
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: "\U0001F1EC\U0001F1E7 \u82F1\u56FD starcorenode.com"
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: gXc2c9NIWxhUTb7HoBCjvo-uB1L4iQj4TH38g4YhxHE
-    short-id: fcd9787f
-  server: 195.184.247.137
-  servername: www.microsoft.com
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 8bbf020e-653f-4a82-9900-1214e4e37dab
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD starcorenode.com"
-  network: ws
-  port: 80
-  server: 199.232.197.131
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
   ws-opts:
     headers:
       Host: max-gb1.global.ssl.fastly.net
