@@ -491,11 +491,52 @@ proxies:
   tls: false
   type: vmess
   uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare"
+- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD Fastly\u5168\u7403Anycast\u8282\u70B9"
+  network: ws
+  port: 80
+  server: 151.101.0.1
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+    path: /
+- auth: 71b0bd15-a03a-481e-a52d-74042c8db157
+  name: "\U0001F1EE\U0001F1F3 \u5370\u5EA6 starcorenode.com"
+  password: 71b0bd15-a03a-481e-a52d-74042c8db157
+  port: 8443
+  server: 103.88.241.133
+  skip-cert-verify: false
+  sni: slopllex.app
+  type: hysteria2
+- name: "\U0001F1EF\U0001F1F5 \u65E5\u672C \u4E1C\u4EACFastly\u8282\u70B9"
+  network: ws
+  port: 80
+  server: 151.101.109.223
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+    path: /
+- name: "\U0001F1EC\U0001F1E7 \u82F1\u56FD starcorenode.com"
+  password: BSs5IAVMQdYuykvDsOYZoa6gNPSGBjAbLL
+  port: 443
+  server: 185.126.236.44
+  skip-cert-verify: false
+  sni: www.mesaly.click
+  type: trojan
+- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9"
   network: ws
   password: humanity
   port: 443
-  server: 162.159.17.189
+  server: 104.20.6.134
   skip-cert-verify: false
   sni: www.multiplydose.com
   type: trojan
@@ -514,59 +555,6 @@ proxies:
   tls: true
   type: vless
   uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-- client-fingerprint: chrome
-  name: "\U0001F1FA\U0001F1E6 \u4E4C\u514B\u5170 starcorenode.com"
-  network: tcp
-  port: 8443
-  server: 95.133.245.163
-  servername: cdn3-87.vk-cdnvideo.com
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
-- name: "\U0001F1FA\U0001F1E6 \u4E4C\u514B\u5170 starcorenode.com 2"
-  network: tcp
-  port: 8443
-  server: cdn7-09.vk-cdnvideo.com
-  servername: cdn7-09.vk-cdnvideo.com
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
-- auth: e3a5bb40be52de65
-  name: "\U0001F1FA\U0001F1E6 \u4E4C\u514B\u5170 starcorenode.com 3"
-  password: e3a5bb40be52de65
-  port: 55555
-  server: 89.251.26.111
-  skip-cert-verify: false
-  sni: apps.apple.com
-  type: hysteria2
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD Fastly\u5168\u7403Anycast\u8282\u70B9"
-  network: ws
-  port: 80
-  server: 151.101.130.219
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-    path: /
-- client-fingerprint: chrome
-  name: "\U0001F1EC\U0001F1E7 \u82F1\u56FD starcorenode.com"
-  network: tcp
-  port: 8443
-  server: cdn3-87.vk-cdnvideo.com
-  servername: cdn3-87.vk-cdnvideo.com
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
 - name: "\U0001F1FA\U0001F1F8 \u5317\u7F8E\u5730\u533A starcorenode.com"
   network: ws
   password: humanity
@@ -579,26 +567,7 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: /assignment
-- name: "\U0001F1F7\U0001F1F4 \u7F57\u9A6C\u5C3C\u4E9A starcorenode.com"
-  password: hxn2jK9Uzezogua0oHuq9Y8viN=UCe.2Jd
-  port: 443
-  server: 185.137.157.254
-  skip-cert-verify: false
-  sni: www.directorypipeline.click
-  type: trojan
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9"
-  network: ws
-  password: humanity
-  port: 443
-  server: 172.64.152.23
-  skip-cert-verify: false
-  sni: www.calmlunch.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: /assignment
-- name: "\U0001F1FA\U0001F1E6 \u4E4C\u514B\u5170 starcorenode.com 4"
+- name: "\U0001F1FA\U0001F1E6 \u4E4C\u514B\u5170 starcorenode.com"
   network: tcp
   port: 8443
   server: 95.133.245.165
@@ -608,6 +577,37 @@ proxies:
   tls: true
   type: vless
   uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: "\U0001F1E8\U0001F1ED \u745E\u58EB starcorenode.com"
+  network: tcp
+  port: 5454
+  reality-opts:
+    public-key: 7Mb18pl7fH3NvhVevIVTgRdPlAorUucOWMlUaTrDV0o
+    short-id: 4265cc8365
+  server: 1.sdwan.realm-sync.com
+  servername: swcdn.apple.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 8faf6e38-0531-4d63-91f0-2aba5b9ff864
+- name: "\U0001F1E9\U0001F1EA \u5FB7\u56FD starcorenode.com"
+  password: qDVh0NalwefxyZlHh3Ni2JSlhErcuC3Wiq
+  port: 443
+  server: 91.233.8.138
+  skip-cert-verify: false
+  sni: www.homelywebs.click
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1E9\U0001F1EA \u5FB7\u56FD starcorenode.com 2"
+  port: 1020
+  server: nlt.reata.ir
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 6244c41a-f4c1-4733-a654-c38f7729b13c
 - cipher: aes-256-cfb
   country: 'NULL'
   name: 'NULL'
