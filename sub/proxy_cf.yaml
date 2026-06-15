@@ -491,10 +491,47 @@ proxies:
   tls: false
   type: vmess
   uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
+- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9"
+  network: ws
+  port: 443
+  server: 104.17.138.107
+  servername: zyzzzoao.xn--fiqv8j.eu.org
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: fe273991-0514-4a16-8ec4-b15ae861c000
+  ws-opts:
+    headers:
+      Host: zyzzzoao.xn--fiqv8j.eu.org
+    path: /
+- name: "\U0001F1EF\U0001F1F5 \u65E5\u672C \u4E1C\u4EACFastly\u8282\u70B9"
+  network: ws
+  port: 80
+  server: 151.101.109.223
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+    path: /
+- name: "\U0001F1F7\U0001F1FA \u4FC4\u7F57\u65AF starcorenode.com"
+  network: tcp
+  port: 26048
+  server: 193.233.23.196
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 3007b043-acdf-43a4-900e-c7c015406f89
 - name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD starcorenode.com"
   network: ws
   port: 80
   server: 199.232.197.131
+  servername: max-gb1.global.ssl.fastly.net
   skip-cert-verify: false
   tfo: false
   tls: false
@@ -504,11 +541,34 @@ proxies:
     headers:
       Host: max-gb1.global.ssl.fastly.net
     path: /
+- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u9A6C\u8428\u8BF8\u585E\u5DDE\u57C3\u585E\
+    \u514B\u65AF\u53BF\u5B89\u591A\u5F17\u9547ClearBlue\u79D1\u6280\u516C\u53F8"
+  network: tcp
+  port: 8443
+  server: 207.211.214.42
+  servername: bru-be-01.fromblancwithlove.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+- name: "\U0001F1F2\U0001F1E9 \u6469\u5C14\u591A\u74E6 starcorenode.com"
+  network: ws
+  port: 8880
+  server: 185.170.166.30
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime04.workers.dev
+    path: /
 - name: "\U0001F1FA\U0001F1E6 \u4E4C\u514B\u5170 starcorenode.com"
   network: tcp
   port: 8443
-  server: 95.133.245.165
-  servername: cdn3-87.vk-cdnvideo.com
+  server: cdn7-09.vk-cdnvideo.com
   skip-cert-verify: false
   tfo: false
   tls: true
@@ -527,70 +587,23 @@ proxies:
     headers:
       Host: max-gb1.global.ssl.fastly.net
     path: /
-- client-fingerprint: chrome
-  name: "\U0001F1ED\U0001F1F7 \u514B\u7F57\u5730\u4E9A starcorenode.com"
+- name: "\U0001F1ED\U0001F1F7 \u514B\u7F57\u5730\u4E9A starcorenode.com"
   network: tcp
   port: 8443
-  server: cdn3-87.vk-cdnvideo.com
-  servername: cdn3-87.vk-cdnvideo.com
+  server: 46.229.243.124
+  servername: cdn9-33.vk-cdnvideo.com
   skip-cert-verify: false
   tfo: false
   tls: true
   type: vless
   uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
-- auth: 71b0bd15-a03a-481e-a52d-74042c8db157
-  name: "\U0001F1EE\U0001F1F3 \u5370\u5EA6 starcorenode.com"
-  password: 71b0bd15-a03a-481e-a52d-74042c8db157
-  port: 8443
-  server: 103.88.241.133
-  skip-cert-verify: false
-  sni: slopllex.app
-  type: hysteria2
-- alterId: 0
-  cipher: auto
-  name: "\U0001F1E9\U0001F1EA \u5FB7\u56FD starcorenode.com"
-  port: 1020
-  server: nlt.reata.ir
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 6244c41a-f4c1-4733-a654-c38f7729b13c
-- name: "\U0001F1F3\U0001F1F1 \u8377\u5170 starcorenode.com"
-  network: tcp
-  port: 8443
-  server: 185.229.191.10
-  servername: ams1.fromblancwithlove.com
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-- alpn:
-  - h3,h2,http/1.1
-  client-fingerprint: chrome
-  name: "\U0001F1EF\U0001F1F5 \u65E5\u672C \u4E1C\u4EACFastly\u8282\u70B9"
-  network: ws
-  port: 443
-  server: 151.101.109.223
-  servername: global.fastly.com
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 62d26257-546d-a267-c4f1-fb19de937929
-  ws-opts:
-    headers:
-      Host: global.fastly.com
-    path: /
 - name: "\U0001F1EC\U0001F1E7 \u82F1\u56FD starcorenode.com"
-  network: tcp
-  port: 8443
-  server: cdn7-39.vk-cdnvideo.com
+  password: BSs5IAVMQdYuykvDsOYZoa6gNPSGBjAbLL
+  port: 443
+  server: 185.126.236.44
   skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+  sni: www.mesaly.click
+  type: trojan
 - cipher: aes-256-cfb
   country: 'NULL'
   name: 'NULL'
