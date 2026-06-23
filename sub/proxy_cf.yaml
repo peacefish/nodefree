@@ -580,38 +580,35 @@ proxies:
   tls: false
   type: vmess
   uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
-- name: "\U0001F1EE\U0001F1F9 \u610F\u5927\u5229 \u7C73\u5170Fastly\u8282\u70B9"
-  network: ws
-  password: MITIVPN
-  port: 80
-  server: 151.101.242.172
-  skip-cert-verify: false
-  sni: mitivpn--4.global.ssl.fastly.net
-  type: trojan
-  ws-opts:
-    headers:
-      Host: mitivpn--4.global.ssl.fastly.net
-    path: /ed=mitivpn
 - client-fingerprint: chrome
-  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9"
-  network: ws
-  port: 8443
-  server: 104.16.72.162
-  servername: srv37.hamiibar.com
+  flow: xtls-rprx-vision
+  name: "\U0001F1E7\U0001F1F7 \u5DF4\u897F \u5723\u4FDD\u7F57Host1Plus\u6570\u636E\
+    \u4E2D\u5FC3"
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 69_I9Wm_vP5wQUbiQhdejWS9yLlNYLFjcnF59G-0GAU
+    short-id: 31e36d0ac3355472
+  server: 191.44.118.101
+  servername: www.microsoft.com
   skip-cert-verify: false
   tfo: false
   tls: true
   type: vless
-  uuid: f3b8c2a1-9d4e-4b7f-a6c5-2e8d1f0b4a93
-  ws-opts:
-    headers:
-      Host: srv37.hamiibar.com
-    path: /
+  uuid: deecd21a-a24f-444d-b92a-2c8e41a6b05b
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD starcorenode.com"
+  port: 52080
+  server: 154.37.223.56
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: f1ac5c82-00a4-400b-bb20-530c91b7c5bb
 - name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD Fastly\u5168\u7403Anycast\u8282\u70B9"
   network: ws
   port: 80
-  server: 151.101.2.219
-  servername: max-gb1.global.ssl.fastly.net
+  server: 151.101.194.219
   skip-cert-verify: false
   tfo: false
   tls: false
@@ -621,172 +618,14 @@ proxies:
     headers:
       Host: max-gb1.global.ssl.fastly.net
     path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: "\U0001F1F7\U0001F1FA \u4FC4\u7F57\u65AF starcorenode.com"
-  network: tcp
-  port: 2777
-  reality-opts:
-    public-key: HyxhIAJ1VbVX77n76vXAps81yWRVbKCr8AC_71sM5Ao
-    short-id: 0f4dacf08722a29f
-  server: disk.api-yandex.net
-  servername: ads.x5.ru
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: a48c736e-d3de-47b8-a6eb-ef1d6fd34c63
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD Fastly\u8282\u70B9"
-  network: ws
-  port: 80
-  server: 151.101.119.151
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-    path: /?ed=2560
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 2"
-  network: ws
-  password: humanity
+- name: "\U0001F1F7\U0001F1F4 \u7F57\u9A6C\u5C3C\u4E9A starcorenode.com"
+  password: fFj7MAGy1VlAWmB_gMBG_27oPYTSHvV6MX
   port: 443
-  server: 172.66.47.69
+  server: 185.137.157.59
   skip-cert-verify: false
-  sni: www.multiplydose.com
+  sni: www.lateralio.click
   type: trojan
-  ws-opts:
-    headers:
-      Host: www.multiplydose.com
-    path: /assignment
-- name: "\U0001F1EC\U0001F1E7 \u82F1\u56FD starcorenode.com"
-  password: VGBzLm49%3DM_i02Az30tIeonkQw180t-edg
-  port: 443
-  server: 185.126.236.190
-  skip-cert-verify: false
-  sni: 185.126.236.190
-  type: trojan
-- name: "\u6CE2\u65AF\u5C3C\u4E9A\u548C\u9ED1\u585E\u54E5\u7EF4\u90A3 starcorenode.com"
-  network: ws
-  port: 80
-  server: 77.74.228.140
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  uuid: f9255507-1b65-433f-bfd8-193b35e068e2
-  ws-opts:
-    headers:
-      Host: s5.868001.xyz
-    path: Telegram
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: "\U0001F1F1\U0001F1F9 \u7ACB\u9676\u5B9B starcorenode.com"
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: Zq6qL8R76CWAsWlI1m_684JcC6Jw_kFAZNshxfjivB0
-    short-id: 6ba85179e30d4fc2
-  server: 84.32.209.210
-  servername: statusdetector404.ru
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 82bcfd17-37d2-4bf2-be7f-c338b8e959b0
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD starcorenode.com"
-  network: ws
-  port: 80
-  server: 199.232.197.131
-  servername: max-gb1.global.ssl.fastly.net
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-    path: /
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD Fastly\u8282\u70B9 2"
-  network: ws
-  port: 80
-  server: 151.101.118.151
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-    path: /?ed=2560
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 3"
-  network: ws
-  port: 8443
-  server: 104.16.75.224
-  servername: splash.ariyuz.org
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 4bf9601f-87e8-4250-a4e4-250bf54c5db4
-  ws-opts:
-    headers:
-      Host: splash.ariyuz.org
-    path: /api/v1
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD starcorenode.com 2"
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: hgQ3Wa09f9ectEos7QyC1LQ8bBq8lEAcAtGIDFTKin0
-    short-id: c0
-  server: 45.144.48.119
-  servername: www.intel.com
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 69a2af58-d74a-44ca-864a-e09b493f4274
-- alpn:
-  - h2
-  name: "\U0001F1EF\U0001F1F5 \u65E5\u672C \u4E1C\u4EACFastly\u8282\u70B9"
-  network: ws
-  password: MITIVPN
-  port: 443
-  server: 151.101.110.219
-  skip-cert-verify: false
-  sni: global.fastly.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: mitivpn--3.global.ssl.fastly.net
-    path: /ed=mitivpn
-- name: "\U0001F1EC\U0001F1E7 \u82F1\u56FD starcorenode.com 2"
-  password: BSs5IAVMQdYuykvDsOYZoa6gNPSGBjAbLL
-  port: 443
-  server: 185.126.236.44
-  skip-cert-verify: false
-  sni: www.mesaly.click
-  type: trojan
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD starcorenode.com 3"
-  network: ws
-  port: 80
-  server: 167.82.0.1
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-    path: /
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD starcorenode.com 4"
+- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD starcorenode.com 2"
   network: ws
   port: 443
   server: 140.248.185.253
@@ -800,21 +639,115 @@ proxies:
     headers:
       Host: default.ssl.fastly.net
     path: /
+- http-opts:
+    headers:
+      Host:
+      - play.google.com
+    method: GET
+    path:
+    - /
+  name: "\U0001F1ED\U0001F1FA \u5308\u7259\u5229 starcorenode.com"
+  network: http
+  port: 8044
+  server: 109.61.18.75
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 6e25f7b4-efce-425a-af98-3f310623bfa2
+- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u4E54\u6CBB\u4E9A\u6D32\u4E9A\u7279\u5170\
+    \u5927Fastly\u8282\u70B9"
+  network: ws
+  port: 80
+  server: 151.101.57.151
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+    path: /?ed=2560
+- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD Fastly\u5168\u7403Anycast\u8282\u70B9 2"
+  network: ws
+  port: 80
+  server: 151.101.0.1
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+    path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u4F5B\u7F57\u91CC\u8FBE\u5DDE\u8FC8\u963F\
-    \u5BC6\u5E02"
+  name: "\u4F0A\u62C9\u514B starcorenode.com"
   network: tcp
-  port: 443
+  port: 8443
   reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  server: 72.56.14.178
-  servername: fi.sellflow.org
+    public-key: '%2DFQM2tUbpiBjwjgla2mwkSkFhFIKQU0FQOvRi0ZD_mY'
+    short-id: 540f5784c2481b5a
+  server: 81.90.29.53
+  servername: mishaduck.duckdns.org
   skip-cert-verify: false
   tfo: false
   tls: true
   type: vless
-  uuid: 33de2596-d95d-412b-a8c2-410be7060ca3
+  uuid: cf038a28-8f85-41fc-9e86-ba99a3fdd0d9
+- name: "\U0001F1E6\U0001F1FA \u6FB3\u5927\u5229\u4E9A Fastly\u8282\u70B9"
+  network: ws
+  port: 80
+  server: 151.101.170.151
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+    path: /?ed=2560
+- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD Fastly\u5168\u7403Anycast\u8282\u70B9 3"
+  network: ws
+  port: 80
+  server: speedtest.net
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+    path: /
+- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD Fastly\u8282\u70B9"
+  network: ws
+  port: 80
+  server: 151.101.71.151
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+    path: /?ed=2560
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: "\U0001F1E9\U0001F1F0 \u4E39\u9EA6 starcorenode.com"
+  network: tcp
+  port: 443
+  server: assets.trorays.com
+  servername: assets.trorays.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: b69a71ef-51dc-48c6-b3df-4c3533062606
 - cipher: aes-256-cfb
   country: 'NULL'
   name: 'NULL'
