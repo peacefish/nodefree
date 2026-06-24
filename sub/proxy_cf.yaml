@@ -580,50 +580,10 @@ proxies:
   tls: false
   type: vmess
   uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
-- name: "\U0001F1E7\U0001F1F7 \u5DF4\u897F\u5723\u4FDD\u7F57 CloudFlare\u8282\u70B9"
-  network: ws
-  password: humanity
-  port: 443
-  server: 188.114.98.0
-  skip-cert-verify: false
-  sni: www.calmlunch.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: /assignment
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: "\U0001F1E9\U0001F1F0 \u4E39\u9EA6 starcorenode.com"
-  network: tcp
-  port: 443
-  server: assets.trorays.com
-  servername: assets.trorays.com
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: b69a71ef-51dc-48c6-b3df-4c3533062606
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: "\U0001F1FF\U0001F1E6 \u5357\u975E starcorenode.com"
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-  server: 45.194.10.68
-  servername: storage.yandex.net
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-- name: "\U0001F1EF\U0001F1F5 \u65E5\u672C \u4E1C\u4EACFastly\u8282\u70B9"
+- name: "\U0001F1E6\U0001F1FA \u6FB3\u5927\u5229\u4E9A Fastly\u8282\u70B9"
   network: ws
   port: 80
-  server: 151.101.109.223
-  servername: max-gb1.global.ssl.fastly.net
+  server: 151.101.171.151
   skip-cert-verify: false
   tfo: false
   tls: false
@@ -632,53 +592,19 @@ proxies:
   ws-opts:
     headers:
       Host: max-gb1.global.ssl.fastly.net
-    path: /
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u534E\u76DB\u987FCogent\u901A\u4FE1\u516C\
-    \u53F8"
-  password: ks3og6wZ9kH8UJv1bmpvwXbfgDNNaTd1Lk
-  port: 443
-  server: 38.54.64.247
-  skip-cert-verify: false
-  type: trojan
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: "\U0001F1F7\U0001F1FA \u4FC4\u7F57\u65AF starcorenode.com"
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  server: 212.41.10.228
-  servername: abuse.sellflow.org
+    path: /?ed=2560
+- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD Fastly\u5168\u7403Anycast\u8282\u70B9"
+  network: ws
+  port: 80
+  server: speedtest.net
   skip-cert-verify: false
   tfo: false
-  tls: true
+  tls: false
   type: vless
-  uuid: 33de2596-d95d-412b-a8c2-410be7060ca3
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9"
-  network: ws
-  password: humanity
-  port: 443
-  server: 172.64.155.209
-  skip-cert-verify: false
-  sni: www.gossipglove.com
-  type: trojan
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
   ws-opts:
     headers:
-      Host: www.gossipglove.com
-    path: /assignment
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 2"
-  network: ws
-  port: 443
-  server: 108.162.194.135
-  servername: nbhhh.mrcool.kdns.fr
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 659a9075-d5ab-4fd2-bf34-b37043fae832
-  ws-opts:
-    headers:
-      Host: nbhhh.mrcool.kdns.fr
+      Host: max-gb1.global.ssl.fastly.net
     path: /
 - alterId: 0
   cipher: auto
@@ -694,6 +620,19 @@ proxies:
     headers:
       Host: google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir.
     path: /
+- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD Fastly\u5168\u7403Anycast\u8282\u70B9 2"
+  network: ws
+  port: 80
+  server: 151.101.2.219
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  ws-opts:
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+    path: /
 - name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD Fastly\u8282\u70B9"
   network: ws
   port: 80
@@ -707,37 +646,13 @@ proxies:
     headers:
       Host: max-gb1.global.ssl.fastly.net
     path: /?ed=2560
-- alpn:
-  - h3,h2,http/1.1
-  client-fingerprint: chrome
-  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD starcorenode.com 2"
-  network: ws
+- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD starcorenode.com 2"
+  password: O4O8.Ew+ujFX6GJBQ=xQr.heGwux0GYHqk
   port: 443
-  server: 140.248.185.253
-  servername: global.fastly.com
+  server: 45.61.52.243
   skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 6e7ebc40-58a6-c567-4ae8-51b7605a272b
-  ws-opts:
-    headers:
-      Host: global.fastly.com
-    path: /
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD starcorenode.com 3"
-  network: ws
-  port: 80
-  server: 199.232.197.131
-  servername: max-gb1.global.ssl.fastly.net
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  ws-opts:
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-    path: /
+  sni: 45.61.52.243
+  type: trojan
 - name: "\U0001F1F7\U0001F1F4 \u7F57\u9A6C\u5C3C\u4E9A starcorenode.com"
   password: fFj7MAGy1VlAWmB_gMBG_27oPYTSHvV6MX
   port: 443
@@ -745,32 +660,43 @@ proxies:
   skip-cert-verify: false
   sni: www.lateralio.click
   type: trojan
-- name: "\U0001F1FA\U0001F1F8 \u5317\u7F8E\u5730\u533A starcorenode.com"
-  network: ws
-  port: 80
-  server: hentai-cdn.apruxdomain.xyz
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: "\U0001F1F7\U0001F1FA \u4FC4\u7F57\u65AF starcorenode.com"
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  server: 109.73.194.240
+  servername: sellflow.org
   skip-cert-verify: false
   tfo: false
-  tls: false
+  tls: true
   type: vless
-  uuid: 32dffb35-9b53-4b62-8694-a8fa9dc999ed
-  ws-opts:
-    headers:
-      Host: hentai-cdn.apruxdomain.xyz
-    path: /
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD Fastly\u5168\u7403Anycast\u8282\u70B9"
+  uuid: 33de2596-d95d-412b-a8c2-410be7060ca3
+- alpn:
+  - http/1.1
+  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD RF Engineering"
   network: ws
-  port: 80
-  server: speedtest.net
+  password: humanity
+  port: 443
+  server: 141.193.213.21
   skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  sni: www.calmloud.com
+  type: trojan
   ws-opts:
     headers:
-      Host: max-gb1.global.ssl.fastly.net
-    path: /
+      Host: www.calmloud.com
+    path: /assignment
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD starcorenode.com 3"
+  port: 43203
+  server: 154.37.223.56
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 68bd04a1-0547-46a6-cdb2-c8ac3fce1e67
 - cipher: aes-256-cfb
   country: 'NULL'
   name: 'NULL'
