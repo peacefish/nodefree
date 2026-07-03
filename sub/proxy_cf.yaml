@@ -418,28 +418,27 @@ proxies:
   tls: false
   type: vmess
   uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
-- name: "\U0001F1F7\U0001F1F4 \u7F57\u9A6C\u5C3C\u4E9A starcorenode.com"
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-  port: 443
-  server: 185.137.157.128
-  skip-cert-verify: false
-  type: trojan
-- name: "\U0001F1EB\U0001F1F7 \u6CD5\u56FD\u5DF4\u9ECE CloudFlare\u8282\u70B9"
-  network: ws
-  password: humanity
-  port: 443
-  server: 141.101.90.101
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
+- http-opts:
     headers:
-      Host: www.ignitelimit.com
-    path: /assignment
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9"
+      Host:
+      - play.google.com
+    method: GET
+    path:
+    - /
+  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD starcorenode.com"
+  network: http
+  port: 5630
+  server: 167.233.27.48
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 5e8add97-7e48-458a-a000-32d0d6fa253e
+- client-fingerprint: chrome
+  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9"
   network: ws
-  port: 443
-  server: cdn.9889888.xyz
+  port: 2083
+  server: 172.64.150.246
   servername: t1s1.rittbo.kdns.fr
   skip-cert-verify: false
   tfo: false
@@ -450,35 +449,14 @@ proxies:
     headers:
       Host: t1s1.rittbo.kdns.fr
     path: /
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u534E\u76DB\u987FCogent\u901A\u4FE1\u516C\
-    \u53F8"
-  password: ks3og6wZ9kH8UJv1bmpvwXbfgDNNaTd1Lk
+- name: "\U0001F1EC\U0001F1E7 \u82F1\u56FD starcorenode.com"
+  password: BSs5IAVMQdYuykvDsOYZoa6gNPSGBjAbLL
   port: 443
-  server: 38.54.64.247
+  server: 185.126.236.44
   skip-cert-verify: false
+  sni: www.mesaly.click
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: "\U0001F1EE\U0001F1F3 \u5370\u5EA6 starcorenode.com"
-  password: Uk8lfmvhYnx5rJvXxKrRqGRynd9gIpJ.iY
-  port: 14605
-  server: 103.241.66.76
-  type: ss
-- client-fingerprint: chrome
-  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 2"
-  network: ws
-  port: 443
-  server: 104.17.131.138
-  servername: support.zoom.us.yxls.eu.cc
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 6680846a-8a57-4dfd-9a0e-63209cfc8535
-  ws-opts:
-    headers:
-      Host: support.zoom.us.yxls.eu.cc
-    path: /sg-amz
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 3"
+- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 2"
   network: ws
   port: 443
   server: 104.21.227.134
@@ -492,50 +470,41 @@ proxies:
     headers:
       Host: t1s1.rittbo.kdns.fr
     path: /
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 4"
-  network: ws
-  password: humanity
+- name: "\U0001F1F7\U0001F1F4 \u7F57\u9A6C\u5C3C\u4E9A starcorenode.com"
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
-  server: 172.64.152.23
+  server: 185.137.157.138
   skip-cert-verify: false
-  sni: www.calmlunch.com
   type: trojan
+- name: "\U0001F1F7\U0001F1F4 \u7F57\u9A6C\u5C3C\u4E9A starcorenode.com 2"
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  port: 443
+  server: 185.137.157.128
+  skip-cert-verify: false
+  type: trojan
+- name: "\U0001F1E8\U0001F1F3 \u5317\u4EAC\u5E02 \u963F\u91CC\u4E91"
+  network: ws
+  port: 443
+  server: 39.107.252.182
+  servername: nbhhh.mrcool.kdns.fr
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 659a9075-d5ab-4fd2-bf34-b37043fae832
   ws-opts:
     headers:
-      Host: www.calmlunch.com
-    path: /assignment
-- name: "\U0001F1E7\U0001F1F7 \u5DF4\u897F\u5723\u4FDD\u7F57 CloudFlare\u8282\u70B9"
-  network: ws
-  password: humanity
-  port: 443
-  server: 188.114.98.0
-  skip-cert-verify: false
-  sni: www.calmlunch.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: /assignment
+      Host: nbhhh.mrcool.kdns.fr
+    path: "/proxyip=Telegram-WangCai2\U0001F1E8\U0001F1F3fp=chrome"
 - cipher: chacha20-ietf-poly1305
-  name: "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761 Choopa\u6570\u636E\u4E2D\u5FC3"
-  password: I-bP3lFh.dTG3XitF7XtVK83CZ7rI2Ut=n
-  port: 23027
-  server: 45.32.122.179
+  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u534E\u76DB\u987FCogent\u901A\u4FE1\u516C\
+    \u53F8"
+  password: bwjNPcwgz5+1gCyi+rB+nfqugw38B7tqVa
+  port: 17283
+  server: 38.180.221.143
   type: ss
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 5"
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.20.6.134
-  skip-cert-verify: false
-  sni: www.calmloud.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmloud.com
-    path: /assignment
 - client-fingerprint: chrome
-  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 6"
+  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 3"
   network: ws
   port: 8443
   server: 172.64.52.134
@@ -549,22 +518,23 @@ proxies:
     headers:
       Host: t1s1.rittbo.kdns.fr
     path: /
-- http-opts:
-    headers:
-      Host:
-      - it.fifapes.monster
-    method: GET
-    path:
-    - /
-  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD starcorenode.com"
-  network: http
-  port: 29148
-  server: it.fifapes.monster
+- alpn:
+  - h2
+  client-fingerprint: chrome
+  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 4"
+  network: ws
+  port: 443
+  server: 104.16.75.226
+  servername: server-ir-3.ariyuz.org
   skip-cert-verify: false
   tfo: false
-  tls: false
+  tls: true
   type: vless
-  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
+  uuid: b3bd8d0e-3cbe-4241-a4f1-e3dd0a9e432c
+  ws-opts:
+    headers:
+      Host: server-ir-3.ariyuz.org
+    path: /page=2
 - cipher: aes-256-cfb
   country: 'NULL'
   name: 'NULL'
