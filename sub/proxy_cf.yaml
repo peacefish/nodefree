@@ -294,10 +294,45 @@ proxies:
   tls: false
   type: vmess
   uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9"
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD starcorenode.com"
   network: ws
   port: 443
-  server: 104.21.227.134
+  server: kiss-timazadi-9090.up.railway.app
+  servername: kiss-timazadi-9090.up.railway.app
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: bf912534-d325-5fd6-6f9c-4d0748a4534f
+  ws-opts:
+    headers:
+      Host: kiss-timazadi-9090.up.railway.app
+    path: /ws/bf912534-d325-5fd6-6f9c-4d0748a4534f
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9"
+  network: ws
+  port: 443
+  server: assets.fiverr.com
+  servername: ap.mozestanman.dpdns.org
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: cee8c30c-fb13-4a89-abb4-5a32cf716c97
+  ws-opts:
+    headers:
+      Host: ap.mozestanman.dpdns.org
+    path: /Novex
+- client-fingerprint: chrome
+  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 2"
+  network: ws
+  port: 443
+  server: yx.cloudflare.182682.xyz
   servername: t1s1.rittbo.kdns.fr
   skip-cert-verify: false
   tfo: false
@@ -308,38 +343,37 @@ proxies:
     headers:
       Host: t1s1.rittbo.kdns.fr
     path: /
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD starcorenode.com"
-  network: ws
-  port: 80
-  server: 199.232.132.11
+- http-opts:
+    headers:
+      Host:
+      - '%2F%3FBIA_TELEGRAM%40MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI'
+    method: GET
+    path:
+    - /
+  name: "\U0001F1FA\U0001F1F8 \u5317\u7F8E\u5730\u533A starcorenode.com"
+  network: http
+  port: 29148
+  server: it.fifapes.monster
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vless
-  uuid: 3b940e86-7b0d-40da-acf1-12d334e41023
-  ws-opts:
-    headers:
-      Host: Fastapi.Org
-    path: /
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD starcorenode.com 2"
-  network: ws
-  port: 80
-  server: 199.232.224.11
+  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: "\U0001F1F7\U0001F1FA \u4FC4\u7F57\u65AF starcorenode.com"
+  network: tcp
+  port: 2087
+  reality-opts:
+    public-key: J2RPvguvaBHlFDFOcZHs4sY9wSNIGNvvmDZud49A7i8
+    short-id: 9f0a1b2c
+  server: msk.24pitbullstore.ru
+  servername: msk.24pitbullstore.ru
   skip-cert-verify: false
   tfo: false
-  tls: false
+  tls: true
   type: vless
-  uuid: 3b940e86-7b0d-40da-acf1-12d334e41023
-  ws-opts:
-    headers:
-      Host: Fastapi.Org
-    path: /
-- name: "\U0001F1F7\U0001F1F4 \u7F57\u9A6C\u5C3C\u4E9A starcorenode.com"
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
-  port: 443
-  server: 185.137.157.145
-  skip-cert-verify: false
-  type: trojan
+  uuid: 570779d8-b4cd-4b3c-a8bd-6127f51c4d48
 - name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F \u7535\u8BAF\u76C8\u79D1\u6709\u9650\u516C\
     \u53F8"
   password: OccIqeORGQwiNkwS
@@ -348,25 +382,93 @@ proxies:
   skip-cert-verify: false
   sni: yazhou10.dynu.net
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: "\U0001F1E9\U0001F1EA \u5FB7\u56FD \u6CD5\u5C14\u80AF\u65BD\u6CF0\u56E0HETZNER"
-  port: 14991
-  server: me.echo-license.gr
+- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD starcorenode.com 2"
+  network: ws
+  port: 80
+  server: 199.232.236.11
   skip-cert-verify: false
+  tfo: false
   tls: false
-  type: vmess
-  uuid: fbd2b2f1-af4a-4e5f-9556-af37edea9db5
-- name: "\U0001F1F7\U0001F1F4 \u7F57\u9A6C\u5C3C\u4E9A starcorenode.com 2"
+  type: vless
+  uuid: 3b940e86-7b0d-40da-acf1-12d334e41023
+  ws-opts:
+    headers:
+      Host: Fastapi.Org
+    path: /
+- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD starcorenode.com 3"
+  password: lcGo9bOwOB8yC7oAAI.TC=rBFs6PfVgCeF
+  port: 443
+  server: 149.28.241.235
+  skip-cert-verify: false
+  sni: 149.28.241.235
+  type: trojan
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: "\U0001F1F7\U0001F1FA \u4FC4\u7F57\u65AF starcorenode.com 2"
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: Cve6RU_xmFPAsLiW2eIucli0lwEZyf7XFj6_rR8LukI
+    short-id: 671047edbaa38eef
+  server: 193.111.117.62
+  servername: max.ru
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 9946f24b-0020-40f6-9d06-de8abff0e584
+- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD Fastly\u5168\u7403Anycast\u8282\u70B9"
+  network: ws
+  port: 80
+  server: 151.101.3.8
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 3b940e86-7b0d-40da-acf1-12d334e41023
+  ws-opts:
+    headers:
+      Host: Fastapi.Org
+    path: /?ed=1024
+- name: "\U0001F1F7\U0001F1F4 \u7F57\u9A6C\u5C3C\u4E9A starcorenode.com"
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
-  server: 185.137.157.151
+  server: 185.137.157.142
   skip-cert-verify: false
   type: trojan
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 2"
+- auth: 35415e5e-3666-4454-8c45-903af0fcddf4
+  name: "\U0001F1F7\U0001F1F4 \u7F57\u9A6C\u5C3C\u4E9A starcorenode.com 2"
+  password: 35415e5e-3666-4454-8c45-903af0fcddf4
+  port: 47257
+  server: 85.120.228.208
+  skip-cert-verify: false
+  sni: www.bing.com
+  type: hysteria2
+- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 3"
   network: ws
   port: 443
-  server: 172.64.152.241
+  server: cucc.cloudflare.seeck.cn
+  servername: zdy.vavava.kdns.fr
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 8ce3af34-308f-456c-93a6-e6dff9f03d77
+  ws-opts:
+    headers:
+      Host: zdy.vavava.kdns.fr
+    path: /pyip=ProxyIP.CMLiussss.netfp=chrome
+- name: "\U0001F1F7\U0001F1F4 \u7F57\u9A6C\u5C3C\u4E9A starcorenode.com 3"
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+  port: 443
+  server: 185.137.157.156
+  skip-cert-verify: false
+  type: trojan
+- client-fingerprint: chrome
+  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 4"
+  network: ws
+  port: 443
+  server: 104.16.73.137
   servername: t1s1.rittbo.kdns.fr
   skip-cert-verify: false
   tfo: false
@@ -376,28 +478,24 @@ proxies:
   ws-opts:
     headers:
       Host: t1s1.rittbo.kdns.fr
-    path: /
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u534E\u76DB\u987FCogent\u901A\u4FE1\u516C\
-    \u53F8"
-  password: Lw_DP4+W.J5K33MD2Jy5zQVuT5n71+=BcD
+    path: '@generalconfiig'
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 5"
+  network: ws
   port: 443
-  server: 38.60.168.129
+  server: hikvision-plus.com
+  servername: ap.mozestanman.dpdns.org
   skip-cert-verify: false
-  type: trojan
-- auth: 35415e5e-3666-4454-8c45-903af0fcddf4
-  name: "\U0001F1F7\U0001F1F4 \u7F57\u9A6C\u5C3C\u4E9A starcorenode.com 3"
-  password: 35415e5e-3666-4454-8c45-903af0fcddf4
-  port: 47257
-  server: 85.120.228.208
-  skip-cert-verify: false
-  sni: www.bing.com
-  type: hysteria2
-- cipher: chacha20-ietf-poly1305
-  name: "\U0001F1EE\U0001F1F3 \u5370\u5EA6 starcorenode.com"
-  password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
-  port: 28061
-  server: 103.111.114.71
-  type: ss
+  tfo: false
+  tls: true
+  type: vless
+  uuid: cee8c30c-fb13-4a89-abb4-5a32cf716c97
+  ws-opts:
+    headers:
+      Host: ap.mozestanman.dpdns.org
+    path: /Novex
 - cipher: aes-256-cfb
   country: 'NULL'
   name: 'NULL'
