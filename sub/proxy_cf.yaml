@@ -294,68 +294,101 @@ proxies:
   tls: false
   type: vmess
   uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD starcorenode.com"
-  password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
+- name: "\U0001F1F7\U0001F1F4 \u7F57\u9A6C\u5C3C\u4E9A starcorenode.com"
+  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
-  server: 149.104.104.58
+  server: 185.137.157.156
   skip-cert-verify: false
-  sni: 149.104.104.58
+  sni: 185.137.157.156
   type: trojan
+- client-fingerprint: chrome
+  name: "\U0001F1FA\U0001F1F8 \u5317\u7F8E\u5730\u533A starcorenode.com"
+  network: ws
+  port: 2053
+  server: 23.133.52.10
+  servername: s5gydl.936.us.ci
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
+  ws-opts:
+    headers:
+      Host: s5gydl.936.us.ci
+    path: /proxyip=tw.william.us.ci?uuid=f4e91fac-25eb-4d26-a14c-c82c3778a0e4
+- http-opts:
+    headers:
+      Host:
+      - snapp.io
+    method: GET
+    path:
+    - /
+  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD starcorenode.com"
+  network: http
+  port: 48711
+  server: 155.103.69.195
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 23a9b46e-9443-4268-81c5-399929919ab0
 - client-fingerprint: chrome
   name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9"
   network: ws
   port: 443
-  server: cloudflare.182682.xyz
-  servername: edt2.yfqh08811.ccwu.cc
+  server: 172.64.147.137
+  servername: tianshu13.pages.dev
   skip-cert-verify: false
   tfo: false
   tls: true
   type: vless
-  uuid: 4a1441b0-7bc8-4906-85cf-6b59c256b480
+  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
   ws-opts:
     headers:
-      Host: edt2.yfqh08811.ccwu.cc
-    path: /
-- client-fingerprint: chrome
-  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 2"
-  network: ws
-  port: 2087
-  server: 173.245.58.179
-  servername: vp9.cc.cd
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
-  ws-opts:
-    headers:
-      Host: vp9.cc.cd
-    path: /
-- name: "\U0001F1F7\U0001F1F4 \u7F57\u9A6C\u5C3C\u4E9A starcorenode.com"
+      Host: tianshu13.pages.dev
+    path: /pyip=proxyip.sg.cmliussss.net
+- name: "\U0001F1F7\U0001F1F4 \u7F57\u9A6C\u5C3C\u4E9A starcorenode.com 2"
   password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
   port: 443
-  server: 185.137.157.151
+  server: 185.137.157.145
   skip-cert-verify: false
   type: trojan
 - client-fingerprint: chrome
-  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 3"
+  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 2"
   network: ws
   port: 443
-  server: cf8.466688.xyz
-  servername: cfoo-146.pages.dev
+  server: 172.64.155.209
+  servername: cf.cfvip.lol
   skip-cert-verify: false
   tfo: false
   tls: true
   type: vless
-  uuid: b08562b0-dbc0-47d1-860d-9435133b25c9
+  uuid: 93f0761d-4393-4b43-a523-e812fa0b7e83
   ws-opts:
     headers:
-      Host: cfoo-146.pages.dev
-    path: /QiangLieTuiJian?ed
+      Host: cf.cfvip.lol
+    path: /pyip=47.251.95.178
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 3"
+  network: ws
+  port: 443
+  server: 172.64.151.120
+  servername: nl1.cloudbench.app
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: b052df40-d51c-456c-9bd6-57af01a87e4e
+  ws-opts:
+    headers:
+      Host: nl1.cloudbench.app
+    path: /cdn
 - name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 4"
   network: ws
   port: 443
-  server: cf.008500.xyz
+  server: cdn.9889888.xyz
   servername: t1s1.rittbo.kdns.fr
   skip-cert-verify: false
   tfo: false
@@ -366,32 +399,50 @@ proxies:
     headers:
       Host: t1s1.rittbo.kdns.fr
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: "\U0001F1EE\U0001F1F3 \u5370\u5EA6 starcorenode.com"
-  password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
-  port: 28061
-  server: 103.111.114.82
-  type: ss
-- name: "\U0001F1F7\U0001F1F4 \u7F57\u9A6C\u5C3C\u4E9A starcorenode.com 2"
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD starcorenode.com 2"
+  password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
   port: 443
-  server: 185.137.157.135
+  server: 149.104.104.58
   skip-cert-verify: false
+  sni: 149.104.104.58
   type: trojan
-- name: "\U0001F1F7\U0001F1F4 \u7F57\u9A6C\u5C3C\u4E9A starcorenode.com 3"
-  password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD starcorenode.com 3"
+  network: ws
   port: 443
-  server: 185.137.157.149
+  server: 199.232.249.110
+  servername: ssl.fastly.com
   skip-cert-verify: false
-  sni: 185.137.157.149
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 891710f4-45f3-41b1-99a6-6f1510f83c10
+  ws-opts:
+    headers:
+      Host: ssl.fastly.com
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed
+- name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F \u7535\u8BAF\u76C8\u79D1\u6709\u9650\u516C\
+    \u53F8"
+  password: OccIqeORGQwiNkwS
+  port: 19128
+  server: jpbgp.netvigor.cc
+  skip-cert-verify: false
+  sni: yazhou10.dynu.net
   type: trojan
-- name: "\U0001F1E7\U0001F1F7 \u5DF4\u897F\u5723\u4FDD\u7F57 CloudFlare\u8282\u70B9"
-  password: VPNCUSTOMIZE
+- client-fingerprint: chrome
+  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 5"
+  network: ws
   port: 443
-  server: 188.114.97.6
+  server: 172.64.147.15
+  servername: tianshu13.pages.dev
   skip-cert-verify: false
-  sni: ww.offers.de5.net
-  type: trojan
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  ws-opts:
+    headers:
+      Host: tianshu13.pages.dev
+    path: /pyip=proxyip.sg.cmliussss.net
 - cipher: aes-256-cfb
   country: 'NULL'
   name: 'NULL'
