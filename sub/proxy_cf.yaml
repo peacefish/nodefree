@@ -564,17 +564,70 @@ proxies:
   tls: false
   type: vmess
   uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
-- cipher: chacha20-ietf-poly1305
-  name: "\U0001F1EE\U0001F1F3 \u5370\u5EA6 starcorenode.com"
-  password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
-  port: 28061
-  server: 103.111.114.82
-  type: ss
 - client-fingerprint: chrome
-  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9"
+  flow: xtls-rprx-vision
+  name: "\U0001F1FF\U0001F1E6 \u5357\u975E starcorenode.com"
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
+    short-id: c6ef72e4635d15a5
+  server: 45.196.201.102
+  servername: storage.yandex.net
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: "\U0001F1FF\U0001F1E6 \u5357\u975E starcorenode.com 2"
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
+    short-id: c6ef72e4635d15a5
+  server: 45.196.201.79
+  servername: storage.yandex.net
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
+- cipher: chacha20-ietf-poly1305
+  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u534E\u76DB\u987F\u5DDE\u897F\u96C5\u56FE\
+    \u5E02\u4E9A\u9A6C\u900A(Amazon)\u516C\u53F8\u6570\u636E\u4E2D\u5FC3"
+  password: 792e0bdb-01db-450c-94c4-925151eb396e
+  port: 16688
+  server: ss.041.node-for-bigairport.win
+  type: ss
+- auth: e3a5bb40be52de65
+  name: "\U0001F1EC\U0001F1F7 \u5E0C\u814A starcorenode.com"
+  password: e3a5bb40be52de65
+  port: 2328
+  server: q.baoge.me
+  skip-cert-verify: false
+  sni: q.baoge.me
+  type: hysteria2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: "\U0001F1FF\U0001F1E6 \u5357\u975E starcorenode.com 3"
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
+    short-id: c6ef72e4635d15a5
+  server: 45.196.201.78
+  servername: storage.yandex.net
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
+- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9"
   network: ws
   port: 443
-  server: 104.21.227.134
+  server: yx.cloudflare.182682.xyz
   servername: t1s1.rittbo.kdns.fr
   skip-cert-verify: false
   tfo: false
@@ -588,101 +641,39 @@ proxies:
 - auth: grape_288923
   name: "\U0001F1FA\U0001F1E6 \u4E4C\u514B\u5170 starcorenode.com"
   password: grape_288923
-  port: 8080
+  port: 8443
   server: 194.247.182.201
   skip-cert-verify: false
   sni: grape-coffee-fi.gleeze.com
   type: hysteria2
-- name: "\U0001F1EE\U0001F1F7 \u4F0A\u6717 starcorenode.com"
-  network: tcp
-  port: 2090
-  server: fn.fifapes.monster
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u5BBE\u5229\u5927\u5B66"
-  network: tcp
-  port: 20342
-  server: 141.133.172.222
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  uuid: 5eecb34f-c905-4c77-b7fb-d830b451cd11
-- http-opts:
-    headers:
-      Host:
-      - gr1.fifapes.monster
-    method: GET
-    path:
-    - /
-  name: "\U0001F1FA\U0001F1F8 \u5317\u7F8E\u5730\u533A starcorenode.com"
-  network: http
-  port: 8882
-  server: gr1.fifapes.monster
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: "\U0001F1FF\U0001F1E6 \u5357\u975E starcorenode.com"
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
-    short-id: c6ef72e4635d15a5
-  server: 45.196.201.4
-  servername: storage.yandex.net
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
 - name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD starcorenode.com"
-  network: ws
+  password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
   port: 443
-  server: 199.232.78.159
-  servername: ssl.fastly.com
+  server: 149.104.104.58
   skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 79a5be11-ec1f-4e18-b7fc-aef854234c43
-  ws-opts:
-    headers:
-      Host: ssl.fastly.com
-    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 2"
-  network: ws
-  password: humanity
-  port: 443
-  server: 162.159.91.211
-  skip-cert-verify: false
-  sni: www.calmlunch.com
+  sni: 149.104.104.58
   type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: /assignment
-- client-fingerprint: chrome
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: "\U0001F1FF\U0001F1E6 \u5357\u975E starcorenode.com 2"
+  name: "\U0001F1F7\U0001F1FA \u4FC4\u7F57\u65AF starcorenode.com"
   network: tcp
   port: 443
   reality-opts:
-    public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
-    short-id: c6ef72e4635d15a5
-  server: 45.196.201.23
-  servername: storage.yandex.net
+    public-key: oGgupP3uX0TNyFwuxNYaFj-IQ8EPhCuKfJdaOHiMnV0
+    short-id: c334408a1056aaf8
+  server: 147.45.50.132
+  servername: nl16.sodahub.online
   skip-cert-verify: false
   tfo: false
   tls: true
   type: vless
-  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
+  uuid: 8bba3194-4856-46d1-8319-075817d87eb1
+- cipher: aes-256-gcm
+  name: "\U0001F1EE\U0001F1F7 \u4F0A\u6717 starcorenode.com"
+  password: EMIruFl6nN37LDQxCIwstG09haCBkyjvZVjWIMOQ0Jk=
+  port: 82
+  server: 94.183.124.95
+  type: ss
 - cipher: aes-256-cfb
   country: 'NULL'
   name: 'NULL'
