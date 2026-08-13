@@ -295,12 +295,12 @@ proxies:
   type: vmess
   uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
 - alpn:
-  - http%2F1.1
+  - h3%2Ch2%2Chttp%2F1.1
   name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9"
   network: ws
   password: humanity
   port: 443
-  server: 104.18.23.63
+  server: 172.67.221.242
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
@@ -308,18 +308,41 @@ proxies:
     headers:
       Host: www.ignitelimit.com
     path: /assignment
-- name: "\U0001F1EC\U0001F1E7 \u82F1\u56FD Technicolor SA"
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  port: 20004
-  server: oplosgru-c.catcat321.com
+- client-fingerprint: chrome
+  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 2"
+  network: ws
+  port: 443
+  server: 104.17.20.214
+  servername: refighehosein.salamdadash123.workers.dev
   skip-cert-verify: false
-  sni: hk.catxstar.com
-  type: trojan
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 2"
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  ws-opts:
+    headers:
+      Host: refighehosein.salamdadash123.workers.dev
+    path: /
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: "\U0001F1E8\U0001F1E6 \u52A0\u62FF\u5927 starcorenode.com"
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: UE8hUjH1WYwemxIriq5lvtFCnHTdLF817okXr-u7MGs
+    short-id: 250b5976473a
+  server: jyvlryz.cvewfjg.shop
+  servername: www.cloudflare.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 4e0f4e59-3613-4f0c-b824-7348413d20e6
+- name: "\U0001F1E8\U0001F1E6 \u52A0\u62FF\u5927 starcorenode.com 2"
   network: ws
   password: humanity
   port: 443
-  server: 104.18.152.113
+  server: 130.250.137.171
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
@@ -331,33 +354,7 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 104.18.152.50
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: /assignment
-- client-fingerprint: chrome
-  name: "\U0001F1F7\U0001F1FA \u4FC4\u7F57\u65AF \u83AB\u65AF\u79D1Relcom\u7F51\u7EDC"
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: k2gF2ZrpECMogTk1dY1uQ_BaWuyUVRTrewS-dnRL53s
-    short-id: 5ae57d5673
-  server: nltw6.lckdwn.ru
-  servername: nltw6.lckdwn.ru
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: f4540796-ce50-4c2b-a41c-58f18f36ab96
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u52A0\u5DDE"
-  network: ws
-  password: humanity
-  port: 443
-  server: 216.24.57.7
+  server: 104.16.174.71
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
@@ -369,7 +366,7 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 104.18.12.149
+  server: 104.18.152.229
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
@@ -381,19 +378,7 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 104.19.229.21
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: assignment
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 6"
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.174.34
+  server: 104.18.152.159
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
@@ -401,11 +386,11 @@ proxies:
     headers:
       Host: www.ignitelimit.com
     path: /assignment
-- name: "\U0001F1F1\U0001F1F9 \u7ACB\u9676\u5B9B starcorenode.com"
+- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 6"
   network: ws
   password: humanity
   port: 443
-  server: 86.38.214.205
+  server: 104.18.152.103
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
@@ -417,7 +402,7 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: 104.18.152.210
+  server: www.speedtest.org
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
@@ -425,35 +410,99 @@ proxies:
     headers:
       Host: www.ignitelimit.com
     path: /assignment
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 8"
+- alpn:
+  - http/1.1
+  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD \u4E54\u6CBB\u4E9A\u6D32\u4E9A\u7279\u5170\
+    \u5927Fastly\u8282\u70B9"
   network: ws
-  password: humanity
+  password: MiTiVPN
   port: 443
-  server: 104.18.152.219
+  server: 151.101.56.9
   skip-cert-verify: false
-  sni: www.ignitelimit.com
+  sni: default.fastly.com
   type: trojan
   ws-opts:
     headers:
-      Host: www.ignitelimit.com
-    path: /assignment
+      Host: s3z-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/f-l@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+- alpn:
+  - h2%2Chttp%2F1.1
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: "\U0001F1EE\U0001F1F7 \u4F0A\u6717 starcorenode.com"
+  network: tcp
+  port: 443
+  server: 31.59.129.225
+  servername: u643766u5dfdedf2s846.csgfw.top
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 41f4cb15-5a3f-3934-89fe-b4177146adf4
+- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD starcorenode.com"
+  network: ws
+  port: 8880
+  server: 198.12.145.30
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime61.workers.dev
+    path: /
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: "\U0001F1E7\U0001F1F7 \u5DF4\u897F\u5723\u4FDD\u7F57 CloudFlare\u8282\u70B9"
+  network: ws
+  port: 443
+  server: 188.114.98.134
+  servername: o94yv7LiF0-AnxIsd9EFehVvs7mXn6bh.z-UlE-ikA-d-e-nE-k-E.WorkeRs.dEv
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: ba49d874-fe02-465d-82d3-ed981dc7694f
+  ws-opts:
+    headers:
+      Host: o94yv7LiF0-AnxIsd9EFehVvs7mXn6bh.z-UlE-ikA-d-e-nE-k-E.WorkeRs.dEv
+    path: /
+- client-fingerprint: chrome
+  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 8"
+  network: ws
+  port: 443
+  server: 141.101.114.8
+  servername: noisy-term-e657.airdrop2014aa5168.workers.dev
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 5d8eb33a-2166-4daf-88fe-4be5799c493b
+  ws-opts:
+    headers:
+      Host: noisy-term-e657.airdrop2014aa5168.workers.dev
+    path: /
+- alpn:
+  - h2%2Chttp%2F1.1
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD starcorenode.com 2"
+  network: tcp
+  port: 443
+  server: s175.uugfw.top
+  servername: u643766u6f31abbcs173.gogocs.xyz
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 41f4cb15-5a3f-3934-89fe-b4177146adf4
 - name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 9"
   network: ws
   password: humanity
   port: 443
-  server: 104.17.111.8
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: /assignment
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 10"
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.174.117
+  server: 104.16.174.37
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
@@ -462,83 +511,46 @@ proxies:
       Host: www.ignitelimit.com
     path: /assignment
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761 Amazon\u6570\u636E\u4E2D\u5FC3"
-  network: tcp
-  port: 17623
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.0.111.82
-  servername: www.apple.com
+  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 10"
+  network: ws
+  port: 443
+  server: 104.20.6.134
+  servername: r.meDiASHOPPp.sbS
   skip-cert-verify: false
   tfo: false
   tls: true
   type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 11"
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.174.46
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
+  uuid: 2088ef0d-4d2c-43b3-874b-b6a03531c81b
   ws-opts:
     headers:
-      Host: www.ignitelimit.com
-    path: /assignment
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 12"
+      Host: r.meDiASHOPPp.sbS
+    path: /eyJqdW5rIjoiVVpPeXNodUFQMHNVcU12aCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD Cloudinnovation\u6570\u636E\u4E2D\u5FC3"
   network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.77
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: /assignment
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 13"
-  network: ws
-  port: 2095
-  server: 172.64.146.153
+  port: 8880
+  server: 154.83.2.30
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
     headers:
-      Host: fangbinxingnmsl.pusytroller.gq
+      Host: vms.lifetime28.workers.dev
     path: /
-- alpn:
-  - http%2F1.1%2Ch2%2Ch3
-  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 14"
+- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 11"
   network: ws
-  password: humanity
-  port: 443
-  server: 198.41.223.96
+  port: 8880
+  server: www.glassdoor.com
   skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
+  tfo: false
+  tls: false
+  type: vless
+  uuid: 5fc8a5e4-d0c5-4ad2-8bfe-db589553c6c1
   ws-opts:
     headers:
-      Host: www.ignitelimit.com
-    path: /assignment
-- name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD CloudFlare\u8282\u70B9 15"
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.152
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: /assignment
+      Host: red-disk-58df.153-2ce.workers.dev
+    path: /pyip=ProxyIP.KR.CMLiussss.net
 - cipher: aes-256-cfb
   country: 'NULL'
   name: 'NULL'
